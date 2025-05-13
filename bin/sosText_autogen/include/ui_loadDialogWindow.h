@@ -40,8 +40,8 @@ public:
     QPushButton *pushButton_2;
     QPlainTextEdit *plainTextEdit;
     QSplitter *splitter;
-    QTreeView *treeView;
-    QListWidget *listWidget;
+    QTreeView *directories;
+    QListWidget *files;
     QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *LoadDialogWindow)
@@ -115,25 +115,26 @@ public:
         splitter = new QSplitter(LoadDialogWindow);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
-        treeView = new QTreeView(splitter);
-        treeView->setObjectName("treeView");
+        directories = new QTreeView(splitter);
+        directories->setObjectName("directories");
         QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::MinimumExpanding);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(treeView->sizePolicy().hasHeightForWidth());
-        treeView->setSizePolicy(sizePolicy3);
-        treeView->setMinimumSize(QSize(150, 400));
-        treeView->setMaximumSize(QSize(300, 16777215));
-        splitter->addWidget(treeView);
-        listWidget = new QListWidget(splitter);
-        listWidget->setObjectName("listWidget");
+        sizePolicy3.setHeightForWidth(directories->sizePolicy().hasHeightForWidth());
+        directories->setSizePolicy(sizePolicy3);
+        directories->setMinimumSize(QSize(150, 400));
+        directories->setMaximumSize(QSize(300, 16777215));
+        directories->setDragEnabled(true);
+        splitter->addWidget(directories);
+        files = new QListWidget(splitter);
+        files->setObjectName("files");
         QSizePolicy sizePolicy4(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
-        listWidget->setSizePolicy(sizePolicy4);
-        listWidget->setMinimumSize(QSize(300, 400));
-        splitter->addWidget(listWidget);
+        sizePolicy4.setHeightForWidth(files->sizePolicy().hasHeightForWidth());
+        files->setSizePolicy(sizePolicy4);
+        files->setMinimumSize(QSize(300, 400));
+        splitter->addWidget(files);
 
         verticalLayout->addWidget(splitter);
 

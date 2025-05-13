@@ -19,6 +19,8 @@ class LoadDialogWindow : public QDialog
 
     private:
     Ui::LoadDialogWindow *ui;
+
+    // TODO Load and return file (ifstream)
 };
 
 #endif // LOADDIALOGWINDOW_H

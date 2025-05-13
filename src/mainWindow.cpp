@@ -17,3 +17,8 @@ int MainWindow::showLoadDialog()
     loadDialogWindow->show();
     return(0);
 }
+
+QWidget *MainWindow::getTextBox()
+{
+    return ui->textEdit;
+}
