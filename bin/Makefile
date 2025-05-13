@@ -166,29 +166,29 @@ sosText_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s
 .PHONY : sosText_autogen/mocs_compilation.cpp.s
 
-src/loadDialog.o: src/loadDialog.cpp.o
-.PHONY : src/loadDialog.o
+src/loadDialogWindow.o: src/loadDialogWindow.cpp.o
+.PHONY : src/loadDialogWindow.o
 
 # target to build an object file
-src/loadDialog.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialog.cpp.o
-.PHONY : src/loadDialog.cpp.o
+src/loadDialogWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o
+.PHONY : src/loadDialogWindow.cpp.o
 
-src/loadDialog.i: src/loadDialog.cpp.i
-.PHONY : src/loadDialog.i
+src/loadDialogWindow.i: src/loadDialogWindow.cpp.i
+.PHONY : src/loadDialogWindow.i
 
 # target to preprocess a source file
-src/loadDialog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialog.cpp.i
-.PHONY : src/loadDialog.cpp.i
+src/loadDialogWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.i
+.PHONY : src/loadDialogWindow.cpp.i
 
-src/loadDialog.s: src/loadDialog.cpp.s
-.PHONY : src/loadDialog.s
+src/loadDialogWindow.s: src/loadDialogWindow.cpp.s
+.PHONY : src/loadDialogWindow.s
 
 # target to generate assembly for a file
-src/loadDialog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialog.cpp.s
-.PHONY : src/loadDialog.cpp.s
+src/loadDialogWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.s
+.PHONY : src/loadDialogWindow.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -251,9 +251,9 @@ help:
 	@echo "... sosText_autogen/mocs_compilation.o"
 	@echo "... sosText_autogen/mocs_compilation.i"
 	@echo "... sosText_autogen/mocs_compilation.s"
-	@echo "... src/loadDialog.o"
-	@echo "... src/loadDialog.i"
-	@echo "... src/loadDialog.s"
+	@echo "... src/loadDialogWindow.o"
+	@echo "... src/loadDialogWindow.i"
+	@echo "... src/loadDialogWindow.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

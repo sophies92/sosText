@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/qt6/**"
+                "/opt/qt6/**",
+                "${workspaceFolder}/bin/sosText_autogen/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui
+CXX_INCLUDES = -I/home/sophie/Projects/cpp/sosText/sosText/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui
 
 CXX_FLAGS = -fPIC -std=gnu++17
 

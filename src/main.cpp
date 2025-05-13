@@ -3,6 +3,7 @@
 #include <QTranslator>
 
 #include "mainWindow.h"
+#include "loadDialogWindow.h"
 
 int main(int argc, char *argv[])
 {

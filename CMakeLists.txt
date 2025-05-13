@@ -21,10 +21,10 @@ set(PROJECT_SOURCES
         src/mainWindow.cpp
         src/mainWindow.h
         src/mainWindow.ui
-
-        src/loadDialog.cpp
-        src/loadDialog.h
-        src/loadDialog.ui
+        
+        src/loadDialogWindow.cpp
+        src/loadDialogWindow.h
+        src/loadDialogWindow.ui
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

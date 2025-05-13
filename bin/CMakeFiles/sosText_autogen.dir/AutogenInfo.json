@@ -320,9 +320,9 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.h",
+			"/home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h",
 			"MU",
-			"UVLADIE3JM/moc_loadDialog.cpp",
+			"UVLADIE3JM/moc_loadDialogWindow.cpp",
 			null
 		],
 		[
@@ -390,7 +390,7 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp",
+			"/home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp",
 			"MU",
 			null
 		],

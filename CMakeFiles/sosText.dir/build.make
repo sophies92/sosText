@@ -69,10 +69,24 @@ include CMakeFiles/sosText.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sosText.dir/flags.make
 
+CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: CMakeFiles/sosText.dir/flags.make
+CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: sosText_autogen/mocs_compilation.cpp
+CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: CMakeFiles/sosText.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o -MF CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/sosText_autogen/mocs_compilation.cpp
+
+CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sophie/Projects/cpp/sosText/sosText/sosText_autogen/mocs_compilation.cpp > CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sophie/Projects/cpp/sosText/sosText/sosText_autogen/mocs_compilation.cpp -o CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/sosText.dir/src/main.cpp.o: CMakeFiles/sosText.dir/flags.make
 CMakeFiles/sosText.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/sosText.dir/src/main.cpp.o: CMakeFiles/sosText.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sosText.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sosText.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sosText.dir/src/main.cpp.o -MF CMakeFiles/sosText.dir/src/main.cpp.o.d -o CMakeFiles/sosText.dir/src/main.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/main.cpp
 
 CMakeFiles/sosText.dir/src/main.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/sosText.dir/src/main.cpp.s: cmake_force
 CMakeFiles/sosText.dir/src/mainWindow.cpp.o: CMakeFiles/sosText.dir/flags.make
 CMakeFiles/sosText.dir/src/mainWindow.cpp.o: src/mainWindow.cpp
 CMakeFiles/sosText.dir/src/mainWindow.cpp.o: CMakeFiles/sosText.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sosText.dir/src/mainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sosText.dir/src/mainWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sosText.dir/src/mainWindow.cpp.o -MF CMakeFiles/sosText.dir/src/mainWindow.cpp.o.d -o CMakeFiles/sosText.dir/src/mainWindow.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp
 
 CMakeFiles/sosText.dir/src/mainWindow.cpp.i: cmake_force
@@ -97,32 +111,34 @@ CMakeFiles/sosText.dir/src/mainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sosText.dir/src/mainWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp -o CMakeFiles/sosText.dir/src/mainWindow.cpp.s
 
-CMakeFiles/sosText.dir/src/loadDialog.cpp.o: CMakeFiles/sosText.dir/flags.make
-CMakeFiles/sosText.dir/src/loadDialog.cpp.o: src/loadDialog.cpp
-CMakeFiles/sosText.dir/src/loadDialog.cpp.o: CMakeFiles/sosText.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sosText.dir/src/loadDialog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sosText.dir/src/loadDialog.cpp.o -MF CMakeFiles/sosText.dir/src/loadDialog.cpp.o.d -o CMakeFiles/sosText.dir/src/loadDialog.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp
+CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o: CMakeFiles/sosText.dir/flags.make
+CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o: src/loadDialogWindow.cpp
+CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o: CMakeFiles/sosText.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o -MF CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o.d -o CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp
 
-CMakeFiles/sosText.dir/src/loadDialog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sosText.dir/src/loadDialog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp > CMakeFiles/sosText.dir/src/loadDialog.cpp.i
+CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp > CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.i
 
-CMakeFiles/sosText.dir/src/loadDialog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sosText.dir/src/loadDialog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp -o CMakeFiles/sosText.dir/src/loadDialog.cpp.s
+CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp -o CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.s
 
 # Object files for target sosText
 sosText_OBJECTS = \
+"CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/sosText.dir/src/main.cpp.o" \
 "CMakeFiles/sosText.dir/src/mainWindow.cpp.o" \
-"CMakeFiles/sosText.dir/src/loadDialog.cpp.o"
+"CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o"
 
 # External object files for target sosText
 sosText_EXTERNAL_OBJECTS =
 
+sosText: CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o
 sosText: CMakeFiles/sosText.dir/src/main.cpp.o
 sosText: CMakeFiles/sosText.dir/src/mainWindow.cpp.o
-sosText: CMakeFiles/sosText.dir/src/loadDialog.cpp.o
+sosText: CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o
 sosText: CMakeFiles/sosText.dir/build.make
 sosText: /opt/qt6/6.6.0/gcc_64/lib/libQt6Widgets.so.6.6.0
 sosText: /opt/qt6/6.6.0/gcc_64/lib/libQt6Gui.so.6.6.0
@@ -130,7 +146,7 @@ sosText: /opt/qt6/6.6.0/gcc_64/lib/libQt6Core.so.6.6.0
 sosText: /usr/lib/x86_64-linux-gnu/libGLX.so
 sosText: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 sosText: CMakeFiles/sosText.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable sosText"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable sosText"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sosText.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+d108e8ddbaf2e2cc7db5644d57658dbf CMakeFiles/sosText_autogen

@@ -379,4 +379,7 @@ CMakeFiles/sosText.dir/src/main.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontmetrics.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontinfo.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h

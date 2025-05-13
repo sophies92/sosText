@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp" "CMakeFiles/sosText.dir/src/loadDialog.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/loadDialog.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/sosText_autogen/mocs_compilation.cpp" "CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp" "CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp" "CMakeFiles/sosText.dir/src/main.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/main.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp" "CMakeFiles/sosText.dir/src/mainWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/mainWindow.cpp.o.d"
   )
