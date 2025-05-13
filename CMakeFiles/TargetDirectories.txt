@@ -1,0 +1,3 @@
+/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles/sosText.dir
+/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles/edit_cache.dir
+/home/sophie/Projects/cpp/sosText/sosText/CMakeFiles/rebuild_cache.dir

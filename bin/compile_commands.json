@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/main.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/main.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/mainWindow.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/loadDialog.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/loadDialog.cpp"
+}
+]
