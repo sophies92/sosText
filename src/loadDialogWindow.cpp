@@ -8,5 +8,5 @@ LoadDialogWindow::LoadDialogWindow(QWidget *parent) : QDialog(parent), ui(new Ui
 
 LoadDialogWindow::~LoadDialogWindow()
 {
-    
+    delete ui;
 }
