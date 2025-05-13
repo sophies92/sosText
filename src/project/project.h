@@ -13,7 +13,7 @@ namespace Project
         ~Project();
 
         private:
-        std::vector<File> projectFiles;
+        std::vector<File *> projectFiles;
     };
 };
 

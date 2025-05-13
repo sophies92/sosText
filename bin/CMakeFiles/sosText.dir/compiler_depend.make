@@ -947,6 +947,12 @@ CMakeFiles/sosText.dir/src/main.cpp.o: /home/sophie/Projects/cpp/sosText/sosText
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
   /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.h
 
+CMakeFiles/sosText.dir/src/project/file.cpp.o: /home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp \
+  /usr/include/stdc-predef.h
+
+CMakeFiles/sosText.dir/src/project/project.cpp.o: /home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o: /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp \
   /usr/include/stdc-predef.h \
   /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.h \
@@ -2848,6 +2854,8 @@ sosText_autogen/mocs_compilation.cpp:
 
 /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h:
 
+/home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp:
+
 /opt/qt6/6.6.0/gcc_64/include/QtGui/qrawfont.h:
 
 /usr/include/c++/12/tr1/gamma.tcc:
@@ -2897,6 +2905,8 @@ sosText_autogen/mocs_compilation.cpp:
 /usr/include/c++/12/bits/range_access.h:
 
 /opt/qt6/6.6.0/gcc_64/include/QtCore/qobjectdefs_impl.h:
+
+/home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 

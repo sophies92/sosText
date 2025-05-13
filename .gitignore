@@ -1,10 +1,10 @@
 #Ignore
 
 ##Dirs
-bin
-.git
-.vscode
-dev
+./bin
+./.git
+./.vscode
+./dev
 
 ##Files
-.gitignore
+./.gitignore
