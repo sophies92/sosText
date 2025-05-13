@@ -42,13 +42,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 26,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 28,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -209,6 +209,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 0,
+					"path" : "/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include"
+				},
+				{
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/opt/qt6/6.6.0/gcc_64/include/QtWidgets"
@@ -248,8 +252,16 @@
 			[
 				0,
 				1,
-				4
+				2,
+				5
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "sosText_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "sosText::@6890427a1f51a3e7e1df",
@@ -280,7 +292,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 9,
+				"backtrace" : 2,
 				"fragment" : "/opt/qt6/6.6.0/gcc_64/lib/libQt6Core.so.6.6.0",
 				"role" : "libraries"
 			},
@@ -312,28 +324,38 @@
 			[
 				0,
 				1,
-				4
+				2,
+				5
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2,
-				5
+				3,
+				6,
+				8,
+				9
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				3,
-				6
+				4,
+				7
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "bin/sosText_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -371,6 +393,18 @@
 			"backtrace" : 1,
 			"path" : "src/loadDialog.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "bin/sosText_autogen/include/src/ui_mainWindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "bin/sosText_autogen/include/src/ui_loadDialog.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

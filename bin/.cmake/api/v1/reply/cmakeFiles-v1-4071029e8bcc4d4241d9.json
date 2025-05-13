@@ -234,138 +234,6 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
-		},
-		{
-			"isExternal" : true,
 			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake"
 		},
 		{
@@ -431,6 +299,10 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake"
 		},
 		{
@@ -469,6 +341,101 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/qt6/6.6.0/gcc_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
 		},
 		{
 			"isExternal" : true,

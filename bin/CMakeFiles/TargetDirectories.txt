@@ -1,3 +1,4 @@
 /home/sophie/Projects/cpp/sosText/sosText/bin/CMakeFiles/sosText.dir
 /home/sophie/Projects/cpp/sosText/sosText/bin/CMakeFiles/edit_cache.dir
 /home/sophie/Projects/cpp/sosText/sosText/bin/CMakeFiles/rebuild_cache.dir
+/home/sophie/Projects/cpp/sosText/sosText/bin/CMakeFiles/sosText_autogen.dir

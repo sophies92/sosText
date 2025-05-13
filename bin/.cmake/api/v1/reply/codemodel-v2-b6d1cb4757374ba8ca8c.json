@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "sosText",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sosText::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sosText-Debug-9b6ce4a0afc72d064125.json",
+					"jsonFile" : "target-sosText-Debug-8e501d8d601f06497ca8.json",
 					"name" : "sosText",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sosText_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sosText_autogen-Debug-65f9f845820efa6a853e.json",
+					"name" : "sosText_autogen",
 					"projectIndex" : 0
 				}
 			]

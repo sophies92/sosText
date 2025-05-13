@@ -129,6 +129,43 @@ sosText/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/build
 .PHONY : sosText/fast
 
+#=============================================================================
+# Target rules for targets named sosText_autogen
+
+# Build rule for target.
+sosText_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sosText_autogen
+.PHONY : sosText_autogen
+
+# fast build rule for target.
+sosText_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText_autogen.dir/build.make CMakeFiles/sosText_autogen.dir/build
+.PHONY : sosText_autogen/fast
+
+sosText_autogen/mocs_compilation.o: sosText_autogen/mocs_compilation.cpp.o
+.PHONY : sosText_autogen/mocs_compilation.o
+
+# target to build an object file
+sosText_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o
+.PHONY : sosText_autogen/mocs_compilation.cpp.o
+
+sosText_autogen/mocs_compilation.i: sosText_autogen/mocs_compilation.cpp.i
+.PHONY : sosText_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+sosText_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.i
+.PHONY : sosText_autogen/mocs_compilation.cpp.i
+
+sosText_autogen/mocs_compilation.s: sosText_autogen/mocs_compilation.cpp.s
+.PHONY : sosText_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+sosText_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s
+.PHONY : sosText_autogen/mocs_compilation.cpp.s
+
 src/loadDialog.o: src/loadDialog.cpp.o
 .PHONY : src/loadDialog.o
 
@@ -209,7 +246,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... sosText_autogen"
 	@echo "... sosText"
+	@echo "... sosText_autogen/mocs_compilation.o"
+	@echo "... sosText_autogen/mocs_compilation.i"
+	@echo "... sosText_autogen/mocs_compilation.s"
 	@echo "... src/loadDialog.o"
 	@echo "... src/loadDialog.i"
 	@echo "... src/loadDialog.s"

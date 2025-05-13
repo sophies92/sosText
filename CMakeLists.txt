@@ -8,8 +8,12 @@ project(sosText
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_PREFIX_PATH /opt/qt6/6.6.0/gcc_64)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 set(PROJECT_SOURCES
         src/main.cpp
@@ -26,6 +30,6 @@ set(PROJECT_SOURCES
 add_executable(sosText ${PROJECT_SOURCES})
 
 target_link_libraries(
-        sosText PRIVATE Qt6::Widgets
+        sosText PRIVATE Qt6::Widgets Qt6::Core
 )
 
