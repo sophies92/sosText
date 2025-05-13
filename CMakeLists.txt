@@ -18,13 +18,13 @@ set(CMAKE_AUTOUIC ON)
 set(PROJECT_SOURCES
         src/main.cpp
 
-        src/mainWindow.cpp
-        src/mainWindow.h
-        src/mainWindow.ui
+        src/ui/mainWindow/mainWindow.cpp
+        src/ui/mainWindow/mainWindow.h
+        src/ui/mainWindow/mainWindow.ui
         
-        src/loadDialogWindow.cpp
-        src/loadDialogWindow.h
-        src/loadDialogWindow.ui
+        src/ui/openFileDialog/loadDialogWindow.cpp
+        src/ui/openFileDialog/loadDialogWindow.h
+        src/ui/openFileDialog/loadDialogWindow.ui
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

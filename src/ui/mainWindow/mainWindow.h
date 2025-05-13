@@ -20,7 +20,7 @@ class MainWindow : public QMainWindow
 
     public slots:
     int showLoadDialog();
-    QWidget *getTextBox();
+    Ui::MainWindow *getMainWindowObject();
 
     private:
     Ui::MainWindow *ui;

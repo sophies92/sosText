@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../src/mainWindow.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -41,8 +42,8 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "MainWindow",
     "showLoadDialog",
     "",
-    "getTextBox",
-    "QWidget*"
+    "getMainWindowObject",
+    "Ui::MainWindow*"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
@@ -50,8 +51,8 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata0[11];
     char stringdata1[15];
     char stringdata2[1];
-    char stringdata3[11];
-    char stringdata4[9];
+    char stringdata3[20];
+    char stringdata4[16];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -60,14 +61,14 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
         QT_MOC_LITERAL(11, 14),  // "showLoadDialog"
         QT_MOC_LITERAL(26, 0),  // ""
-        QT_MOC_LITERAL(27, 10),  // "getTextBox"
-        QT_MOC_LITERAL(38, 8)   // "QWidget*"
+        QT_MOC_LITERAL(27, 19),  // "getMainWindowObject"
+        QT_MOC_LITERAL(47, 15)   // "Ui::MainWindow*"
     },
     "MainWindow",
     "showLoadDialog",
     "",
-    "getTextBox",
-    "QWidget*"
+    "getMainWindowObject",
+    "Ui::MainWindow*"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -108,8 +109,8 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
         // method 'showLoadDialog'
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'getTextBox'
-        QtPrivate::TypeAndForceComplete<QWidget *, std::false_type>
+        // method 'getMainWindowObject'
+        QtPrivate::TypeAndForceComplete<Ui::MainWindow *, std::false_type>
     >,
     nullptr
 } };
@@ -122,8 +123,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: { int _r = _t->showLoadDialog();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
-        case 1: { QWidget* _r = _t->getTextBox();
-            if (_a[0]) *reinterpret_cast< QWidget**>(_a[0]) = std::move(_r); }  break;
+        case 1: { Ui::MainWindow* _r = _t->getMainWindowObject();
+            if (_a[0]) *reinterpret_cast< Ui::MainWindow**>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }

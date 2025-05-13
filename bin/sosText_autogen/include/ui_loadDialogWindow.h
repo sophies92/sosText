@@ -38,7 +38,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QPlainTextEdit *plainTextEdit;
+    QPlainTextEdit *filepath;
     QSplitter *splitter;
     QTreeView *directories;
     QListWidget *files;
@@ -98,16 +98,16 @@ public:
 
         horizontalLayout->addWidget(pushButton_2);
 
-        plainTextEdit = new QPlainTextEdit(frame);
-        plainTextEdit->setObjectName("plainTextEdit");
+        filepath = new QPlainTextEdit(frame);
+        filepath->setObjectName("filepath");
         QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(plainTextEdit->sizePolicy().hasHeightForWidth());
-        plainTextEdit->setSizePolicy(sizePolicy2);
-        plainTextEdit->setMinimumSize(QSize(400, 20));
+        sizePolicy2.setHeightForWidth(filepath->sizePolicy().hasHeightForWidth());
+        filepath->setSizePolicy(sizePolicy2);
+        filepath->setMinimumSize(QSize(400, 20));
 
-        horizontalLayout->addWidget(plainTextEdit);
+        horizontalLayout->addWidget(filepath);
 
 
         verticalLayout->addWidget(frame);
@@ -147,7 +147,7 @@ public:
 
 
         retranslateUi(LoadDialogWindow);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, LoadDialogWindow, qOverload<>(&QDialog::open));
+        QObject::connect(buttonBox, SIGNAL(accepted()), LoadDialogWindow, SLOT(loadFile()));
         QObject::connect(buttonBox, &QDialogButtonBox::rejected, LoadDialogWindow, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(LoadDialogWindow);

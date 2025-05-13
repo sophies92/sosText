@@ -124,7 +124,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPlainTextEdit" name="plainTextEdit">
+       <widget class="QPlainTextEdit" name="filepath">
         <property name="sizePolicy">
          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
           <horstretch>0</horstretch>
@@ -204,7 +204,7 @@
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
    <receiver>LoadDialogWindow</receiver>
-   <slot>open()</slot>
+   <slot>loadFile()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>248</x>
@@ -233,4 +233,7 @@
    </hints>
   </connection>
  </connections>
+ <slots>
+  <slot>loadFile()</slot>
+ </slots>
 </ui>

@@ -365,45 +365,45 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/mainWindow.cpp",
+			"path" : "src/ui/mainWindow/mainWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/mainWindow.h",
+			"path" : "src/ui/mainWindow/mainWindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/mainWindow.ui",
+			"path" : "src/ui/mainWindow/mainWindow.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/loadDialogWindow.cpp",
+			"path" : "src/ui/openFileDialog/loadDialogWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/loadDialogWindow.h",
+			"path" : "src/ui/openFileDialog/loadDialogWindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/loadDialogWindow.ui",
+			"path" : "src/ui/openFileDialog/loadDialogWindow.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "bin/sosText_autogen/include/src/ui_mainWindow.h",
+			"path" : "bin/sosText_autogen/include/src/ui/mainWindow/ui_mainWindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "bin/sosText_autogen/include/src/ui_loadDialogWindow.h",
+			"path" : "bin/sosText_autogen/include/src/ui/openFileDialog/ui_loadDialogWindow.h",
 			"sourceGroupIndex" : 1
 		}
 	],

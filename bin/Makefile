@@ -166,30 +166,6 @@ sosText_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.s
 .PHONY : sosText_autogen/mocs_compilation.cpp.s
 
-src/loadDialogWindow.o: src/loadDialogWindow.cpp.o
-.PHONY : src/loadDialogWindow.o
-
-# target to build an object file
-src/loadDialogWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.o
-.PHONY : src/loadDialogWindow.cpp.o
-
-src/loadDialogWindow.i: src/loadDialogWindow.cpp.i
-.PHONY : src/loadDialogWindow.i
-
-# target to preprocess a source file
-src/loadDialogWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.i
-.PHONY : src/loadDialogWindow.cpp.i
-
-src/loadDialogWindow.s: src/loadDialogWindow.cpp.s
-.PHONY : src/loadDialogWindow.s
-
-# target to generate assembly for a file
-src/loadDialogWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/loadDialogWindow.cpp.s
-.PHONY : src/loadDialogWindow.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -214,29 +190,53 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/mainWindow.o: src/mainWindow.cpp.o
-.PHONY : src/mainWindow.o
+src/ui/mainWindow/mainWindow.o: src/ui/mainWindow/mainWindow.cpp.o
+.PHONY : src/ui/mainWindow/mainWindow.o
 
 # target to build an object file
-src/mainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/mainWindow.cpp.o
-.PHONY : src/mainWindow.cpp.o
+src/ui/mainWindow/mainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o
+.PHONY : src/ui/mainWindow/mainWindow.cpp.o
 
-src/mainWindow.i: src/mainWindow.cpp.i
-.PHONY : src/mainWindow.i
+src/ui/mainWindow/mainWindow.i: src/ui/mainWindow/mainWindow.cpp.i
+.PHONY : src/ui/mainWindow/mainWindow.i
 
 # target to preprocess a source file
-src/mainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/mainWindow.cpp.i
-.PHONY : src/mainWindow.cpp.i
+src/ui/mainWindow/mainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.i
+.PHONY : src/ui/mainWindow/mainWindow.cpp.i
 
-src/mainWindow.s: src/mainWindow.cpp.s
-.PHONY : src/mainWindow.s
+src/ui/mainWindow/mainWindow.s: src/ui/mainWindow/mainWindow.cpp.s
+.PHONY : src/ui/mainWindow/mainWindow.s
 
 # target to generate assembly for a file
-src/mainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/mainWindow.cpp.s
-.PHONY : src/mainWindow.cpp.s
+src/ui/mainWindow/mainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.s
+.PHONY : src/ui/mainWindow/mainWindow.cpp.s
+
+src/ui/openFileDialog/loadDialogWindow.o: src/ui/openFileDialog/loadDialogWindow.cpp.o
+.PHONY : src/ui/openFileDialog/loadDialogWindow.o
+
+# target to build an object file
+src/ui/openFileDialog/loadDialogWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o
+.PHONY : src/ui/openFileDialog/loadDialogWindow.cpp.o
+
+src/ui/openFileDialog/loadDialogWindow.i: src/ui/openFileDialog/loadDialogWindow.cpp.i
+.PHONY : src/ui/openFileDialog/loadDialogWindow.i
+
+# target to preprocess a source file
+src/ui/openFileDialog/loadDialogWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.i
+.PHONY : src/ui/openFileDialog/loadDialogWindow.cpp.i
+
+src/ui/openFileDialog/loadDialogWindow.s: src/ui/openFileDialog/loadDialogWindow.cpp.s
+.PHONY : src/ui/openFileDialog/loadDialogWindow.s
+
+# target to generate assembly for a file
+src/ui/openFileDialog/loadDialogWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.s
+.PHONY : src/ui/openFileDialog/loadDialogWindow.cpp.s
 
 # Help Target
 help:
@@ -251,15 +251,15 @@ help:
 	@echo "... sosText_autogen/mocs_compilation.o"
 	@echo "... sosText_autogen/mocs_compilation.i"
 	@echo "... sosText_autogen/mocs_compilation.s"
-	@echo "... src/loadDialogWindow.o"
-	@echo "... src/loadDialogWindow.i"
-	@echo "... src/loadDialogWindow.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mainWindow.o"
-	@echo "... src/mainWindow.i"
-	@echo "... src/mainWindow.s"
+	@echo "... src/ui/mainWindow/mainWindow.o"
+	@echo "... src/ui/mainWindow/mainWindow.i"
+	@echo "... src/ui/mainWindow/mainWindow.s"
+	@echo "... src/ui/openFileDialog/loadDialogWindow.o"
+	@echo "... src/ui/openFileDialog/loadDialogWindow.i"
+	@echo "... src/ui/openFileDialog/loadDialogWindow.s"
 .PHONY : help
 
 

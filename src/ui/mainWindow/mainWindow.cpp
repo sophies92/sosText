@@ -13,12 +13,12 @@ MainWindow::~MainWindow()
 
 int MainWindow::showLoadDialog()
 {
-    loadDialogWindow = new LoadDialogWindow();
+    loadDialogWindow = new LoadDialogWindow(this);
     loadDialogWindow->show();
     return(0);
 }
 
-QWidget *MainWindow::getTextBox()
+Ui::MainWindow *MainWindow::getMainWindowObject()
 {
-    return ui->textEdit;
+    return ui;
 }

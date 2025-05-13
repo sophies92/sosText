@@ -2,6 +2,8 @@
 #define LOADDIALOGWINDOW_H
 
 #include <QDialog>
+#include <QMainWindow>
+#include <QPlainTextEdit>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -14,13 +16,17 @@ class LoadDialogWindow : public QDialog
     Q_OBJECT
 
     public:
-    LoadDialogWindow(QWidget *parent = nullptr);
+    LoadDialogWindow(QMainWindow *parent = nullptr);
     ~LoadDialogWindow();
+
+    public slots:
+    void loadFile();
 
     private:
     Ui::LoadDialogWindow *ui;
 
-    // TODO Load and return file (ifstream)
+    QPlainTextEdit *filePathText;
+
 };
 
 #endif // LOADDIALOGWINDOW_H
