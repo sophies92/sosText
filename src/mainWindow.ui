@@ -85,7 +85,7 @@
            <x>0</x>
            <y>0</y>
            <width>306</width>
-           <height>459</height>
+           <height>389</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -122,7 +122,7 @@
            <x>0</x>
            <y>0</y>
            <width>306</width>
-           <height>459</height>
+           <height>389</height>
           </rect>
          </property>
          <attribute name="label">
@@ -278,15 +278,24 @@
    <property name="text">
     <string>Open File</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
   </action>
   <action name="actionOpen_Project">
    <property name="text">
     <string>Open Project</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
   </action>
   <action name="actionSave_File">
    <property name="text">
     <string>Save File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="actionExit">
@@ -298,10 +307,10 @@
  <resources/>
  <connections>
   <connection>
-   <sender>actionExit</sender>
+   <sender>actionOpen_File</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
-   <slot>close()</slot>
+   <slot>showLoadDialog()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>
@@ -309,15 +318,15 @@
     </hint>
     <hint type="destinationlabel">
      <x>399</x>
-     <y>332</y>
+     <y>393</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>actionOpen_File</sender>
+   <sender>actionExit</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
-   <slot>loadFile()</slot>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>
@@ -331,6 +340,6 @@
   </connection>
  </connections>
  <slots>
-  <slot>loadFile()</slot>
+  <slot>showLoadDialog()</slot>
  </slots>
 </ui>

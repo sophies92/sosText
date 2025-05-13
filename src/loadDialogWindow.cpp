@@ -3,7 +3,7 @@
 
 LoadDialogWindow::LoadDialogWindow(QWidget *parent) : QDialog(parent), ui(new Ui::LoadDialogWindow)
 {
-    ui->setupUi(this);
+    LoadDialogWindow::ui->setupUi(this);
 }
 
 LoadDialogWindow::~LoadDialogWindow()

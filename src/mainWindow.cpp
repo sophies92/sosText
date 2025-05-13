@@ -3,10 +3,17 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    MainWindow::ui->setupUi(this);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+int MainWindow::showLoadDialog()
+{
+    loadDialogWindow = new LoadDialogWindow();
+    loadDialogWindow->show();
+    return(0);
 }

@@ -1,5 +1,6 @@
 /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/UVLADIE3JM/moc_mainWindow.cpp: /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.h \
   /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/moc_predefs.h \
+  /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20functional.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20memory.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20type_traits.h \
@@ -137,7 +138,9 @@
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qtguiglobal.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qtransform.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qwindowdefs.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \

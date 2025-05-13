@@ -407,6 +407,7 @@
  mmc:Q_OBJECT
  mdp:/home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.h
  mdp:/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/moc_predefs.h
+ mdp:/home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtCore/q20functional.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtCore/q20memory.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtCore/q20type_traits.h
@@ -544,7 +545,9 @@
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtGui/qtguiglobal.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtGui/qtransform.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtGui/qwindowdefs.h
+ mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow
+ mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h
  mdp:/opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h
@@ -808,6 +811,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h
+ uic:ui_loadDialogWindow.h
 /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp
  uic:ui_mainWindow.h
 /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.cpp

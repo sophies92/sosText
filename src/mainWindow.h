@@ -2,13 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "loadDialogWindow.h"
+#include "ui_loadDialogWindow.h"
 
-QT_BEGIN_NAMESPACE
 namespace Ui
 {
     class MainWindow;
-};
-QT_END_NAMESPACE 
+}
 
 class MainWindow : public QMainWindow
 {
@@ -18,11 +18,12 @@ class MainWindow : public QMainWindow
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    private slots:
-    
+    public slots:
+    int showLoadDialog();
 
     private:
     Ui::MainWindow *ui;
+    LoadDialogWindow *loadDialogWindow;
 };
 
 #endif // MAINWINDOW_H

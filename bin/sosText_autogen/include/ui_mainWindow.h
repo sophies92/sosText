@@ -104,7 +104,7 @@ public:
         toolBoxLeftPages->setMinimumSize(QSize(200, 400));
         pageProjectView = new QWidget();
         pageProjectView->setObjectName("pageProjectView");
-        pageProjectView->setGeometry(QRect(0, 0, 306, 459));
+        pageProjectView->setGeometry(QRect(0, 0, 306, 389));
         sizePolicy.setHeightForWidth(pageProjectView->sizePolicy().hasHeightForWidth());
         pageProjectView->setSizePolicy(sizePolicy);
         gridLayout_2 = new QGridLayout(pageProjectView);
@@ -121,7 +121,7 @@ public:
         toolBoxLeftPages->addItem(pageProjectView, QString::fromUtf8("Project: $PROJECTNAME"));
         pageSettings = new QWidget();
         pageSettings->setObjectName("pageSettings");
-        pageSettings->setGeometry(QRect(0, 0, 306, 459));
+        pageSettings->setGeometry(QRect(0, 0, 306, 389));
         toolBoxLeftPages->addItem(pageSettings, QString::fromUtf8("Settings"));
         splitterTopLeftRight->addWidget(toolBoxLeftPages);
         tabWidgetOpenFiles = new QTabWidget(splitterTopLeftRight);
@@ -207,8 +207,8 @@ public:
         menuFile->addAction(actionExit);
 
         retranslateUi(MainWindow);
+        QObject::connect(actionOpen_File, SIGNAL(triggered()), MainWindow, SLOT(showLoadDialog()));
         QObject::connect(actionExit, &QAction::triggered, MainWindow, qOverload<>(&QMainWindow::close));
-        QObject::connect(actionOpen_File, SIGNAL(triggered()), MainWindow, SLOT(loadFile()));
 
         toolBoxLeftPages->setCurrentIndex(0);
         tabWidgetOpenFiles->setCurrentIndex(0);
@@ -222,8 +222,17 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "sosText", nullptr));
         actionOpen_File->setText(QCoreApplication::translate("MainWindow", "Open File", nullptr));
+#if QT_CONFIG(shortcut)
+        actionOpen_File->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+O", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionOpen_Project->setText(QCoreApplication::translate("MainWindow", "Open Project", nullptr));
+#if QT_CONFIG(shortcut)
+        actionOpen_Project->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+O", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionSave_File->setText(QCoreApplication::translate("MainWindow", "Save File", nullptr));
+#if QT_CONFIG(shortcut)
+        actionSave_File->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+S", nullptr));
+#endif // QT_CONFIG(shortcut)
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         toolBoxLeftPages->setItemText(toolBoxLeftPages->indexOf(pageProjectView), QCoreApplication::translate("MainWindow", "Project: $PROJECTNAME", nullptr));
         toolBoxLeftPages->setItemText(toolBoxLeftPages->indexOf(pageSettings), QCoreApplication::translate("MainWindow", "Settings", nullptr));

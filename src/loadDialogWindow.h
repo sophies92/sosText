@@ -7,8 +7,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui
 {
     class LoadDialogWindow;
-};
-QT_END_NAMESPACE
+}
 
 class LoadDialogWindow : public QDialog
 {
@@ -21,6 +20,5 @@ class LoadDialogWindow : public QDialog
     private:
     Ui::LoadDialogWindow *ui;
 };
-
 
 #endif // LOADDIALOGWINDOW_H
