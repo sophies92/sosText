@@ -11,14 +11,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-int MainWindow::showLoadDialog()
+void MainWindow::showLoadFileDialog()
 {
     loadDialogWindow = new LoadDialogWindow(this);
     loadDialogWindow->show();
-    return(0);
-}
-
-Ui::MainWindow *MainWindow::getMainWindowObject()
-{
-    return ui;
 }

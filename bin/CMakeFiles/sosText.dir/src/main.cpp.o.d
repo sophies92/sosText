@@ -366,7 +366,7 @@ CMakeFiles/sosText.dir/src/main.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qlocale.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QTranslator \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qtranslator.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qwidget.h \
@@ -380,7 +380,7 @@ CMakeFiles/sosText.dir/src/main.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontinfo.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/loadDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
@@ -419,52 +419,6 @@ CMakeFiles/sosText.dir/src/main.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qglyphrun.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qrawfont.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadDialogWindow.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QAbstractButton \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractbutton.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QApplication \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialogButtonBox \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QFrame \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qframe.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QHBoxLayout \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qboxlayout.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlayout.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlayoutitem.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qboxlayout.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qgridlayout.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QHeaderView \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qheaderview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/qvalidator.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qslider.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QLabel \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlabel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/qpicture.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidget \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPushButton \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qpushbutton.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractbutton.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QSpacerItem \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlayoutitem.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QSplitter \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsplitter.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QTreeView \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtreeview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QVBoxLayout
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.h

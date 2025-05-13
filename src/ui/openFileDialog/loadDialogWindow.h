@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QMainWindow>
 #include <QPlainTextEdit>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -20,13 +21,9 @@ class LoadDialogWindow : public QDialog
     ~LoadDialogWindow();
 
     public slots:
-    void loadFile();
 
     private:
     Ui::LoadDialogWindow *ui;
-
-    QPlainTextEdit *filePathText;
-
 };
 
 #endif // LOADDIALOGWINDOW_H

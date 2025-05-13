@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "loadDialogWindow.h"
-#include "ui_loadDialogWindow.h"
+
+#include "../openFileDialog/loadDialogWindow.h"
 
 namespace Ui
 {
@@ -19,8 +19,7 @@ class MainWindow : public QMainWindow
     ~MainWindow();
 
     public slots:
-    int showLoadDialog();
-    Ui::MainWindow *getMainWindowObject();
+    void showLoadFileDialog();
 
     private:
     Ui::MainWindow *ui;

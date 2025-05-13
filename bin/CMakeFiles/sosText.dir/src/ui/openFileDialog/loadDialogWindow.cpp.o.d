@@ -1,9 +1,9 @@
-CMakeFiles/sosText.dir/src/mainWindow.cpp.o: \
- /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.cpp \
+CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o: \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.cpp \
  /usr/include/stdc-predef.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/mainWindow.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qtguiglobal.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qglobal.h \
@@ -363,10 +363,9 @@ CMakeFiles/sosText.dir/src/mainWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qcursor.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qbitmap.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qplaintextedit.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtextedit.h \
@@ -405,6 +404,8 @@ CMakeFiles/sosText.dir/src/mainWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qglyphrun.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qrawfont.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \
@@ -461,27 +462,4 @@ CMakeFiles/sosText.dir/src/mainWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsplitter.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QTreeView \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtreeview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_mainWindow.h \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/QAction \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/qaction.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QGridLayout \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qgridlayout.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QLineEdit \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlineedit.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMenu \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmenu.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMenuBar \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmenubar.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmenu.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QStatusBar \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstatusbar.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QTabWidget \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QTextEdit \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtextedit.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QToolBox \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtoolbox.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QWidget \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qwidget.h
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QVBoxLayout

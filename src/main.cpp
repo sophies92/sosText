@@ -2,8 +2,8 @@
 #include <QLocale>
 #include <QTranslator>
 
-#include "mainWindow.h"
-#include "loadDialogWindow.h"
+#include "ui/mainWindow/mainWindow.h"
+#include "ui/openFileDialog/loadDialogWindow.h"
 
 int main(int argc, char *argv[])
 {
