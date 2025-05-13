@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/mocs_compilation.cpp" "CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp" "CMakeFiles/sosText.dir/src/main.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/main.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp" "CMakeFiles/sosText.dir/src/project/file.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/project/file.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp" "CMakeFiles/sosText.dir/src/project/project.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/project/project.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp" "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.cpp" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o.d"
   )

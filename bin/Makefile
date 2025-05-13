@@ -190,6 +190,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/project/file.o: src/project/file.cpp.o
+.PHONY : src/project/file.o
+
+# target to build an object file
+src/project/file.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.o
+.PHONY : src/project/file.cpp.o
+
+src/project/file.i: src/project/file.cpp.i
+.PHONY : src/project/file.i
+
+# target to preprocess a source file
+src/project/file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.i
+.PHONY : src/project/file.cpp.i
+
+src/project/file.s: src/project/file.cpp.s
+.PHONY : src/project/file.s
+
+# target to generate assembly for a file
+src/project/file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.s
+.PHONY : src/project/file.cpp.s
+
+src/project/project.o: src/project/project.cpp.o
+.PHONY : src/project/project.o
+
+# target to build an object file
+src/project/project.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/project.cpp.o
+.PHONY : src/project/project.cpp.o
+
+src/project/project.i: src/project/project.cpp.i
+.PHONY : src/project/project.i
+
+# target to preprocess a source file
+src/project/project.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/project.cpp.i
+.PHONY : src/project/project.cpp.i
+
+src/project/project.s: src/project/project.cpp.s
+.PHONY : src/project/project.s
+
+# target to generate assembly for a file
+src/project/project.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/project.cpp.s
+.PHONY : src/project/project.cpp.s
+
 src/ui/mainWindow/mainWindow.o: src/ui/mainWindow/mainWindow.cpp.o
 .PHONY : src/ui/mainWindow/mainWindow.o
 
@@ -254,6 +302,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/project/file.o"
+	@echo "... src/project/file.i"
+	@echo "... src/project/file.s"
+	@echo "... src/project/project.o"
+	@echo "... src/project/project.i"
+	@echo "... src/project/project.s"
 	@echo "... src/ui/mainWindow/mainWindow.o"
 	@echo "... src/ui/mainWindow/mainWindow.i"
 	@echo "... src/ui/mainWindow/mainWindow.s"
