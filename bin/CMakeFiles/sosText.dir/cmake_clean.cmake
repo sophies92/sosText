@@ -12,8 +12,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/sosText.dir/src/project/project.cpp.o.d"
   "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o"
   "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o.d"
-  "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o"
-  "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o.d"
+  "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o"
+  "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o.d"
+  "CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o"
+  "CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o.d"
   "sosText"
   "sosText.pdb"
 )

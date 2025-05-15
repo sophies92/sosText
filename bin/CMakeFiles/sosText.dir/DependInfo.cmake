@@ -13,7 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.cpp" "CMakeFiles/sosText.dir/src/project/IFile.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/project/IFile.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp" "CMakeFiles/sosText.dir/src/project/project.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/project/project.cpp.o.d"
   "/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp" "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o.d"
-  "/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.cpp" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.cpp" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o.d"
+  "/home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.cpp" "CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o" "gcc" "CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o.d"
   )
 
 # Targets to which this target links.

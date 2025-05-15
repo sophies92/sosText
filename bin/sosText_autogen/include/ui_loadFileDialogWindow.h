@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'loadDialogWindow.ui'
+** Form generated from reading UI file 'loadFileDialogWindow.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.6.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_LOADDIALOGWINDOW_H
-#define UI_LOADDIALOGWINDOW_H
+#ifndef UI_LOADFILEDIALOGWINDOW_H
+#define UI_LOADFILEDIALOGWINDOW_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAbstractButton>
@@ -28,7 +28,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_LoadDialogWindow
+class Ui_LoadFileDialogWindow
 {
 public:
     QVBoxLayout *verticalLayout;
@@ -44,14 +44,14 @@ public:
     QListWidget *files;
     QDialogButtonBox *buttonBox;
 
-    void setupUi(QDialog *LoadDialogWindow)
+    void setupUi(QDialog *LoadFileDialogWindow)
     {
-        if (LoadDialogWindow->objectName().isEmpty())
-            LoadDialogWindow->setObjectName("LoadDialogWindow");
-        LoadDialogWindow->resize(610, 557);
-        verticalLayout = new QVBoxLayout(LoadDialogWindow);
+        if (LoadFileDialogWindow->objectName().isEmpty())
+            LoadFileDialogWindow->setObjectName("LoadFileDialogWindow");
+        LoadFileDialogWindow->resize(610, 557);
+        verticalLayout = new QVBoxLayout(LoadFileDialogWindow);
         verticalLayout->setObjectName("verticalLayout");
-        label = new QLabel(LoadDialogWindow);
+        label = new QLabel(LoadFileDialogWindow);
         label->setObjectName("label");
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
@@ -69,7 +69,7 @@ public:
 
         verticalLayout->addItem(horizontalSpacer);
 
-        frame = new QFrame(LoadDialogWindow);
+        frame = new QFrame(LoadFileDialogWindow);
         frame->setObjectName("frame");
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy1.setHorizontalStretch(0);
@@ -112,7 +112,7 @@ public:
 
         verticalLayout->addWidget(frame);
 
-        splitter = new QSplitter(LoadDialogWindow);
+        splitter = new QSplitter(LoadFileDialogWindow);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Horizontal);
         directories = new QTreeView(splitter);
@@ -138,7 +138,7 @@ public:
 
         verticalLayout->addWidget(splitter);
 
-        buttonBox = new QDialogButtonBox(LoadDialogWindow);
+        buttonBox = new QDialogButtonBox(LoadFileDialogWindow);
         buttonBox->setObjectName("buttonBox");
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Open);
@@ -146,27 +146,27 @@ public:
         verticalLayout->addWidget(buttonBox);
 
 
-        retranslateUi(LoadDialogWindow);
-        QObject::connect(buttonBox, SIGNAL(accepted()), LoadDialogWindow, SLOT(loadFile()));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, LoadDialogWindow, qOverload<>(&QDialog::reject));
+        retranslateUi(LoadFileDialogWindow);
+        QObject::connect(buttonBox, SIGNAL(accepted()), LoadFileDialogWindow, SLOT(loadFile()));
+        QObject::connect(buttonBox, &QDialogButtonBox::rejected, LoadFileDialogWindow, qOverload<>(&QDialog::reject));
 
-        QMetaObject::connectSlotsByName(LoadDialogWindow);
+        QMetaObject::connectSlotsByName(LoadFileDialogWindow);
     } // setupUi
 
-    void retranslateUi(QDialog *LoadDialogWindow)
+    void retranslateUi(QDialog *LoadFileDialogWindow)
     {
-        LoadDialogWindow->setWindowTitle(QCoreApplication::translate("LoadDialogWindow", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("LoadDialogWindow", "Open File", nullptr));
-        pushButton->setText(QCoreApplication::translate("LoadDialogWindow", "Up", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("LoadDialogWindow", "Back", nullptr));
+        LoadFileDialogWindow->setWindowTitle(QCoreApplication::translate("LoadFileDialogWindow", "Dialog", nullptr));
+        label->setText(QCoreApplication::translate("LoadFileDialogWindow", "Open File", nullptr));
+        pushButton->setText(QCoreApplication::translate("LoadFileDialogWindow", "Up", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("LoadFileDialogWindow", "Back", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class LoadDialogWindow: public Ui_LoadDialogWindow {};
+    class LoadFileDialogWindow: public Ui_LoadFileDialogWindow {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_LOADDIALOGWINDOW_H
+#endif // UI_LOADFILEDIALOGWINDOW_H

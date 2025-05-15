@@ -3,7 +3,7 @@
 #include <QTranslator>
 
 #include "ui/mainWindow/mainWindow.h"
-#include "ui/openFileDialog/loadDialogWindow.h"
+#include "ui/openFileDialog/loadFileDialogWindow.h"
 
 int main(int argc, char *argv[])
 {

@@ -1,10 +1,11 @@
-/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/UVLADIE3JM/moc_loadDialogWindow.cpp: /home/sophie/Projects/cpp/sosText/sosText/src/loadDialogWindow.h \
+/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/moc_loadFileDialogWindow.cpp: /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h \
   /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/moc_predefs.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QList \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QObject \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QRect \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QSize \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QSizeF \
+  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20functional.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20memory.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20type_traits.h \

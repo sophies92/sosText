@@ -121,7 +121,7 @@ public:
         toolBoxLeftPages->addItem(pageProjectView, QString::fromUtf8("Project: $PROJECTNAME"));
         pageSettings = new QWidget();
         pageSettings->setObjectName("pageSettings");
-        pageSettings->setGeometry(QRect(0, 0, 306, 389));
+        pageSettings->setGeometry(QRect(0, 0, 100, 30));
         toolBoxLeftPages->addItem(pageSettings, QString::fromUtf8("Settings"));
         splitterTopLeftRight->addWidget(toolBoxLeftPages);
         tabWidgetOpenFiles = new QTabWidget(splitterTopLeftRight);
@@ -207,8 +207,9 @@ public:
         menuFile->addAction(actionExit);
 
         retranslateUi(MainWindow);
-        QObject::connect(actionOpen_File, SIGNAL(triggered()), MainWindow, SLOT(showLoadDialog()));
+        QObject::connect(actionOpen_File, SIGNAL(triggered()), MainWindow, SLOT(showLoadFileDialog()));
         QObject::connect(actionExit, &QAction::triggered, MainWindow, qOverload<>(&QMainWindow::close));
+        QObject::connect(actionOpen_Project, SIGNAL(triggered()), MainWindow, SLOT(showLoadProjectDialog()));
 
         toolBoxLeftPages->setCurrentIndex(0);
         tabWidgetOpenFiles->setCurrentIndex(0);

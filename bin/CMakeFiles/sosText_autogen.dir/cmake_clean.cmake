@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sosText_autogen"
   "sosText_autogen/include/src/ui/mainWindow/ui_mainWindow.h"
-  "sosText_autogen/include/src/ui/openFileDialog/ui_loadDialogWindow.h"
+  "sosText_autogen/include/src/ui/openFileDialog/ui_loadFileDialogWindow.h"
+  "sosText_autogen/include/src/ui/openProjectDialog/ui_loadProjectDialogWindow.h"
   "sosText_autogen/mocs_compilation.cpp"
 )
 

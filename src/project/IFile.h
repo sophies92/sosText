@@ -16,8 +16,15 @@ namespace Project
 
         // public functions
         public:
+        /**
+         * @fn IFile(std::filesystm::path)
+         */
         IFile(std::filesystem::path path);
-        ~IFile();
+
+        /**
+         * @fn ~IFile()
+         */
+        virtual ~IFile();
 
         // private functions
         private:
@@ -30,7 +37,7 @@ namespace Project
 
         /**
          * @fn getFilesInDirectory()
-         * @brief this function ges all the IFile's contained in this directory, f it is one.
+         * @brief this function ges all the IFile's contained in this directory, if it is one.
          * @return none
          */
         void getFilesInDirectoy();

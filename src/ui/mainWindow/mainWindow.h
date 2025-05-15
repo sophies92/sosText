@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 
-#include "../openFileDialog/loadDialogWindow.h"
+#include "../openFileDialog/loadFileDialogWindow.h"
+#include "../openProjectDialog/loadProjectDialogWindow.h"
 
 namespace Ui
 {
@@ -20,10 +21,13 @@ class MainWindow : public QMainWindow
 
     public slots:
     void showLoadFileDialog();
+    void showLoadProjectDialog();
 
     private:
     Ui::MainWindow *ui;
-    LoadDialogWindow *loadDialogWindow;
+    LoadFileDialogWindow *loadFileDialogWindow;
+    LoadProjectDialogWindow *loadProjectDialgWindow;
+
 };
 
 #endif // MAINWINDOW_H

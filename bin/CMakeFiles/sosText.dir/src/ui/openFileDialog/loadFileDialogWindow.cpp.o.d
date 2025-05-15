@@ -1,7 +1,7 @@
-CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o: \
- /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.cpp \
+CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.cpp \
  /usr/include/stdc-predef.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -406,7 +406,7 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QAbstractButton \

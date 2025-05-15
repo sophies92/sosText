@@ -10,7 +10,7 @@ namespace Project
 {
     /**
      * @class Project
-     * @brief This is the Project class. It inherits from IFile. It holds the current open project There should only be 1 of these a at any time.
+     * @brief This is the Project class. It inherits from IFile. It holds the current open project There should only be 1 of these at any time.
      */
     class Project : IFile
     {

@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'loadDialogWindow.h'
+** Meta object code from reading C++ file 'loadFileDialogWindow.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.6.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/ui/openFileDialog/loadDialogWindow.h"
+#include "../../../src/ui/openFileDialog/loadFileDialogWindow.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
@@ -20,7 +20,7 @@ QT_BEGIN_MOC_NAMESPACE
 #include <memory>
 
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'loadDialogWindow.h' doesn't include <QObject>."
+#error "The header file 'loadFileDialogWindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.6.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -37,28 +37,28 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS_t {};
-static constexpr auto qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS = QtMocHelpers::stringData(
-    "LoadDialogWindow"
+struct qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS_t {};
+static constexpr auto qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS = QtMocHelpers::stringData(
+    "LoadFileDialogWindow"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
-struct qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS_t {
+struct qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS_t {
     uint offsetsAndSizes[2];
-    char stringdata0[17];
+    char stringdata0[21];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS_t qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS = {
+    uint(sizeof(qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS_t qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS = {
     {
-        QT_MOC_LITERAL(0, 16)   // "LoadDialogWindow"
+        QT_MOC_LITERAL(0, 20)   // "LoadFileDialogWindow"
     },
-    "LoadDialogWindow"
+    "LoadFileDialogWindow"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSLoadDialogWindowENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSLoadFileDialogWindowENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -74,20 +74,20 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLoadDialogWindowENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject LoadDialogWindow::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject LoadFileDialogWindow::staticMetaObject = { {
     QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSLoadDialogWindowENDCLASS,
+    qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSLoadFileDialogWindowENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<LoadDialogWindow, std::true_type>
+        QtPrivate::TypeAndForceComplete<LoadFileDialogWindow, std::true_type>
     >,
     nullptr
 } };
 
-void LoadDialogWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void LoadFileDialogWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
     (void)_id;
@@ -95,20 +95,20 @@ void LoadDialogWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     (void)_a;
 }
 
-const QMetaObject *LoadDialogWindow::metaObject() const
+const QMetaObject *LoadFileDialogWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *LoadDialogWindow::qt_metacast(const char *_clname)
+void *LoadFileDialogWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSLoadDialogWindowENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSLoadFileDialogWindowENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int LoadDialogWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int LoadFileDialogWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     return _id;

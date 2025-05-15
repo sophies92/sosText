@@ -365,7 +365,7 @@ CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qcursor.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qbitmap.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/X65IIGPM5E/../../../src/ui/mainWindow/../openFileDialog/loadDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/X65IIGPM5E/../../../src/ui/mainWindow/../openFileDialog/loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
@@ -408,6 +408,9 @@ CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/X65IIGPM5E/../../../src/ui/mainWindow/../openProjectDialog/loadProjectDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qtmochelpers.h \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/moc_loadDialogWindow.cpp \
- /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/../../../src/ui/openFileDialog/loadDialogWindow.h
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/moc_loadFileDialogWindow.cpp \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/../../../src/ui/openFileDialog/loadFileDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/M2KKQ6WSLV/moc_loadProjectDialogWindow.cpp \
+ /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/M2KKQ6WSLV/../../../src/ui/openProjectDialog/loadProjectDialogWindow.h

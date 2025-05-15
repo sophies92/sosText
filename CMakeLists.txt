@@ -22,9 +22,13 @@ set(PROJECT_SOURCES
         src/ui/mainWindow/mainWindow.h
         src/ui/mainWindow/mainWindow.ui
         
-        src/ui/openFileDialog/loadDialogWindow.cpp
-        src/ui/openFileDialog/loadDialogWindow.h
-        src/ui/openFileDialog/loadDialogWindow.ui
+        src/ui/openFileDialog/loadFileDialogWindow.cpp
+        src/ui/openFileDialog/loadFileDialogWindow.h
+        src/ui/openFileDialog/loadFileDialogWindow.ui
+
+        src/ui/openProjectDialog/loadProjectDialogWindow.cpp
+        src/ui/openProjectDialog/loadProjectDialogWindow.h
+        src/ui/openProjectDialog/loadProjectDialogWindow.ui
 
         src/project/project.cpp
         src/project/project.h
