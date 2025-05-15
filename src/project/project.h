@@ -1,7 +1,7 @@
 #ifndef PROJECT_H
 #define PROJECT_H
 
-#include "file.h"
+#include <filesystem>
 
 namespace Project
 {
@@ -13,7 +13,7 @@ namespace Project
         ~Project();
 
         private:
-        std::vector<File *> projectFiles;
+        
     };
 };
 
