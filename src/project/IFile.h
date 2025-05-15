@@ -10,9 +10,9 @@ namespace Project
     {
         // private variables
         private:
-        bool isDirectory;
         std::filesystem::path *path; //<! the std::filesystem::path where the project is located.
-        std::vector<IFile> *filesList;
+        bool isDirectory; //<! is this IFile a directory?
+        std::vector<IFile> *filesList; //<! if ths IFile is a directory, this is the list of IFiles it contains.
 
         // public functions
         public:
