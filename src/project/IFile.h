@@ -27,6 +27,12 @@ namespace Project
          * @return 0 if this is a directory, 1 if is a file
          */
         bool checkIfIsDirectory();
+
+        /**
+         * @fn getFilesInDirectory()
+         * @brief this function ges all the IFile's contained in this directory, f it is one.
+         * @return none
+         */
         void getFilesInDirectoy();
     };
 };
