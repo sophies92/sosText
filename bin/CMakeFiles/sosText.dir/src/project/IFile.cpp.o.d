@@ -1,7 +1,7 @@
-CMakeFiles/sosText.dir/src/project/project.cpp.o: \
- /home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp \
+CMakeFiles/sosText.dir/src/project/IFile.cpp.o: \
+ /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.cpp \
  /usr/include/stdc-predef.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/project/project.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/system_error \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -174,5 +174,4 @@ CMakeFiles/sosText.dir/src/project/project.cpp.o: \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_uninitialized.h \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc \
- /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.h
+ /usr/include/c++/12/bits/vector.tcc

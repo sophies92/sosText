@@ -320,9 +320,9 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/project/file.h",
+			"/home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.h",
 			"MU",
-			"A5Q22ZIOL5/moc_file.cpp",
+			"A5Q22ZIOL5/moc_IFile.cpp",
 			null
 		],
 		[
@@ -403,7 +403,7 @@
 	[
 		[ "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp", "MU", null ],
 		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp",
+			"/home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.cpp",
 			"MU",
 			null
 		],

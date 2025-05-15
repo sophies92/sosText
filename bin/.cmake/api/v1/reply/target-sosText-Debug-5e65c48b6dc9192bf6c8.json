@@ -414,12 +414,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/project/file.cpp",
+			"path" : "src/project/IFile.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/project/file.h",
+			"path" : "src/project/IFile.h",
 			"sourceGroupIndex" : 1
 		},
 		{

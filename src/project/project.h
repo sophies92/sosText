@@ -2,26 +2,19 @@
 #define PROJECT_H
 
 #include <filesystem>
+#include <vector>
+
+#include "IFile.h"
 
 namespace Project
 {
-    class Project
+    class Project : IFile
     {
         public:
-        
-        /**
-         * @fn Project(std::flesystem::path projectPath)
-         * @brief The consructor for the Project class.
-         */
-        Project(std::filesystem::path projectPath);
-        /**
-         * @fn ~Proect()
-         * @brief The destrcor for the roject class.
-         */
+        Project();
         ~Project();
 
         private:
-        std::filesystem::path *projectPath;
     };
 };
 

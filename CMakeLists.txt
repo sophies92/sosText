@@ -28,8 +28,8 @@ set(PROJECT_SOURCES
 
         src/project/project.cpp
         src/project/project.h
-        src/project/file.cpp
-        src/project/file.h
+        src/project/IFile.cpp
+        src/project/IFile.h
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

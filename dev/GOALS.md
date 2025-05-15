@@ -4,7 +4,7 @@
 
 -Create Load File UI
 
--Load, edit & save a file
+-Load a file
 
 -Load a project
 
