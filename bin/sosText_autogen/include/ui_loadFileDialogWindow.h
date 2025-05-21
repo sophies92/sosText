@@ -17,11 +17,9 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSplitter>
 #include <QtWidgets/QTreeView>
 #include <QtWidgets/QVBoxLayout>
@@ -32,8 +30,6 @@ class Ui_LoadFileDialogWindow
 {
 public:
     QVBoxLayout *verticalLayout;
-    QLabel *label;
-    QSpacerItem *horizontalSpacer;
     QFrame *frame;
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButton;
@@ -51,31 +47,13 @@ public:
         LoadFileDialogWindow->resize(610, 557);
         verticalLayout = new QVBoxLayout(LoadFileDialogWindow);
         verticalLayout->setObjectName("verticalLayout");
-        label = new QLabel(LoadFileDialogWindow);
-        label->setObjectName("label");
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy);
-        label->setMinimumSize(QSize(0, 20));
-        label->setMaximumSize(QSize(16777215, 20));
-        label->setFrameShape(QFrame::NoFrame);
-        label->setAlignment(Qt::AlignCenter);
-
-        verticalLayout->addWidget(label);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        verticalLayout->addItem(horizontalSpacer);
-
         frame = new QFrame(LoadFileDialogWindow);
         frame->setObjectName("frame");
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
-        frame->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
+        frame->setSizePolicy(sizePolicy);
         frame->setMinimumSize(QSize(0, 50));
         frame->setMaximumSize(QSize(16777215, 50));
         frame->setFrameShape(QFrame::StyledPanel);
@@ -84,27 +62,27 @@ public:
         horizontalLayout->setObjectName("horizontalLayout");
         pushButton = new QPushButton(frame);
         pushButton->setObjectName("pushButton");
-        sizePolicy1.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
+        pushButton->setSizePolicy(sizePolicy);
         pushButton->setMinimumSize(QSize(20, 20));
 
         horizontalLayout->addWidget(pushButton);
 
         pushButton_2 = new QPushButton(frame);
         pushButton_2->setObjectName("pushButton_2");
-        sizePolicy1.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
-        pushButton_2->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
+        pushButton_2->setSizePolicy(sizePolicy);
         pushButton_2->setMinimumSize(QSize(20, 20));
 
         horizontalLayout->addWidget(pushButton_2);
 
         filepath = new QPlainTextEdit(frame);
         filepath->setObjectName("filepath");
-        QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(filepath->sizePolicy().hasHeightForWidth());
-        filepath->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(filepath->sizePolicy().hasHeightForWidth());
+        filepath->setSizePolicy(sizePolicy1);
         filepath->setMinimumSize(QSize(400, 20));
 
         horizontalLayout->addWidget(filepath);
@@ -117,22 +95,22 @@ public:
         splitter->setOrientation(Qt::Horizontal);
         directories = new QTreeView(splitter);
         directories->setObjectName("directories");
-        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::MinimumExpanding);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(directories->sizePolicy().hasHeightForWidth());
-        directories->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::MinimumExpanding);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(directories->sizePolicy().hasHeightForWidth());
+        directories->setSizePolicy(sizePolicy2);
         directories->setMinimumSize(QSize(150, 400));
         directories->setMaximumSize(QSize(300, 16777215));
         directories->setDragEnabled(true);
         splitter->addWidget(directories);
         files = new QListWidget(splitter);
         files->setObjectName("files");
-        QSizePolicy sizePolicy4(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
-        sizePolicy4.setHorizontalStretch(0);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(files->sizePolicy().hasHeightForWidth());
-        files->setSizePolicy(sizePolicy4);
+        QSizePolicy sizePolicy3(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(files->sizePolicy().hasHeightForWidth());
+        files->setSizePolicy(sizePolicy3);
         files->setMinimumSize(QSize(300, 400));
         files->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
         splitter->addWidget(files);
@@ -157,8 +135,7 @@ public:
 
     void retranslateUi(QDialog *LoadFileDialogWindow)
     {
-        LoadFileDialogWindow->setWindowTitle(QCoreApplication::translate("LoadFileDialogWindow", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("LoadFileDialogWindow", "Open File", nullptr));
+        LoadFileDialogWindow->setWindowTitle(QCoreApplication::translate("LoadFileDialogWindow", "Load File", nullptr));
         pushButton->setText(QCoreApplication::translate("LoadFileDialogWindow", "Up", nullptr));
         pushButton_2->setText(QCoreApplication::translate("LoadFileDialogWindow", "Back", nullptr));
     } // retranslateUi

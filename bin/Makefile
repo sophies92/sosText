@@ -310,30 +310,6 @@ src/ui/openFileDialog/loadFileDialogWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.s
 .PHONY : src/ui/openFileDialog/loadFileDialogWindow.cpp.s
 
-src/ui/openProjectDialog/loadProjectDialogWindow.o: src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.o
-
-# target to build an object file
-src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.cpp.o
-
-src/ui/openProjectDialog/loadProjectDialogWindow.i: src/ui/openProjectDialog/loadProjectDialogWindow.cpp.i
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.i
-
-# target to preprocess a source file
-src/ui/openProjectDialog/loadProjectDialogWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.i
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.cpp.i
-
-src/ui/openProjectDialog/loadProjectDialogWindow.s: src/ui/openProjectDialog/loadProjectDialogWindow.cpp.s
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.s
-
-# target to generate assembly for a file
-src/ui/openProjectDialog/loadProjectDialogWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/ui/openProjectDialog/loadProjectDialogWindow.cpp.s
-.PHONY : src/ui/openProjectDialog/loadProjectDialogWindow.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -365,9 +341,6 @@ help:
 	@echo "... src/ui/openFileDialog/loadFileDialogWindow.o"
 	@echo "... src/ui/openFileDialog/loadFileDialogWindow.i"
 	@echo "... src/ui/openFileDialog/loadFileDialogWindow.s"
-	@echo "... src/ui/openProjectDialog/loadProjectDialogWindow.o"
-	@echo "... src/ui/openProjectDialog/loadProjectDialogWindow.i"
-	@echo "... src/ui/openProjectDialog/loadProjectDialogWindow.s"
 .PHONY : help
 
 

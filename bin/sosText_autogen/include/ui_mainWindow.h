@@ -121,7 +121,7 @@ public:
         toolBoxLeftPages->addItem(pageProjectView, QString::fromUtf8("Project: $PROJECTNAME"));
         pageSettings = new QWidget();
         pageSettings->setObjectName("pageSettings");
-        pageSettings->setGeometry(QRect(0, 0, 100, 30));
+        pageSettings->setGeometry(QRect(0, 0, 306, 389));
         toolBoxLeftPages->addItem(pageSettings, QString::fromUtf8("Settings"));
         splitterTopLeftRight->addWidget(toolBoxLeftPages);
         tabWidgetOpenFiles = new QTabWidget(splitterTopLeftRight);
@@ -209,7 +209,6 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(actionOpen_File, SIGNAL(triggered()), MainWindow, SLOT(showLoadFileDialog()));
         QObject::connect(actionExit, &QAction::triggered, MainWindow, qOverload<>(&QMainWindow::close));
-        QObject::connect(actionOpen_Project, SIGNAL(triggered()), MainWindow, SLOT(showLoadProjectDialog()));
 
         toolBoxLeftPages->setCurrentIndex(0);
         tabWidgetOpenFiles->setCurrentIndex(0);
@@ -237,6 +236,7 @@ public:
         actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         toolBoxLeftPages->setItemText(toolBoxLeftPages->indexOf(pageProjectView), QCoreApplication::translate("MainWindow", "Project: $PROJECTNAME", nullptr));
         toolBoxLeftPages->setItemText(toolBoxLeftPages->indexOf(pageSettings), QCoreApplication::translate("MainWindow", "Settings", nullptr));
+        textEdit->setDocumentTitle(QString());
         tabWidgetOpenFiles->setTabText(tabWidgetOpenFiles->indexOf(tabOpenFile), QCoreApplication::translate("MainWindow", "$FILENAME", nullptr));
         tabWidgetBottomTabs->setTabText(tabWidgetBottomTabs->indexOf(tabConsole), QCoreApplication::translate("MainWindow", "Console", nullptr));
         tabWidgetBottomTabs->setTabText(tabWidgetBottomTabs->indexOf(tabErrors), QCoreApplication::translate("MainWindow", "Errors", nullptr));

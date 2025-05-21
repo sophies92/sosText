@@ -3,12 +3,15 @@
 
 #include <filesystem>
 #include <vector>
+#include <fstream>
 
 #include <QDialog>
 #include <QMainWindow>
 #include <QPlainTextEdit>
 #include <QString>
 #include <QListWidgetItem>
+
+#include "../../project/project.h"
 
 namespace Ui
 {
@@ -41,6 +44,8 @@ class LoadFileDialogWindow : public QDialog
     // Private functions
     private:
     void onStart();
+
+    void populateFilesList();
 };
 
 #endif // LOADFILEDIALOGWINDOW_H

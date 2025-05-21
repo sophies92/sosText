@@ -386,6 +386,10 @@ CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o: \
  /usr/include/c++/12/bits/istream.tcc \
  /usr/include/c++/12/bits/sstream.tcc /usr/include/c++/12/codecvt \
  /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
+ /usr/include/c++/12/fstream \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
@@ -445,7 +449,9 @@ CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openProjectDialog/loadProjectDialogWindow.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/../../project/project.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/../../project/IFile.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../../project/project.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_mainWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \

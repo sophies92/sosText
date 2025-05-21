@@ -348,12 +348,6 @@
 			"MU",
 			"5SXYBYQBFK/moc_loadFileDialogWindow.cpp",
 			null
-		],
-		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.h",
-			"MU",
-			"M2KKQ6WSLV/moc_loadProjectDialogWindow.cpp",
-			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -436,11 +430,6 @@
 		],
 		[
 			"/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.cpp",
 			"MU",
 			null
 		]

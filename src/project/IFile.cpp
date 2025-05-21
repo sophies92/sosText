@@ -38,3 +38,8 @@ void Project::IFile::getFilesInDirectoy()
         // create "file" and add to filesList
     }
 }
+
+void Project::IFile::setPath(std::string path)
+{
+    this->path = new std::filesystem::path(path);
+}

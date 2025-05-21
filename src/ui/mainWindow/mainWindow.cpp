@@ -16,9 +16,3 @@ void MainWindow::showLoadFileDialog()
     loadFileDialogWindow = new LoadFileDialogWindow(this);
     loadFileDialogWindow->show();
 }
-
-void MainWindow::showLoadProjectDialog()
-{
-    loadProjectDialgWindow = new LoadProjectDialogWindow(this);
-    loadProjectDialgWindow->show();
-}

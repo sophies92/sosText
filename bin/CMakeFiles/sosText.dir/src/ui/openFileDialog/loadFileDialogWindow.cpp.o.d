@@ -174,7 +174,10 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_uninitialized.h \
  /usr/include/c++/12/bits/stl_vector.h \
  /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc \
+ /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/fstream \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -448,6 +451,8 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/../../project/project.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/../../project/IFile.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \
@@ -474,16 +479,11 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qgridlayout.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QHeaderView \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qheaderview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QLabel \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlabel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/qpicture.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidget \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPushButton \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qpushbutton.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractbutton.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QSpacerItem \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlayoutitem.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QSplitter \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsplitter.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QTreeView \

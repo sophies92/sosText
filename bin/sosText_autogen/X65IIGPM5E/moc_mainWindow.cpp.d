@@ -1,7 +1,8 @@
 /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/X65IIGPM5E/moc_mainWindow.cpp: /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.h \
   /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/moc_predefs.h \
+  /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.h \
+  /home/sophie/Projects/cpp/sosText/sosText/src/project/project.h \
   /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h \
-  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QList \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QObject \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QRect \
@@ -238,6 +239,7 @@
   /usr/include/c++/12/bits/fs_fwd.h \
   /usr/include/c++/12/bits/fs_ops.h \
   /usr/include/c++/12/bits/fs_path.h \
+  /usr/include/c++/12/bits/fstream.tcc \
   /usr/include/c++/12/bits/functexcept.h \
   /usr/include/c++/12/bits/functional_hash.h \
   /usr/include/c++/12/bits/hash_bytes.h \
@@ -334,6 +336,7 @@
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/ext/type_traits.h \
   /usr/include/c++/12/filesystem \
+  /usr/include/c++/12/fstream \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/initializer_list \
   /usr/include/c++/12/iomanip \
@@ -468,8 +471,10 @@
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \

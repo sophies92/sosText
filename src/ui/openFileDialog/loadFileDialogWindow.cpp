@@ -14,15 +14,23 @@ LoadFileDialogWindow::~LoadFileDialogWindow()
 
 void LoadFileDialogWindow::openFileButton()
 {
+    std::ifstream(ui->filepath->toPlainText().toStdString());
     close();
 }
 
 void LoadFileDialogWindow::filesListItemClicked(QListWidgetItem *listItem)
 {
-    ui->filepath->setPlainText(currentDirectoryString + listItem->text());
-    // if directory
-
-    // if file
+    if(std::filesystem::is_directory(ui->filepath->toPlainText().toStdString() + listItem->text().toStdString()))
+    {
+        ui->filepath->setPlainText(currentDirectoryString + listItem->text() + "/");
+        currentDirectory = ui->filepath->toPlainText().toStdString().c_str();
+        currentDirectoryString = currentDirectory.c_str();
+        populateFilesList();
+    }
+    else
+    {
+        ui->filepath->setPlainText(currentDirectoryString + listItem->text());
+    }
 }
 
 void LoadFileDialogWindow::onStart()
@@ -34,14 +42,15 @@ void LoadFileDialogWindow::onStart()
     // set directory string to display in UI
     ui->filepath->setPlainText(currentDirectoryString);
 
-    // make new list of files
-    currentDirectoryFiles = new std::vector<std::filesystem::directory_entry>();
+    populateFilesList();
+}
+
+void LoadFileDialogWindow::populateFilesList()
+{
+    ui->files->clear();
     // iterate through the current directory
     for(std::filesystem::directory_entry file : std::filesystem::directory_iterator(this->currentDirectory))
     {
-        // add any found files to files list
-        currentDirectoryFiles->push_back(file);
-
         // create a new QListWidgetItem
         QListWidgetItem *fileItem = new QListWidgetItem();
         // set text of that item to filename

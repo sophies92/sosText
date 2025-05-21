@@ -8,6 +8,8 @@ namespace Project
 {
     class IFile
     {
+        // Public Variables
+
         // private variables
         private:
         std::filesystem::path *path; //<! the std::filesystem::path where the project is located.
@@ -26,6 +28,8 @@ namespace Project
          */
         virtual ~IFile();
 
+        virtual void setPath(std::string path);
+
         // private functions
         private:
         /**
@@ -33,14 +37,14 @@ namespace Project
          * @brief
          * @return 0 if this is a directory, 1 if is a file
          */
-        bool checkIfIsDirectory();
+        virtual bool checkIfIsDirectory();
 
         /**
          * @fn getFilesInDirectory()
          * @brief this function ges all the IFile's contained in this directory, if it is one.
          * @return none
          */
-        void getFilesInDirectoy();
+        virtual void getFilesInDirectoy();
     };
 };
 

@@ -121,8 +121,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>100</width>
-           <height>30</height>
+           <width>306</width>
+           <height>389</height>
           </rect>
          </property>
          <attribute name="label">
@@ -176,6 +176,9 @@
               <width>400</width>
               <height>400</height>
              </size>
+            </property>
+            <property name="documentTitle">
+             <string/>
             </property>
            </widget>
           </item>
@@ -338,25 +341,8 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>actionOpen_Project</sender>
-   <signal>triggered()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>showLoadProjectDialog()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>393</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
  <slots>
   <slot>showLoadFileDialog()</slot>
-  <slot>showLoadProjectDialog()</slot>
  </slots>
 </ui>

@@ -26,10 +26,6 @@ set(PROJECT_SOURCES
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui
 
-        src/ui/openProjectDialog/loadProjectDialogWindow.cpp
-        src/ui/openProjectDialog/loadProjectDialogWindow.h
-        src/ui/openProjectDialog/loadProjectDialogWindow.ui
-
         src/project/project.cpp
         src/project/project.h
         src/project/IFile.cpp
