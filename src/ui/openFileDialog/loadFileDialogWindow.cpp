@@ -14,7 +14,7 @@ LoadFileDialogWindow::~LoadFileDialogWindow()
 
 void LoadFileDialogWindow::openFileButton()
 {
-    std::ifstream(ui->filepath->toPlainText().toStdString());
+    Project::currentProject = new Project::File(ui->filepath->toPlainText().toStdString().c_str());
     close();
 }
 
@@ -30,7 +30,6 @@ void LoadFileDialogWindow::filesListItemClicked(QListWidgetItem *listItem)
     else
     {
         ui->filepath->setPlainText(currentDirectoryString + listItem->text());
-        Project::currentProject = new Project::File(ui->filepath->toPlainText().toStdString().c_str());
     }
 }
 
