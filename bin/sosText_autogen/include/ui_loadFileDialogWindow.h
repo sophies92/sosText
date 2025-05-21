@@ -134,6 +134,7 @@ public:
         sizePolicy4.setHeightForWidth(files->sizePolicy().hasHeightForWidth());
         files->setSizePolicy(sizePolicy4);
         files->setMinimumSize(QSize(300, 400));
+        files->setEditTriggers(QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed);
         splitter->addWidget(files);
 
         verticalLayout->addWidget(splitter);
@@ -149,6 +150,7 @@ public:
         retranslateUi(LoadFileDialogWindow);
         QObject::connect(buttonBox, SIGNAL(accepted()), LoadFileDialogWindow, SLOT(openFileButton()));
         QObject::connect(buttonBox, &QDialogButtonBox::rejected, LoadFileDialogWindow, qOverload<>(&QDialog::reject));
+        QObject::connect(files, SIGNAL(itemClicked(QListWidgetItem*)), LoadFileDialogWindow, SLOT(filesListItemClicked(QListWidgetItem*)));
 
         QMetaObject::connectSlotsByName(LoadFileDialogWindow);
     } // setupUi

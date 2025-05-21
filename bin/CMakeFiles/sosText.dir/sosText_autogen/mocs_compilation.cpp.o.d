@@ -429,6 +429,23 @@ CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidgetItem \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qlocale.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtGui/qvalidator.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qslider.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/X65IIGPM5E/../../../src/ui/mainWindow/../openProjectDialog/loadProjectDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qtmochelpers.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/moc_loadFileDialogWindow.cpp \

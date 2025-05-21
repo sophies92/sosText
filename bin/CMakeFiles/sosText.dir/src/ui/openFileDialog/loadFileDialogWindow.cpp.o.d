@@ -171,6 +171,10 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/fs_dir.h /usr/include/c++/12/bits/fs_ops.h \
+ /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_uninitialized.h \
+ /usr/include/c++/12/bits/stl_vector.h \
+ /usr/include/c++/12/bits/stl_bvector.h \
+ /usr/include/c++/12/bits/vector.tcc \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -260,8 +264,7 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qtmetamacros.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qobjectdefs_impl.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qfunctionaltools_impl.h \
- /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_tempbuf.h \
+ /usr/include/c++/12/memory /usr/include/c++/12/bits/stl_tempbuf.h \
  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12/bits/align.h /usr/include/c++/12/bit \
  /usr/include/c++/12/bits/shared_ptr_atomic.h \
@@ -276,10 +279,7 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /usr/include/c++/12/bits/hashtable_policy.h \
  /usr/include/c++/12/bits/node_handle.h \
  /usr/include/c++/12/bits/unordered_map.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/array \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/array \
  /usr/include/c++/12/compare /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \
@@ -431,6 +431,23 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidgetItem \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qlocale.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtGui/qvalidator.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qslider.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
+ /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \
@@ -443,7 +460,6 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qcoreapplication_platform.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qguiapplication.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qinputmethod.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qlocale.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qguiapplication_platform.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialogButtonBox \
@@ -458,25 +474,10 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qgridlayout.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QHeaderView \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qheaderview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /opt/qt6/6.6.0/gcc_64/include/QtGui/qvalidator.h \
- /opt/qt6/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qslider.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QLabel \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlabel.h \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qpicture.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidget \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
- /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPushButton \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qpushbutton.h \

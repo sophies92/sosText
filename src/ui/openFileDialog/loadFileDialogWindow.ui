@@ -183,6 +183,9 @@
         <height>400</height>
        </size>
       </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+      </property>
      </widget>
     </widget>
    </item>
@@ -232,8 +235,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>files</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>LoadFileDialogWindow</receiver>
+   <slot>filesListItemClicked(QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>openFileButton()</slot>
+  <slot>filesListItemClicked(QListWidgetItem*)</slot>
  </slots>
 </ui>

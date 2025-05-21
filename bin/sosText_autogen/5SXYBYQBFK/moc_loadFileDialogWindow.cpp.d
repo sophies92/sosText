@@ -10,6 +10,7 @@
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20memory.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q20type_traits.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/q23utility.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtCore/qabstractitemmodel.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qalgorithms.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qanystringview.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qarraydata.h \
@@ -51,11 +52,13 @@
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qhashfunctions.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qiodevice.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qiodevicebase.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtCore/qitemselectionmodel.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qiterable.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qiterator.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qlatin1stringview.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qline.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qlist.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtCore/qlocale.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qlogging.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qmalloc.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qmap.h \
@@ -78,6 +81,7 @@
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qprocessordetection.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qrect.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qrefcount.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtCore/qregularexpression.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qscopedpointer.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qscopeguard.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qset.h \
@@ -163,18 +167,31 @@
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qtguiexports.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qtguiglobal.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qtransform.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtGui/qvalidator.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qvector2d.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qvectornd.h \
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qwindowdefs.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QDialog \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QListWidgetItem \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QMainWindow \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/QPlainTextEdit \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractitemview.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractslider.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qdialog.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qframe.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistview.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qlistwidget.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qmainwindow.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qplaintextedit.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qslider.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyle.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qstyleoption.h \
+  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabbar.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtabwidget.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtextedit.h \
   /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qtwidgets-config.h \
