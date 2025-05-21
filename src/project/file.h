@@ -6,23 +6,11 @@
 
 namespace Project
 {
-    class File : IFile
+    class File : public IFile
     {
         public:
-        File();
+        File(std::filesystem::path path);
         ~File();
-
-        /**
-         * @fn checkExists()
-         * @brief check if the file exists
-         */
-        bool checkExists();
-
-        /**
-         * @fn checkFileType()
-         * @brief checks if the file is an openable file type
-         */
-        int checkFileType();
 
         /**
          * @fn loadFile()

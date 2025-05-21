@@ -1,6 +1,7 @@
 /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/5SXYBYQBFK/moc_loadFileDialogWindow.cpp: /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h \
   /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/moc_predefs.h \
   /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.h \
+  /home/sophie/Projects/cpp/sosText/sosText/src/project/file.h \
   /home/sophie/Projects/cpp/sosText/sosText/src/project/project.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QList \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QObject \

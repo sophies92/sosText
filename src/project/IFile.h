@@ -18,6 +18,7 @@ namespace Project
 
         // public functions
         public:
+        IFile();
         /**
          * @fn IFile(std::filesystm::path)
          */

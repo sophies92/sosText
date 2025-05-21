@@ -23,8 +23,6 @@ class MainWindow : public QMainWindow
 
     LoadFileDialogWindow *loadFileDialogWindow;
 
-    Project::Project *currentProject;
-
     // Public Functions
     public:
     MainWindow(QWidget *parent = nullptr);

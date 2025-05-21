@@ -12,6 +12,7 @@
 #include <QListWidgetItem>
 
 #include "../../project/project.h"
+#include "../../project/file.h"
 
 namespace Ui
 {

@@ -1,25 +1,24 @@
 #ifndef PROJECT_H
 #define PROJECT_H
 
-#include <filesystem>
-#include <vector>
-
 #include "IFile.h"
 
 namespace Project
 {
-    /**
-     * @class Project
-     * @brief This is the Project class. It inherits from IFile. It holds the current open project There should only be 1 of these at any time.
-     */
+    static IFile *currentProject;
+    
     class Project : public IFile
     {
-        public:
-        Project();
+        // Public Variables
+
+        // Private Variables
+
+        // Public Functions
+        Project(std::filesystem::path path);
         ~Project();
 
-        private:
+        // Private Functions
     };
-};
+}
 
 #endif // PROJECT_H

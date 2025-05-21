@@ -30,6 +30,7 @@ void LoadFileDialogWindow::filesListItemClicked(QListWidgetItem *listItem)
     else
     {
         ui->filepath->setPlainText(currentDirectoryString + listItem->text());
+        Project::currentProject = new Project::File(ui->filepath->toPlainText().toStdString().c_str());
     }
 }
 

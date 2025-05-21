@@ -1,5 +1,9 @@
 #include "IFile.h"
 
+Project::IFile::IFile()
+{
+}
+
 Project::IFile::IFile(std::filesystem::path path)
 {
     this->path = new std::filesystem::path(path);

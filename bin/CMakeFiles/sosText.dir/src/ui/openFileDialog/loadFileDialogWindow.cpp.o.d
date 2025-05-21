@@ -453,6 +453,7 @@ CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/../../project/project.h \
  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/../../project/IFile.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/../../project/file.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_loadFileDialogWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qvariant.h \

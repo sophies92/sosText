@@ -451,6 +451,7 @@ CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtWidgets/qrubberband.h \
  /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/../../project/project.h \
  /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/../../project/IFile.h \
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openFileDialog/../../project/file.h \
  /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../../project/project.h \
  /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include/ui_mainWindow.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QVariant \
