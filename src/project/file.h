@@ -1,6 +1,7 @@
 #ifndef FILE_H
 #define FILE_H
 
+#include <string>
 #include "IFile.h"
 
 namespace Project
@@ -11,7 +12,7 @@ namespace Project
         File();
         ~File();
 
-        void loadFile();
+        std::string *loadFile();
     };
 }
 
