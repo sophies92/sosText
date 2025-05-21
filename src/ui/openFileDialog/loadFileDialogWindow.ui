@@ -204,7 +204,7 @@
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
    <receiver>LoadFileDialogWindow</receiver>
-   <slot>loadFile()</slot>
+   <slot>openFileButton()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>248</x>
@@ -234,6 +234,6 @@
   </connection>
  </connections>
  <slots>
-  <slot>loadFile()</slot>
+  <slot>openFileButton()</slot>
  </slots>
 </ui>

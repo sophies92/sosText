@@ -147,7 +147,7 @@ public:
 
 
         retranslateUi(LoadFileDialogWindow);
-        QObject::connect(buttonBox, SIGNAL(accepted()), LoadFileDialogWindow, SLOT(loadFile()));
+        QObject::connect(buttonBox, SIGNAL(accepted()), LoadFileDialogWindow, SLOT(openFileButton()));
         QObject::connect(buttonBox, &QDialogButtonBox::rejected, LoadFileDialogWindow, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(LoadFileDialogWindow);

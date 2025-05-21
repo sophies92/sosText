@@ -442,5 +442,4 @@ CMakeFiles/sosText.dir/src/main.cpp.o: \
  /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
  /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openProjectDialog/loadProjectDialogWindow.h \
- /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h
+ /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/../openProjectDialog/loadProjectDialogWindow.h

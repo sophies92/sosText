@@ -1012,8 +1012,7 @@ CMakeFiles/sosText.dir/src/main.cpp.o: /home/sophie/Projects/cpp/sosText/sosText
   /opt/qt6/6.6.0/gcc_64/include/QtGui/qfontdatabase.h \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/QString \
   /opt/qt6/6.6.0/gcc_64/include/QtCore/qstring.h \
-  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.h \
-  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h
+  /home/sophie/Projects/cpp/sosText/sosText/src/ui/openProjectDialog/loadProjectDialogWindow.h
 
 CMakeFiles/sosText.dir/src/project/IFile.cpp.o: /home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.cpp \
   /usr/include/stdc-predef.h \
