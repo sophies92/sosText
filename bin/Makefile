@@ -214,6 +214,30 @@ src/project/IFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/IFile.cpp.s
 .PHONY : src/project/IFile.cpp.s
 
+src/project/file.o: src/project/file.cpp.o
+.PHONY : src/project/file.o
+
+# target to build an object file
+src/project/file.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.o
+.PHONY : src/project/file.cpp.o
+
+src/project/file.i: src/project/file.cpp.i
+.PHONY : src/project/file.i
+
+# target to preprocess a source file
+src/project/file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.i
+.PHONY : src/project/file.cpp.i
+
+src/project/file.s: src/project/file.cpp.s
+.PHONY : src/project/file.s
+
+# target to generate assembly for a file
+src/project/file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sosText.dir/build.make CMakeFiles/sosText.dir/src/project/file.cpp.s
+.PHONY : src/project/file.cpp.s
+
 src/project/project.o: src/project/project.cpp.o
 .PHONY : src/project/project.o
 
@@ -329,6 +353,9 @@ help:
 	@echo "... src/project/IFile.o"
 	@echo "... src/project/IFile.i"
 	@echo "... src/project/IFile.s"
+	@echo "... src/project/file.o"
+	@echo "... src/project/file.i"
+	@echo "... src/project/file.s"
 	@echo "... src/project/project.o"
 	@echo "... src/project/project.i"
 	@echo "... src/project/project.s"

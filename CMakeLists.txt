@@ -34,6 +34,8 @@ set(PROJECT_SOURCES
         src/project/project.h
         src/project/IFile.cpp
         src/project/IFile.h
+        src/project/file.cpp
+        src/project/file.h
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

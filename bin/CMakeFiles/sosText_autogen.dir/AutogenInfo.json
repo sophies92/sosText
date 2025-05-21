@@ -326,6 +326,12 @@
 			null
 		],
 		[
+			"/home/sophie/Projects/cpp/sosText/sosText/src/project/file.h",
+			"MU",
+			"A5Q22ZIOL5/moc_file.cpp",
+			null
+		],
+		[
 			"/home/sophie/Projects/cpp/sosText/sosText/src/project/project.h",
 			"MU",
 			"A5Q22ZIOL5/moc_project.cpp",
@@ -410,6 +416,11 @@
 		[ "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp", "MU", null ],
 		[
 			"/home/sophie/Projects/cpp/sosText/sosText/src/project/IFile.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp",
 			"MU",
 			null
 		],

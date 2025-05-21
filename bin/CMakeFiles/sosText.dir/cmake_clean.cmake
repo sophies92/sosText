@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sosText.dir/src/main.cpp.o.d"
   "CMakeFiles/sosText.dir/src/project/IFile.cpp.o"
   "CMakeFiles/sosText.dir/src/project/IFile.cpp.o.d"
+  "CMakeFiles/sosText.dir/src/project/file.cpp.o"
+  "CMakeFiles/sosText.dir/src/project/file.cpp.o.d"
   "CMakeFiles/sosText.dir/src/project/project.cpp.o"
   "CMakeFiles/sosText.dir/src/project/project.cpp.o.d"
   "CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o"
