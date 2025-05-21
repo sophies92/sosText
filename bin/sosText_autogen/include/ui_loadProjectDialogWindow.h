@@ -48,7 +48,7 @@ public:
     {
         if (LoadProjectDialogWindow->objectName().isEmpty())
             LoadProjectDialogWindow->setObjectName("LoadProjectDialogWindow");
-        LoadProjectDialogWindow->resize(610, 557);
+        LoadProjectDialogWindow->resize(888, 713);
         verticalLayout = new QVBoxLayout(LoadProjectDialogWindow);
         verticalLayout->setObjectName("verticalLayout");
         label = new QLabel(LoadProjectDialogWindow);
@@ -156,7 +156,7 @@ public:
     void retranslateUi(QDialog *LoadProjectDialogWindow)
     {
         LoadProjectDialogWindow->setWindowTitle(QCoreApplication::translate("LoadProjectDialogWindow", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("LoadProjectDialogWindow", "Open File", nullptr));
+        label->setText(QCoreApplication::translate("LoadProjectDialogWindow", "Open Project", nullptr));
         pushButton->setText(QCoreApplication::translate("LoadProjectDialogWindow", "Up", nullptr));
         pushButton_2->setText(QCoreApplication::translate("LoadProjectDialogWindow", "Back", nullptr));
     } // retranslateUi

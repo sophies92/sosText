@@ -8,5 +8,5 @@ LoadProjectDialogWindow::LoadProjectDialogWindow(QMainWindow *parent) : QDialog(
 
 LoadProjectDialogWindow::~LoadProjectDialogWindow()
 {
-    delete this;
+    delete ui;
 }

@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
 MainWindow::~MainWindow()
 {
-    delete this;
+    delete ui;
 }
 
 void MainWindow::showLoadFileDialog()
