@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>610</width>
-    <height>557</height>
+    <width>888</width>
+    <height>713</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,7 +38,7 @@
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="text">
-      <string>Open File</string>
+      <string>Open Project</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
