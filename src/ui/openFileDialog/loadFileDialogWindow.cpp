@@ -26,10 +26,7 @@ void LoadFileDialogWindow::cancelButton()
 
 void LoadFileDialogWindow::onDirListClick(QModelIndex index)
 {
-    if(filesModel->isDir(index))
-    {
-        *path = filesModel->filePath(index).toStdString().c_str();
-    }
+    *path = filesModel->filePath(index).toStdString().c_str();
     updateUIPathView();
 }
 
