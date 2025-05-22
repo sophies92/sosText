@@ -11,7 +11,6 @@ LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project
     ui->directories->setModel(filesModel);
     ui->directories->expandToDepth(0);
     updateUIPathView();
-    updateUIFilesView();
 }
 
 LoadFileDialogWindow::~LoadFileDialogWindow()
@@ -33,13 +32,6 @@ void LoadFileDialogWindow::onDirListClick(QModelIndex index)
     }
     
     updateUIPathView();
-    updateUIFilesView();
-}
-
-void LoadFileDialogWindow::onFileListClick(QListWidgetItem *item)
-{
-    updateUIPathView();
-    ui->filepath->setPlainText(ui->filepath->toPlainText() + item->text());
 }
 
 void LoadFileDialogWindow::openFileButton()
@@ -54,7 +46,6 @@ void LoadFileDialogWindow::upButton()
         path->pop_back();
     }
     updateUIPathView();
-    updateUIFilesView();
 }
 
 void LoadFileDialogWindow::updateUIPathView()
@@ -66,19 +57,4 @@ void LoadFileDialogWindow::updateUIPathView()
         newPath += ele;
     }
     ui->filepath->setPlainText(newPath.c_str());
-}
-
-void LoadFileDialogWindow::updateUIFilesView()
-{
-    // Update Files View
-    ui->files->clear();
-    for(std::filesystem::directory_entry e : std::filesystem::directory_iterator(ui->filepath->toPlainText().toStdString()))
-    {
-        if(e.is_regular_file())
-        {
-            QListWidgetItem *q = new QListWidgetItem();
-            q->setText(e.path().filename().c_str());
-            ui->files->addItem(q);
-        }
-    }
 }

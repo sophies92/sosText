@@ -39,14 +39,12 @@ class LoadFileDialogWindow : public QDialog
     public slots:
     void cancelButton();
     void onDirListClick(QModelIndex index);
-    void onFileListClick(QListWidgetItem *item);
     void openFileButton();
     void upButton();
     
     // Private functions
     private:
     void updateUIPathView();
-    void updateUIFilesView();
 
 };
 
