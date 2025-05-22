@@ -18,6 +18,7 @@ set(CMAKE_AUTOUIC ON)
 set(PROJECT_SOURCES
         src/main.cpp
 
+        src/project/project.cpp
         src/project/project.h
 
         src/ui/mainWindow/mainWindow.cpp
@@ -28,8 +29,6 @@ set(PROJECT_SOURCES
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui
 
-        src/utils/appManager.cpp
-        src/utils/appManager.h
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

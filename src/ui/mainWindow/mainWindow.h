@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "../openFileDialog/loadFileDialogWindow.h"
+#include "../../project/project.h"
+
 namespace Ui
 {
     class MainWindow;
@@ -18,6 +21,10 @@ class MainWindow : public QMainWindow
     private:
     Ui::MainWindow *ui;
 
+    LoadFileDialogWindow *loadFileDialogWindow;
+
+    Project::Project *currentProject;
+
     // Public Functions
     public:
     MainWindow(QWidget *parent = nullptr);
@@ -25,6 +32,7 @@ class MainWindow : public QMainWindow
 
     // Public Slots
     public slots:
+    void *openFileDialog();
 
     // Private functions
     private:

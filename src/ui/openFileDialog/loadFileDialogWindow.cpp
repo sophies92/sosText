@@ -1,7 +1,7 @@
 #include "loadFileDialogWindow.h"
 #include "ui_loadFileDialogWindow.h"
 
-LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
+LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *project) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
 

@@ -1,15 +1,11 @@
 #ifndef LOADFILEDIALOGWINDOW_H
 #define LOADFILEDIALOGWINDOW_H
 
-#include <filesystem>
-#include <vector>
-#include <fstream>
 
 #include <QDialog>
 #include <QMainWindow>
-#include <QPlainTextEdit>
-#include <QString>
-#include <QListWidgetItem>
+
+#include "../../project/project.h"
 
 namespace Ui
 {
@@ -27,13 +23,13 @@ class LoadFileDialogWindow : public QDialog
 
     // Public functions
     public:
-    LoadFileDialogWindow(QMainWindow *parent = nullptr);
+    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *project);
     ~LoadFileDialogWindow();
 
     // Public UI slots
     public slots:
     void openFileButton();
-
+    
     // Private functions
     private:
 };

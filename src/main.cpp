@@ -2,13 +2,14 @@
 #include <QLocale>
 #include <QTranslator>
 
-#include "utils/appManager.h"
+#include "ui/mainWindow/mainWindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    Utils::AppManager *appManager = new Utils::AppManager();
+    MainWindow mainWindow;
+    mainWindow.showMaximized();
 
     return a.exec();
 }

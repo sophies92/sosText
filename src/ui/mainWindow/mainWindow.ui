@@ -121,8 +121,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>306</width>
-           <height>389</height>
+           <width>98</width>
+           <height>28</height>
           </rect>
          </property>
          <attribute name="label">
@@ -313,7 +313,7 @@
    <sender>actionOpen_File</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
-   <slot>showLoadFileDialog()</slot>
+   <slot>openFileDialog()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>
@@ -343,6 +343,6 @@
   </connection>
  </connections>
  <slots>
-  <slot>showLoadFileDialog()</slot>
+  <slot>openFileDialog()</slot>
  </slots>
 </ui>
