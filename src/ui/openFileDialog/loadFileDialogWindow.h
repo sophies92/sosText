@@ -11,9 +11,6 @@
 #include <QString>
 #include <QListWidgetItem>
 
-#include "../../project/project.h"
-#include "../../project/file.h"
-
 namespace Ui
 {
     class LoadFileDialogWindow;
@@ -27,10 +24,6 @@ class LoadFileDialogWindow : public QDialog
 
     // Private variables
     Ui::LoadFileDialogWindow *ui;
-
-    QString currentDirectoryString;
-    std::filesystem::path currentDirectory;
-    std::vector<std::filesystem::directory_entry> *currentDirectoryFiles;
 
     // Public functions
     public:
