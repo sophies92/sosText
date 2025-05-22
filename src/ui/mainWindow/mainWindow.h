@@ -4,7 +4,7 @@
 #include <QMainWindow>
 
 #include "../openFileDialog/loadFileDialogWindow.h"
-#include "../../project/project.h"
+#include "../../project/iProject.h"
 
 namespace Ui
 {
@@ -23,7 +23,7 @@ class MainWindow : public QMainWindow
 
     LoadFileDialogWindow *loadFileDialogWindow;
 
-    Project::Project *currentProject;
+    Project::IProject *currentProject;
 
     // Public Functions
     public:

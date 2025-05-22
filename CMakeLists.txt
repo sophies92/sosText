@@ -18,8 +18,8 @@ set(CMAKE_AUTOUIC ON)
 set(PROJECT_SOURCES
         src/main.cpp
 
-        src/project/project.cpp
-        src/project/project.h
+        src/project/iProject.cpp
+        src/project/iProject.h
 
         src/ui/mainWindow/mainWindow.cpp
         src/ui/mainWindow/mainWindow.h

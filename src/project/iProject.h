@@ -16,7 +16,7 @@ namespace Project
      * @class Project::Project
      * @brief this class holds all the information about the currently open Project.
      */
-    class Project
+    class IProject
     {
         // Public Variables
         public:
@@ -27,8 +27,8 @@ namespace Project
 
         // Public Functions
         public:
-        Project();
-        ~Project();
+        IProject();
+        ~IProject();
         void setPath(std::string path);
         std::filesystem::path *getPath();
 
