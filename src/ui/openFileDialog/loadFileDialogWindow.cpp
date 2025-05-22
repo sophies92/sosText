@@ -14,7 +14,6 @@ LoadFileDialogWindow::~LoadFileDialogWindow()
 
 void LoadFileDialogWindow::openFileButton()
 {
-    Project::currentProject = new Project::File(ui->filepath->toPlainText().toStdString().c_str());
     close();
 }
 
