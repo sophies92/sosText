@@ -7,6 +7,9 @@
 #ifndef PROJECT_H
 #define PROJECT_H
 
+#include <string>
+#include <filesystem>
+
 namespace Project
 {
     /**
@@ -20,11 +23,14 @@ namespace Project
 
         // Private Variables
         private:
+        std::filesystem::path *path;
 
         // Public Functions
         public:
         Project();
         ~Project();
+        void setPath(std::string path);
+        std::filesystem::path *getPath();
 
         // Private Functions
         private:

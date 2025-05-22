@@ -1,11 +1,11 @@
 #include "loadFileDialogWindow.h"
 #include "ui_loadFileDialogWindow.h"
 
-LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *project) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
+LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
-    path = new std::vector<std::string>();
-    path->push_back("/");
+    this->project = currentProject;
+    path = new std::string("/");
     filesModel = new QFileSystemModel();
     filesModel->setRootPath(ui->filepath->toPlainText());
     ui->directories->setModel(filesModel);
@@ -28,33 +28,32 @@ void LoadFileDialogWindow::onDirListClick(QModelIndex index)
 {
     if(filesModel->isDir(index))
     {
-        
+        *path = filesModel->filePath(index).toStdString().c_str();
     }
-    
     updateUIPathView();
 }
 
 void LoadFileDialogWindow::openFileButton()
 {
-    
+    if(std::filesystem::is_directory(*path))
+    {
+        project = new Project::Project();
+        project->setPath(*path);
+    }
+    else
+    {
+        project = new Project::Project();
+        project->setPath(*path);
+        // do something to show pathis set
+    }
 }
 
 void LoadFileDialogWindow::upButton()
 {
-    if(path->size() > 1)
-    {
-        path->pop_back();
-    }
-    updateUIPathView();
+    
 }
 
 void LoadFileDialogWindow::updateUIPathView()
 {
-    // Update Path
-    std::filesystem::path newPath;
-    for(std::string ele : *path)
-    {
-        newPath += ele;
-    }
-    ui->filepath->setPlainText(newPath.c_str());
+    ui->filepath->setPlainText(path->c_str());
 }

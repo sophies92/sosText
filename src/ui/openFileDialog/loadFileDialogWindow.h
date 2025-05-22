@@ -27,12 +27,14 @@ class LoadFileDialogWindow : public QDialog
     // Private variables
     Ui::LoadFileDialogWindow *ui;
 
-    std::vector<std::string> *path;
+    std::string *path;
     QFileSystemModel *filesModel;
+
+    Project::Project *project;
 
     // Public functions
     public:
-    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *project = nullptr);
+    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *currentProject = nullptr);
     ~LoadFileDialogWindow();
 
     // Public UI slots
