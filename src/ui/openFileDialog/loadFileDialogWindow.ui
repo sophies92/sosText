@@ -166,7 +166,7 @@
        </property>
        <widget class="QSplitter" name="splitter">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -175,6 +175,12 @@
          <size>
           <width>100</width>
           <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
          </size>
         </property>
         <property name="orientation">
@@ -196,6 +202,12 @@
            <height>0</height>
           </size>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
         </widget>
         <widget class="QListView" name="listView">
          <property name="sizePolicy">
@@ -208,6 +220,12 @@
           <size>
            <width>100</width>
            <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
           </size>
          </property>
         </widget>
@@ -237,6 +255,15 @@
         <property name="animated">
          <bool>true</bool>
         </property>
+        <attribute name="headerCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="headerDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <attribute name="headerStretchLastSection">
+         <bool>true</bool>
+        </attribute>
        </widget>
       </widget>
      </item>
