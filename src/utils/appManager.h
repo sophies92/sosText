@@ -11,6 +11,7 @@ namespace Utils
         public:
 
         private:
+        // UI Windows
         MainWindow *mainWindow;
         LoadFileDialogWindow *loadFileWindow;
 
