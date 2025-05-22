@@ -11,7 +11,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void *MainWindow::openFileDialog()
+void MainWindow::openFileDialog()
 {
     loadFileDialogWindow = new LoadFileDialogWindow(this, currentProject);
     loadFileDialogWindow->show();

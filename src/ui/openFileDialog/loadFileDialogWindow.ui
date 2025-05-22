@@ -42,7 +42,7 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="upButton">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -118,7 +118,7 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>300</width>
+        <width>16777215</width>
         <height>16777215</height>
        </size>
       </property>
@@ -192,14 +192,46 @@
    </hints>
   </connection>
   <connection>
+   <sender>upButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LoadFileDialogWindow</receiver>
+   <slot>upButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>files</sender>
    <signal>itemClicked(QListWidgetItem*)</signal>
    <receiver>LoadFileDialogWindow</receiver>
-   <slot>filesListItemClicked(QListWidgetItem*)</slot>
+   <slot>onFileListClick(QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>450</x>
-     <y>316</y>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>directories</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>LoadFileDialogWindow</receiver>
+   <slot>onDirListClick(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>304</x>
@@ -210,6 +242,8 @@
  </connections>
  <slots>
   <slot>openFileButton()</slot>
-  <slot>filesListItemClicked(QListWidgetItem*)</slot>
+  <slot>upButton()</slot>
+  <slot>onFileListClick(QListWidgetItem*)</slot>
+  <slot>onDirListClick(QModelIndex)</slot>
  </slots>
 </ui>

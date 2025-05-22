@@ -32,7 +32,7 @@ class MainWindow : public QMainWindow
 
     // Public Slots
     public slots:
-    void *openFileDialog();
+    void openFileDialog();
 
     // Private functions
     private:

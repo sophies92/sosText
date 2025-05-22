@@ -1,9 +1,15 @@
 #ifndef LOADFILEDIALOGWINDOW_H
 #define LOADFILEDIALOGWINDOW_H
 
+#include <vector>
+#include <string>
+#include <filesystem>
 
 #include <QDialog>
 #include <QMainWindow>
+#include <QFileSystemModel>
+#include <QListWidgetItem>
+#include <QFileSelector>
 
 #include "../../project/project.h"
 
@@ -21,17 +27,27 @@ class LoadFileDialogWindow : public QDialog
     // Private variables
     Ui::LoadFileDialogWindow *ui;
 
+    std::vector<std::string> *path;
+    QFileSystemModel *filesModel;
+
     // Public functions
     public:
-    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *project);
+    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *project = nullptr);
     ~LoadFileDialogWindow();
 
     // Public UI slots
     public slots:
+    void cancelButton();
+    void onDirListClick(QModelIndex index);
+    void onFileListClick(QListWidgetItem *item);
     void openFileButton();
+    void upButton();
     
     // Private functions
     private:
+    void updateUIPathView();
+    void updateUIFilesView();
+
 };
 
 #endif // LOADFILEDIALOGWINDOW_H
