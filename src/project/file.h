@@ -11,12 +11,6 @@ namespace Project
         public:
         File(std::filesystem::path path);
         ~File();
-
-        /**
-         * @fn loadFile()
-         * @brief loads the file and returns it as a string
-         */
-        std::string *loadFile();
     };
 }
 

@@ -5,8 +5,10 @@
 
 namespace Project
 {
-    static IFile *currentProject;
-    
+    /**
+     * @class Project::Project
+     * @brief the Project class. This inherits from IFile.
+     */
     class Project : public IFile
     {
         // Public Variables

@@ -12,20 +12,14 @@ namespace Project
 
         // private variables
         private:
-        std::filesystem::path *path; //<! the std::filesystem::path where the project is located.
-        bool isDirectory; //<! is this IFile a directory?
-        std::vector<IFile> *filesList; //<! if ths IFile is a directory, this is the list of IFiles it contains.
+        std::filesystem::path *path;    //<! the std::filesystem::path where the project is located.
 
         // public functions
         public:
-        IFile();
-        /**
-         * @fn IFile(std::filesystm::path)
-         */
-        IFile(std::filesystem::path path);
 
         /**
          * @fn ~IFile()
+         * @brief destructor for IFile.
          */
         virtual ~IFile();
 
@@ -33,19 +27,7 @@ namespace Project
 
         // private functions
         private:
-        /**
-         * @fn checkIfIsDiectory()
-         * @brief
-         * @return 0 if this is a directory, 1 if is a file
-         */
-        virtual bool checkIfIsDirectory();
-
-        /**
-         * @fn getFilesInDirectory()
-         * @brief this function ges all the IFile's contained in this directory, if it is one.
-         * @return none
-         */
-        virtual void getFilesInDirectoy();
+        
     };
 };
 
