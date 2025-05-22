@@ -33,13 +33,9 @@ class LoadFileDialogWindow : public QDialog
     // Public UI slots
     public slots:
     void openFileButton();
-    void filesListItemClicked(QListWidgetItem *listItem);
 
     // Private functions
     private:
-    void onStart();
-
-    void populateFilesList();
 };
 
 #endif // LOADFILEDIALOGWINDOW_H

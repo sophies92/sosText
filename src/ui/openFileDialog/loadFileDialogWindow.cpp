@@ -4,7 +4,7 @@
 LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
-    onStart();
+
 }
 
 LoadFileDialogWindow::~LoadFileDialogWindow()
@@ -13,17 +13,5 @@ LoadFileDialogWindow::~LoadFileDialogWindow()
 }
 
 void LoadFileDialogWindow::openFileButton()
-{
-}
-
-void LoadFileDialogWindow::filesListItemClicked(QListWidgetItem *listItem)
-{
-}
-
-void LoadFileDialogWindow::onStart()
-{
-}
-
-void LoadFileDialogWindow::populateFilesList()
 {
 }

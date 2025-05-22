@@ -26,12 +26,8 @@ set(PROJECT_SOURCES
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui
 
-        src/project/project.cpp
-        src/project/project.h
-        src/project/IFile.cpp
-        src/project/IFile.h
-        src/project/file.cpp
-        src/project/file.h
+        src/utils/appManager.cpp
+        src/utils/appManager.h
 )
 
 add_executable(sosText ${PROJECT_SOURCES})
