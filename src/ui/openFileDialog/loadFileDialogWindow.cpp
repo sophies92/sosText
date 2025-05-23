@@ -28,6 +28,9 @@ void LoadFileDialogWindow::openFileButton()
 {
     if(std::filesystem::is_directory(*path))
     {
+        Project::IProject *project = new Project::IProject();
+        project->setPath(path->c_str());
+        emit projectOpened(project);
     }
     else
     {

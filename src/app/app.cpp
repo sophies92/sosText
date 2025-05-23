@@ -9,6 +9,17 @@ App::App::~App()
 {
 }
 
+void App::App::setProject(Project::IProject *project)
+{
+    this->project = project;
+}
+
+void App::App::projectOpened(Project::IProject *project)
+{
+    this->project = project;
+    std::cout << this->project->getPath()->c_str() << std::endl;
+}
+
 void App::App::showMainWindow()
 {
     mainWindow = new MainWindow();
@@ -19,5 +30,6 @@ void App::App::showMainWindow()
 void App::App::showLoadFileDialogWindow()
 {
     loadFileDialogWindow = new LoadFileDialogWindow(mainWindow, project);
+    connect(loadFileDialogWindow, &LoadFileDialogWindow::projectOpened, this, &App::projectOpened);
     loadFileDialogWindow->show();
 }

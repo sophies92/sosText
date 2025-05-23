@@ -42,6 +42,7 @@ class LoadFileDialogWindow : public QDialog
     void openFileButton();
 
     signals:
+    void projectOpened(Project::IProject *project);
 
     // Private functions
     private:
