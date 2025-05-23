@@ -18,6 +18,9 @@ set(CMAKE_AUTOUIC ON)
 set(PROJECT_SOURCES
         src/main.cpp
 
+        src/app/app.cpp
+        src/app/app.h
+
         src/project/iProject.cpp
         src/project/iProject.h
 

@@ -344,5 +344,6 @@
  </connections>
  <slots>
   <slot>openFileDialog()</slot>
+  <slot>newProjectLoaded(Project::IProject*)</slot>
  </slots>
 </ui>

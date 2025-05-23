@@ -21,18 +21,17 @@ class MainWindow : public QMainWindow
     private:
     Ui::MainWindow *ui;
 
-    LoadFileDialogWindow *loadFileDialogWindow;
-
-    Project::IProject *currentProject;
-
     // Public Functions
     public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget*parent = nullptr);
     ~MainWindow();
 
     // Public Slots
     public slots:
     void openFileDialog();
+
+    signals:
+    void openFileDialogClicked();
 
     // Private functions
     private:

@@ -1,7 +1,7 @@
 #include "mainWindow.h"
 #include "ui_mainWindow.h"
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
 }
@@ -13,6 +13,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::openFileDialog()
 {
-    loadFileDialogWindow = new LoadFileDialogWindow(this, currentProject);
-    loadFileDialogWindow->show();
+    emit openFileDialogClicked();
 }

@@ -11,6 +11,7 @@
 #include <QListWidgetItem>
 #include <QFileSelector>
 
+#include "../mainWindow/mainWindow.h"
 #include "../../project/iProject.h"
 
 namespace Ui
@@ -30,8 +31,6 @@ class LoadFileDialogWindow : public QDialog
     std::string *path;
     QFileSystemModel *filesModel;
 
-    Project::IProject *project;
-
     // Public functions
     public:
     LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::IProject *currentProject = nullptr);
@@ -39,11 +38,11 @@ class LoadFileDialogWindow : public QDialog
 
     // Public UI slots
     public slots:
-    void cancelButton();
     void onDirListClick(QModelIndex index);
     void openFileButton();
-    void upButton();
-    
+
+    signals:
+
     // Private functions
     private:
     void updateUIPathView();

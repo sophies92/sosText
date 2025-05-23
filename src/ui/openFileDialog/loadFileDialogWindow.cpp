@@ -4,7 +4,6 @@
 LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::IProject *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
-    this->project = currentProject;
     path = new std::string("/");
     filesModel = new QFileSystemModel();
     filesModel->setRootPath(ui->filepath->toPlainText());
@@ -19,11 +18,6 @@ LoadFileDialogWindow::~LoadFileDialogWindow()
     delete ui;
 }
 
-void LoadFileDialogWindow::cancelButton()
-{
-
-}
-
 void LoadFileDialogWindow::onDirListClick(QModelIndex index)
 {
     *path = filesModel->filePath(index).toStdString().c_str();
@@ -34,21 +28,13 @@ void LoadFileDialogWindow::openFileButton()
 {
     if(std::filesystem::is_directory(*path))
     {
-        project = new Project::IProject();
-        project->setPath(*path);
     }
     else
     {
-        project = new Project::IProject();
-        project->setPath(*path);
-        // do something to show pathis set
     }
+    this->close();
 }
 
-void LoadFileDialogWindow::upButton()
-{
-    
-}
 
 void LoadFileDialogWindow::updateUIPathView()
 {

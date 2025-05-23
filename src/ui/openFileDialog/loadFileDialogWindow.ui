@@ -352,6 +352,7 @@
   </connection>
  </connections>
  <slots>
+  <signal>newProjectLoaded(Project::IProject*)</signal>
   <slot>openFileButton()</slot>
   <slot>upButton()</slot>
   <slot>onDirListClick(QModelIndex)</slot>
