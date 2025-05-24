@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>787</height>
+    <height>666</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -63,7 +63,7 @@
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
-       <widget class="QToolBox" name="toolBoxLeftPages">
+       <widget class="QToolBox" name="projectBar">
         <property name="sizePolicy">
          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
@@ -136,9 +136,9 @@
          </attribute>
         </widget>
        </widget>
-       <widget class="QTabWidget" name="tabWidgetOpenFiles">
+       <widget class="QTabWidget" name="filesTabs">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -192,9 +192,9 @@
         </widget>
        </widget>
       </widget>
-      <widget class="QTabWidget" name="tabWidgetBottomTabs">
+      <widget class="QTabWidget" name="consoleBar">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -205,12 +205,18 @@
          <height>200</height>
         </size>
        </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>200</height>
+        </size>
+       </property>
        <property name="currentIndex">
         <number>0</number>
        </property>
        <widget class="QWidget" name="tabConsole">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -222,7 +228,7 @@
          <item row="0" column="0">
           <widget class="QPlainTextEdit" name="plainTextEdit">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -245,6 +251,12 @@
         </layout>
        </widget>
        <widget class="QWidget" name="tabErrors">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <attribute name="title">
          <string>Errors</string>
         </attribute>
@@ -339,7 +351,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>tabWidgetOpenFiles</sender>
+   <sender>filesTabs</sender>
    <signal>tabCloseRequested(int)</signal>
    <receiver>MainWindow</receiver>
    <slot>closeTab(int)</slot>

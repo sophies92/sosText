@@ -34,6 +34,10 @@ set(PROJECT_SOURCES
         src/ui/mainWindow/mainWindow.h
         src/ui/mainWindow/mainWindow.ui
 
+        src/ui/mainWindow/filesTabs/welcomeTab.cpp
+        src/ui/mainWindow/filesTabs/welcomeTab.h
+        src/ui/mainWindow/filesTabs/welcomeTab.ui
+
         src/ui/openFileDialog/loadFileDialogWindow.cpp
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui

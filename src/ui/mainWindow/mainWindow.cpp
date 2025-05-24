@@ -20,9 +20,9 @@ void MainWindow::updateProject(Project::IProject *project)
 {
     if(project->getProjectType() == Project::ProjectType::FILE)
     {
-        int tabIndex = ui->tabWidgetOpenFiles->tabBar()->addTab(project->getPath()->filename().c_str());
+        int tabIndex = ui->filesTabs->tabBar()->addTab(project->getPath()->filename().c_str());
         // set tab contets
-        ui->tabWidgetOpenFiles->tabBar()->setCurrentIndex(tabIndex);
+        ui->filesTabs->tabBar()->setCurrentIndex(tabIndex);
     }
     else if(project->getProjectType() == Project::ProjectType::PROJECT)
     {
@@ -32,5 +32,5 @@ void MainWindow::updateProject(Project::IProject *project)
 
 void MainWindow::closeTab(int index)
 {
-    ui->tabWidgetOpenFiles->tabBar()->removeTab(index);
+    ui->filesTabs->tabBar()->removeTab(index);
 }
