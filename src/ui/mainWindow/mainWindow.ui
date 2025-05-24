@@ -85,7 +85,7 @@
            <x>0</x>
            <y>0</y>
            <width>306</width>
-           <height>392</height>
+           <height>387</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -168,27 +168,7 @@
          <attribute name="title">
           <string>$FILENAME</string>
          </attribute>
-         <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="0">
-           <widget class="QTextEdit" name="textEdit">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>400</width>
-              <height>400</height>
-             </size>
-            </property>
-            <property name="documentTitle">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <layout class="QGridLayout" name="gridLayout_3"/>
         </widget>
        </widget>
       </widget>
