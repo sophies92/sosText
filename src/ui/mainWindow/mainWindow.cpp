@@ -25,8 +25,8 @@ void MainWindow::updateProject(Project::IProject *project)
     if(project->getProjectType() == Project::ProjectType::FILE)
     {
         NewFileTab *newFileTab = new NewFileTab();
+        newFileTab->textEdit->setText(project->getOpenFile()->c_str());
         int tabIndex = ui->filesTabs->addTab(newFileTab, project->getPath()->filename().c_str());
-        // set tab contets
         ui->filesTabs->setCurrentIndex(tabIndex);
     }
     else if(project->getProjectType() == Project::ProjectType::PROJECT)

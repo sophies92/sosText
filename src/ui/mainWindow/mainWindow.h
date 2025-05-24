@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTextEdit>
 
 #include "../openFileDialog/loadFileDialogWindow.h"
 #include "../filesTabs/welcomeTab/welcomeTab.h"

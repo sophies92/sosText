@@ -22,6 +22,7 @@ namespace Project
         public:
         Project();
         ~Project();
+        std::string *getOpenFile();
 
         // Private Functions
         private:

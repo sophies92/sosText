@@ -7,6 +7,7 @@
 #define NEWFILETAB_H
 
 #include <QWidget>
+#include <QTextEdit>
 
 namespace Ui
 {
@@ -15,6 +16,9 @@ namespace Ui
 
 class NewFileTab : public QWidget
 {
+    public:
+    QTextEdit *textEdit;
+
     private:
     Ui::NewFileTab *ui;
 

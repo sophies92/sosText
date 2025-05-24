@@ -26,19 +26,21 @@ void LoadFileDialogWindow::onDirListClick(QModelIndex index)
 
 void LoadFileDialogWindow::openFileButton()
 {
-    Project::IProject *newProject;
+
     if(std::filesystem::is_directory(*path))
     {
-        newProject = new Project::Project();
+        Project::Project *newProject = new Project::Project();
         newProject->setProjectType(Project::ProjectType::PROJECT);
+        newProject->setPath(path->c_str());
+        emit projectOpened(newProject);
     }
     else
     {
-        newProject = new Project::File();
+        Project::File *newProject = new Project::File();
         newProject->setProjectType(Project::ProjectType::FILE);
+        newProject->setPath(path->c_str());
+        emit projectOpened(newProject);
     }
-    newProject->setPath(path->c_str());
-    emit projectOpened(newProject);
     this->close();
 }
 

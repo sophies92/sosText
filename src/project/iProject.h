@@ -12,7 +12,7 @@
 
 namespace Project
 {
-    enum class ProjectType
+    enum ProjectType
     {
         FILE,
         PROJECT
@@ -30,16 +30,17 @@ namespace Project
         // Private Variables
         private:
         std::filesystem::path *path;
-        Project::ProjectType projectType;
+        ProjectType projectType;
 
         // Public Functions
         public:
         IProject();
         virtual ~IProject();
-        void setPath(std::string path);
-        std::filesystem::path *getPath();
-        void setProjectType(Project::ProjectType projectType);
-        Project::ProjectType getProjectType();
+        virtual void setPath(std::string path);
+        virtual std::filesystem::path *getPath();
+        virtual void setProjectType(ProjectType projectType);
+        virtual ProjectType getProjectType();
+        virtual std::string *getOpenFile() = 0;
 
         // Private Functions
         private:

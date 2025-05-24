@@ -4,6 +4,7 @@
 NewFileTab::NewFileTab(QWidget *parent) : QWidget(), ui(new Ui::NewFileTab)
 {
     NewFileTab::ui->setupUi(this);
+    textEdit = ui->textEdit;
 }
 
 NewFileTab::~NewFileTab()
