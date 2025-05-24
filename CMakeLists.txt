@@ -26,18 +26,17 @@ set(PROJECT_SOURCES
 
         src/project/project.cpp
         src/project/project.h
-        
+
         src/project/file.cpp
         src/project/file.h
 
         src/ui/mainWindow/mainWindow.cpp
         src/ui/mainWindow/mainWindow.h
         src/ui/mainWindow/mainWindow.ui
-        
+
         src/ui/openFileDialog/loadFileDialogWindow.cpp
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui
-
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

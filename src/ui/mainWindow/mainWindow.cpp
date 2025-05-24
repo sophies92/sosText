@@ -24,6 +24,10 @@ void MainWindow::updateProject(Project::IProject *project)
         // set tab contets
         ui->tabWidgetOpenFiles->tabBar()->setCurrentIndex(tabIndex);
     }
+    else if(project->getProjectType() == Project::ProjectType::PROJECT)
+    {
+        // make project tree
+    }
 }
 
 void MainWindow::closeTab(int index)

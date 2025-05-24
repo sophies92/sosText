@@ -76,6 +76,12 @@
           <height>400</height>
          </size>
         </property>
+        <property name="maximumSize">
+         <size>
+          <width>400</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="currentIndex">
          <number>0</number>
         </property>
@@ -84,8 +90,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>306</width>
-           <height>387</height>
+           <width>316</width>
+           <height>338</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -121,8 +127,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>306</width>
-           <height>392</height>
+           <width>316</width>
+           <height>338</height>
           </rect>
          </property>
          <attribute name="label">
@@ -146,13 +152,16 @@
         <property name="currentIndex">
          <number>0</number>
         </property>
+        <property name="documentMode">
+         <bool>true</bool>
+        </property>
         <property name="tabsClosable">
          <bool>true</bool>
         </property>
         <property name="movable">
          <bool>true</bool>
         </property>
-        <widget class="QWidget" name="tabOpenFile">
+        <widget class="QWidget" name="tabWelcomePage">
          <property name="sizePolicy">
           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
@@ -166,9 +175,20 @@
           </size>
          </property>
          <attribute name="title">
-          <string>$FILENAME</string>
+          <string>Welcome</string>
          </attribute>
-         <layout class="QGridLayout" name="gridLayout_3"/>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
       </widget>

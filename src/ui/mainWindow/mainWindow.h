@@ -23,7 +23,7 @@ class MainWindow : public QMainWindow
 
     // Public Functions
     public:
-    MainWindow(QWidget*parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     // Public Slots
