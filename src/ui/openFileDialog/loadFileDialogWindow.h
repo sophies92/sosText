@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <filesystem>
+#include <fstream>
 
 #include <QDialog>
 #include <QMainWindow>
@@ -43,6 +44,7 @@ class LoadFileDialogWindow : public QDialog
     void openFileButton();
 
     signals:
+    // TODO change it emit path
     void projectOpened(Project::IProject *project);
 
     // Private functions

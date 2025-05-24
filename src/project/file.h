@@ -24,9 +24,11 @@ namespace Project
         File();
         ~File();
         std::string *getOpenFile();
+        void setOpenFile(std::string *string);
 
         // Private Functions
         private:
+        
     };
 }
 

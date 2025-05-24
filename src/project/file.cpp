@@ -2,7 +2,7 @@
 
 Project::File::File()
 {
-    openFile = new std::string("Replace this soon");
+    
 }
 
 Project::File::~File()
@@ -13,4 +13,9 @@ Project::File::~File()
 std::string *Project::File::getOpenFile()
 {
     return(this->openFile);
+}
+
+void Project::File::setOpenFile(std::string *string)
+{
+    openFile = string;
 }

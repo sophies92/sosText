@@ -34,6 +34,7 @@ class MainWindow : public QMainWindow
     void openFileDialog();
     void updateProject(Project::IProject *project);
     void closeTab(int index);
+    void showWelcomeTab();
 
     signals:
     void openFileDialogClicked();

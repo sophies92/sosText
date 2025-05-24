@@ -4,10 +4,6 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
-
-    WelcomeTab *welcomeTab = new WelcomeTab();
-    int index = ui->filesTabs->addTab(welcomeTab, "Welcome");
-    ui->filesTabs->setCurrentIndex(index);
 }
 
 MainWindow::~MainWindow()
@@ -38,4 +34,13 @@ void MainWindow::updateProject(Project::IProject *project)
 void MainWindow::closeTab(int index)
 {
     ui->filesTabs->removeTab(index);
+}
+
+void MainWindow::showWelcomeTab()
+{
+    WelcomeTab *welcomeTab = new WelcomeTab();
+    connect(welcomeTab, &WelcomeTab::newFileButtonPressed, this, 0);
+
+    int index = ui->filesTabs->addTab(welcomeTab, "Welcome");
+    ui->filesTabs->setCurrentIndex(index);
 }

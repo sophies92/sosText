@@ -21,6 +21,43 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Welcome to sosText</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>What would you like to do?</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QCommandLinkButton" name="newFileButton">
      <property name="maximumSize">
       <size>
@@ -47,6 +84,19 @@
     </widget>
    </item>
    <item>
+    <widget class="QCommandLinkButton" name="newProjectButton">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Start a New Project</string>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QCommandLinkButton" name="openProjectButton">
      <property name="maximumSize">
       <size>
@@ -55,7 +105,7 @@
       </size>
      </property>
      <property name="text">
-      <string>Open a Project</string>
+      <string>Open an Existing Project</string>
      </property>
     </widget>
    </item>
