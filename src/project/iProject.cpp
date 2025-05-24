@@ -17,3 +17,13 @@ std::filesystem::path *Project::IProject::getPath()
 {
     return path;
 }
+
+void Project::IProject::setProjectType(ProjectType projectType)
+{
+    this->projectType = projectType;
+}
+
+Project::ProjectType Project::IProject::getProjectType()
+{
+    return(this->projectType);
+}

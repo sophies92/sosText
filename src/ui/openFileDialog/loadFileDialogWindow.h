@@ -12,7 +12,8 @@
 #include <QFileSelector>
 
 #include "../mainWindow/mainWindow.h"
-#include "../../project/iProject.h"
+#include "../../project/project.h"
+#include "../../project/file.h"
 
 namespace Ui
 {

@@ -17,13 +17,14 @@ void App::App::setProject(Project::IProject *project)
 void App::App::projectOpened(Project::IProject *project)
 {
     this->project = project;
-    std::cout << this->project->getPath()->c_str() << std::endl;
+    emit projectUpdated(this->project);
 }
 
 void App::App::showMainWindow()
 {
     mainWindow = new MainWindow();
     connect(mainWindow, &MainWindow::openFileDialogClicked, this, &App::showLoadFileDialogWindow);
+    connect(this, &App::projectUpdated, mainWindow, &MainWindow::updateProject);
     mainWindow->showMaximized();
 }
 

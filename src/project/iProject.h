@@ -4,17 +4,23 @@
  * @author Sophie Short
  */
 
-#ifndef PROJECT_H
-#define PROJECT_H
+#ifndef IPROJECT_H
+#define IPROJECT_H
 
 #include <string>
 #include <filesystem>
 
 namespace Project
 {
+    enum class ProjectType
+    {
+        FILE,
+        PROJECT
+    };
+
     /**
-     * @class Project::Project
-     * @brief this class holds all the information about the currently open Project.
+     * @class Project::IProject
+     * @brief 
      */
     class IProject
     {
@@ -24,13 +30,16 @@ namespace Project
         // Private Variables
         private:
         std::filesystem::path *path;
+        Project::ProjectType projectType;
 
         // Public Functions
         public:
         IProject();
-        ~IProject();
+        virtual ~IProject();
         void setPath(std::string path);
         std::filesystem::path *getPath();
+        void setProjectType(Project::ProjectType projectType);
+        Project::ProjectType getProjectType();
 
         // Private Functions
         private:
@@ -38,4 +47,4 @@ namespace Project
     };
 }
 
-#endif // PROJECT_H
+#endif // IPROJECT_H

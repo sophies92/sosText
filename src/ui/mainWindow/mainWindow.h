@@ -29,6 +29,8 @@ class MainWindow : public QMainWindow
     // Public Slots
     public slots:
     void openFileDialog();
+    void updateProject(Project::IProject *project);
+    void closeTab(int index);
 
     signals:
     void openFileDialogClicked();

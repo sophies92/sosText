@@ -85,7 +85,7 @@
            <x>0</x>
            <y>0</y>
            <width>306</width>
-           <height>389</height>
+           <height>392</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -122,7 +122,7 @@
            <x>0</x>
            <y>0</y>
            <width>306</width>
-           <height>389</height>
+           <height>392</height>
           </rect>
          </property>
          <attribute name="label">
@@ -145,6 +145,12 @@
         </property>
         <property name="currentIndex">
          <number>0</number>
+        </property>
+        <property name="tabsClosable">
+         <bool>true</bool>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
         </property>
         <widget class="QWidget" name="tabOpenFile">
          <property name="sizePolicy">
@@ -332,9 +338,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>tabWidgetOpenFiles</sender>
+   <signal>tabCloseRequested(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>closeTab(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>554</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>openFileDialog()</slot>
   <slot>newProjectLoaded(Project::IProject*)</slot>
+  <slot>closeTab(int)</slot>
  </slots>
 </ui>

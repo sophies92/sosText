@@ -41,6 +41,10 @@ namespace App
         void showLoadFileDialogWindow();
         void projectOpened(Project::IProject *project);
 
+        // Signals
+        signals:
+        void projectUpdated(Project::IProject *project);
+
         // Private Functions
         private:
         void showMainWindow();
