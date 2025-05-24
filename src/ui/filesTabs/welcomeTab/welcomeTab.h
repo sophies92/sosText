@@ -3,7 +3,7 @@
  * @brief
  * @author
  */
-#ifndef WECOMETAB_H
+#ifndef WELCOMETAB_H
 #define WELCOMETAB_H
 
 #include <QWidget>
@@ -20,8 +20,11 @@ class WelcomeTab : public QWidget
     // Public Variables
 
     // Private Variables
+    private:
+    Ui::WelcomeTab *ui;
 
     // Public Functions
+    public:
     WelcomeTab(QWidget *parent = nullptr);
     ~WelcomeTab();
 

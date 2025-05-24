@@ -4,6 +4,10 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
+
+    WelcomeTab *welcomeTab = new WelcomeTab();
+    int index = ui->filesTabs->addTab(welcomeTab, "Welcome");
+    ui->filesTabs->setCurrentIndex(index);
 }
 
 MainWindow::~MainWindow()
@@ -20,9 +24,10 @@ void MainWindow::updateProject(Project::IProject *project)
 {
     if(project->getProjectType() == Project::ProjectType::FILE)
     {
-        int tabIndex = ui->filesTabs->tabBar()->addTab(project->getPath()->filename().c_str());
+        NewFileTab *newFileTab = new NewFileTab();
+        int tabIndex = ui->filesTabs->addTab(newFileTab, project->getPath()->filename().c_str());
         // set tab contets
-        ui->filesTabs->tabBar()->setCurrentIndex(tabIndex);
+        ui->filesTabs->setCurrentIndex(tabIndex);
     }
     else if(project->getProjectType() == Project::ProjectType::PROJECT)
     {
@@ -32,5 +37,5 @@ void MainWindow::updateProject(Project::IProject *project)
 
 void MainWindow::closeTab(int index)
 {
-    ui->filesTabs->tabBar()->removeTab(index);
+    ui->filesTabs->removeTab(index);
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Welcome</class>
- <widget class="QWidget" name="Welcome">
+ <class>WelcomeTab</class>
+ <widget class="QWidget" name="WelcomeTab">
   <property name="geometry">
    <rect>
     <x>0</x>

@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 #include "../openFileDialog/loadFileDialogWindow.h"
+#include "../filesTabs/welcomeTab/welcomeTab.h"
+#include "../filesTabs/newFileTab/newFileTab.h"
 #include "../../project/iProject.h"
 
 namespace Ui
