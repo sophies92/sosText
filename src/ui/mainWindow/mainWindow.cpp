@@ -4,7 +4,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
-    connect(ui->actionOpen_File, &QAction::triggered , this, &MainWindow::openFileDialog);
+    connect(ui->actionOpen_File, &QAction::triggered , this, &MainWindow::openFileDialogSelected);
     connect(ui->filesTabs, &QTabWidget::tabCloseRequested, this, &MainWindow::closeTab);
     connect(ui->actionExit, &QAction::triggered, this, &MainWindow::close);
     showWelcomeTab();
@@ -20,9 +20,9 @@ void MainWindow::showWelcomeTab()
     WelcomeTab *welcomeTab = new WelcomeTab();
 
     connect(welcomeTab, &WelcomeTab::newFileButtonPressedSignal, this, &MainWindow::newFileStarted);
-    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, this, &MainWindow::openFileDialog);
-    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, this, &MainWindow::newProjectStarted);
-    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, this, &MainWindow::openFileDialog);
+    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, this, &MainWindow::openFileDialogSelected);
+    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, this, &MainWindow::startNewProjectSelected);
+    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, this, &MainWindow::openFileDialogSelected);
 
     int index = ui->filesTabs->addTab(welcomeTab, "Welcome");
     ui->filesTabs->setCurrentIndex(index);
@@ -40,13 +40,14 @@ void MainWindow::newFileStarted()
     addNewFileTab(file);
 }
 
-void MainWindow::newProjectStarted()
+void MainWindow::startNewProjectSelected()
 {
+    emit startNewProjectSelectedSignal();
 }
 
-void MainWindow::openFileDialog()
+void MainWindow::openFileDialogSelected()
 {
-    emit openFileDialogClicked();
+    emit openFileDialogSelectedSignal();
 }
 
 void MainWindow::fileOpened(std::string *path)

@@ -36,13 +36,14 @@ class MainWindow : public QMainWindow
     void closeTab(int index);
 
     void newFileStarted();
-    void newProjectStarted();
-    void openFileDialog();
+    void startNewProjectSelected();
+    void openFileDialogSelected();
 
     void fileOpened(std::string *path);
 
     signals:
-    void openFileDialogClicked();
+    void openFileDialogSelectedSignal();
+    void startNewProjectSelectedSignal();
 
     private:
     void addNewFileTab(Project::File *file);

@@ -16,6 +16,11 @@ void App::App::showLoadFileDialogWindow()
     loadFileDialogWindow->show();
 }
 
+void App::App::showNewProjectWindow()
+{
+    // TODO show new project wizard
+}
+
 void App::App::fileOpened(std::string *path)
 {
     emit fileOpenedSignal(path);
@@ -24,7 +29,8 @@ void App::App::fileOpened(std::string *path)
 void App::App::showMainWindow()
 {
     mainWindow = new MainWindow();
-    connect(mainWindow, &MainWindow::openFileDialogClicked, this, &App::showLoadFileDialogWindow);
+    connect(mainWindow, &MainWindow::openFileDialogSelectedSignal, this, &App::showLoadFileDialogWindow);
     connect(this, &App::App::fileOpenedSignal, mainWindow, &MainWindow::fileOpened);
+    connect(mainWindow, &MainWindow::startNewProjectSelectedSignal, this, &App::showNewProjectWindow);
     mainWindow->showMaximized();
 }
