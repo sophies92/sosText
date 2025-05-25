@@ -15,6 +15,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// TODO add action for show welcome screen
 void MainWindow::showWelcomeTab()
 {
     WelcomeTab *welcomeTab = new WelcomeTab();
