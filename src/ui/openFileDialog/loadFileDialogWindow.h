@@ -44,8 +44,7 @@ class LoadFileDialogWindow : public QDialog
     void openFileButton();
 
     signals:
-    // TODO change it emit path
-    void projectOpened(Project::Project *project);
+    void fileOpened(std::string *path);
 
     // Private functions
     private:

@@ -4,11 +4,15 @@
 LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
+    connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &LoadFileDialogWindow::openFileButton);
+    connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &LoadFileDialogWindow::close);
+    connect(ui->directories, &QTreeView::clicked, this, &LoadFileDialogWindow::onDirListClick);
+
     path = new std::string("/");
     filesModel = new QFileSystemModel();
     filesModel->setRootPath(ui->filepath->toPlainText());
     ui->directories->setModel(filesModel);
-    ui->directories->expandToDepth(0);
+    ui->directories->expandToDepth(1);
     updateUIPathView();
 }
 
@@ -26,14 +30,7 @@ void LoadFileDialogWindow::onDirListClick(QModelIndex index)
 
 void LoadFileDialogWindow::openFileButton()
 {
-    if(std::filesystem::is_directory(*path))
-    {
-        
-    }
-    else
-    {
-        
-    }
+    emit fileOpened(path);
     this->close();
 }
 

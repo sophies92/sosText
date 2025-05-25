@@ -28,14 +28,6 @@ void MainWindow::showWelcomeTab()
     ui->filesTabs->setCurrentIndex(index);
 }
 
-void MainWindow::addNewFileTab(Project::File *file)
-{
-    NewFileTab *newFileTab = new NewFileTab();
-    newFileTab->textEdit->setText(file->getPath()->c_str());
-    int tabIndex = ui->filesTabs->addTab(newFileTab, file->getPath()->c_str());
-    ui->filesTabs->setCurrentIndex(tabIndex);
-}
-
 void MainWindow::closeTab(int index)
 {
     ui->filesTabs->removeTab(index);
@@ -57,4 +49,18 @@ void MainWindow::openFileDialog()
     emit openFileDialogClicked();
 }
 
+void MainWindow::fileOpened(std::string *path)
+{
+    Project::File *file = new Project::File();
+    file->setPath(*path);
+    addNewFileTab(file);
+}
 
+void MainWindow::addNewFileTab(Project::File *file)
+{
+    NewFileTab *newFileTab = new NewFileTab();
+    // TODO set file text
+    // newFileTab->textEdit->setText();
+    int tabIndex = ui->filesTabs->addTab(newFileTab, file->getPath()->c_str());
+    ui->filesTabs->setCurrentIndex(tabIndex);
+}

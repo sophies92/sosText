@@ -260,56 +260,7 @@
   </layout>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>LoadFileDialogWindow</receiver>
-   <slot>openFileButton()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>299</x>
-     <y>502</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>299</x>
-     <y>267</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>LoadFileDialogWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>299</x>
-     <y>502</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>299</x>
-     <y>267</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>directories</sender>
-   <signal>clicked(QModelIndex)</signal>
-   <receiver>LoadFileDialogWindow</receiver>
-   <slot>onDirListClick(QModelIndex)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>379</x>
-     <y>269</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>299</x>
-     <y>267</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <signal>newProjectLoaded(Project::IProject*)</signal>
   <slot>openFileButton()</slot>

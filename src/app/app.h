@@ -37,9 +37,11 @@ namespace App
         // Public Slots
         public slots:
         void showLoadFileDialogWindow();
+        void fileOpened(std::string *path);
 
         // Signals
         signals:
+        void fileOpenedSignal(std::string *path);
 
         // Private Functions
         private:

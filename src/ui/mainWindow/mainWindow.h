@@ -33,15 +33,19 @@ class MainWindow : public QMainWindow
     // Public Slots
     public slots:
     void showWelcomeTab();
-    void addNewFileTab(Project::File *file);
     void closeTab(int index);
 
     void newFileStarted();
     void newProjectStarted();
     void openFileDialog();
 
+    void fileOpened(std::string *path);
+
     signals:
     void openFileDialogClicked();
+
+    private:
+    void addNewFileTab(Project::File *file);
 };
 
 #endif // MAINWINDOW_H
