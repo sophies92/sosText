@@ -32,21 +32,16 @@ class MainWindow : public QMainWindow
 
     // Public Slots
     public slots:
-    void openFileDialog();
-    void closeTab(int index);
     void showWelcomeTab();
+    void addNewFileTab(Project::File *file);
+    void closeTab(int index);
 
     void newFileStarted();
-    void fileOpened();
     void newProjectStarted();
-    void projectOpened();
+    void openFileDialog();
 
     signals:
     void openFileDialogClicked();
-
-    // Private functions
-    private:
-    void addNewFileTab(Project::File *file);
 };
 
 #endif // MAINWINDOW_H

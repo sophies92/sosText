@@ -288,56 +288,7 @@
   </action>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>actionOpen_File</sender>
-   <signal>triggered()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>openFileDialog()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>393</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>actionExit</sender>
-   <signal>triggered()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>393</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>filesTabs</sender>
-   <signal>tabCloseRequested(int)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>closeTab(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>554</x>
-     <y>257</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>399</x>
-     <y>393</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>openFileDialog()</slot>
   <slot>newProjectLoaded(Project::IProject*)</slot>
