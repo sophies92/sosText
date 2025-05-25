@@ -4,6 +4,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
+    showWelcomeTab();
 }
 
 MainWindow::~MainWindow()
@@ -16,21 +17,6 @@ void MainWindow::openFileDialog()
     emit openFileDialogClicked();
 }
 
-void MainWindow::updateProject(Project::IProject *project)
-{
-    if(project->getProjectType() == Project::ProjectType::FILE)
-    {
-        NewFileTab *newFileTab = new NewFileTab();
-        newFileTab->textEdit->setText(project->getOpenFile()->c_str());
-        int tabIndex = ui->filesTabs->addTab(newFileTab, project->getPath()->filename().c_str());
-        ui->filesTabs->setCurrentIndex(tabIndex);
-    }
-    else if(project->getProjectType() == Project::ProjectType::PROJECT)
-    {
-        // make project tree
-    }
-}
-
 void MainWindow::closeTab(int index)
 {
     ui->filesTabs->removeTab(index);
@@ -39,8 +25,41 @@ void MainWindow::closeTab(int index)
 void MainWindow::showWelcomeTab()
 {
     WelcomeTab *welcomeTab = new WelcomeTab();
-    connect(welcomeTab, &WelcomeTab::newFileButtonPressed, this, 0);
+
+    connect(welcomeTab, &WelcomeTab::newFileButtonPressedSignal, this, &MainWindow::newFileStarted);
+    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, this, &MainWindow::fileOpened);
+    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, this, &MainWindow::newProjectStarted);
+    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, this, &MainWindow::projectOpened);
 
     int index = ui->filesTabs->addTab(welcomeTab, "Welcome");
     ui->filesTabs->setCurrentIndex(index);
+}
+
+void MainWindow::newFileStarted()
+{
+    Project::File *file = new Project::File();
+    file->setPath("newFile");
+    addNewFileTab(file);
+}
+
+void MainWindow::fileOpened()
+{
+    emit openFileDialogClicked();
+}
+
+void MainWindow::newProjectStarted()
+{
+}
+
+void MainWindow::projectOpened()
+{
+    emit openFileDialogClicked();
+}
+
+void MainWindow::addNewFileTab(Project::File *file)
+{
+    NewFileTab *newFileTab = new NewFileTab();
+    newFileTab->textEdit->setText(file->getPath()->c_str());
+    int tabIndex = ui->filesTabs->addTab(newFileTab, file->getPath()->c_str());
+    ui->filesTabs->setCurrentIndex(tabIndex);
 }

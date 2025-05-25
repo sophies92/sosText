@@ -6,11 +6,11 @@
 #ifndef PROJECT_H
 #define PROJECT_H
 
-#include "iProject.h"
+#include <string>
 
 namespace Project
 {
-    class Project : public IProject
+    class Project
     {
         // Public Variables
         public:
@@ -22,7 +22,6 @@ namespace Project
         public:
         Project();
         ~Project();
-        std::string *getOpenFile();
 
         // Private Functions
         private:

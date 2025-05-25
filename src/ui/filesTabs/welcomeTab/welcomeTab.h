@@ -8,9 +8,6 @@
 
 #include <QWidget>
 
-#include "../../../project/project.h"
-#include "../../../project/file.h"
-
 namespace Ui
 {
     class WelcomeTab;
@@ -31,12 +28,18 @@ class WelcomeTab : public QWidget
     WelcomeTab(QWidget *parent = nullptr);
     ~WelcomeTab();
 
+    public slots:
+    void newFileButtonPressed();
+    void openFileButtonPressed();
+    void newProjectButtonPressed();
+    void openProjectButtonPressed();
+
     // Signals
     signals:
-    void newFileButtonPressed();
-    void openFileButtonPressed(Project::File);
-    void newProjectButtonPressed();
-    void openProjectButtonPressed(Project::Project*);
+    void newFileButtonPressedSignal();
+    void openFileButtonPressedSignal();
+    void newProjectButtonPressedSignal();
+    void openProjectButtonPressedSignal();
 
     // Private Functions
 };

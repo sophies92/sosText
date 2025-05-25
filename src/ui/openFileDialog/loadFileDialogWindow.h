@@ -35,7 +35,7 @@ class LoadFileDialogWindow : public QDialog
 
     // Public functions
     public:
-    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::IProject *currentProject = nullptr);
+    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *currentProject = nullptr);
     ~LoadFileDialogWindow();
 
     // Public UI slots
@@ -45,7 +45,7 @@ class LoadFileDialogWindow : public QDialog
 
     signals:
     // TODO change it emit path
-    void projectOpened(Project::IProject *project);
+    void projectOpened(Project::Project *project);
 
     // Private functions
     private:

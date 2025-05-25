@@ -21,9 +21,6 @@ set(PROJECT_SOURCES
         src/app/app.cpp
         src/app/app.h
 
-        src/project/iProject.cpp
-        src/project/iProject.h
-
         src/project/project.cpp
         src/project/project.h
 

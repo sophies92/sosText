@@ -2,20 +2,21 @@
 
 Project::File::File()
 {
-    
+    this->path = new std::string("newFile");
 }
 
 Project::File::~File()
 {
-    delete openFile;
+    delete this->path;
 }
 
-std::string *Project::File::getOpenFile()
+std::string *Project::File::getPath()
 {
-    return(this->openFile);
+    return(this->path);
 }
 
-void Project::File::setOpenFile(std::string *string)
+void Project::File::setPath(std::string newPath)
 {
-    openFile = string;
+    delete this->path;
+    this->path = new std::string(newPath);
 }

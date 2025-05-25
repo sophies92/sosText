@@ -1,7 +1,7 @@
 #include "loadFileDialogWindow.h"
 #include "ui_loadFileDialogWindow.h"
 
-LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::IProject *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
+LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
     path = new std::string("/");
@@ -28,18 +28,11 @@ void LoadFileDialogWindow::openFileButton()
 {
     if(std::filesystem::is_directory(*path))
     {
-        Project::Project *newProject = new Project::Project();
-        newProject->setProjectType(Project::ProjectType::PROJECT);
-        newProject->setPath(path->c_str());
-        emit projectOpened(newProject);
+        
     }
     else
     {
-        Project::File *newProject = new Project::File();
-        newProject->setProjectType(Project::ProjectType::FILE);
-        newProject->setPath(path->c_str());
-        newProject->setOpenFile(new std::string("This for now..."));
-        emit projectOpened(newProject);
+        
     }
     this->close();
 }

@@ -13,7 +13,7 @@
 #include "../ui/mainWindow/mainWindow.h"
 #include "../ui/openFileDialog/loadFileDialogWindow.h"
 
-#include "../project/iProject.h"
+#include "../project/project.h"
 
 namespace App
 {
@@ -28,22 +28,18 @@ namespace App
 
         // Private Variables
         private:
-        Project::IProject *project;
 
         // Public Functions
         public:
         App(QObject *parent = nullptr);
         ~App();
-        void setProject(Project::IProject *project);
 
         // Public Slots
         public slots:
         void showLoadFileDialogWindow();
-        void projectOpened(Project::IProject *project);
 
         // Signals
         signals:
-        void projectUpdated(Project::IProject *project);
 
         // Private Functions
         private:

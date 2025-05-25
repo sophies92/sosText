@@ -5,26 +5,24 @@
 #define FILE_H
 
 #include <string>
-
-#include "iProject.h"
-
 namespace Project
 {
-    class File : public IProject
+    class File
     {
         // Public Variables
         public:
 
         // Private Variables
         private:
-        std::string *openFile;
+        std::string *path;
 
         // Public Functions
         public:
         File();
         ~File();
-        std::string *getOpenFile();
-        void setOpenFile(std::string *string);
+        std::string *getPath();
+        void setPath(std::string newPath);
+
 
         // Private Functions
         private:

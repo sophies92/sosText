@@ -7,7 +7,8 @@
 #include "../openFileDialog/loadFileDialogWindow.h"
 #include "../filesTabs/welcomeTab/welcomeTab.h"
 #include "../filesTabs/newFileTab/newFileTab.h"
-#include "../../project/iProject.h"
+
+#include "../../project/file.h"
 
 namespace Ui
 {
@@ -32,16 +33,20 @@ class MainWindow : public QMainWindow
     // Public Slots
     public slots:
     void openFileDialog();
-    void updateProject(Project::IProject *project);
     void closeTab(int index);
     void showWelcomeTab();
+
+    void newFileStarted();
+    void fileOpened();
+    void newProjectStarted();
+    void projectOpened();
 
     signals:
     void openFileDialogClicked();
 
     // Private functions
     private:
-
+    void addNewFileTab(Project::File *file);
 };
 
 #endif // MAINWINDOW_H
