@@ -29,25 +29,30 @@ class MainWindow : public QMainWindow
     public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    Ui::MainWindow *getUi();
 
     // Public Slots
     public slots:
-    void showWelcomeTab();
+    void addNewWelcomeTab(WelcomeTab *tab);
+    void addNewFileTab(NewFileTab *tab);
     void closeTab(int index);
 
-    void newFileStarted();
     void startNewProjectSelected();
     void openFileDialogSelected();
 
     void fileOpened(std::filesystem::path *path);
     void projectOpened(std::filesystem::path *path);
 
+    void fileSaved();
+
     signals:
-    void openFileDialogSelectedSignal();
-    void startNewProjectSelectedSignal();
+    void requestOpenFileDialogSignal();
+    void requestNewProjectSignal();
+    void requestWelcomeTabSignal();
+    void requestFileTabSignal();
 
     private:
-    void addNewFileTab(Project::File *file);
+    
 };
 
 #endif // MAINWINDOW_H

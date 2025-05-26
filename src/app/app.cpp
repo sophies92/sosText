@@ -9,16 +9,54 @@ App::App::~App()
 {
 }
 
-void App::App::showLoadFileDialogWindow()
+void App::App::showMainWindow()
+{
+    mainWindow = new MainWindow();
+    connect(mainWindow, &MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
+    connect(mainWindow, &MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
+    connect(mainWindow, &MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
+    connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileTabRequested);
+    connect(this, &App::newWelcomeTabSignal, mainWindow, &MainWindow::addNewWelcomeTab);
+    connect(this, &App::newFileTabSignal, mainWindow, &MainWindow::addNewFileTab);
+    mainWindow->showMaximized();
+    emit mainWindow->requestWelcomeTabSignal();
+}
+
+void App::App::openFileDialogRequested()
 {
     loadFileDialogWindow = new LoadFileDialogWindow(mainWindow);
     connect(loadFileDialogWindow, &LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
     loadFileDialogWindow->show();
 }
 
-void App::App::showNewProjectWindow()
+void App::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
+}
+
+void App::App::welcomeTabRequested()
+{
+    WelcomeTab *welcomeTab = new WelcomeTab();
+    connect(welcomeTab, &WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
+    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, mainWindow, &MainWindow::openFileDialogSelected);
+    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &MainWindow::startNewProjectSelected);
+    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &MainWindow::openFileDialogSelected);
+    emit newWelcomeTabSignal(welcomeTab);
+}
+
+NewFileTab *App::App::fileTabRequested()
+{
+    NewFileTab *tab = new NewFileTab();
+    tab->file = new Project::File();
+    return(tab);
+}
+
+void App::App::fileStarted()
+{
+    NewFileTab *tab = fileTabRequested();
+    tab->file->setPath("newFile");
+    tab->file->setFilename("newFile");
+    emit newFileTabSignal(tab);
 }
 
 void App::App::fileOpened(std::filesystem::path *path)
@@ -29,16 +67,11 @@ void App::App::fileOpened(std::filesystem::path *path)
     }
     else
     {
-        emit fileOpenedSignal(path);
+        NewFileTab *tab = fileTabRequested();
+        tab->file->setPath(path->c_str());
+        tab->file->setFilename(path->filename().c_str());
+        tab->file->setFileText(tab->file->loadFile());
+        emit newFileTabSignal(tab);
     }
 }
 
-void App::App::showMainWindow()
-{
-    mainWindow = new MainWindow();
-    connect(mainWindow, &MainWindow::openFileDialogSelectedSignal, this, &App::showLoadFileDialogWindow);
-    connect(this, &App::fileOpenedSignal, mainWindow, &MainWindow::fileOpened);
-    connect(this, &App::projectOpenedSignal, mainWindow, &MainWindow::projectOpened);
-    connect(mainWindow, &MainWindow::startNewProjectSelectedSignal, this, &App::showNewProjectWindow);
-    mainWindow->showMaximized();
-}

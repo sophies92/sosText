@@ -8,10 +8,13 @@
 #include <filesystem>
 #include <fstream>
 
+#include <QString>
+
 namespace Project
 {
     class File
     {
+        #define MAX_FILE_LENGTH 10000
         // Public Variables
         public:
 
@@ -29,10 +32,14 @@ namespace Project
         std::filesystem::path *getPath();
         void setPath(std::filesystem::path newPath);
 
-        std::filesystem::path *getfilename();
+        std::filesystem::path *getFilename();
         void setFilename(std::filesystem::path newFilename);
 
-        std::string *loadFileText();
+        std::string *getFileText();
+        void setFileText(std::string *newFileText);
+
+        std::string *loadFile();
+        void saveFile(QString *tabText);
 
         // Private Functions
         private:

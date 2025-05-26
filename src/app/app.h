@@ -37,19 +37,24 @@ namespace App
 
         // Public Slots
         public slots:
-        void showLoadFileDialogWindow();
-        void showNewProjectWindow();
+        void showMainWindow();
+        void openFileDialogRequested();
+        void newProjectWindowRequested();
+        void welcomeTabRequested();
+        NewFileTab *fileTabRequested();
+
+        void fileStarted();
         void fileOpened(std::filesystem::path *path);
 
         // Signals
         signals:
-        void fileOpenedSignal(std::filesystem::path *path);
+        void fileStartedSignal();
+        void fileOpenedSignal(NewFileTab *tab);
         void projectOpenedSignal(std::filesystem::path *path);
+        void fileSavedSignal();
 
-        // Private Functions
-        private:
-        void showMainWindow();
-        
+        void newWelcomeTabSignal(WelcomeTab *tab);
+        void newFileTabSignal(NewFileTab *tab);
     };
 }
 

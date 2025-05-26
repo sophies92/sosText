@@ -8,6 +8,8 @@
 
 #include <QWidget>
 
+#include "../newFileTab/newFileTab.h"
+
 namespace Ui
 {
     class WelcomeTab;
