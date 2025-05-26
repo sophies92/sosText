@@ -4,6 +4,8 @@
 #ifndef FILE_H
 #define FILE_H
 
+#define MAX_FILE_LENGTH 256000
+
 #include <string>
 #include <filesystem>
 #include <fstream>
@@ -14,7 +16,6 @@ namespace Project
 {
     class File
     {
-        #define MAX_FILE_LENGTH 256000
         // Public Variables
         public:
 

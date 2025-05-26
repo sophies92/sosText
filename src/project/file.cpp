@@ -48,9 +48,11 @@ std::string *Project::File::loadFile()
 {
     delete fileText;
     fileText = new std::string();
+    char text[MAX_FILE_LENGTH];
     std::fstream fs;
     fs.open(path->c_str());
-    fs.read(fileText->data(), MAX_FILE_LENGTH);
+    fs.read(text, MAX_FILE_LENGTH);
+    fileText->assign(text);
     fs.close();
     return(fileText);
 }
