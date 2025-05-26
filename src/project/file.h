@@ -14,7 +14,7 @@ namespace Project
 {
     class File
     {
-        #define MAX_FILE_LENGTH 10000
+        #define MAX_FILE_LENGTH 256000
         // Public Variables
         public:
 

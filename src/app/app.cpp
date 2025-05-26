@@ -70,7 +70,6 @@ void App::App::fileOpened(std::filesystem::path *path)
         NewFileTab *tab = fileTabRequested();
         tab->file->setPath(path->c_str());
         tab->file->setFilename(path->filename().c_str());
-        tab->file->setFileText(tab->file->loadFile());
         emit newFileTabSignal(tab);
     }
 }
