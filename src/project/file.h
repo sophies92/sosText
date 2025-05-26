@@ -32,7 +32,7 @@ namespace Project
         std::filesystem::path *getfilename();
         void setFilename(std::filesystem::path newFilename);
 
-        std::string *setFileText();
+        std::string *loadFileText();
 
         // Private Functions
         private:

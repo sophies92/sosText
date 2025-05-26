@@ -34,7 +34,7 @@ void Project::File::setFilename(std::filesystem::path newFilename)
     this->filename = new std::filesystem::path(newFilename);
 }
 
-std::string *Project::File::setFileText()
+std::string *Project::File::loadFileText()
 {
     delete fileText;
     fileText = new std::string();

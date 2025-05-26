@@ -69,7 +69,7 @@ void MainWindow::addNewFileTab(Project::File *file)
 {
     NewFileTab *newFileTab = new NewFileTab();
     // TODO set file text
-    newFileTab->textEdit->setText(file->setFileText()->c_str());
+    newFileTab->textEdit->setText(file->loadFileText()->c_str());
     int tabIndex = ui->filesTabs->addTab(newFileTab, file->getfilename()->c_str());
     ui->filesTabs->setCurrentIndex(tabIndex);
 }
