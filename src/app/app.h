@@ -7,6 +7,7 @@
 #define APP_H
 
 #include <iostream>
+#include <filesystem>
 
 #include <QObject>
 
@@ -38,11 +39,12 @@ namespace App
         public slots:
         void showLoadFileDialogWindow();
         void showNewProjectWindow();
-        void fileOpened(std::string *path);
+        void fileOpened(std::filesystem::path *path);
 
         // Signals
         signals:
-        void fileOpenedSignal(std::string *path);
+        void fileOpenedSignal(std::filesystem::path *path);
+        void projectOpenedSignal(std::filesystem::path *path);
 
         // Private Functions
         private:

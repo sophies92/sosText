@@ -39,7 +39,8 @@ class MainWindow : public QMainWindow
     void startNewProjectSelected();
     void openFileDialogSelected();
 
-    void fileOpened(std::string *path);
+    void fileOpened(std::filesystem::path *path);
+    void projectOpened(std::filesystem::path *path);
 
     signals:
     void openFileDialogSelectedSignal();

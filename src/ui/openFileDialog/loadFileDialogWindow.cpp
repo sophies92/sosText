@@ -8,7 +8,7 @@ LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project
     connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &LoadFileDialogWindow::close);
     connect(ui->directories, &QTreeView::clicked, this, &LoadFileDialogWindow::onDirListClick);
 
-    path = new std::string("/");
+    path = new std::filesystem::path("/");
     filesModel = new QFileSystemModel();
     filesModel->setRootPath(ui->filepath->toPlainText());
     ui->directories->setModel(filesModel);

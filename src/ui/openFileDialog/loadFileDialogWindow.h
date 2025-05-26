@@ -30,7 +30,7 @@ class LoadFileDialogWindow : public QDialog
     // Private variables
     Ui::LoadFileDialogWindow *ui;
 
-    std::string *path;
+    std::filesystem::path *path;
     QFileSystemModel *filesModel;
 
     // Public functions
@@ -44,7 +44,7 @@ class LoadFileDialogWindow : public QDialog
     void openFileButton();
 
     signals:
-    void fileOpened(std::string *path);
+    void fileOpened(std::filesystem::path *path);
 
     // Private functions
     private:

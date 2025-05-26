@@ -37,7 +37,7 @@ void MainWindow::closeTab(int index)
 void MainWindow::newFileStarted()
 {
     Project::File *file = new Project::File();
-    file->setPath("newFile");
+    file->setPath("");
     addNewFileTab(file);
 }
 
@@ -51,18 +51,25 @@ void MainWindow::openFileDialogSelected()
     emit openFileDialogSelectedSignal();
 }
 
-void MainWindow::fileOpened(std::string *path)
+void MainWindow::fileOpened(std::filesystem::path *path)
 {
     Project::File *file = new Project::File();
     file->setPath(*path);
+    file->setFilename(path->filename());
     addNewFileTab(file);
+}
+
+void MainWindow::projectOpened(std::filesystem::path *path)
+{
+    Project::Project *project = new Project::Project();
+    // TODO add project to main screen
 }
 
 void MainWindow::addNewFileTab(Project::File *file)
 {
     NewFileTab *newFileTab = new NewFileTab();
     // TODO set file text
-    // newFileTab->textEdit->setText();
-    int tabIndex = ui->filesTabs->addTab(newFileTab, file->getPath()->c_str());
+    newFileTab->textEdit->setText(file->setFileText()->c_str());
+    int tabIndex = ui->filesTabs->addTab(newFileTab, file->getfilename()->c_str());
     ui->filesTabs->setCurrentIndex(tabIndex);
 }
