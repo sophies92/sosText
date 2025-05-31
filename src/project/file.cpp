@@ -10,6 +10,8 @@ Project::File::File()
 Project::File::~File()
 {
     delete this->path;
+    delete this->filename;
+    delete this ->fileText;
 }
 
 std::filesystem::path *Project::File::getPath()
@@ -50,6 +52,7 @@ std::string *Project::File::loadFile()
     fileText = new std::string();
     char text[MAX_FILE_LENGTH];
     std::fstream fs;
+    fflush(stdin);
     fs.open(path->c_str());
     fs.read(text, MAX_FILE_LENGTH);
     fileText->assign(text);
