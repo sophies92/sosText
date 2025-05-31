@@ -48,6 +48,7 @@ void Project::File::setFileText(std::string *newFileText)
 
 std::string *Project::File::loadFile()
 {
+    // BUG text not clearing????
     delete fileText;
     fileText = new std::string();
     char text[MAX_FILE_LENGTH];
