@@ -22,6 +22,11 @@ void MainWindow::addNewWelcomeTab(WelcomeTab *tab)
     ui->filesTabs->setCurrentIndex(index);
 }
 
+Ui::MainWindow *MainWindow::getUi()
+{
+    return(ui);
+}
+
 void MainWindow::addNewFileTab(NewFileTab *tab)
 {
     int tabIndex = ui->filesTabs->addTab(tab, tab->file->getFilename()->c_str());
@@ -30,8 +35,8 @@ void MainWindow::addNewFileTab(NewFileTab *tab)
 
 void MainWindow::closeTab(int index)
 {
+    // TODO more delete
     ui->filesTabs->removeTab(index);
-    emit tabClosedSignal(index);
 }
 
 void MainWindow::startNewProjectSelected()
@@ -56,6 +61,8 @@ void MainWindow::projectOpened(std::filesystem::path *path)
 void MainWindow::fileSaved()
 {
     // TODO save stuff happens here - need to call save on current tab
+    NewFileTab *tab = dynamic_cast<NewFileTab*>(ui->filesTabs->currentWidget());
+    tab->file->saveFile(tab->textEdit->toPlainText());
 }
 
 

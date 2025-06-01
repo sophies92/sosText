@@ -9,6 +9,7 @@
 #include <string>
 #include <filesystem>
 #include <fstream>
+#include <iostream>
 
 #include <QString>
 
@@ -40,7 +41,7 @@ namespace Project
         void setFileText(std::string *newFileText);
 
         std::string *loadFile();
-        void saveFile(QString *tabText);
+        void saveFile(QString tabText);
 
         // Private Functions
         private:

@@ -26,7 +26,6 @@ namespace App
         // Public Variables
         public:
         MainWindow *mainWindow;
-        std::vector<QWidget*> *openFiles;
         LoadFileDialogWindow *loadFileDialogWindow;
 
         // Private Variables
@@ -44,7 +43,6 @@ namespace App
         void newProjectWindowRequested();
         void welcomeTabRequested();
         NewFileTab *fileTabRequested();
-        void tabClosed(int index);
 
         void fileStarted();
         void fileOpened(std::filesystem::path *path);
@@ -54,7 +52,6 @@ namespace App
         void fileStartedSignal();
         void fileOpenedSignal(NewFileTab *tab);
         void projectOpenedSignal(std::filesystem::path *path);
-        void fileSavedSignal();
 
         void newWelcomeTabSignal(WelcomeTab *tab);
         void newFileTabSignal(NewFileTab *tab);

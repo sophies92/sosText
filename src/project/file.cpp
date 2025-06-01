@@ -59,17 +59,18 @@ std::string *Project::File::loadFile()
     return(fileText);
 }
 
-void Project::File::saveFile(QString *tabText)
+void Project::File::saveFile(QString tabText)
 {
-    if(tabText->toStdString().c_str() != fileText->c_str())
+    if(tabText.toStdString().c_str() != fileText->c_str())
     {
         if(std::filesystem::exists(path->c_str()))
         {
             // TODO needs file backup before overwrite
             std::fstream fs;
             fs.open(path->c_str());
-            fs.write(tabText->toStdString().c_str(), MAX_FILE_LENGTH);
+            fs.write(tabText.toStdString().c_str(), MAX_FILE_LENGTH);
             fs.close();
+            std::cout << "saved" << std::endl;
         }
         else
         {

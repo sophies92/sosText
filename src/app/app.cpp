@@ -2,13 +2,12 @@
 
 App::App::App(QObject *parent) : QObject()
 {
-    openFiles = new std::vector<QWidget*>();
     showMainWindow();
 }
 
 App::App::~App()
 {
-    delete openFiles;
+    
 }
 
 void App::App::showMainWindow()
@@ -18,7 +17,6 @@ void App::App::showMainWindow()
     connect(mainWindow, &MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
     connect(mainWindow, &MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
     connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileTabRequested);
-    connect(mainWindow, &MainWindow::tabClosedSignal, this, &App::tabClosed);
     connect(this, &App::newWelcomeTabSignal, mainWindow, &MainWindow::addNewWelcomeTab);
     connect(this, &App::newFileTabSignal, mainWindow, &MainWindow::addNewFileTab);
     mainWindow->showMaximized();
@@ -44,7 +42,6 @@ void App::App::welcomeTabRequested()
     connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, mainWindow, &MainWindow::openFileDialogSelected);
     connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &MainWindow::startNewProjectSelected);
     connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &MainWindow::openFileDialogSelected);
-    openFiles->push_back(welcomeTab);
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
@@ -54,18 +51,11 @@ NewFileTab *App::App::fileTabRequested()
     return(tab);
 }
 
-void App::App::tabClosed(int index)
-{
-    delete openFiles->at(index);
-    openFiles->erase(openFiles->begin() +index);
-}
-
 void App::App::fileStarted()
 {
     NewFileTab *tab = fileTabRequested();
     tab->file->setPath("newFile");
     tab->file->setFilename("newFile");
-    openFiles->push_back(tab);
     emit newFileTabSignal(tab);
 }
 
@@ -82,7 +72,6 @@ void App::App::fileOpened(std::filesystem::path *path)
         tab->file->setFilename(path->filename().c_str());
         tab->file->setFileText(tab->file->loadFile());
         tab->textEdit->setText(tab->file->getFileText()->c_str());
-        openFiles->push_back(tab);
         emit newFileTabSignal(tab);
     }
 }
