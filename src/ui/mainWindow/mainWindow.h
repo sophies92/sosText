@@ -46,6 +46,7 @@ class MainWindow : public QMainWindow
     void projectOpened(std::filesystem::path *path);
 
     void fileSaved();
+    void allFilesSaved();
 
     signals:
     void requestOpenFileDialogSignal();
