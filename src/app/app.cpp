@@ -45,7 +45,7 @@ void App::App::welcomeTabRequested()
     connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &MainWindow::startNewProjectSelected);
     connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &MainWindow::openFileDialogSelected);
     openFiles->push_back(welcomeTab);
-    emit newWelcomeTabSignal(welcomeTab);
+    emit newWelcomeTabSignal(welcomeTab); 
 }
 
 NewFileTab *App::App::fileTabRequested()
