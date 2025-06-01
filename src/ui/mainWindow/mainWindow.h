@@ -61,6 +61,10 @@ class MainWindow : public QMainWindow
     void allFilesSaved();
 
     signals:
+    /**
+     * @fn requestOpenFileDialogSignal()
+     * @brief Send a request for the Open-File Dialog window to be shown.
+     */
     void requestOpenFileDialogSignal();
     void requestNewProjectSignal();
     void requestWelcomeTabSignal();
