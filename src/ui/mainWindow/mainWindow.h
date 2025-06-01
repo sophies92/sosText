@@ -47,6 +47,11 @@ class MainWindow : public QMainWindow
 
     // Public Slots
     public slots:
+    /**
+     * @fn addNewWelcomeTab(WelcomeTab *tab)
+     * @brief Adds a new WelcomeTab to the file viewer.
+     * @param tab A pointer to the tab to be added.
+     */
     void addNewWelcomeTab(WelcomeTab *tab);
     void addNewFileTab(NewFileTab *tab);
     void closeTab(int index);
