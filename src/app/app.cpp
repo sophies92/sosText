@@ -51,7 +51,6 @@ void App::App::welcomeTabRequested()
 NewFileTab *App::App::fileTabRequested()
 {
     NewFileTab *tab = new NewFileTab();
-    std::cout << openFiles->size() << std::endl;
     return(tab);
 }
 
