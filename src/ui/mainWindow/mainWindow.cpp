@@ -54,7 +54,7 @@ void MainWindow::projectOpened(std::filesystem::path *path)
 
 void MainWindow::fileSaved()
 {
-    
+    // TODO save stuff happens here - need to call save on current tab
 }
 
 

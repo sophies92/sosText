@@ -47,7 +47,6 @@ void App::App::welcomeTabRequested()
 NewFileTab *App::App::fileTabRequested()
 {
     NewFileTab *tab = new NewFileTab();
-    tab->file = new Project::File();
     return(tab);
 }
 
@@ -71,7 +70,6 @@ void App::App::fileOpened(std::filesystem::path *path)
         tab->file->setPath(path->c_str());
         tab->file->setFilename(path->filename().c_str());
         tab->file->setFileText(tab->file->loadFile());
-        tab->textEdit->clear();
         tab->textEdit->setText(tab->file->getFileText()->c_str());
         emit newFileTabSignal(tab);
     }

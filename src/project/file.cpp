@@ -50,7 +50,7 @@ std::string *Project::File::loadFile()
 {
     delete fileText;
     fileText = new std::string();
-    std::ifstream fs;
+    std::fstream fs;
     std::stringstream ss;
     fs.open(path->c_str());
     ss << fs.rdbuf();
@@ -63,9 +63,17 @@ void Project::File::saveFile(QString *tabText)
 {
     if(tabText->toStdString().c_str() != fileText->c_str())
     {
-        std::fstream fs;
-        fs.open(path->c_str());
-        fs.write(tabText->toStdString().c_str(), MAX_FILE_LENGTH);
-        fs.close();
+        if(std::filesystem::exists(path->c_str()))
+        {
+            // TODO needs file backup before overwrite
+            std::fstream fs;
+            fs.open(path->c_str());
+            fs.write(tabText->toStdString().c_str(), MAX_FILE_LENGTH);
+            fs.close();
+        }
+        else
+        {
+            // TODO show new file (save as) dialog
+        }
     }
 }
