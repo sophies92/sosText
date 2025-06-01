@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <filesystem>
+#include <vector>
 
 #include <QObject>
 
@@ -25,6 +26,7 @@ namespace App
         // Public Variables
         public:
         MainWindow *mainWindow;
+        std::vector<QWidget*> *openFiles;
         LoadFileDialogWindow *loadFileDialogWindow;
 
         // Private Variables
@@ -42,6 +44,7 @@ namespace App
         void newProjectWindowRequested();
         void welcomeTabRequested();
         NewFileTab *fileTabRequested();
+        void tabClosed(int index);
 
         void fileStarted();
         void fileOpened(std::filesystem::path *path);

@@ -31,6 +31,7 @@ void MainWindow::addNewFileTab(NewFileTab *tab)
 void MainWindow::closeTab(int index)
 {
     ui->filesTabs->removeTab(index);
+    emit tabClosedSignal(index);
 }
 
 void MainWindow::startNewProjectSelected()

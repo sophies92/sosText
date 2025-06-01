@@ -52,6 +52,7 @@ class MainWindow : public QMainWindow
     void requestNewProjectSignal();
     void requestWelcomeTabSignal();
     void requestFileTabSignal();
+    void tabClosedSignal(int index);
 
     private:
     
