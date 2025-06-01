@@ -65,5 +65,6 @@ void MainWindow::fileSaved()
     tab->file->saveFile(tab->textEdit->toPlainText());
 }
 
-
-
+void MainWindow::allFilesSaved()
+{
+}

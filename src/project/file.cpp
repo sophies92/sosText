@@ -68,7 +68,7 @@ void Project::File::saveFile(QString tabText)
             // TODO needs file backup before overwrite
             std::fstream fs;
             fs.open(path->c_str());
-            fs.write(tabText.toStdString().c_str(), MAX_FILE_LENGTH);
+            fs.write(tabText.toStdString().c_str(), tabText.length() +1);
             fs.close();
             std::cout << "saved" << std::endl;
         }
