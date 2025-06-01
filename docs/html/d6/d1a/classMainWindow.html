@@ -63,6 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d9/dbe/classMainWindow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MainWindow Class Reference</div></div>
@@ -87,12 +89,87 @@ Collaboration diagram for MainWindow:</div>
 </map>
 <center><span class="legend">[<a href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ae1aa7e235f2e303f4b68ac9626ee9567"><td class="memItemLeft" align="right" valign="top"><a id="ae1aa7e235f2e303f4b68ac9626ee9567" name="ae1aa7e235f2e303f4b68ac9626ee9567"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addNewWelcomeTab</b> (<a class="el" href="../../d4/d70/classWelcomeTab.html">WelcomeTab</a> *tab)</td></tr>
+<tr class="separator:ae1aa7e235f2e303f4b68ac9626ee9567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b89034eddb56c4c29ff57f67dfcb7dd"><td class="memItemLeft" align="right" valign="top"><a id="a8b89034eddb56c4c29ff57f67dfcb7dd" name="a8b89034eddb56c4c29ff57f67dfcb7dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addNewFileTab</b> (<a class="el" href="../../d2/daa/classNewFileTab.html">NewFileTab</a> *tab)</td></tr>
+<tr class="separator:a8b89034eddb56c4c29ff57f67dfcb7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767a4abc61dda0a39b7fd74d515762cf"><td class="memItemLeft" align="right" valign="top"><a id="a767a4abc61dda0a39b7fd74d515762cf" name="a767a4abc61dda0a39b7fd74d515762cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeTab</b> (int index)</td></tr>
+<tr class="separator:a767a4abc61dda0a39b7fd74d515762cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1c95223bf9d7361ec6190af66b09b9"><td class="memItemLeft" align="right" valign="top"><a id="a1c1c95223bf9d7361ec6190af66b09b9" name="a1c1c95223bf9d7361ec6190af66b09b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startNewProjectSelected</b> ()</td></tr>
+<tr class="separator:a1c1c95223bf9d7361ec6190af66b09b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebfdc23697b226422fb82081c13d5bf"><td class="memItemLeft" align="right" valign="top"><a id="a7ebfdc23697b226422fb82081c13d5bf" name="a7ebfdc23697b226422fb82081c13d5bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>openFileDialogSelected</b> ()</td></tr>
+<tr class="separator:a7ebfdc23697b226422fb82081c13d5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c15307ff62f0036af803bcdee96ff4c"><td class="memItemLeft" align="right" valign="top"><a id="a5c15307ff62f0036af803bcdee96ff4c" name="a5c15307ff62f0036af803bcdee96ff4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileOpened</b> (std::filesystem::path *path)</td></tr>
+<tr class="separator:a5c15307ff62f0036af803bcdee96ff4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cbf62123e742a8c181b75d445deee2"><td class="memItemLeft" align="right" valign="top"><a id="a67cbf62123e742a8c181b75d445deee2" name="a67cbf62123e742a8c181b75d445deee2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>projectOpened</b> (std::filesystem::path *path)</td></tr>
+<tr class="separator:a67cbf62123e742a8c181b75d445deee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610c7867be42913a6bab1939f3e63179"><td class="memItemLeft" align="right" valign="top"><a id="a610c7867be42913a6bab1939f3e63179" name="a610c7867be42913a6bab1939f3e63179"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileSaved</b> ()</td></tr>
+<tr class="separator:a610c7867be42913a6bab1939f3e63179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9e7fde427e98bd3b1d828b66ca0cd1"><td class="memItemLeft" align="right" valign="top"><a id="a5a9e7fde427e98bd3b1d828b66ca0cd1" name="a5a9e7fde427e98bd3b1d828b66ca0cd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>allFilesSaved</b> ()</td></tr>
+<tr class="separator:a5a9e7fde427e98bd3b1d828b66ca0cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a0e0dc847a4a40cf01b35d02a4ec221af"><td class="memItemLeft" align="right" valign="top"><a id="a0e0dc847a4a40cf01b35d02a4ec221af" name="a0e0dc847a4a40cf01b35d02a4ec221af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestOpenFileDialogSignal</b> ()</td></tr>
+<tr class="separator:a0e0dc847a4a40cf01b35d02a4ec221af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1f9aeb12438cd46c8c56c8e2f167b6"><td class="memItemLeft" align="right" valign="top"><a id="a1c1f9aeb12438cd46c8c56c8e2f167b6" name="a1c1f9aeb12438cd46c8c56c8e2f167b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestNewProjectSignal</b> ()</td></tr>
+<tr class="separator:a1c1f9aeb12438cd46c8c56c8e2f167b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf603265e8b35e84aedf45c47e39655d"><td class="memItemLeft" align="right" valign="top"><a id="adf603265e8b35e84aedf45c47e39655d" name="adf603265e8b35e84aedf45c47e39655d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestWelcomeTabSignal</b> ()</td></tr>
+<tr class="separator:adf603265e8b35e84aedf45c47e39655d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b55a0db20d8067b7bfc15106474665"><td class="memItemLeft" align="right" valign="top"><a id="ab6b55a0db20d8067b7bfc15106474665" name="ab6b55a0db20d8067b7bfc15106474665"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestFileTabSignal</b> ()</td></tr>
+<tr class="separator:ab6b55a0db20d8067b7bfc15106474665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top"><a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MainWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d1a/classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for the <a class="el" href="../../d6/d1a/classMainWindow.html">MainWindow</a> class.  <a href="../../d6/d1a/classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">More...</a><br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae560f8c66af6bc7dc502df5b9de25d40"><td class="memItemLeft" align="right" valign="top"><a id="ae560f8c66af6bc7dc502df5b9de25d40" name="ae560f8c66af6bc7dc502df5b9de25d40"></a>
+Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>getUi</b> ()</td></tr>
+<tr class="separator:ae560f8c66af6bc7dc502df5b9de25d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor for the <a class="el" href="../../d6/d1a/classMainWindow.html">MainWindow</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>A pointer to the parent QWidget. default = null </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/<a class="el" href="../../d2/d11/mainWindow_8h_source.html">mainWindow.h</a></li>
 <li>/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp</li>

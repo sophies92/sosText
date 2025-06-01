@@ -1,3 +1,8 @@
+/**
+ * @file mainWindow.h
+ * @brief
+ * @author Sophie Short
+ */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -17,18 +22,25 @@ namespace Ui
     class MainWindow;
 }
 
+/**
+ * @class MainWindow
+ * @brief
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-    // Public Variables
-
     // Private Variables
     private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui;                                             //!< a pointer to the UI element
 
     // Public Functions
     public:
+    /**
+     * @fn MainWindow(QWidget *parent = nullptr)
+     * @brief The constructor for the MainWindow class
+     * @param parent A pointer to the parent QWidget. default = null
+     */
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     Ui::MainWindow *getUi();

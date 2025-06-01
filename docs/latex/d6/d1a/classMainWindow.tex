@@ -18,15 +18,80 @@ Collaboration diagram for Main\+Window\+:\nopagebreak
 \includegraphics[width=167pt]{d2/d38/classMainWindow__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_ae1aa7e235f2e303f4b68ac9626ee9567}\label{classMainWindow_ae1aa7e235f2e303f4b68ac9626ee9567}} 
+void {\bfseries add\+New\+Welcome\+Tab} (\mbox{\hyperlink{classWelcomeTab}{Welcome\+Tab}} $\ast$tab)
+\item 
+\mbox{\Hypertarget{classMainWindow_a8b89034eddb56c4c29ff57f67dfcb7dd}\label{classMainWindow_a8b89034eddb56c4c29ff57f67dfcb7dd}} 
+void {\bfseries add\+New\+File\+Tab} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} $\ast$tab)
+\item 
+\mbox{\Hypertarget{classMainWindow_a767a4abc61dda0a39b7fd74d515762cf}\label{classMainWindow_a767a4abc61dda0a39b7fd74d515762cf}} 
+void {\bfseries close\+Tab} (int index)
+\item 
+\mbox{\Hypertarget{classMainWindow_a1c1c95223bf9d7361ec6190af66b09b9}\label{classMainWindow_a1c1c95223bf9d7361ec6190af66b09b9}} 
+void {\bfseries start\+New\+Project\+Selected} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_a7ebfdc23697b226422fb82081c13d5bf}\label{classMainWindow_a7ebfdc23697b226422fb82081c13d5bf}} 
+void {\bfseries open\+File\+Dialog\+Selected} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_a5c15307ff62f0036af803bcdee96ff4c}\label{classMainWindow_a5c15307ff62f0036af803bcdee96ff4c}} 
+void {\bfseries file\+Opened} (std\+::filesystem\+::path $\ast$path)
+\item 
+\mbox{\Hypertarget{classMainWindow_a67cbf62123e742a8c181b75d445deee2}\label{classMainWindow_a67cbf62123e742a8c181b75d445deee2}} 
+void {\bfseries project\+Opened} (std\+::filesystem\+::path $\ast$path)
+\item 
+\mbox{\Hypertarget{classMainWindow_a610c7867be42913a6bab1939f3e63179}\label{classMainWindow_a610c7867be42913a6bab1939f3e63179}} 
+void {\bfseries file\+Saved} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_a5a9e7fde427e98bd3b1d828b66ca0cd1}\label{classMainWindow_a5a9e7fde427e98bd3b1d828b66ca0cd1}} 
+void {\bfseries all\+Files\+Saved} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a0e0dc847a4a40cf01b35d02a4ec221af}\label{classMainWindow_a0e0dc847a4a40cf01b35d02a4ec221af}} 
+void {\bfseries request\+Open\+File\+Dialog\+Signal} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_a1c1f9aeb12438cd46c8c56c8e2f167b6}\label{classMainWindow_a1c1f9aeb12438cd46c8c56c8e2f167b6}} 
+void {\bfseries request\+New\+Project\+Signal} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_adf603265e8b35e84aedf45c47e39655d}\label{classMainWindow_adf603265e8b35e84aedf45c47e39655d}} 
+void {\bfseries request\+Welcome\+Tab\+Signal} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_ab6b55a0db20d8067b7bfc15106474665}\label{classMainWindow_ab6b55a0db20d8067b7bfc15106474665}} 
+void {\bfseries request\+File\+Tab\+Signal} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
-{\bfseries Main\+Window} (QWidget $\ast$parent=nullptr)
+\mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em The constructor for the \mbox{\hyperlink{classMainWindow}{Main\+Window}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae560f8c66af6bc7dc502df5b9de25d40}\label{classMainWindow_ae560f8c66af6bc7dc502df5b9de25d40}} 
+Ui\+::\+Main\+Window $\ast$ {\bfseries get\+Ui} ()
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+The constructor for the \mbox{\hyperlink{classMainWindow}{Main\+Window}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & A pointer to the parent QWidget. default = null \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/ui/main\+Window/main\+Window.\+h\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/ui/main\+Window/\mbox{\hyperlink{mainWindow_8h}{main\+Window.\+h}}\item 
 /home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/ui/main\+Window/main\+Window.\+cpp\end{DoxyCompactItemize}

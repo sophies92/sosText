@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d2/db7/classLoadFileDialogWindow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">LoadFileDialogWindow Class Reference</div></div>
@@ -90,18 +91,24 @@ Collaboration diagram for LoadFileDialogWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
+<tr class="memitem:aab6943207cc5a07ff09777888d9df7eb"><td class="memItemLeft" align="right" valign="top"><a id="aab6943207cc5a07ff09777888d9df7eb" name="aab6943207cc5a07ff09777888d9df7eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDirListClick</b> (QModelIndex index)</td></tr>
+<tr class="separator:aab6943207cc5a07ff09777888d9df7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8464b605241ac1f26b86d0be940bbaaa"><td class="memItemLeft" align="right" valign="top"><a id="a8464b605241ac1f26b86d0be940bbaaa" name="a8464b605241ac1f26b86d0be940bbaaa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>openFileButton</b> ()</td></tr>
 <tr class="separator:a8464b605241ac1f26b86d0be940bbaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114b3cf42df55e6713ef4fa60ad91876"><td class="memItemLeft" align="right" valign="top"><a id="a114b3cf42df55e6713ef4fa60ad91876" name="a114b3cf42df55e6713ef4fa60ad91876"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>filesListItemClicked</b> (QListWidgetItem *listItem)</td></tr>
-<tr class="separator:a114b3cf42df55e6713ef4fa60ad91876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a03f5647156cedf0526efa73fd0dd8465"><td class="memItemLeft" align="right" valign="top"><a id="a03f5647156cedf0526efa73fd0dd8465" name="a03f5647156cedf0526efa73fd0dd8465"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fileOpened</b> (std::filesystem::path *path)</td></tr>
+<tr class="separator:a03f5647156cedf0526efa73fd0dd8465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87c005b9442435d5d26de0c7813ac27f"><td class="memItemLeft" align="right" valign="top"><a id="a87c005b9442435d5d26de0c7813ac27f" name="a87c005b9442435d5d26de0c7813ac27f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFileDialogWindow</b> (QMainWindow *parent=nullptr)</td></tr>
-<tr class="separator:a87c005b9442435d5d26de0c7813ac27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bbd01aeec47d4b23d46a1953c1680c"><td class="memItemLeft" align="right" valign="top"><a id="a29bbd01aeec47d4b23d46a1953c1680c" name="a29bbd01aeec47d4b23d46a1953c1680c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFileDialogWindow</b> (QMainWindow *parent=nullptr, <a class="el" href="../../dc/d20/classProject_1_1Project.html">Project::Project</a> *currentProject=nullptr)</td></tr>
+<tr class="separator:a29bbd01aeec47d4b23d46a1953c1680c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/<a class="el" href="../../d2/d58/loadFileDialogWindow_8h_source.html">loadFileDialogWindow.h</a></li>

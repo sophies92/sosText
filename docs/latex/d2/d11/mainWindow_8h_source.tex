@@ -1,40 +1,66 @@
 \hypertarget{mainWindow_8h_source}{}\doxysection{main\+Window.\+h}
 \label{mainWindow_8h_source}\index{/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.h@{/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.h}}
-
+\mbox{\hyperlink{mainWindow_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QMainWindow>}}
-\DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{namespace }Ui}
-\DoxyCodeLine{7 \{}
-\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}};}
-\DoxyCodeLine{9 \}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{10 }
-\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}} : \textcolor{keyword}{public} QMainWindow}
-\DoxyCodeLine{12 \{}
-\DoxyCodeLine{13     Q\_OBJECT}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15     \textcolor{comment}{// Public Variables}}
-\DoxyCodeLine{16 }
-\DoxyCodeLine{17     \textcolor{comment}{// Private Variables}}
-\DoxyCodeLine{18     \textcolor{keyword}{private}:}
-\DoxyCodeLine{19     Ui::MainWindow *ui;}
-\DoxyCodeLine{20 }
-\DoxyCodeLine{21     \textcolor{comment}{// Public Functions}}
-\DoxyCodeLine{22     \textcolor{keyword}{public}:}
-\DoxyCodeLine{23     \mbox{\hyperlink{classMainWindow}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{24     \mbox{\hyperlink{classMainWindow}{\string~MainWindow}}();}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26     \textcolor{comment}{// Public Slots}}
-\DoxyCodeLine{27     \textcolor{keyword}{public} slots:}
-\DoxyCodeLine{28 }
-\DoxyCodeLine{29     \textcolor{comment}{// Private functions}}
-\DoxyCodeLine{30     \textcolor{keyword}{private}:}
-\DoxyCodeLine{31 }
-\DoxyCodeLine{32 \};}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../openFileDialog/loadFileDialogWindow.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../filesTabs/welcomeTab/welcomeTab.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../filesTabs/newFileTab/newFileTab.h"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../../project/file.h"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }Ui}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}};}
+\DoxyCodeLine{23 \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     Q\_OBJECT}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{comment}{// Private Variables}}
+\DoxyCodeLine{34     \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     Ui::MainWindow *ui;                                             }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{// Public Functions}}
+\DoxyCodeLine{38     \textcolor{keyword}{public}:}
+\DoxyCodeLine{44     \mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{45     \mbox{\hyperlink{classMainWindow}{\string~MainWindow}}();}
+\DoxyCodeLine{46     Ui::MainWindow *getUi();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{comment}{// Public Slots}}
+\DoxyCodeLine{49     \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} addNewWelcomeTab(\mbox{\hyperlink{classWelcomeTab}{WelcomeTab}} *tab);}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} addNewFileTab(\mbox{\hyperlink{classNewFileTab}{NewFileTab}} *tab);}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} closeTab(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} startNewProjectSelected();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} openFileDialogSelected();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} fileOpened(std::filesystem::path *path);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} projectOpened(std::filesystem::path *path);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} fileSaved();}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} allFilesSaved();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     signals:}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} requestOpenFileDialogSignal();}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} requestNewProjectSignal();}
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} requestWelcomeTabSignal();}
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} requestFileTabSignal();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keyword}{private}:}
+\DoxyCodeLine{70     }
+\DoxyCodeLine{71 \};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
 
 \end{DoxyCode}
