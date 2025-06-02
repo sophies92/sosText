@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/sosText_autogen/mocs_compilation.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/mocs_compilation.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/main.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/main.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/main.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/app/app.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/app/app.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/app/app.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/project/project.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/project/project.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/project/file.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/project/file.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/ui/mainWindow/mainWindow.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/ui/mainWindow/mainWindow.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/ui/filesTabs/welcomeTab/welcomeTab.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/welcomeTab/welcomeTab.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/welcomeTab/welcomeTab.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/ui/filesTabs/newFileTab/newFileTab.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/newFileTab/newFileTab.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/newFileTab/newFileTab.cpp"
+},
+{
+  "directory": "/home/sophie/Projects/cpp/sosText/sosText/bin",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/sophie/Projects/cpp/sosText/sosText/bin/sosText_autogen/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtWidgets -isystem /opt/qt6/6.6.0/gcc_64/include -isystem /opt/qt6/6.6.0/gcc_64/include/QtCore -isystem /opt/qt6/6.6.0/gcc_64/mkspecs/linux-g++ -isystem /opt/qt6/6.6.0/gcc_64/include/QtGui -g -fPIC -std=gnu++17 -o CMakeFiles/sosText.dir/src/ui/openFileDialog/loadFileDialogWindow.cpp.o -c /home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.cpp",
+  "file": "/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.cpp"
+}
+]
