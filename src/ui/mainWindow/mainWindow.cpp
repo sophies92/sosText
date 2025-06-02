@@ -57,9 +57,11 @@ void MainWindow::projectOpened(std::filesystem::path *path)
 
 void MainWindow::fileSaved()
 {
-    // TODO save stuff happens here - need to call save on current tab
-    NewFileTab *tab = dynamic_cast<NewFileTab*>(ui->filesTabs->currentWidget());
-    tab->file->saveFile(tab->textEdit->toPlainText());
+    if(ui->filesTabs->currentWidget()->objectName() != "WelcomeTab")
+    {
+        NewFileTab *tab = dynamic_cast<NewFileTab*>(ui->filesTabs->currentWidget());
+        tab->file->saveFile(tab->textEdit->toPlainText());
+    }    
 }
 
 void MainWindow::allFilesSaved()
