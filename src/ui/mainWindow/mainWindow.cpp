@@ -4,10 +4,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(), ui(new Ui::MainWindow)
 {
     MainWindow::ui->setupUi(this);
-    connect(ui->actionOpen_File, &QAction::triggered , this, &MainWindow::openFileDialogSelected);
-    connect(ui->actionSave_File, &QAction::triggered, this, &MainWindow::fileSaved);
-    connect(ui->filesTabs, &QTabWidget::tabCloseRequested, this, &MainWindow::closeTab);
-    connect(ui->actionExit, &QAction::triggered, this, &MainWindow::close);
+    connectActions();
 }
 
 MainWindow::~MainWindow()
@@ -67,4 +64,24 @@ void MainWindow::fileSaved()
 
 void MainWindow::allFilesSaved()
 {
+}
+
+void MainWindow::connectActions()
+{
+    connect(ui->actionShow_Welcome_Tab, &QAction::triggered, this, &MainWindow::requestWelcomeTabSignal);
+
+    connect(ui->action_New_File, &QAction::triggered, this, &MainWindow::requestFileTabSignal);
+    connect(ui->actionNew_Project, &QAction::triggered, this, &MainWindow::requestNewProjectSignal);
+
+    connect(ui->actionOpen_File, &QAction::triggered, this, &MainWindow::openFileDialogSelected);
+
+    connect(ui->actionSave_File, &QAction::triggered, this, &MainWindow::fileSaved);
+    // connect(ui->actionSave_As, &QAction::triggered, this, &MainWindow);
+    // connect(ui->actionSave_All, &QAction::triggered, this, &MainWindow);
+
+    // connect(ui->actionSettings_Preferences, &QAction::triggered, this, &MainWindow);
+
+    connect(ui->actionE_xit, &QAction::triggered, this, &MainWindow::close);
+    
+    connect(ui->filesTabs, &QTabWidget::tabCloseRequested, this, &MainWindow::closeTab);
 }

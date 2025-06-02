@@ -76,7 +76,7 @@ class MainWindow : public QMainWindow
     void requestFileTabSignal();
 
     private:
-    
+    void connectActions();
 };
 
 #endif // MAINWINDOW_H

@@ -33,7 +33,13 @@ class Ui_MainWindow
 public:
     QAction *actionOpen_File;
     QAction *actionSave_File;
-    QAction *actionExit;
+    QAction *actionShow_Welcome_Tab;
+    QAction *action_New_File;
+    QAction *actionSave_As;
+    QAction *actionSettings_Preferences;
+    QAction *actionNew_Project;
+    QAction *actionSave_All;
+    QAction *actionE_xit;
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QSplitter *splitterTopBottom;
@@ -71,8 +77,20 @@ public:
         actionOpen_File->setObjectName("actionOpen_File");
         actionSave_File = new QAction(MainWindow);
         actionSave_File->setObjectName("actionSave_File");
-        actionExit = new QAction(MainWindow);
-        actionExit->setObjectName("actionExit");
+        actionShow_Welcome_Tab = new QAction(MainWindow);
+        actionShow_Welcome_Tab->setObjectName("actionShow_Welcome_Tab");
+        action_New_File = new QAction(MainWindow);
+        action_New_File->setObjectName("action_New_File");
+        actionSave_As = new QAction(MainWindow);
+        actionSave_As->setObjectName("actionSave_As");
+        actionSettings_Preferences = new QAction(MainWindow);
+        actionSettings_Preferences->setObjectName("actionSettings_Preferences");
+        actionNew_Project = new QAction(MainWindow);
+        actionNew_Project->setObjectName("actionNew_Project");
+        actionSave_All = new QAction(MainWindow);
+        actionSave_All->setObjectName("actionSave_All");
+        actionE_xit = new QAction(MainWindow);
+        actionE_xit->setObjectName("actionE_xit");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         sizePolicy.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
@@ -115,7 +133,7 @@ public:
         projectBar->addItem(pageProjectView, QString::fromUtf8("Project: $PROJECTNAME"));
         pageSettings = new QWidget();
         pageSettings->setObjectName("pageSettings");
-        pageSettings->setGeometry(QRect(0, 0, 378, 338));
+        pageSettings->setGeometry(QRect(0, 0, 98, 28));
         projectBar->addItem(pageSettings, QString::fromUtf8("Settings"));
         splitterTopLeftRight->addWidget(projectBar);
         filesTabs = new QTabWidget(splitterTopLeftRight);
@@ -189,11 +207,20 @@ public:
 
         menubar->addAction(menuFile->menuAction());
         menubar->addAction(menuAbout->menuAction());
+        menuFile->addAction(actionShow_Welcome_Tab);
+        menuFile->addSeparator();
+        menuFile->addAction(action_New_File);
+        menuFile->addAction(actionNew_Project);
+        menuFile->addSeparator();
         menuFile->addAction(actionOpen_File);
         menuFile->addSeparator();
         menuFile->addAction(actionSave_File);
+        menuFile->addAction(actionSave_As);
+        menuFile->addAction(actionSave_All);
         menuFile->addSeparator();
-        menuFile->addAction(actionExit);
+        menuFile->addAction(actionSettings_Preferences);
+        menuFile->addSeparator();
+        menuFile->addAction(actionE_xit);
 
         retranslateUi(MainWindow);
 
@@ -208,15 +235,36 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "sosText", nullptr));
-        actionOpen_File->setText(QCoreApplication::translate("MainWindow", "Open File/Project", nullptr));
+        actionOpen_File->setText(QCoreApplication::translate("MainWindow", "&Open File/Project", nullptr));
 #if QT_CONFIG(shortcut)
         actionOpen_File->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+O", nullptr));
 #endif // QT_CONFIG(shortcut)
-        actionSave_File->setText(QCoreApplication::translate("MainWindow", "Save File", nullptr));
+        actionSave_File->setText(QCoreApplication::translate("MainWindow", "&Save", nullptr));
 #if QT_CONFIG(shortcut)
         actionSave_File->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+S", nullptr));
 #endif // QT_CONFIG(shortcut)
-        actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        actionShow_Welcome_Tab->setText(QCoreApplication::translate("MainWindow", "Show &Welcome Tab", nullptr));
+#if QT_CONFIG(shortcut)
+        actionShow_Welcome_Tab->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+W", nullptr));
+#endif // QT_CONFIG(shortcut)
+        action_New_File->setText(QCoreApplication::translate("MainWindow", "&New File", nullptr));
+#if QT_CONFIG(shortcut)
+        action_New_File->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+N", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionSave_As->setText(QCoreApplication::translate("MainWindow", "Save As", nullptr));
+#if QT_CONFIG(shortcut)
+        actionSave_As->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+S", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionSettings_Preferences->setText(QCoreApplication::translate("MainWindow", "Settings and &Preferences", nullptr));
+#if QT_CONFIG(shortcut)
+        actionSettings_Preferences->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+P", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionNew_Project->setText(QCoreApplication::translate("MainWindow", "New Project", nullptr));
+#if QT_CONFIG(shortcut)
+        actionNew_Project->setShortcut(QCoreApplication::translate("MainWindow", "Ctrl+Shift+N", nullptr));
+#endif // QT_CONFIG(shortcut)
+        actionSave_All->setText(QCoreApplication::translate("MainWindow", "Save All", nullptr));
+        actionE_xit->setText(QCoreApplication::translate("MainWindow", "E&xit", nullptr));
         projectBar->setItemText(projectBar->indexOf(pageProjectView), QCoreApplication::translate("MainWindow", "Project: $PROJECTNAME", nullptr));
         projectBar->setItemText(projectBar->indexOf(pageSettings), QCoreApplication::translate("MainWindow", "Settings", nullptr));
         consoleBar->setTabText(consoleBar->indexOf(tabConsole), QCoreApplication::translate("MainWindow", "Console", nullptr));

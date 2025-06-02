@@ -16,7 +16,7 @@ void App::App::showMainWindow()
     connect(mainWindow, &MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
     connect(mainWindow, &MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
     connect(mainWindow, &MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
-    connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileTabRequested);
+    connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileStarted);
     connect(this, &App::newWelcomeTabSignal, mainWindow, &MainWindow::addNewWelcomeTab);
     connect(this, &App::newFileTabSignal, mainWindow, &MainWindow::addNewFileTab);
     mainWindow->showMaximized();
