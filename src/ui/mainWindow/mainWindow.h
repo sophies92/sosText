@@ -56,9 +56,6 @@ class MainWindow : public QMainWindow
     void addNewFileTab(NewFileTab *tab);
     void closeTab(int index);
 
-    void startNewProjectSelected();
-    void openFileDialogSelected();
-
     void fileOpened(std::filesystem::path *path);
     void projectOpened(std::filesystem::path *path);
 

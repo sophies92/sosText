@@ -36,16 +36,6 @@ void MainWindow::closeTab(int index)
     ui->filesTabs->removeTab(index);
 }
 
-void MainWindow::startNewProjectSelected()
-{
-    emit requestNewProjectSignal();
-}
-
-void MainWindow::openFileDialogSelected()
-{
-    emit requestOpenFileDialogSignal();
-}
-
 void MainWindow::fileOpened(std::filesystem::path *path)
 {
 
@@ -75,7 +65,7 @@ void MainWindow::connectActions()
     connect(ui->action_New_File, &QAction::triggered, this, &MainWindow::requestFileTabSignal);
     connect(ui->actionNew_Project, &QAction::triggered, this, &MainWindow::requestNewProjectSignal);
 
-    connect(ui->actionOpen_File, &QAction::triggered, this, &MainWindow::openFileDialogSelected);
+    connect(ui->actionOpen_File, &QAction::triggered, this, &MainWindow::requestOpenFileDialogSignal);
 
     connect(ui->actionSave_File, &QAction::triggered, this, &MainWindow::fileSaved);
     // connect(ui->actionSave_As, &QAction::triggered, this, &MainWindow);

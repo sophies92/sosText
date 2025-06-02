@@ -52,8 +52,6 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "NewFileTab*",
     "closeTab",
     "index",
-    "startNewProjectSelected",
-    "openFileDialogSelected",
     "fileOpened",
     "std::filesystem::path*",
     "path",
@@ -63,7 +61,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[42];
+    uint offsetsAndSizes[38];
     char stringdata0[11];
     char stringdata1[28];
     char stringdata2[1];
@@ -77,14 +75,12 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata10[12];
     char stringdata11[9];
     char stringdata12[6];
-    char stringdata13[24];
+    char stringdata13[11];
     char stringdata14[23];
-    char stringdata15[11];
-    char stringdata16[23];
-    char stringdata17[5];
+    char stringdata15[5];
+    char stringdata16[14];
+    char stringdata17[10];
     char stringdata18[14];
-    char stringdata19[10];
-    char stringdata20[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -103,14 +99,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(156, 11),  // "NewFileTab*"
         QT_MOC_LITERAL(168, 8),  // "closeTab"
         QT_MOC_LITERAL(177, 5),  // "index"
-        QT_MOC_LITERAL(183, 23),  // "startNewProjectSelected"
-        QT_MOC_LITERAL(207, 22),  // "openFileDialogSelected"
-        QT_MOC_LITERAL(230, 10),  // "fileOpened"
-        QT_MOC_LITERAL(241, 22),  // "std::filesystem::path*"
-        QT_MOC_LITERAL(264, 4),  // "path"
-        QT_MOC_LITERAL(269, 13),  // "projectOpened"
-        QT_MOC_LITERAL(283, 9),  // "fileSaved"
-        QT_MOC_LITERAL(293, 13)   // "allFilesSaved"
+        QT_MOC_LITERAL(183, 10),  // "fileOpened"
+        QT_MOC_LITERAL(194, 22),  // "std::filesystem::path*"
+        QT_MOC_LITERAL(217, 4),  // "path"
+        QT_MOC_LITERAL(222, 13),  // "projectOpened"
+        QT_MOC_LITERAL(236, 9),  // "fileSaved"
+        QT_MOC_LITERAL(246, 13)   // "allFilesSaved"
     },
     "MainWindow",
     "requestOpenFileDialogSignal",
@@ -125,8 +119,6 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "NewFileTab*",
     "closeTab",
     "index",
-    "startNewProjectSelected",
-    "openFileDialogSelected",
     "fileOpened",
     "std::filesystem::path*",
     "path",
@@ -144,7 +136,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -152,21 +144,19 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   92,    2, 0x06,    1 /* Public */,
-       3,    0,   93,    2, 0x06,    2 /* Public */,
-       4,    0,   94,    2, 0x06,    3 /* Public */,
-       5,    0,   95,    2, 0x06,    4 /* Public */,
+       1,    0,   80,    2, 0x06,    1 /* Public */,
+       3,    0,   81,    2, 0x06,    2 /* Public */,
+       4,    0,   82,    2, 0x06,    3 /* Public */,
+       5,    0,   83,    2, 0x06,    4 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       6,    1,   96,    2, 0x0a,    5 /* Public */,
-       9,    1,   99,    2, 0x0a,    7 /* Public */,
-      11,    1,  102,    2, 0x0a,    9 /* Public */,
-      13,    0,  105,    2, 0x0a,   11 /* Public */,
-      14,    0,  106,    2, 0x0a,   12 /* Public */,
-      15,    1,  107,    2, 0x0a,   13 /* Public */,
-      18,    1,  110,    2, 0x0a,   15 /* Public */,
-      19,    0,  113,    2, 0x0a,   17 /* Public */,
-      20,    0,  114,    2, 0x0a,   18 /* Public */,
+       6,    1,   84,    2, 0x0a,    5 /* Public */,
+       9,    1,   87,    2, 0x0a,    7 /* Public */,
+      11,    1,   90,    2, 0x0a,    9 /* Public */,
+      13,    1,   93,    2, 0x0a,   11 /* Public */,
+      16,    1,   96,    2, 0x0a,   13 /* Public */,
+      17,    0,   99,    2, 0x0a,   15 /* Public */,
+      18,    0,  100,    2, 0x0a,   16 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -178,10 +168,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, 0x80000000 | 10,    8,
     QMetaType::Void, QMetaType::Int,   12,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 16,   17,
-    QMetaType::Void, 0x80000000 | 16,   17,
+    QMetaType::Void, 0x80000000 | 14,   15,
+    QMetaType::Void, 0x80000000 | 14,   15,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -214,10 +202,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'closeTab'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'startNewProjectSelected'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'openFileDialogSelected'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'fileOpened'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<std::filesystem::path *, std::false_type>,
@@ -245,12 +229,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 4: _t->addNewWelcomeTab((*reinterpret_cast< std::add_pointer_t<WelcomeTab*>>(_a[1]))); break;
         case 5: _t->addNewFileTab((*reinterpret_cast< std::add_pointer_t<NewFileTab*>>(_a[1]))); break;
         case 6: _t->closeTab((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 7: _t->startNewProjectSelected(); break;
-        case 8: _t->openFileDialogSelected(); break;
-        case 9: _t->fileOpened((*reinterpret_cast< std::add_pointer_t<std::filesystem::path*>>(_a[1]))); break;
-        case 10: _t->projectOpened((*reinterpret_cast< std::add_pointer_t<std::filesystem::path*>>(_a[1]))); break;
-        case 11: _t->fileSaved(); break;
-        case 12: _t->allFilesSaved(); break;
+        case 7: _t->fileOpened((*reinterpret_cast< std::add_pointer_t<std::filesystem::path*>>(_a[1]))); break;
+        case 8: _t->projectOpened((*reinterpret_cast< std::add_pointer_t<std::filesystem::path*>>(_a[1]))); break;
+        case 9: _t->fileSaved(); break;
+        case 10: _t->allFilesSaved(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -316,13 +298,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 11;
     }
     return _id;
 }
