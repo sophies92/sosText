@@ -59,6 +59,7 @@ namespace sosText
              */
             ~App();
 
+            // Private Functions
             private:
 
             /**
