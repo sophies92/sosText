@@ -2,7 +2,8 @@
 
 sosText::App::App::App(QObject *parent) : QObject()
 {
-    this->appSettings = new sosText::settings::AppSettings();
+    this->appSettings = createNewAppSettings();
+    this->appSettings->LoadSettings();
     mainWindowRequested();
 }
 
@@ -15,6 +16,12 @@ NewFileTab *sosText::App::App::createNewFileTab()
 {
     NewFileTab *tab = new NewFileTab();
     return(tab);
+}
+
+sosText::settings::AppSettings *sosText::App::App::createNewAppSettings()
+{
+    sosText::settings::AppSettings *settings = new sosText::settings::AppSettings();
+    return(settings);
 }
 
 void sosText::App::App::mainWindowRequested()

@@ -53,6 +53,7 @@ namespace sosText
 
             private:
             NewFileTab *createNewFileTab();
+            sosText::settings::AppSettings *createNewAppSettings();
 
             // Public Slots
             public slots:
