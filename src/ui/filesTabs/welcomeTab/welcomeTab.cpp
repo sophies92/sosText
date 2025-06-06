@@ -1,36 +1,36 @@
 #include "welcomeTab.h"
 #include "ui_welcomeTab.h"
 
-WelcomeTab::WelcomeTab(QWidget *parent) : QWidget(), ui(new Ui::WelcomeTab)
+sosText::ui::WelcomeTab::WelcomeTab(QWidget *parent) : QWidget(), ui(new Ui::WelcomeTab)
 {
-    WelcomeTab::ui->setupUi(this);
-    connect(ui->newFileButton, &QCommandLinkButton::pressed, this, &WelcomeTab::newFileButtonPressed);
-    connect(ui->openFileButton, &QCommandLinkButton::pressed, this, &WelcomeTab::openFileButtonPressed);
-    connect(ui->newProjectButton, &QCommandLinkButton::pressed, this, &WelcomeTab::newProjectButtonPressed);
-    connect(ui->openProjectButton, &QCommandLinkButton::pressed, this, &WelcomeTab::openProjectButtonPressed);
+    sosText::ui::WelcomeTab::ui->setupUi(this);
+    connect(ui->newFileButton, &QCommandLinkButton::pressed, this, &sosText::ui::WelcomeTab::newFileButtonPressed);
+    connect(ui->openFileButton, &QCommandLinkButton::pressed, this, &sosText::ui::WelcomeTab::openFileButtonPressed);
+    connect(ui->newProjectButton, &QCommandLinkButton::pressed, this, &sosText::ui::WelcomeTab::newProjectButtonPressed);
+    connect(ui->openProjectButton, &QCommandLinkButton::pressed, this, &sosText::ui::WelcomeTab::openProjectButtonPressed);
 }
 
-WelcomeTab::~WelcomeTab()
+sosText::ui::WelcomeTab::~WelcomeTab()
 {
     delete ui;
 }
 
-void WelcomeTab::newFileButtonPressed()
+void sosText::ui::WelcomeTab::newFileButtonPressed()
 {
     emit newFileButtonPressedSignal();
 }
 
-void WelcomeTab::openFileButtonPressed()
+void sosText::ui::WelcomeTab::openFileButtonPressed()
 {
     emit openFileButtonPressedSignal();
 }
 
-void WelcomeTab::newProjectButtonPressed()
+void sosText::ui::WelcomeTab::newProjectButtonPressed()
 {
     emit newProjectButtonPressedSignal();
 }
 
-void WelcomeTab::openProjectButtonPressed()
+void sosText::ui::WelcomeTab::openProjectButtonPressed()
 {
     emit openProjectButtonPressedSignal();
 }

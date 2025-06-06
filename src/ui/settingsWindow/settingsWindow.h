@@ -15,31 +15,39 @@ namespace Ui
 
 namespace sosText
 {
-    class SettingsWindow : public QWidget
+    namespace ui
     {
-        Q_OBJECT
+        class SettingsWindow : public QWidget
+        {
+            Q_OBJECT
 
-        private:
-        Ui::SettingsWindow *ui;
+            private:
+            Ui::SettingsWindow *ui;
 
-        public:
-        /**
-         * @fn
-         * @brief
-         */
-        SettingsWindow(QWidget *parent = nullptr);
-        /**
-         * @fn
-         * @brief
-         */
-        ~SettingsWindow();
-        /**
-         * @fn
-         * @brief
-         * @param none
-         * @return none
-         */
-        void close();
-    };
+            public:
+            /**
+             * @fn
+             * @brief
+             */
+            SettingsWindow(QWidget *parent = nullptr);
+            /**
+             * @fn
+             * @brief
+             */
+            ~SettingsWindow();
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+
+            public slots:
+            void close();
+
+            signals:
+            void requestAllSettings();
+        };
+    }
 }
 #endif // SETTINGSWINDOW_H

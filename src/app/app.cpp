@@ -52,18 +52,24 @@ void sosText::App::App::newProjectWindowRequested()
 
 void sosText::App::App::welcomeTabRequested()
 {
-    WelcomeTab *welcomeTab = new WelcomeTab();
-    connect(welcomeTab, &WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
-    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
-    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal);
-    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
+    sosText::ui::WelcomeTab *welcomeTab = new sosText::ui::WelcomeTab();
+    connect(welcomeTab, &sosText::ui::WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
+    connect(welcomeTab, &sosText::ui::WelcomeTab::openFileButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
+    connect(welcomeTab, &sosText::ui::WelcomeTab::newProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal);
+    connect(welcomeTab, &sosText::ui::WelcomeTab::openProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
 void sosText::App::App::settingsWindowRequested()
 {
-    settingsWindow = new SettingsWindow(mainWindow);
+    settingsWindow = new sosText::ui::SettingsWindow(mainWindow);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestAllSettings, this, &sosText::App::App::allSettingsRequested);
     settingsWindow->show();
+}
+
+void sosText::App::App::allSettingsRequested()
+{
+    // TODO return settings somehow (list)
 }
 
 void sosText::App::App::fileStarted()

@@ -38,7 +38,7 @@ namespace sosText
             private:
             sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
             sosText::ui::LoadFileDialogWindow *loadFileDialogWindow;    //!< A pointer to the LoadFileDialogWindow
-            SettingsWindow *settingsWindow;                             //!< A pointer to the SettingsWindow
+            sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             
             sosText::settings::AppSettings *appSettings;                //!< A pointer to the AppSettings
 
@@ -110,6 +110,10 @@ namespace sosText
              * @return none
              */
             void settingsWindowRequested();
+            /**
+             * 
+             */
+            void allSettingsRequested();
             /** 
              * @fn fileStarted()
              * @brief creates a NewFileTab when a new file is started
@@ -147,7 +151,7 @@ namespace sosText
              * @param tab the WelcomeTab to be sent out
              * @return none
              */
-            void newWelcomeTabSignal(WelcomeTab *tab);
+            void newWelcomeTabSignal(sosText::ui::WelcomeTab *tab);
             /**
              * @fn newFileTabSignal(NewFileTab *tab)
              * @brief sends out a signal containing a newly created NewFileTab
@@ -155,6 +159,10 @@ namespace sosText
              * @return none
              */
             void newFileTabSignal(NewFileTab *tab);
+            /**
+             * 
+             */
+            void settingsRequestReturnSignal();
         };
     }
 }
