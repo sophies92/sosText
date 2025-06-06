@@ -45,8 +45,10 @@ void sosText::ui::SettingsWindow::close()
 
 void sosText::ui::SettingsWindow::setDefaults()
 {
+    // TODO set defaults
 }
 
 void sosText::ui::SettingsWindow::saveSettings()
 {
+    // TODO save settings
 }
