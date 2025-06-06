@@ -1,30 +1,30 @@
 #include "app.h"
 
-sosText::App::App::App(QObject *parent) : QObject()
+sosText::app::App::App(QObject *parent) : QObject()
 {
     this->appSettings = createNewAppSettings();
     this->appSettings->LoadSettings();
     mainWindowRequested();
 }
 
-sosText::App::App::~App()
+sosText::app::App::~App()
 {
     delete appSettings;
 }
 
-NewFileTab *sosText::App::App::createNewFileTab()
+NewFileTab *sosText::app::App::createNewFileTab()
 {
     NewFileTab *tab = new NewFileTab();
     return(tab);
 }
 
-sosText::settings::AppSettings *sosText::App::App::createNewAppSettings()
+sosText::settings::AppSettings *sosText::app::App::createNewAppSettings()
 {
     sosText::settings::AppSettings *settings = new sosText::settings::AppSettings();
     return(settings);
 }
 
-void sosText::App::App::mainWindowRequested()
+void sosText::app::App::mainWindowRequested()
 {
     mainWindow = new sosText::ui::MainWindow();
     connect(mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
@@ -38,20 +38,20 @@ void sosText::App::App::mainWindowRequested()
     emit mainWindow->requestWelcomeTabSignal();
 }
 
-void sosText::App::App::openFileDialogRequested()
+void sosText::app::App::openFileDialogRequested()
 {
     loadFileDialogWindow = new sosText::ui::LoadFileDialogWindow(mainWindow);
     connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
     loadFileDialogWindow->show();
 }
 
-void sosText::App::App::newProjectWindowRequested()
+void sosText::app::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
     
 }
 
-void sosText::App::App::welcomeTabRequested()
+void sosText::app::App::welcomeTabRequested()
 {
     sosText::ui::WelcomeTab *welcomeTab = new sosText::ui::WelcomeTab();
     connect(welcomeTab, &sosText::ui::WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
@@ -61,32 +61,32 @@ void sosText::App::App::welcomeTabRequested()
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
-void sosText::App::App::settingsWindowRequested()
+void sosText::app::App::settingsWindowRequested()
 {
     settingsWindow = new sosText::ui::SettingsWindow(mainWindow);
-    connect(settingsWindow, &sosText::ui::SettingsWindow::requestGetAllSettings, this, &sosText::App::App::getAllSettingsRequested);
-    connect(this, &sosText::App::App::settingsRequestReturnSignal, settingsWindow, &sosText::ui::SettingsWindow::allSettingsRequestReturn);
-    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSaveSettings, this, &sosText::App::App::saveSettingsRequested);
-    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSetDefaults, this, &sosText::App::App::setDefaultSettingsRequested);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestGetAllSettings, this, &sosText::app::App::getAllSettingsRequested);
+    connect(this, &sosText::app::App::settingsRequestReturnSignal, settingsWindow, &sosText::ui::SettingsWindow::allSettingsRequestReturn);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSaveSettings, this, &sosText::app::App::saveSettingsRequested);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSetDefaults, this, &sosText::app::App::setDefaultSettingsRequested);
     settingsWindow->show();
 }
 
-void sosText::App::App::getAllSettingsRequested()
+void sosText::app::App::getAllSettingsRequested()
 {
     emit settingsRequestReturnSignal(this->appSettings->getAllSettings());
 }
 
-void sosText::App::App::saveSettingsRequested()
+void sosText::app::App::saveSettingsRequested()
 {
     // TODO save settings
 }
 
-void sosText::App::App::setDefaultSettingsRequested()
+void sosText::app::App::setDefaultSettingsRequested()
 {
     // TODO set defaults
 }
 
-void sosText::App::App::fileStarted()
+void sosText::app::App::fileStarted()
 {
     NewFileTab *tab = createNewFileTab();
     tab->file->setPath("newFile");
@@ -94,7 +94,7 @@ void sosText::App::App::fileStarted()
     emit newFileTabSignal(tab);
 }
 
-void sosText::App::App::fileOpened(std::filesystem::path *path)
+void sosText::app::App::fileOpened(std::filesystem::path *path)
 {
     if(std::filesystem::is_directory(path->c_str()))
     {

@@ -20,7 +20,7 @@
 
 namespace sosText
 {
-    namespace App
+    namespace app
     {
         /**
          * @class App
