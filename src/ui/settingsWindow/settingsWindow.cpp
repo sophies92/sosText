@@ -12,11 +12,12 @@ sosText::ui::SettingsWindow::~SettingsWindow()
     delete ui;
 }
 
-void sosText::ui::SettingsWindow::allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings)
-{
-}
-
 void sosText::ui::SettingsWindow::close()
 {
     delete this;
+}
+
+void sosText::ui::SettingsWindow::allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings)
+{
+    // TODO display settings
 }
