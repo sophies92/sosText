@@ -26,26 +26,34 @@ namespace sosText
 
             public:
             /**
-             * @fn
-             * @brief
+             * @fn SettingsWindow(QWidget *parent = nullptr)
+             * @brief The constructor for SettingsWindow
+             * @param parent A pointer to the parent object. Default=nullptr
              */
             SettingsWindow(QWidget *parent = nullptr);
             /**
-             * @fn
-             * @brief
+             * @fn ~SettingsWindow()
+             * @brief The destructor for SettingsWindow
              */
             ~SettingsWindow();
+            
+
+            public slots:
             /**
              * @fn
              * @brief
              * @param none
              * @return none
              */
-
-            public slots:
             void close();
 
             signals:
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
             void requestAllSettings();
         };
     }
