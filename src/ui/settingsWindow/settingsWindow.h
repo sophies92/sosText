@@ -57,7 +57,7 @@ namespace sosText
              * @return none
              */
             void close();
-            
+
             void setDefaults();
 
             void saveSettings();
@@ -69,7 +69,23 @@ namespace sosText
              * @param none
              * @return none
              */
-            void requestAllSettings();
+            void requestGetAllSettings();
+
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+            void requestSaveSettings();
+
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+            void requestSetDefaults();
         };
     }
 }

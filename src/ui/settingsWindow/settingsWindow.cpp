@@ -50,5 +50,5 @@ void sosText::ui::SettingsWindow::setDefaults()
 
 void sosText::ui::SettingsWindow::saveSettings()
 {
-    // TODO save settings
+    emit requestSaveSettings();
 }

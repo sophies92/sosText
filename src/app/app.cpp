@@ -64,14 +64,26 @@ void sosText::App::App::welcomeTabRequested()
 void sosText::App::App::settingsWindowRequested()
 {
     settingsWindow = new sosText::ui::SettingsWindow(mainWindow);
-    connect(settingsWindow, &sosText::ui::SettingsWindow::requestAllSettings, this, &sosText::App::App::allSettingsRequested);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestGetAllSettings, this, &sosText::App::App::getAllSettingsRequested);
     connect(this, &sosText::App::App::settingsRequestReturnSignal, settingsWindow, &sosText::ui::SettingsWindow::allSettingsRequestReturn);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSaveSettings, this, &sosText::App::App::saveSettingsRequested);
+    connect(settingsWindow, &sosText::ui::SettingsWindow::requestSetDefaults, this, &sosText::App::App::setDefaultSettingsRequested);
     settingsWindow->show();
 }
 
-void sosText::App::App::allSettingsRequested()
+void sosText::App::App::getAllSettingsRequested()
 {
     emit settingsRequestReturnSignal(this->appSettings->getAllSettings());
+}
+
+void sosText::App::App::saveSettingsRequested()
+{
+    // TODO save settings
+}
+
+void sosText::App::App::setDefaultSettingsRequested()
+{
+    // TODO set defaults
 }
 
 void sosText::App::App::fileStarted()

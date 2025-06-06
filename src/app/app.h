@@ -113,7 +113,24 @@ namespace sosText
             /**
              * 
              */
-            void allSettingsRequested();
+            void getAllSettingsRequested();
+
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+            void saveSettingsRequested();
+
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+            void setDefaultSettingsRequested();
+
             /** 
              * @fn fileStarted()
              * @brief creates a NewFileTab when a new file is started
