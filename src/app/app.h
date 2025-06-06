@@ -14,6 +14,7 @@
 
 #include "../ui/mainWindow/mainWindow.h"
 #include "../ui/openFileDialog/loadFileDialogWindow.h"
+#include "../ui/settingsWindow/settingsWindow.h"
 
 #include "../project/project.h"
 
@@ -27,6 +28,7 @@ namespace App
         public:
         MainWindow *mainWindow;
         LoadFileDialogWindow *loadFileDialogWindow;
+        SettingsWindow *settingsWindow;
 
         // Private Variables
         private:
@@ -36,14 +38,16 @@ namespace App
         App(QObject *parent = nullptr);
         ~App();
 
+        private:
+        NewFileTab *createNewFileTab();
+
         // Public Slots
         public slots:
-        void showMainWindow();
+        void mainWindowRequested();
         void openFileDialogRequested();
         void newProjectWindowRequested();
         void welcomeTabRequested();
-        NewFileTab *fileTabRequested();
-
+        void settingsWindowRequested();
         void fileStarted();
         void fileOpened(std::filesystem::path *path);
 

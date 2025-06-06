@@ -71,6 +71,7 @@ class MainWindow : public QMainWindow
     void requestNewProjectSignal();
     void requestWelcomeTabSignal();
     void requestFileTabSignal();
+    void requestSettingsWindowSignal();
 
     private:
     void connectActions();

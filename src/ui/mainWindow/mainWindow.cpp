@@ -61,19 +61,13 @@ void MainWindow::allFilesSaved()
 void MainWindow::connectActions()
 {
     connect(ui->actionShow_Welcome_Tab, &QAction::triggered, this, &MainWindow::requestWelcomeTabSignal);
-
     connect(ui->action_New_File, &QAction::triggered, this, &MainWindow::requestFileTabSignal);
     connect(ui->actionNew_Project, &QAction::triggered, this, &MainWindow::requestNewProjectSignal);
-
     connect(ui->actionOpen_File, &QAction::triggered, this, &MainWindow::requestOpenFileDialogSignal);
-
     connect(ui->actionSave_File, &QAction::triggered, this, &MainWindow::fileSaved);
     // connect(ui->actionSave_As, &QAction::triggered, this, &MainWindow);
     // connect(ui->actionSave_All, &QAction::triggered, this, &MainWindow);
-
-    // connect(ui->actionSettings_Preferences, &QAction::triggered, this, &MainWindow);
-
+    connect(ui->actionSettings_Preferences, &QAction::triggered, this, &MainWindow::requestSettingsWindowSignal);
     connect(ui->actionE_xit, &QAction::triggered, this, &MainWindow::close);
-    
     connect(ui->filesTabs, &QTabWidget::tabCloseRequested, this, &MainWindow::closeTab);
 }

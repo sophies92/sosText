@@ -13,8 +13,10 @@ namespace Ui
     class SettingsWindow;
 }
 
-class SettingsWindow : QWidget
+class SettingsWindow : public QWidget
 {
+    Q_OBJECT
+
     private:
     Ui::SettingsWindow *ui;
 

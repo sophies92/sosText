@@ -2,7 +2,7 @@
 
 App::App::App(QObject *parent) : QObject()
 {
-    showMainWindow();
+    mainWindowRequested();
 }
 
 App::App::~App()
@@ -10,13 +10,20 @@ App::App::~App()
     
 }
 
-void App::App::showMainWindow()
+NewFileTab *App::App::createNewFileTab()
+{
+    NewFileTab *tab = new NewFileTab();
+    return(tab);
+}
+
+void App::App::mainWindowRequested()
 {
     mainWindow = new MainWindow();
     connect(mainWindow, &MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
     connect(mainWindow, &MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
     connect(mainWindow, &MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
     connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileStarted);
+    connect(mainWindow, &MainWindow::requestSettingsWindowSignal, this, &App::settingsWindowRequested);
     connect(this, &App::newWelcomeTabSignal, mainWindow, &MainWindow::addNewWelcomeTab);
     connect(this, &App::newFileTabSignal, mainWindow, &MainWindow::addNewFileTab);
     mainWindow->showMaximized();
@@ -45,15 +52,15 @@ void App::App::welcomeTabRequested()
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
-NewFileTab *App::App::fileTabRequested()
+void App::App::settingsWindowRequested()
 {
-    NewFileTab *tab = new NewFileTab();
-    return(tab);
+    settingsWindow = new SettingsWindow(mainWindow);
+    settingsWindow->show();
 }
 
 void App::App::fileStarted()
 {
-    NewFileTab *tab = fileTabRequested();
+    NewFileTab *tab = createNewFileTab();
     tab->file->setPath("newFile");
     tab->file->setFilename("newFile");
     emit newFileTabSignal(tab);
@@ -67,7 +74,7 @@ void App::App::fileOpened(std::filesystem::path *path)
     }
     else
     {
-        NewFileTab *tab = fileTabRequested();
+        NewFileTab *tab = createNewFileTab();
         tab->file->setPath(path->c_str());
         tab->file->setFilename(path->filename().c_str());
         tab->file->setFileText(tab->file->loadFile());
