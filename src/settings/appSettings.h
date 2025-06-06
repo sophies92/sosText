@@ -17,7 +17,7 @@ namespace sosText
         class AppSettings
         {
             private:
-            std::map<std::string, sosText::settings::Setting> *appSettings;
+            std::map<std::string, sosText::settings::Setting> *appSettingsMap;
 
             public:
             AppSettings();

@@ -2,12 +2,12 @@
 
 sosText::settings::AppSettings::AppSettings()
 {
-    appSettings = new std::map<std::string, sosText::settings::Setting>();
+    appSettingsMap = new std::map<std::string, sosText::settings::Setting>();
 }
 
 sosText::settings::AppSettings::~AppSettings()
 {
-    delete appSettings;
+    delete appSettingsMap;
 }
 
 void sosText::settings::AppSettings::LoadSettings()

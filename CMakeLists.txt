@@ -29,6 +29,8 @@ set(PROJECT_SOURCES
 
         src/settings/setting.cpp
         src/settings/setting.h
+        src/settings/appSettings.cpp
+        src/settings/appSettings.h
 
         src/ui/mainWindow/mainWindow.cpp
         src/ui/mainWindow/mainWindow.h

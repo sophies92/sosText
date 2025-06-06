@@ -2,7 +2,7 @@
 
 sosText::App::App::App(QObject *parent) : QObject()
 {
-    appSettings = new sosText::settings::AppSettings();
+    this->appSettings = new sosText::settings::AppSettings();
     mainWindowRequested();
 }
 
