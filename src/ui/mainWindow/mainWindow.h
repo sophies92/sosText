@@ -46,6 +46,10 @@ namespace sosText
              * @param parent A pointer to the parent QWidget. default = null
              */
             MainWindow(QWidget *parent = nullptr);
+            /**
+             * @fn ~MainWindow()
+             * @brief The destructor for MainWindow
+             */
             ~MainWindow();
             Ui::MainWindow *getUi();
 
