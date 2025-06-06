@@ -22,6 +22,7 @@ namespace sosText
             public:
             AppSettings();
             ~AppSettings();
+            void LoadSettings();
         };
     }
 }

@@ -2,12 +2,13 @@
 
 sosText::App::App::App(QObject *parent) : QObject()
 {
+    appSettings = new sosText::settings::AppSettings();
     mainWindowRequested();
 }
 
 sosText::App::App::~App()
 {
-    
+    delete appSettings;
 }
 
 NewFileTab *sosText::App::App::createNewFileTab()

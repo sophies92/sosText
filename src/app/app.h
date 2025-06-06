@@ -17,7 +17,7 @@
 #include "../ui/settingsWindow/settingsWindow.h"
 
 #include "../project/project.h"
-#include "../settings/setting.h"
+#include "../settings/appSettings.h"
 
 namespace sosText
 {
@@ -35,7 +35,9 @@ namespace sosText
             public:
             sosText::ui::MainWindow *mainWindow;            //!< A pointer to the MainWindow of the App
             LoadFileDialogWindow *loadFileDialogWindow;     //!< A pointer to the LoadFileDialogWindow
+
             SettingsWindow *settingsWindow;                 //!< A pointer to the SettingsWindow
+            sosText::settings::AppSettings *appSettings;    //!< A pointer to the AppSettings
 
             // Private Variables
             private:

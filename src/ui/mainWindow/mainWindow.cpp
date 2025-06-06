@@ -12,7 +12,6 @@ sosText::ui::MainWindow::~MainWindow()
     delete ui;
 }
 
-// TODO add action for show welcome screen
 void sosText::ui::MainWindow::addNewWelcomeTab(WelcomeTab *tab)
 {
     int index = ui->filesTabs->addTab(tab, "Welcome");

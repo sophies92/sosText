@@ -9,3 +9,8 @@ sosText::settings::AppSettings::~AppSettings()
 {
     delete appSettings;
 }
+
+void sosText::settings::AppSettings::LoadSettings()
+{
+    // TODO load settings from file and add to settings map
+}
