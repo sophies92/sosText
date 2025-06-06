@@ -110,7 +110,7 @@ namespace sosText
              * @return none
              */
             void settingsWindowRequested();
-            /**
+            /** 
              * @fn fileStarted()
              * @brief creates a NewFileTab when a new file is started
              * @param none
