@@ -44,12 +44,14 @@ namespace sosText
 
             // Public Functions
             public:
+
             /**
              * @fn App(QObject *parent = nullptr)
              * @brief The constructor for the class
              * @param parent A pointer to the parent object. Default=nullptr
              */
             App(QObject *parent = nullptr);
+
             /**
              * @fn ~App()
              * @brief The destructor for the class
@@ -58,6 +60,7 @@ namespace sosText
             ~App();
 
             private:
+
             /**
              * @fn createNewFileTab()
              * @brief Creates and return a NewFileTab object
@@ -65,6 +68,7 @@ namespace sosText
              * @return A pointer to the NewFileTab object that has been created
              */
             NewFileTab *createNewFileTab();
+
             /**
              * @fn createNewAppSettings()
              * @brief Creates and returns a new AppSettings object
@@ -75,6 +79,7 @@ namespace sosText
 
             // Public Slots
             public slots:
+
             /**
              * @fn mainWindowRequested()
              * @brief answers a request to display the MainWindow
@@ -82,6 +87,7 @@ namespace sosText
              * @return none
              */
             void mainWindowRequested();
+
             /**
              * @fn openFileDialogRequested()
              * @brief answers a request to display the OpenFileDialogWindow
@@ -89,6 +95,7 @@ namespace sosText
              * @return none
              */
             void openFileDialogRequested();
+
             /**
              * @fn newProjectWindowRequested()
              * @brief answers a request to show a NewProjectWindow
@@ -96,6 +103,7 @@ namespace sosText
              * @return none
              */
             void newProjectWindowRequested();
+
             /**
              * @fn welcomeTabRequested()
              * @brief answers a request to show a WelcomeTab
@@ -103,6 +111,7 @@ namespace sosText
              * @return none
              */
             void welcomeTabRequested();
+
             /**
              * @fn settingsWindowRequested()
              * @brief answers a request to show the SettingsWindow
@@ -110,6 +119,7 @@ namespace sosText
              * @return none
              */
             void settingsWindowRequested();
+
             /**
              * 
              */
@@ -138,6 +148,7 @@ namespace sosText
              * @return none
              */
             void fileStarted();
+
             /**
              * @fn fileOpened(std::filesystem::path *path)
              * @brief creates a NewFileTab when a file is opened
@@ -148,6 +159,7 @@ namespace sosText
 
             // Signals
             signals:
+
             /**
              * @fn fileOpenedSignal(NewFileTab *tab)
              * @brief sounds out a signal with a tab contaning a newly opened file
@@ -155,6 +167,7 @@ namespace sosText
              * @return none
              */
             void fileOpenedSignal(NewFileTab *tab);
+
             /**
              * @fn projectOpenedSignal(std::filesystem::path *path)
              * @brief 
@@ -162,6 +175,7 @@ namespace sosText
              * @return none
              */
             void projectOpenedSignal(std::filesystem::path *path);
+
             /**
              * @fn newWelcomeTabSignal(WelcomeTab *tab)
              * @brief sends out a signal containing a WelcomeTab
@@ -169,6 +183,7 @@ namespace sosText
              * @return none
              */
             void newWelcomeTabSignal(sosText::ui::WelcomeTab *tab);
+
             /**
              * @fn newFileTabSignal(NewFileTab *tab)
              * @brief sends out a signal containing a newly created NewFileTab
@@ -176,8 +191,12 @@ namespace sosText
              * @return none
              */
             void newFileTabSignal(NewFileTab *tab);
+
             /**
-             * 
+             * @fn
+             * @brief
+             * @param
+             * @return none
              */
             void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
         };
