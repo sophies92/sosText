@@ -36,11 +36,11 @@ namespace sosText
 
             // Private Variables
             private:
-            sosText::ui::MainWindow *mainWindow;            //!< A pointer to the MainWindow of the App
-            sosText::ui::LoadFileDialogWindow *loadFileDialogWindow;     //!< A pointer to the LoadFileDialogWindow
-            SettingsWindow *settingsWindow;                 //!< A pointer to the SettingsWindow
+            sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
+            sosText::ui::LoadFileDialogWindow *loadFileDialogWindow;    //!< A pointer to the LoadFileDialogWindow
+            SettingsWindow *settingsWindow;                             //!< A pointer to the SettingsWindow
             
-            sosText::settings::AppSettings *appSettings;    //!< A pointer to the AppSettings
+            sosText::settings::AppSettings *appSettings;                //!< A pointer to the AppSettings
 
             // Public Functions
             public:

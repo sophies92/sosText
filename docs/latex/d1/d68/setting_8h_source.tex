@@ -11,34 +11,37 @@
 \DoxyCodeLine{00011\ }
 \DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }sosText}
 \DoxyCodeLine{00013\ \{}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{namespace\ }Settings}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{namespace\ }settings}
 \DoxyCodeLine{00015\ \ \ \ \ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classsosText_1_1Settings_1_1Setting}{Setting}}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classsosText_1_1settings_1_1Setting}{Setting}}}
 \DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ settingName;}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ settingDescription;}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ defaultValue;}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ savedValue;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ tempValue;}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1Settings_1_1Setting}{Setting}}();}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1Settings_1_1Setting}{\string~Setting}}();}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getName();}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setName(std::string\ name);}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getDescription();}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDescription(std::string\ description);}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getDefaultValue();}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDefaultValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getSavedValue();}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSavedValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getTempValue();}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTempValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00039\ \ \ \ \ \}}
-\DoxyCodeLine{00040\ \}}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SETTING\_H}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ settingCatagory;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ settingName;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ settingDescription;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ defaultValue;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ savedValue;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ tempValue;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1settings_1_1Setting}{Setting}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1settings_1_1Setting}{\string~Setting}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getCatagory();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setCatagory(std::string\ catagory);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getName();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setName(std::string\ name);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getDescription();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDescription(std::string\ description);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getDefaultValue();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setDefaultValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getSavedValue();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setSavedValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ std::variant<std::string,\ int,\ double,\ bool>\ getTempValue();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setTempValue(std::variant<std::string,\ int,\ double,\ bool>\ value);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SETTING\_H}}
 
 \end{DoxyCode}
