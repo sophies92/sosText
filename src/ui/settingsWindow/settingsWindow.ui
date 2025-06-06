@@ -11,21 +11,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Settings</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Settings</string>
-     </property>
-    </widget>
-   </item>
    <item>
     <widget class="QTreeWidget" name="treeWidget">
      <property name="columnCount">
