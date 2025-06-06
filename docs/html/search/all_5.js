@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['project_0',['Project',['../dc/d20/classProject_1_1Project.html',1,'Project']]],
-  ['project_2eh_1',['project.h',['../dc/d8d/project_8h.html',1,'']]]
+  ['newfiletab_0',['NewFileTab',['../d2/daa/classNewFileTab.html',1,'']]],
+  ['newfiletab_2eh_1',['newFileTab.h',['../d4/df8/newFileTab_8h.html',1,'']]]
 ];

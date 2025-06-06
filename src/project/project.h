@@ -20,7 +20,15 @@ namespace Project
 
         // Public Functions
         public:
+        /**
+         * @fn
+         * @brief
+         */
         Project();
+        /**
+         * @fn
+         * @brief
+         */
         ~Project();
 
         // Private Functions

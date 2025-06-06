@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainwindow_0',['mainWindow',['../d7/d51/classsosText_1_1App_1_1App.html#ac1787d43f809ec35a9a16cc26b7b9933',1,'sosText::App::App']]]
+  ['loadfiledialogwindow_0',['loadFileDialogWindow',['../d7/d51/classsosText_1_1App_1_1App.html#a12c0f5737b836f0a075454267cafcb3f',1,'sosText::App::App']]]
 ];

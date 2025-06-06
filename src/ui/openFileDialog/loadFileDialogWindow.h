@@ -39,20 +39,48 @@ namespace sosText
 
             // Public functions
             public:
-            LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *currentProject = nullptr);
+            /**
+             * @fn
+             * @brief
+             */
+            LoadFileDialogWindow(QMainWindow *parent = nullptr);
+            /**
+             * @fn
+             * @brief
+             */
             ~LoadFileDialogWindow();
 
             // Public UI slots
             public slots:
+            /**
+             * @fn
+             * @brief
+             */
             void onDirListClick(QModelIndex index);
+            /**
+             * @fn
+             * @brief
+             */
             void openFileButton();
+            /**
+             * @fn
+             * @brief
+             */
             void close();
 
             signals:
+            /**
+             * @fn
+             * @brief
+             */
             void fileOpened(std::filesystem::path *path);
 
             // Private functions
             private:
+            /**
+             * @fn
+             * @brief
+             */
             void updateUIPathView();
 
         };

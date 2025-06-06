@@ -23,7 +23,15 @@ namespace sosText
         Ui::SettingsWindow *ui;
 
         public:
+        /**
+         * @fn
+         * @brief
+         */
         SettingsWindow(QWidget *parent = nullptr);
+        /**
+         * @fn
+         * @brief
+         */
         ~SettingsWindow();
     };
 }

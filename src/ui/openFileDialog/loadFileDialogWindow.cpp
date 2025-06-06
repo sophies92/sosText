@@ -1,7 +1,7 @@
 #include "loadFileDialogWindow.h"
 #include "ui_loadFileDialogWindow.h"
 
-sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
+sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &LoadFileDialogWindow::openFileButton);

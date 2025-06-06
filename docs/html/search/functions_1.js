@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainwindow_0',['MainWindow',['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html#a39cb41540228d65e619c5d5e4cfcb30f',1,'sosText::ui::MainWindow']]]
+  ['createnewfiletab_0',['createNewFileTab',['../d7/d51/classsosText_1_1App_1_1App.html#a930060bc8860d64ea00ce290e5240a59',1,'sosText::App::App']]]
 ];

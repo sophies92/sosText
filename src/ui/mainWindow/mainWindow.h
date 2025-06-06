@@ -51,6 +51,10 @@ namespace sosText
              * @brief The destructor for MainWindow
              */
             ~MainWindow();
+            /**
+             * @fn
+             * @brief
+             */
             Ui::MainWindow *getUi();
 
             // Public Slots
@@ -61,13 +65,35 @@ namespace sosText
              * @param tab A pointer to the tab to be added.
              */
             void addNewWelcomeTab(WelcomeTab *tab);
+            /**
+             * @fn
+             * @brief
+             */
             void addNewFileTab(NewFileTab *tab);
+            /**
+             * @fn
+             * @brief
+             */
             void closeTab(int index);
-
+            /**
+             * @fn
+             * @brief
+             */
             void fileOpened(std::filesystem::path *path);
+            /**
+             * @fn
+             * @brief
+             */
             void projectOpened(std::filesystem::path *path);
-
+            /**
+             * @fn
+             * @brief
+             */
             void fileSaved();
+            /**
+             * @fn
+             * @brief
+             */
             void allFilesSaved();
 
             signals:
@@ -76,12 +102,32 @@ namespace sosText
              * @brief Send a request for the Open-File Dialog window to be shown.
              */
             void requestOpenFileDialogSignal();
+            /**
+             * @fn
+             * @brief
+             */
             void requestNewProjectSignal();
+            /**
+             * @fn
+             * @brief
+             */
             void requestWelcomeTabSignal();
+            /**
+             * @fn
+             * @brief
+             */
             void requestFileTabSignal();
+            /**
+             * @fn
+             * @brief
+             */
             void requestSettingsWindowSignal();
 
             private:
+            /**
+             * @fn
+             * @brief
+             */
             void connectActions();
         };
     }

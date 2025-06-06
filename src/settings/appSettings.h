@@ -20,8 +20,20 @@ namespace sosText
             std::map<std::string, sosText::settings::Setting> *appSettingsMap;
 
             public:
+            /**
+             * @fn
+             * @brief
+             */
             AppSettings();
+            /**
+             * @fn
+             * @brief
+             */
             ~AppSettings();
+            /**
+             * @fn
+             * @brief
+             */
             void LoadSettings();
         };
     }

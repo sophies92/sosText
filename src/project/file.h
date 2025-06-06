@@ -28,19 +28,55 @@ namespace Project
 
         // Public Functions
         public:
+        /**
+         * @fn
+         * @brief
+         */
         File();
+        /**
+         * @fn
+         * @brief
+         */
         ~File();
-
+        /**
+         * @fn
+         * @brief
+         */
         std::filesystem::path *getPath();
+        /**
+         * @fn
+         * @brief
+         */
         void setPath(std::filesystem::path newPath);
-
+        /**
+         * @fn
+         * @brief
+         */
         std::filesystem::path *getFilename();
+        /**
+         * @fn
+         * @brief
+         */
         void setFilename(std::filesystem::path newFilename);
-
+        /**
+         * @fn
+         * @brief
+         */
         std::string *getFileText();
+        /**
+         * @fn
+         * @brief
+         */
         void setFileText(std::string *newFileText);
-
+        /**
+         * @fn
+         * @brief
+         */
         std::string *loadFile();
+        /**
+         * @fn
+         * @brief
+         */
         void saveFile(QString tabText);
 
         // Private Functions

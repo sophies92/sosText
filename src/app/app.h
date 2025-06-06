@@ -47,31 +47,92 @@ namespace sosText
             /**
              * @fn App(QObject *parent = nullptr)
              * @brief The constructor for the class
+             * @param parent A pointer to the parent QObject. Default=nullptr
              */
             App(QObject *parent = nullptr);
+            /**
+             * @fn ~App()
+             * @brief The destructor for the class
+             */
             ~App();
 
             private:
+            /**
+             * @fn createNewFileTab()
+             * @brief Creates and return a NewFileTab
+             * @return A pointer to the NewFileTab that has been created
+             */
             NewFileTab *createNewFileTab();
+            /**
+             * @fn
+             * @brief
+             */
             sosText::settings::AppSettings *createNewAppSettings();
 
             // Public Slots
             public slots:
+            /**
+             * @fn
+             * @brief
+             */
             void mainWindowRequested();
+            /**
+             * @fn
+             * @brief
+             */
             void openFileDialogRequested();
+            /**
+             * @fn
+             * @brief
+             */
             void newProjectWindowRequested();
+            /**
+             * @fn
+             * @brief
+             */
             void welcomeTabRequested();
+            /**
+             * @fn
+             * @brief
+             */
             void settingsWindowRequested();
+            /**
+             * @fn
+             * @brief
+             */
             void fileStarted();
+            /**
+             * @fn
+             * @brief
+             */
             void fileOpened(std::filesystem::path *path);
 
             // Signals
             signals:
+            /**
+             * @fn
+             * @brief
+             */
             void fileStartedSignal();
+            /**
+             * @fn
+             * @brief
+             */
             void fileOpenedSignal(NewFileTab *tab);
+            /**
+             * @fn
+             * @brief
+             */
             void projectOpenedSignal(std::filesystem::path *path);
-
+            /**
+             * @fn
+             * @brief
+             */
             void newWelcomeTabSignal(WelcomeTab *tab);
+            /**
+             * @fn
+             * @brief
+             */
             void newFileTabSignal(NewFileTab *tab);
         };
     }
