@@ -17,51 +17,54 @@
 \DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../ui/settingsWindow/settingsWindow.h"{}}}
 \DoxyCodeLine{00018\ }
 \DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}../project/project.h"{}}}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{classApp}{App}}}
-\DoxyCodeLine{00022\ \{}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classApp_1_1App}{App}}\ :\ \textcolor{keyword}{public}\ QObject}
-\DoxyCodeLine{00028\ \ \ \ \ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Variables}}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMainWindow}{MainWindow}}\ *\mbox{\hyperlink{classApp_1_1App_a802240bd0b51eb6fb2082c5751217f8e}{mainWindow}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}\ *\mbox{\hyperlink{classApp_1_1App_a87b745cafa4a6d399005bdd422f7354b}{loadFileDialogWindow}};\ \ \ \ \ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSettingsWindow}{SettingsWindow}}\ *\mbox{\hyperlink{classApp_1_1App_aa7ace09eb2caada675f36f7f5f5cb406}{settingsWindow}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Private\ Variables}}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}../settings/setting.h"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }sosText}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{namespace\ }App}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classsosText_1_1App_1_1App}{App}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Variables}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1ui_1_1MainWindow}{sosText::ui::MainWindow}}\ *\mbox{\hyperlink{classsosText_1_1App_1_1App_ac1787d43f809ec35a9a16cc26b7b9933}{mainWindow}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}\ *\mbox{\hyperlink{classsosText_1_1App_1_1App_a9fac2c971d35a3924c5da1f4546172a0}{loadFileDialogWindow}};\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1SettingsWindow}{SettingsWindow}}\ *\mbox{\hyperlink{classsosText_1_1App_1_1App_a8447337a8772e49a5de7ff1e6e51e4c8}{settingsWindow}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Functions}}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classApp_1_1App}{App}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classApp_1_1App}{\string~App}}();}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *createNewFileTab();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Private\ Variables}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Functions}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1App_1_1App}{App}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classsosText_1_1App_1_1App}{\string~App}}();}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Slots}}
-\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ mainWindowRequested();}
-\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ openFileDialogRequested();}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newProjectWindowRequested();}
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ welcomeTabRequested();}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ settingsWindowRequested();}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStarted();}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpened(std::filesystem::path\ *path);}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Signals}}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ signals:}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStartedSignal();}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpenedSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ projectOpenedSignal(std::filesystem::path\ *path);}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newWelcomeTabSignal(\mbox{\hyperlink{classWelcomeTab}{WelcomeTab}}\ *tab);}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newFileTabSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
-\DoxyCodeLine{00070\ \ \ \ \ \};}
-\DoxyCodeLine{00071\ \}}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APP\_H}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *createNewFileTab();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Slots}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ mainWindowRequested();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ openFileDialogRequested();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newProjectWindowRequested();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ welcomeTabRequested();}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ settingsWindowRequested();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStarted();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpened(std::filesystem::path\ *path);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Signals}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ signals:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStartedSignal();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpenedSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ projectOpenedSignal(std::filesystem::path\ *path);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newWelcomeTabSignal(\mbox{\hyperlink{classWelcomeTab}{WelcomeTab}}\ *tab);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newFileTabSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00074\ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APP\_H}}
 
 \end{DoxyCode}

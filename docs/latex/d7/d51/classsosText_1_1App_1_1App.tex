@@ -1,0 +1,100 @@
+\doxysection{sos\+Text\+::App\+::App Class Reference}
+\hypertarget{classsosText_1_1App_1_1App}{}\label{classsosText_1_1App_1_1App}\index{sosText::App::App@{sosText::App::App}}
+
+
+This class controls the \doxylink{classsosText_1_1App_1_1App}{App}.  
+
+
+
+
+{\ttfamily \#include $<$app.\+h$>$}
+
+
+
+Inheritance diagram for sos\+Text\+::App\+::App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{d9/dd6/classsosText_1_1App_1_1App__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sos\+Text\+::App\+::App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d11/classsosText_1_1App_1_1App__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_aef40e93eeb89ed80ed2f5f756e487ace}\label{classsosText_1_1App_1_1App_aef40e93eeb89ed80ed2f5f756e487ace} 
+void {\bfseries main\+Window\+Requested} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a7b144cdccacb393f10566acb0a3d57d2}\label{classsosText_1_1App_1_1App_a7b144cdccacb393f10566acb0a3d57d2} 
+void {\bfseries open\+File\+Dialog\+Requested} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a5816638ef6ee99c44dce7c271b83a147}\label{classsosText_1_1App_1_1App_a5816638ef6ee99c44dce7c271b83a147} 
+void {\bfseries new\+Project\+Window\+Requested} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a9b9938b040564e7398db893a4889e830}\label{classsosText_1_1App_1_1App_a9b9938b040564e7398db893a4889e830} 
+void {\bfseries welcome\+Tab\+Requested} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_ad5ee7b83ecc27d7b42411fec89919357}\label{classsosText_1_1App_1_1App_ad5ee7b83ecc27d7b42411fec89919357} 
+void {\bfseries settings\+Window\+Requested} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a552dab7335be7dcbd8454e85a593bf5c}\label{classsosText_1_1App_1_1App_a552dab7335be7dcbd8454e85a593bf5c} 
+void {\bfseries file\+Started} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a5e46c3a0db714394fdd0396316ce610a}\label{classsosText_1_1App_1_1App_a5e46c3a0db714394fdd0396316ce610a} 
+void {\bfseries file\+Opened} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a650513f98aad57a137356a0ae938ae58}\label{classsosText_1_1App_1_1App_a650513f98aad57a137356a0ae938ae58} 
+void {\bfseries file\+Started\+Signal} ()
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a48d9ef9ea631bc5de2cb80c19a0eb9fd}\label{classsosText_1_1App_1_1App_a48d9ef9ea631bc5de2cb80c19a0eb9fd} 
+void {\bfseries file\+Opened\+Signal} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a2bfefdee70f5df9303263ff0b41b8a91}\label{classsosText_1_1App_1_1App_a2bfefdee70f5df9303263ff0b41b8a91} 
+void {\bfseries project\+Opened\+Signal} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_ac6514411a17a3b9fd5bf1f6225f6e4d7}\label{classsosText_1_1App_1_1App_ac6514411a17a3b9fd5bf1f6225f6e4d7} 
+void {\bfseries new\+Welcome\+Tab\+Signal} (\mbox{\hyperlink{classWelcomeTab}{Welcome\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_af10260e83474b0adad689e2d8005d4cf}\label{classsosText_1_1App_1_1App_af10260e83474b0adad689e2d8005d4cf} 
+void {\bfseries new\+File\+Tab\+Signal} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_a991772313ecc435d2e1037f5e0eb3a6e}\label{classsosText_1_1App_1_1App_a991772313ecc435d2e1037f5e0eb3a6e} 
+{\bfseries App} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em The constructor for the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1App_1_1App_ac1787d43f809ec35a9a16cc26b7b9933}\label{classsosText_1_1App_1_1App_ac1787d43f809ec35a9a16cc26b7b9933} 
+\mbox{\hyperlink{classsosText_1_1ui_1_1MainWindow}{sos\+Text\+::ui\+::\+Main\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries main\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the Main\+Window of the \doxylink{classsosText_1_1App_1_1App}{App}. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1App_1_1App_a9fac2c971d35a3924c5da1f4546172a0}\label{classsosText_1_1App_1_1App_a9fac2c971d35a3924c5da1f4546172a0} 
+\mbox{\hyperlink{classLoadFileDialogWindow}{Load\+File\+Dialog\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries load\+File\+Dialog\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the \doxylink{classLoadFileDialogWindow}{Load\+File\+Dialog\+Window}. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1App_1_1App_a8447337a8772e49a5de7ff1e6e51e4c8}\label{classsosText_1_1App_1_1App_a8447337a8772e49a5de7ff1e6e51e4c8} 
+\mbox{\hyperlink{classsosText_1_1SettingsWindow}{Settings\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries settings\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the \doxylink{classsosText_1_1SettingsWindow}{Settings\+Window}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class controls the \doxylink{classsosText_1_1App_1_1App}{App}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/app/\mbox{\hyperlink{app_8h}{app.\+h}}\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/app/app.\+cpp\end{DoxyCompactItemize}

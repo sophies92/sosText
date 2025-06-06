@@ -1,0 +1,116 @@
+\doxysection{sos\+Text\+::ui\+::Main\+Window Class Reference}
+\hypertarget{classsosText_1_1ui_1_1MainWindow}{}\label{classsosText_1_1ui_1_1MainWindow}\index{sosText::ui::MainWindow@{sosText::ui::MainWindow}}
+
+
+Inheritance diagram for sos\+Text\+::ui\+::Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{d2/d04/classsosText_1_1ui_1_1MainWindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sos\+Text\+::ui\+::Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{df/d6f/classsosText_1_1ui_1_1MainWindow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsosText_1_1ui_1_1MainWindow_a93b72572628f15f957e780b76c8f4c2f}{add\+New\+Welcome\+Tab}} (\mbox{\hyperlink{classWelcomeTab}{Welcome\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em Adds a new \doxylink{classWelcomeTab}{Welcome\+Tab} to the file viewer. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_adbf2a38afe633a041f8515f13aabb7cc}\label{classsosText_1_1ui_1_1MainWindow_adbf2a38afe633a041f8515f13aabb7cc} 
+void {\bfseries add\+New\+File\+Tab} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_aff9c7be920e2a4d760617c2b31be2336}\label{classsosText_1_1ui_1_1MainWindow_aff9c7be920e2a4d760617c2b31be2336} 
+void {\bfseries close\+Tab} (int index)
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a368bf9e2280d329671d18eda80b6ae6e}\label{classsosText_1_1ui_1_1MainWindow_a368bf9e2280d329671d18eda80b6ae6e} 
+void {\bfseries file\+Opened} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_afe3a2e2a18fa182f8f5232f99c26592f}\label{classsosText_1_1ui_1_1MainWindow_afe3a2e2a18fa182f8f5232f99c26592f} 
+void {\bfseries project\+Opened} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_afe1813ab7ae0d4ff05b6c8cda5b6701a}\label{classsosText_1_1ui_1_1MainWindow_afe1813ab7ae0d4ff05b6c8cda5b6701a} 
+void {\bfseries file\+Saved} ()
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a9b393e685e3b18eb5f1e5b01c9ec7b4d}\label{classsosText_1_1ui_1_1MainWindow_a9b393e685e3b18eb5f1e5b01c9ec7b4d} 
+void {\bfseries all\+Files\+Saved} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a82ac86b4f4f2fba3f7ac8afab0ca4d9c}\label{classsosText_1_1ui_1_1MainWindow_a82ac86b4f4f2fba3f7ac8afab0ca4d9c} 
+void {\bfseries request\+Open\+File\+Dialog\+Signal} ()
+\begin{DoxyCompactList}\small\item\em Send a request for the Open-\/\+File Dialog window to be shown. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_af344ec998117654c632dbefa00f5db6b}\label{classsosText_1_1ui_1_1MainWindow_af344ec998117654c632dbefa00f5db6b} 
+void {\bfseries request\+New\+Project\+Signal} ()
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_ab5b51ebfe670eef1fac2c3b428d03d7d}\label{classsosText_1_1ui_1_1MainWindow_ab5b51ebfe670eef1fac2c3b428d03d7d} 
+void {\bfseries request\+Welcome\+Tab\+Signal} ()
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a40396d744500efcf7cbffbe0e0aeb990}\label{classsosText_1_1ui_1_1MainWindow_a40396d744500efcf7cbffbe0e0aeb990} 
+void {\bfseries request\+File\+Tab\+Signal} ()
+\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a00c1dadb0a9d04f37d14deb1e683a54d}\label{classsosText_1_1ui_1_1MainWindow_a00c1dadb0a9d04f37d14deb1e683a54d} 
+void {\bfseries request\+Settings\+Window\+Signal} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsosText_1_1ui_1_1MainWindow_a39cb41540228d65e619c5d5e4cfcb30f}{Main\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em The constructor for the \doxylink{classsosText_1_1ui_1_1MainWindow}{Main\+Window} class. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a49c2a3edbf913bca74666a84738e5b8f}\label{classsosText_1_1ui_1_1MainWindow_a49c2a3edbf913bca74666a84738e5b8f} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em The destructor for \doxylink{classsosText_1_1ui_1_1MainWindow}{Main\+Window}. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a933cd869ac9d2d853eb8243294bc1445}\label{classsosText_1_1ui_1_1MainWindow_a933cd869ac9d2d853eb8243294bc1445} 
+Ui\+::\+Main\+Window \texorpdfstring{$\ast$}{*} {\bfseries get\+Ui} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a39cb41540228d65e619c5d5e4cfcb30f}\label{classsosText_1_1ui_1_1MainWindow_a39cb41540228d65e619c5d5e4cfcb30f} 
+\index{sosText::ui::MainWindow@{sosText::ui::MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!sosText::ui::MainWindow@{sosText::ui::MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily sos\+Text\+::ui\+::\+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+The constructor for the \doxylink{classsosText_1_1ui_1_1MainWindow}{Main\+Window} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & A pointer to the parent QWidget. default = null \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsosText_1_1ui_1_1MainWindow_a93b72572628f15f957e780b76c8f4c2f}\label{classsosText_1_1ui_1_1MainWindow_a93b72572628f15f957e780b76c8f4c2f} 
+\index{sosText::ui::MainWindow@{sosText::ui::MainWindow}!addNewWelcomeTab@{addNewWelcomeTab}}
+\index{addNewWelcomeTab@{addNewWelcomeTab}!sosText::ui::MainWindow@{sosText::ui::MainWindow}}
+\doxysubsubsection{\texorpdfstring{addNewWelcomeTab}{addNewWelcomeTab}}
+{\footnotesize\ttfamily sos\+Text\+::ui\+::\+Main\+Window\+::add\+New\+Welcome\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWelcomeTab}{Welcome\+Tab}} \texorpdfstring{$\ast$}{*}}]{tab }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Adds a new \doxylink{classWelcomeTab}{Welcome\+Tab} to the file viewer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & A pointer to the tab to be added. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/ui/main\+Window/\mbox{\hyperlink{mainWindow_8h}{main\+Window.\+h}}\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/ui/main\+Window/main\+Window.\+cpp\end{DoxyCompactItemize}

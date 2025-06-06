@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,80,31"/>
-<area shape="rect" id="Node000001" href="$d2/d87/classApp_1_1App.html" title=" " alt="" coords="128,5,208,31"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="94,15,128,15,128,21,94,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,84,80"/>
+<area shape="rect" id="Node000001" href="$d2/daa/classNewFileTab.html" title=" " alt="" coords="176,5,272,31"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="96,49,131,39,175,28,176,33,133,45,98,55"/>
+<area shape="rect" id="Node000002" href="$d4/d70/classWelcomeTab.html" title=" " alt="" coords="172,55,276,80"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="98,65,172,65,172,70,98,70"/>
+<area shape="rect" id="Node000003" href="$d7/d0c/classsosText_1_1SettingsWindow.html" title=" " alt="" coords="132,104,316,129"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="98,79,178,101,176,106,97,84"/>
 </map>
