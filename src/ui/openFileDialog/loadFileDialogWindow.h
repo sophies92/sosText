@@ -21,35 +21,41 @@ namespace Ui
     class LoadFileDialogWindow;
 }
 
-class LoadFileDialogWindow : public QDialog
+namespace sosText
 {
-    Q_OBJECT
+    namespace ui
+    {
+        class LoadFileDialogWindow : public QDialog
+        {
+            Q_OBJECT
 
-    // Public variables
+            // Public variables
 
-    // Private variables
-    Ui::LoadFileDialogWindow *ui;
+            // Private variables
+            Ui::LoadFileDialogWindow *ui;
 
-    std::filesystem::path *path;
-    QFileSystemModel *filesModel;
+            std::filesystem::path *path;
+            QFileSystemModel *filesModel;
 
-    // Public functions
-    public:
-    LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *currentProject = nullptr);
-    ~LoadFileDialogWindow();
+            // Public functions
+            public:
+            LoadFileDialogWindow(QMainWindow *parent = nullptr, Project::Project *currentProject = nullptr);
+            ~LoadFileDialogWindow();
 
-    // Public UI slots
-    public slots:
-    void onDirListClick(QModelIndex index);
-    void openFileButton();
+            // Public UI slots
+            public slots:
+            void onDirListClick(QModelIndex index);
+            void openFileButton();
+            void close();
 
-    signals:
-    void fileOpened(std::filesystem::path *path);
+            signals:
+            void fileOpened(std::filesystem::path *path);
 
-    // Private functions
-    private:
-    void updateUIPathView();
+            // Private functions
+            private:
+            void updateUIPathView();
 
-};
-
+        };
+    }
+}
 #endif // LOADFILEDIALOGWINDOW_H

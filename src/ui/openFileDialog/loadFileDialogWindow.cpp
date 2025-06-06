@@ -1,7 +1,7 @@
 #include "loadFileDialogWindow.h"
 #include "ui_loadFileDialogWindow.h"
 
-LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
+sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project *currentProject) : QDialog(parent), ui(new Ui::LoadFileDialogWindow)
 {
     LoadFileDialogWindow::ui->setupUi(this);
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &LoadFileDialogWindow::openFileButton);
@@ -16,26 +16,30 @@ LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent, Project::Project
     updateUIPathView();
 }
 
-LoadFileDialogWindow::~LoadFileDialogWindow()
+sosText::ui::LoadFileDialogWindow::~LoadFileDialogWindow()
 {
     delete path;
     delete ui;
 }
 
-void LoadFileDialogWindow::onDirListClick(QModelIndex index)
+void sosText::ui::LoadFileDialogWindow::onDirListClick(QModelIndex index)
 {
     *path = filesModel->filePath(index).toStdString().c_str();
     updateUIPathView();
 }
 
-void LoadFileDialogWindow::openFileButton()
+void sosText::ui::LoadFileDialogWindow::openFileButton()
 {
     emit fileOpened(path);
     this->close();
 }
 
+void sosText::ui::LoadFileDialogWindow::close()
+{
+    delete this;
+}
 
-void LoadFileDialogWindow::updateUIPathView()
+void sosText::ui::LoadFileDialogWindow::updateUIPathView()
 {
     ui->filepath->setPlainText(path->c_str());
 }
