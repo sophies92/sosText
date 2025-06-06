@@ -1,0 +1,352 @@
+\doxysection{sos\+Text\+::app\+::App Class Reference}
+\hypertarget{classsosText_1_1app_1_1App}{}\label{classsosText_1_1app_1_1App}\index{sosText::app::App@{sosText::app::App}}
+
+
+This class controls the \doxylink{classsosText_1_1app_1_1App}{App}.  
+
+
+
+
+{\ttfamily \#include $<$app.\+h$>$}
+
+
+
+Inheritance diagram for sos\+Text\+::app\+::App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{d1/d4b/classsosText_1_1app_1_1App__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sos\+Text\+::app\+::App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/dd3/classsosText_1_1app_1_1App__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a7a9a5986f186addb70b893d2900bb3b9}{main\+Window\+Requested}} ()
+\begin{DoxyCompactList}\small\item\em answers a request to display the Main\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a7e2d135ff2aa52acde852986f9f10774}{open\+File\+Dialog\+Requested}} ()
+\begin{DoxyCompactList}\small\item\em answers a request to display the Open\+File\+Dialog\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a31a2493a6624bdd563b9c700576b8c44}{new\+Project\+Window\+Requested}} ()
+\begin{DoxyCompactList}\small\item\em answers a request to show a New\+Project\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a86633ee2aec02f73bc4f9e2dd79328c7}{welcome\+Tab\+Requested}} ()
+\begin{DoxyCompactList}\small\item\em answers a request to show a Welcome\+Tab \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a69fe404bf07fc1ed8c7b50b9b436d5ff}{settings\+Window\+Requested}} ()
+\begin{DoxyCompactList}\small\item\em answers a request to show the Settings\+Window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_ab0539fd08984a1b9846acd1912342130}{get\+All\+Settings\+Requested}} ()
+\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a290d26db3ae624eca7d989584ab68ea5}{save\+Settings\+Requested}} ()
+\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_af0679a3c0dda6f1f6cbe78bf9ea666b2}{set\+Default\+Settings\+Requested}} ()
+\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a5e6538ce36b42ce63436476b302dbcf9}{file\+Started}} ()
+\begin{DoxyCompactList}\small\item\em creates a \doxylink{classNewFileTab}{New\+File\+Tab} when a new file is started \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsosText_1_1app_1_1App_a7e6a7ba6915c1a6fcd7460d57413f37d}{file\+Opened}} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em creates a \doxylink{classNewFileTab}{New\+File\+Tab} when a file is opened \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1app_1_1App_a1b25575a542d15ee30852cdcc5473335}\label{classsosText_1_1app_1_1App_a1b25575a542d15ee30852cdcc5473335} 
+void {\bfseries file\+Opened\+Signal} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em sends out a signal with a tab contaning a newly opened file \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_ad78cff28f0aa8f0fa66105ed6fcf3826}\label{classsosText_1_1app_1_1App_ad78cff28f0aa8f0fa66105ed6fcf3826} 
+void {\bfseries project\+Opened\+Signal} (std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}path)
+\begin{DoxyCompactList}\small\item\em sends out a signal containg a pointer to the open project \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_a180b769b721485a6a99de4ba016c5922}\label{classsosText_1_1app_1_1App_a180b769b721485a6a99de4ba016c5922} 
+void {\bfseries new\+Welcome\+Tab\+Signal} (\mbox{\hyperlink{classsosText_1_1ui_1_1WelcomeTab}{sos\+Text\+::ui\+::\+Welcome\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em sends out a signal containing a Welcome\+Tab \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_ac86d3d95976daf94d87cd715f95fd743}\label{classsosText_1_1app_1_1App_ac86d3d95976daf94d87cd715f95fd743} 
+void {\bfseries new\+File\+Tab\+Signal} (\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em sends out a signal containing a newly created \doxylink{classNewFileTab}{New\+File\+Tab} \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_a49480f796a628429b436e3bf14d39e68}\label{classsosText_1_1app_1_1App_a49480f796a628429b436e3bf14d39e68} 
+void {\bfseries settings\+Request\+Return\+Signal} (std\+::map$<$ std\+::string, \mbox{\hyperlink{classsosText_1_1settings_1_1Setting}{sos\+Text\+::settings\+::\+Setting}} $>$ \texorpdfstring{$\ast$}{*}all\+Settings)
+\begin{DoxyCompactList}\small\item\em sends out a signal containing a pointer to the settings map \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsosText_1_1app_1_1App_a288f217c6fdf1d66ee8d4799bcf0e68b}{App}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em The constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsosText_1_1app_1_1App_ac23eda990471fb8c788cf5acd55ab8f6}{\texorpdfstring{$\sim$}{\string~}\+App}} ()
+\begin{DoxyCompactList}\small\item\em The destructor for the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNewFileTab}{New\+File\+Tab}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsosText_1_1app_1_1App_af6bc004d0648ef40e825b924e8fe5d57}{create\+New\+File\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em Creates and return a \doxylink{classNewFileTab}{New\+File\+Tab} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsosText_1_1settings_1_1AppSettings}{sos\+Text\+::settings\+::\+App\+Settings}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classsosText_1_1app_1_1App_a699a1c078626755bfc6958a58d1920df}{create\+New\+App\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em Creates and returns a new App\+Settings object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsosText_1_1app_1_1App_aaf67b1684daca214b3c7131e8ec409c8}\label{classsosText_1_1app_1_1App_aaf67b1684daca214b3c7131e8ec409c8} 
+\mbox{\hyperlink{classsosText_1_1ui_1_1MainWindow}{sos\+Text\+::ui\+::\+Main\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries main\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the Main\+Window of the \doxylink{classsosText_1_1app_1_1App}{App}. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_a3a2fb5296f1a2a4ee04af61139d561d1}\label{classsosText_1_1app_1_1App_a3a2fb5296f1a2a4ee04af61139d561d1} 
+\mbox{\hyperlink{classsosText_1_1ui_1_1LoadFileDialogWindow}{sos\+Text\+::ui\+::\+Load\+File\+Dialog\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries load\+File\+Dialog\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the Load\+File\+Dialog\+Window. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_a8b9839abf43bb4addd887279c63684c4}\label{classsosText_1_1app_1_1App_a8b9839abf43bb4addd887279c63684c4} 
+\mbox{\hyperlink{classsosText_1_1ui_1_1SettingsWindow}{sos\+Text\+::ui\+::\+Settings\+Window}} \texorpdfstring{$\ast$}{*} {\bfseries settings\+Window}
+\begin{DoxyCompactList}\small\item\em A pointer to the Settings\+Window. \end{DoxyCompactList}\item 
+\Hypertarget{classsosText_1_1app_1_1App_ab8ad595756720610685b249e7a974792}\label{classsosText_1_1app_1_1App_ab8ad595756720610685b249e7a974792} 
+\mbox{\hyperlink{classsosText_1_1settings_1_1AppSettings}{sos\+Text\+::settings\+::\+App\+Settings}} \texorpdfstring{$\ast$}{*} {\bfseries app\+Settings}
+\begin{DoxyCompactList}\small\item\em A pointer to the App\+Settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class controls the \doxylink{classsosText_1_1app_1_1App}{App}. 
+
+This is where UI windows send requests, where they are processed, and returned to the relevant UI windows. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsosText_1_1app_1_1App_a288f217c6fdf1d66ee8d4799bcf0e68b}\label{classsosText_1_1app_1_1App_a288f217c6fdf1d66ee8d4799bcf0e68b} 
+\index{sosText::app::App@{sosText::app::App}!App@{App}}
+\index{App@{App}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::\+App (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+The constructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & A pointer to the parent object. Default=nullptr \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsosText_1_1app_1_1App_ac23eda990471fb8c788cf5acd55ab8f6}\label{classsosText_1_1app_1_1App_ac23eda990471fb8c788cf5acd55ab8f6} 
+\index{sosText::app::App@{sosText::app::App}!````~App@{\texorpdfstring{$\sim$}{\string~}App}}
+\index{````~App@{\texorpdfstring{$\sim$}{\string~}App}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}App()}{\string~App()}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::\texorpdfstring{$\sim$}{\string~}\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The destructor for the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsosText_1_1app_1_1App_a699a1c078626755bfc6958a58d1920df}\label{classsosText_1_1app_1_1App_a699a1c078626755bfc6958a58d1920df} 
+\index{sosText::app::App@{sosText::app::App}!createNewAppSettings@{createNewAppSettings}}
+\index{createNewAppSettings@{createNewAppSettings}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{createNewAppSettings()}{createNewAppSettings()}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::create\+New\+App\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and returns a new App\+Settings object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the App\+Settings object that has been created 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_af6bc004d0648ef40e825b924e8fe5d57}\label{classsosText_1_1app_1_1App_af6bc004d0648ef40e825b924e8fe5d57} 
+\index{sosText::app::App@{sosText::app::App}!createNewFileTab@{createNewFileTab}}
+\index{createNewFileTab@{createNewFileTab}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{createNewFileTab()}{createNewFileTab()}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::create\+New\+File\+Tab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and return a \doxylink{classNewFileTab}{New\+File\+Tab} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{classNewFileTab}{New\+File\+Tab} object that has been created 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a7e6a7ba6915c1a6fcd7460d57413f37d}\label{classsosText_1_1app_1_1App_a7e6a7ba6915c1a6fcd7460d57413f37d} 
+\index{sosText::app::App@{sosText::app::App}!fileOpened@{fileOpened}}
+\index{fileOpened@{fileOpened}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{fileOpened}{fileOpened}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::file\+Opened (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path \texorpdfstring{$\ast$}{*}}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+creates a \doxylink{classNewFileTab}{New\+File\+Tab} when a file is opened 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & a pointer to the path where the file can be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a5e6538ce36b42ce63436476b302dbcf9}\label{classsosText_1_1app_1_1App_a5e6538ce36b42ce63436476b302dbcf9} 
+\index{sosText::app::App@{sosText::app::App}!fileStarted@{fileStarted}}
+\index{fileStarted@{fileStarted}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{fileStarted}{fileStarted}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::file\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+creates a \doxylink{classNewFileTab}{New\+File\+Tab} when a new file is started 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_ab0539fd08984a1b9846acd1912342130}\label{classsosText_1_1app_1_1App_ab0539fd08984a1b9846acd1912342130} 
+\index{sosText::app::App@{sosText::app::App}!getAllSettingsRequested@{getAllSettingsRequested}}
+\index{getAllSettingsRequested@{getAllSettingsRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{getAllSettingsRequested}{getAllSettingsRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::get\+All\+Settings\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a7a9a5986f186addb70b893d2900bb3b9}\label{classsosText_1_1app_1_1App_a7a9a5986f186addb70b893d2900bb3b9} 
+\index{sosText::app::App@{sosText::app::App}!mainWindowRequested@{mainWindowRequested}}
+\index{mainWindowRequested@{mainWindowRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{mainWindowRequested}{mainWindowRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::main\+Window\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+answers a request to display the Main\+Window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a31a2493a6624bdd563b9c700576b8c44}\label{classsosText_1_1app_1_1App_a31a2493a6624bdd563b9c700576b8c44} 
+\index{sosText::app::App@{sosText::app::App}!newProjectWindowRequested@{newProjectWindowRequested}}
+\index{newProjectWindowRequested@{newProjectWindowRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{newProjectWindowRequested}{newProjectWindowRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::new\+Project\+Window\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+answers a request to show a New\+Project\+Window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a7e2d135ff2aa52acde852986f9f10774}\label{classsosText_1_1app_1_1App_a7e2d135ff2aa52acde852986f9f10774} 
+\index{sosText::app::App@{sosText::app::App}!openFileDialogRequested@{openFileDialogRequested}}
+\index{openFileDialogRequested@{openFileDialogRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{openFileDialogRequested}{openFileDialogRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::open\+File\+Dialog\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+answers a request to display the Open\+File\+Dialog\+Window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a290d26db3ae624eca7d989584ab68ea5}\label{classsosText_1_1app_1_1App_a290d26db3ae624eca7d989584ab68ea5} 
+\index{sosText::app::App@{sosText::app::App}!saveSettingsRequested@{saveSettingsRequested}}
+\index{saveSettingsRequested@{saveSettingsRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{saveSettingsRequested}{saveSettingsRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::save\+Settings\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_af0679a3c0dda6f1f6cbe78bf9ea666b2}\label{classsosText_1_1app_1_1App_af0679a3c0dda6f1f6cbe78bf9ea666b2} 
+\index{sosText::app::App@{sosText::app::App}!setDefaultSettingsRequested@{setDefaultSettingsRequested}}
+\index{setDefaultSettingsRequested@{setDefaultSettingsRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{setDefaultSettingsRequested}{setDefaultSettingsRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::set\+Default\+Settings\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a69fe404bf07fc1ed8c7b50b9b436d5ff}\label{classsosText_1_1app_1_1App_a69fe404bf07fc1ed8c7b50b9b436d5ff} 
+\index{sosText::app::App@{sosText::app::App}!settingsWindowRequested@{settingsWindowRequested}}
+\index{settingsWindowRequested@{settingsWindowRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{settingsWindowRequested}{settingsWindowRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::settings\+Window\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+answers a request to show the Settings\+Window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\Hypertarget{classsosText_1_1app_1_1App_a86633ee2aec02f73bc4f9e2dd79328c7}\label{classsosText_1_1app_1_1App_a86633ee2aec02f73bc4f9e2dd79328c7} 
+\index{sosText::app::App@{sosText::app::App}!welcomeTabRequested@{welcomeTabRequested}}
+\index{welcomeTabRequested@{welcomeTabRequested}!sosText::app::App@{sosText::app::App}}
+\doxysubsubsection{\texorpdfstring{welcomeTabRequested}{welcomeTabRequested}}
+{\footnotesize\ttfamily sos\+Text\+::app\+::\+App\+::welcome\+Tab\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+answers a request to show a Welcome\+Tab 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/app/\mbox{\hyperlink{app_8h}{app.\+h}}\item 
+/home/sophie/\+Projects/cpp/sos\+Text/sos\+Text/src/app/app.\+cpp\end{DoxyCompactItemize}

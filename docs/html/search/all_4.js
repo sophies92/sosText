@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mainwindow_0',['mainwindow',['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html',1,'sosText::ui::MainWindow'],['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html#a39cb41540228d65e619c5d5e4cfcb30f',1,'sosText::ui::MainWindow::MainWindow()'],['../d7/d51/classsosText_1_1App_1_1App.html#ac1787d43f809ec35a9a16cc26b7b9933',1,'sosText::App::App::mainWindow']]],
-  ['mainwindow_2eh_1',['mainWindow.h',['../d2/d11/mainWindow_8h.html',1,'']]],
-  ['mainwindowrequested_2',['mainWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#a9eeff861fed40073acb2cd0d1002a2f8',1,'sosText::App::App']]]
+  ['loadfiledialogwindow_0',['loadfiledialogwindow',['../de/d75/classsosText_1_1ui_1_1LoadFileDialogWindow.html',1,'sosText::ui::LoadFileDialogWindow'],['../da/df2/classsosText_1_1app_1_1App.html#a3a2fb5296f1a2a4ee04af61139d561d1',1,'sosText::app::App::loadFileDialogWindow']]],
+  ['loadsettings_1',['LoadSettings',['../d0/d08/classsosText_1_1settings_1_1AppSettings.html#aa61f9de632fd19d9fed90858f7f6ff53',1,'sosText::settings::AppSettings']]]
 ];

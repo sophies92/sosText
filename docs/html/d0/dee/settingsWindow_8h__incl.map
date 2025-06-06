@@ -1,5 +1,13 @@
 <map id="/home/sophie/Projects/cpp/sosText/sosText/src/ui/settingsWindow/settingsWindow.h" name="/home/sophie/Projects/cpp/sosText/sosText/src/ui/settingsWindow/settingsWindow.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,175,75"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="51,123,129,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,75,93,109,87,109,87,75"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="88,5,257,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,123,84,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,77,74,116,70,112,125,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="108,123,237,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,75,175,109,170,109,170,75"/>
+<area shape="rect" id="Node000004" href="$d1/d68/setting_8h.html" title=" " alt="" coords="261,123,420,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,72,309,113,306,118,232,77"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="267,196,326,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="336,150,313,186,309,183,331,147"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="351,196,419,221"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="350,147,373,183,368,186,346,150"/>
 </map>

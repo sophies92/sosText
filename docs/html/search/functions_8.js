@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settingswindowrequested_0',['settingsWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#a3543a56f35cf05bb4d385654922adf37',1,'sosText::App::App']]]
+  ['projectopenedsignal_0',['projectOpenedSignal',['../da/df2/classsosText_1_1app_1_1App.html#ad78cff28f0aa8f0fa66105ed6fcf3826',1,'sosText::app::App']]]
 ];

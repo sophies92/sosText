@@ -1,7 +1,10 @@
 <map id="/home/sophie/Projects/cpp/sosText/sosText/src/settings/setting.h" name="/home/sophie/Projects/cpp/sosText/sosText/src/settings/setting.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,186,60"/>
-<area shape="rect" id="Node000002" href="$d2/d54/appSettings_8h.html" title=" " alt="" coords="5,108,200,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,74,105,108,100,108,100,74"/>
-<area shape="rect" id="Node000003" href="$d2/d39/app_8h.html" title="This is where everything to do with the application is declared." alt="" coords="19,211,186,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,176,105,211,100,211,100,176"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="122,5,289,60"/>
+<area shape="rect" id="Node000002" href="$d2/d54/appSettings_8h.html" title=" " alt="" coords="5,115,200,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,72,130,117,126,113,169,68"/>
+<area shape="rect" id="Node000004" href="$d6/d0f/settingsWindow_8h.html" title=" " alt="" coords="225,108,394,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,68,279,106,275,110,239,72"/>
+<area shape="rect" id="Node000003" href="$d2/d39/app_8h.html" title="This is where everything to do with the application is declared." alt="" coords="122,225,289,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,178,182,223,178,227,135,182"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="270,189,233,227,229,223,266,185"/>
 </map>

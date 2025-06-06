@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['setting_0',['Setting',['../dd/d40/classsosText_1_1settings_1_1Setting.html',1,'sosText::settings']]],
-  ['setting_2eh_1',['setting.h',['../d1/d68/setting_8h.html',1,'']]],
-  ['settingswindow_2',['settingswindow',['../d7/d0c/classsosText_1_1SettingsWindow.html',1,'sosText::SettingsWindow'],['../d7/d51/classsosText_1_1App_1_1App.html#a8447337a8772e49a5de7ff1e6e51e4c8',1,'sosText::App::App::settingsWindow']]],
-  ['settingswindow_2eh_3',['settingsWindow.h',['../d6/d0f/settingsWindow_8h.html',1,'']]],
-  ['settingswindowrequested_4',['settingsWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#a3543a56f35cf05bb4d385654922adf37',1,'sosText::App::App']]]
+  ['requestopenfiledialogsignal_0',['requestOpenFileDialogSignal',['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html#a82ac86b4f4f2fba3f7ac8afab0ca4d9c',1,'sosText::ui::MainWindow']]]
 ];

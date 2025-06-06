@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['appsettings_0',['appSettings',['../d7/d51/classsosText_1_1App_1_1App.html#ac1b8bfc1165979ae3d71a5a3733975a7',1,'sosText::App::App']]]
+  ['appsettings_0',['appSettings',['../da/df2/classsosText_1_1app_1_1App.html#ab8ad595756720610685b249e7a974792',1,'sosText::app::App']]]
 ];

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['newfiletab_0',['NewFileTab',['../d2/daa/classNewFileTab.html',1,'']]],
-  ['newfiletab_2eh_1',['newFileTab.h',['../d4/df8/newFileTab_8h.html',1,'']]],
-  ['newfiletabsignal_2',['newFileTabSignal',['../d7/d51/classsosText_1_1App_1_1App.html#ae02d7bbd04c31f87bac030a4bbcf56d0',1,'sosText::App::App']]],
-  ['newprojectwindowrequested_3',['newProjectWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#aa4e5f9bff8de68f05f43ab53d098260c',1,'sosText::App::App']]],
-  ['newwelcometabsignal_4',['newWelcomeTabSignal',['../d7/d51/classsosText_1_1App_1_1App.html#a66636e279d5cff81edd5261135ecfb4c',1,'sosText::App::App']]]
+  ['mainwindow_0',['mainwindow',['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html',1,'sosText::ui::MainWindow'],['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html#a39cb41540228d65e619c5d5e4cfcb30f',1,'sosText::ui::MainWindow::MainWindow()'],['../da/df2/classsosText_1_1app_1_1App.html#aaf67b1684daca214b3c7131e8ec409c8',1,'sosText::app::App::mainWindow']]],
+  ['mainwindow_2eh_1',['mainWindow.h',['../d2/d11/mainWindow_8h.html',1,'']]],
+  ['mainwindowrequested_2',['mainWindowRequested',['../da/df2/classsosText_1_1app_1_1App.html#a7a9a5986f186addb70b893d2900bb3b9',1,'sosText::app::App']]]
 ];
