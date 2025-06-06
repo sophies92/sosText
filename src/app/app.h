@@ -47,7 +47,7 @@ namespace sosText
             /**
              * @fn App(QObject *parent = nullptr)
              * @brief The constructor for the class
-             * @param parent A pointer to the parent QObject. Default=nullptr
+             * @param parent A pointer to the parent object. Default=nullptr
              */
             App(QObject *parent = nullptr);
             /**
