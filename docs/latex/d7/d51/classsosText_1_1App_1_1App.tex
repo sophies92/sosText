@@ -89,6 +89,8 @@ void \mbox{\hyperlink{classsosText_1_1App_1_1App_ae02d7bbd04c31f87bac030a4bbcf56
 \doxysubsection{Detailed Description}
 This class controls the \doxylink{classsosText_1_1App_1_1App}{App}. 
 
+This is where UI windows send requests, where they are processed, and returned to the relevant UI windows. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classsosText_1_1App_1_1App_a991772313ecc435d2e1037f5e0eb3a6e}\label{classsosText_1_1App_1_1App_a991772313ecc435d2e1037f5e0eb3a6e} 
 \index{sosText::App::App@{sosText::App::App}!App@{App}}
@@ -171,7 +173,7 @@ creates a \doxylink{classNewFileTab}{New\+File\+Tab} when a file is opened
 
 
 \begin{DoxyParams}{Parameters}
-{\em none} & \\
+{\em path} & a pointer to the path where the file can be found \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

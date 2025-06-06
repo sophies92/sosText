@@ -1,6 +1,6 @@
 /**
  * @file app.h
- * @brief the base app that controld everything
+ * @brief This is where everything to do with the application is declared.
  * @author Sophie Short
  */
 #ifndef APP_H
@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <filesystem>
-#include <vector>
 
 #include <QObject>
 
@@ -25,7 +24,8 @@ namespace sosText
     {
         /**
          * @class App
-         * @brief This class controls the App
+         * @brief This class controls the App.
+         * @details This is where UI windows send requests, where they are processed, and returned to the relevant UI windows.
          */
         class App : public QObject
         {
@@ -120,7 +120,7 @@ namespace sosText
             /**
              * @fn fileOpened(std::filesystem::path *path)
              * @brief creates a NewFileTab when a file is opened
-             * @param none
+             * @param path a pointer to the path where the file can be found
              * @return none
              */
             void fileOpened(std::filesystem::path *path);

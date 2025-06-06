@@ -1,5 +1,5 @@
 <map id="/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h" name="/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h">
-<area shape="rect" id="Node000001" title="the base app that controld everything" alt="" coords="477,5,643,60"/>
+<area shape="rect" id="Node000001" title="This is where everything to do with the application is declared." alt="" coords="477,5,643,60"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="16,431,96,456"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,44,274,69,177,88,138,99,109,110,69,131,36,150,25,162,16,176,10,193,8,215,8,298,12,331,21,364,45,418,40,420,16,366,6,332,3,298,3,215,5,192,11,173,20,158,33,146,66,126,107,106,136,94,176,83,273,64,476,39"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="760,431,851,456"/>
