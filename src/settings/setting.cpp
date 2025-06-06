@@ -10,6 +10,16 @@ sosText::settings::Setting::~Setting()
 
 }
 
+std::string sosText::settings::Setting::getCatagory()
+{
+    return(this->settingCatagory);
+}
+
+void sosText::settings::Setting::setCatagory(std::string catagory)
+{
+    this->settingCatagory = catagory;
+}
+
 std::string sosText::settings::Setting::getName()
 {
     return(this->settingName);

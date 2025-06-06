@@ -16,6 +16,7 @@ namespace sosText
         class Setting
         {
             private:
+            std::string settingCatagory;
             std::string settingName;
             std::string settingDescription;
             std::variant<std::string, int, double, bool> defaultValue;
@@ -25,6 +26,8 @@ namespace sosText
             public:
             Setting();
             ~Setting();
+            std::string getCatagory();
+            void setCatagory(std::string catagory);
             std::string getName();
             void setName(std::string name);
             std::string getDescription();
