@@ -21,22 +21,34 @@ namespace sosText
 
             public:
             /**
-             * @fn
+             * @fn AppSettings()
              * @brief
+             * @param none
+             * @return none
              */
             AppSettings();
             /**
-             * @fn
+             * @fn ~AppSettings()
              * @brief
+             * @param none
+             * @return none
              */
             ~AppSettings();
 
             /**
-             * @fn
+             * @fn LoadSettings()
              * @brief
+             * @param none
+             * @return none
              */
             void LoadSettings();
 
+            /**
+             * @fn *getAllSettings()
+             * @brief
+             * @param none
+             * @return a pointer to the appSettingsMap object
+             */
             std::map<std::string, sosText::settings::Setting> *getAllSettings();
         };
     }

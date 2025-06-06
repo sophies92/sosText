@@ -34,6 +34,8 @@ namespace sosText
             // Public Variables
             public:
 
+
+            
             // Private Variables
             private:
             sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
@@ -41,6 +43,8 @@ namespace sosText
             sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             
             sosText::settings::AppSettings *appSettings;                //!< A pointer to the AppSettings
+
+
 
             // Public Functions
             public:
@@ -58,6 +62,8 @@ namespace sosText
              * @param none
              */
             ~App();
+
+
 
             // Private Functions
             private:
@@ -77,6 +83,8 @@ namespace sosText
              * @return A pointer to the AppSettings object that has been created
              */
             sosText::settings::AppSettings *createNewAppSettings();
+
+
 
             // Public Slots
             public slots:
@@ -122,12 +130,15 @@ namespace sosText
             void settingsWindowRequested();
 
             /**
-             * 
+             * @fn getAllSettingsRequested()
+             * @brief
+             * @param none
+             * @return none
              */
             void getAllSettingsRequested();
 
             /**
-             * @fn
+             * @fn saveSettingsRequested()
              * @brief
              * @param none
              * @return none
@@ -135,7 +146,7 @@ namespace sosText
             void saveSettingsRequested();
 
             /**
-             * @fn
+             * @fn setDefaultSettingsRequested()
              * @brief
              * @param none
              * @return none
@@ -158,46 +169,38 @@ namespace sosText
              */
             void fileOpened(std::filesystem::path *path);
 
+
+
             // Signals
             signals:
 
             /**
              * @fn fileOpenedSignal(NewFileTab *tab)
-             * @brief sounds out a signal with a tab contaning a newly opened file
-             * @param tab the NewFileTab to be sent out
-             * @return none
+             * @brief sends out a signal with a tab contaning a newly opened file
              */
             void fileOpenedSignal(NewFileTab *tab);
 
             /**
              * @fn projectOpenedSignal(std::filesystem::path *path)
-             * @brief 
-             * @param none
-             * @return none
+             * @brief sends out a signal containg a pointer to the open project
              */
             void projectOpenedSignal(std::filesystem::path *path);
 
             /**
              * @fn newWelcomeTabSignal(WelcomeTab *tab)
              * @brief sends out a signal containing a WelcomeTab
-             * @param tab the WelcomeTab to be sent out
-             * @return none
              */
             void newWelcomeTabSignal(sosText::ui::WelcomeTab *tab);
 
             /**
              * @fn newFileTabSignal(NewFileTab *tab)
              * @brief sends out a signal containing a newly created NewFileTab
-             * @param tab the NewFileTab to be sent out
-             * @return none
              */
             void newFileTabSignal(NewFileTab *tab);
 
             /**
-             * @fn
-             * @brief
-             * @param
-             * @return none
+             * @fn settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings)
+             * @brief sends out a signal containing a pointer to the settings map
              */
             void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
         };
