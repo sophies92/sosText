@@ -16,13 +16,8 @@ sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : Q
     updateUIPathView();
 
     // TODO show devices
-    for(std::filesystem::directory_entry e : std::filesystem::directory_iterator("/dev"))
-    {
-        if(e.is_block_file())
-        {
-            ui->devicesList->addItem(e.path().filename().c_str());
-        }
-    }
+    ui->devicesList->addItem("root");
+    ui->devicesList->addItem("home");
 }
 
 sosText::ui::LoadFileDialogWindow::~LoadFileDialogWindow()
