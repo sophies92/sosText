@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['_7eapp_0',['~App',['../d7/d51/classsosText_1_1App_1_1App.html#aef8d70b8a0f3a4093f15976cfa90583c',1,'sosText::App::App']]],
-  ['_7emainwindow_1',['~MainWindow',['../d9/dd8/classsosText_1_1ui_1_1MainWindow.html#a49c2a3edbf913bca74666a84738e5b8f',1,'sosText::ui::MainWindow']]]
+  ['newfiletabsignal_0',['newFileTabSignal',['../d7/d51/classsosText_1_1App_1_1App.html#ae02d7bbd04c31f87bac030a4bbcf56d0',1,'sosText::App::App']]],
+  ['newprojectwindowrequested_1',['newProjectWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#aa4e5f9bff8de68f05f43ab53d098260c',1,'sosText::App::App']]],
+  ['newwelcometabsignal_2',['newWelcomeTabSignal',['../d7/d51/classsosText_1_1App_1_1App.html#a66636e279d5cff81edd5261135ecfb4c',1,'sosText::App::App']]]
 ];
