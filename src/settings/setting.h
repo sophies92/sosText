@@ -30,11 +30,11 @@ namespace sosText
             std::string getDescription();
             void setDescription(std::string description);
             std::variant<std::string, int, double, bool> getDefaultValue();
-            void setDefaultValue(std::variant<std::string, int, double, bool>);
+            void setDefaultValue(std::variant<std::string, int, double, bool> value);
             std::variant<std::string, int, double, bool> getSavedValue();
-            void setSavedValue(std::variant<std::string, int, double, bool>);
+            void setSavedValue(std::variant<std::string, int, double, bool> value);
             std::variant<std::string, int, double, bool> getTempValue();
-            void setTempValue(std::variant<std::string, int, double, bool>);
+            void setTempValue(std::variant<std::string, int, double, bool> value);
         };
     }
 }
