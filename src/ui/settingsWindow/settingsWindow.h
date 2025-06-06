@@ -7,6 +7,7 @@
 #define SETTINGSWINDOW_H
 
 #include <QWidget>
+#include <QAbstractButton>
 
 #include "../../settings/setting.h"
 
@@ -41,13 +42,7 @@ namespace sosText
             
 
             public slots:
-            /**
-             * @fn
-             * @brief
-             * @param none
-             * @return none
-             */
-            void close();
+            void buttonPressed(QAbstractButton *button);
             /**
              * @fn
              * @brief
@@ -55,6 +50,17 @@ namespace sosText
              * @return none
              */
             void allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings);
+            /**
+             * @fn close()
+             * @brief Closes the SettingsWindow
+             * @param none
+             * @return none
+             */
+            void close();
+            
+            void setDefaults();
+
+            void saveSettings();
 
             signals:
             /**
