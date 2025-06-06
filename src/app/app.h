@@ -144,7 +144,7 @@ namespace sosText
             /**
              * @fn newWelcomeTabSignal(WelcomeTab *tab)
              * @brief sends out a signal containing a WelcomeTab
-             * @param none
+             * @param tab the NewFileTab to be sent out
              * @return none
              */
             void newWelcomeTabSignal(WelcomeTab *tab);
