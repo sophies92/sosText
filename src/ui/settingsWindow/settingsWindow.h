@@ -46,6 +46,13 @@ namespace sosText
              * @return none
              */
             void close();
+            /**
+             * @fn
+             * @brief
+             * @param none
+             * @return none
+             */
+            void allSettingsRequestReturn();
 
             signals:
             /**

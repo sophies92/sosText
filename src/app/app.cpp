@@ -48,6 +48,7 @@ void sosText::App::App::openFileDialogRequested()
 void sosText::App::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
+    
 }
 
 void sosText::App::App::welcomeTabRequested()
@@ -64,12 +65,14 @@ void sosText::App::App::settingsWindowRequested()
 {
     settingsWindow = new sosText::ui::SettingsWindow(mainWindow);
     connect(settingsWindow, &sosText::ui::SettingsWindow::requestAllSettings, this, &sosText::App::App::allSettingsRequested);
+    connect(this, &sosText::App::App::settingsRequestReturnSignal, settingsWindow, &sosText::ui::SettingsWindow::allSettingsRequestReturn);
     settingsWindow->show();
 }
 
 void sosText::App::App::allSettingsRequested()
 {
     // TODO return settings somehow (list)
+    emit settingsRequestReturnSignal();
 }
 
 void sosText::App::App::fileStarted()

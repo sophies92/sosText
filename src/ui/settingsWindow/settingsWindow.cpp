@@ -12,6 +12,10 @@ sosText::ui::SettingsWindow::~SettingsWindow()
     delete ui;
 }
 
+void sosText::ui::SettingsWindow::allSettingsRequestReturn()
+{
+}
+
 void sosText::ui::SettingsWindow::close()
 {
     delete this;
