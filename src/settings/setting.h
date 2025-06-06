@@ -11,7 +11,7 @@
 
 namespace sosText
 {
-    namespace Settings
+    namespace settings
     {
         class Setting
         {
