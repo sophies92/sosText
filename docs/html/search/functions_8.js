@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['welcometabrequested_0',['welcomeTabRequested',['../d7/d51/classsosText_1_1App_1_1App.html#ad091b22c651e4ffcc7be000564950f19',1,'sosText::App::App']]]
+  ['settingswindowrequested_0',['settingsWindowRequested',['../d7/d51/classsosText_1_1App_1_1App.html#a3543a56f35cf05bb4d385654922adf37',1,'sosText::App::App']]]
 ];
