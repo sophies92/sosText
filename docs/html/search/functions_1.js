@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['requestopenfiledialogsignal_0',['requestOpenFileDialogSignal',['../d6/d1a/classMainWindow.html#a65bb99ea242fd38d39aad18edb19e204',1,'MainWindow']]]
+  ['mainwindow_0',['MainWindow',['../d6/d1a/classMainWindow.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['welcometab_0',['WelcomeTab',['../d4/d70/classWelcomeTab.html',1,'']]]
+  ['settingswindow_0',['SettingsWindow',['../d9/d2b/classSettingsWindow.html',1,'']]]
 ];

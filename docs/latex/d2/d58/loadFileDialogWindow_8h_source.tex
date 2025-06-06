@@ -1,61 +1,61 @@
-\hypertarget{loadFileDialogWindow_8h_source}{}\doxysection{load\+File\+Dialog\+Window.\+h}
-\label{loadFileDialogWindow_8h_source}\index{/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h@{/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h}}
+\doxysection{load\+File\+Dialog\+Window.\+h}
+\hypertarget{loadFileDialogWindow_8h_source}{}\label{loadFileDialogWindow_8h_source}\index{/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h@{/home/sophie/Projects/cpp/sosText/sosText/src/ui/openFileDialog/loadFileDialogWindow.h}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LOADFILEDIALOGWINDOW\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LOADFILEDIALOGWINDOW\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <filesystem>}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <fstream>}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QDialog>}}
-\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QMainWindow>}}
-\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QFileSystemModel>}}
-\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QListWidgetItem>}}
-\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QFileSelector>}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../mainWindow/mainWindow.h"{}}}
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../../project/project.h"{}}}
-\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../../project/file.h"{}}}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{19 \textcolor{keyword}{namespace }Ui}
-\DoxyCodeLine{20 \{}
-\DoxyCodeLine{21     \textcolor{keyword}{class }\mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}};}
-\DoxyCodeLine{22 \}}
-\DoxyCodeLine{23 }
-\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}} : \textcolor{keyword}{public} QDialog}
-\DoxyCodeLine{25 \{}
-\DoxyCodeLine{26     Q\_OBJECT}
-\DoxyCodeLine{27 }
-\DoxyCodeLine{28     \textcolor{comment}{// Public variables}}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30     \textcolor{comment}{// Private variables}}
-\DoxyCodeLine{31     Ui::LoadFileDialogWindow *ui;}
-\DoxyCodeLine{32 }
-\DoxyCodeLine{33     std::filesystem::path *path;}
-\DoxyCodeLine{34     QFileSystemModel *filesModel;}
-\DoxyCodeLine{35 }
-\DoxyCodeLine{36     \textcolor{comment}{// Public functions}}
-\DoxyCodeLine{37     \textcolor{keyword}{public}:}
-\DoxyCodeLine{38     \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}(QMainWindow *parent = \textcolor{keyword}{nullptr}, \mbox{\hyperlink{classProject_1_1Project}{Project::Project}} *currentProject = \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{39     \mbox{\hyperlink{classLoadFileDialogWindow}{\string~LoadFileDialogWindow}}();}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41     \textcolor{comment}{// Public UI slots}}
-\DoxyCodeLine{42     \textcolor{keyword}{public} slots:}
-\DoxyCodeLine{43     \textcolor{keywordtype}{void} onDirListClick(QModelIndex index);}
-\DoxyCodeLine{44     \textcolor{keywordtype}{void} openFileButton();}
-\DoxyCodeLine{45 }
-\DoxyCodeLine{46     signals:}
-\DoxyCodeLine{47     \textcolor{keywordtype}{void} fileOpened(std::filesystem::path *path);}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{49     \textcolor{comment}{// Private functions}}
-\DoxyCodeLine{50     \textcolor{keyword}{private}:}
-\DoxyCodeLine{51     \textcolor{keywordtype}{void} updateUIPathView();}
-\DoxyCodeLine{52 }
-\DoxyCodeLine{53 \};}
-\DoxyCodeLine{54 }
-\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LOADFILEDIALOGWINDOW\_H}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOADFILEDIALOGWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOADFILEDIALOGWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QFileSystemModel>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QListWidgetItem>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QFileSelector>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../mainWindow/mainWindow.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../../project/project.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../../project/file.h"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }Ui}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}};}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Public\ variables}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Private\ variables}}
+\DoxyCodeLine{00031\ \ \ \ \ Ui::LoadFileDialogWindow\ *ui;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::filesystem::path\ *path;}
+\DoxyCodeLine{00034\ \ \ \ \ QFileSystemModel\ *filesModel;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Public\ functions}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}(QMainWindow\ *parent\ =\ \textcolor{keyword}{nullptr},\ \mbox{\hyperlink{classProject_1_1Project}{Project::Project}}\ *currentProject\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classLoadFileDialogWindow}{\string~LoadFileDialogWindow}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ Public\ UI\ slots}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ onDirListClick(QModelIndex\ index);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ openFileButton();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ signals:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpened(std::filesystem::path\ *path);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ Private\ functions}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ updateUIPathView();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOADFILEDIALOGWINDOW\_H}}
 
 \end{DoxyCode}

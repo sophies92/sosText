@@ -1,12 +1,22 @@
 <map id="/home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/welcomeTab/welcomeTab.h" name="/home/sophie/Projects/cpp/sosText/sosText/src/ui/filesTabs/welcomeTab/welcomeTab.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="17,199,96,225"/>
-<area shape="rect" id="node3" href="$d4/df8/newFileTab_8h.html" title=" " alt="" coords="79,124,274,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="127,199,211,225"/>
-<area shape="rect" id="node5" href="$d2/d4d/file_8h_source.html" title=" " alt="" coords="235,199,374,225"/>
-<area shape="rect" id="node6" title=" " alt="" coords="70,273,129,300"/>
-<area shape="rect" id="node7" title=" " alt="" coords="153,273,243,300"/>
-<area shape="rect" id="node8" title=" " alt="" coords="268,273,341,300"/>
-<area shape="rect" id="node9" title=" " alt="" coords="366,273,446,300"/>
-<area shape="rect" id="node10" title=" " alt="" coords="471,273,541,300"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,212,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="17,196,96,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,76,70,123,63,153,60,182,55,181,58,153,65,122,86,74"/>
+<area shape="rect" id="Node000003" href="$d4/df8/newFileTab_8h.html" title=" " alt="" coords="79,123,274,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,73,162,110,158,113,131,76"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="159,150,90,191,87,186,156,146"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="127,196,211,221"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="178,149,174,183,169,182,173,148"/>
+<area shape="rect" id="Node000005" href="$d2/d4d/file_8h_source.html" title=" " alt="" coords="235,196,374,221"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="199,146,273,187,270,191,196,150"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="70,269,129,295"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="273,224,143,269,141,264,271,219"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="153,269,243,295"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="289,224,228,264,225,259,286,219"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="268,269,341,295"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="307,222,307,256,302,256,302,222"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="366,269,446,295"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="322,219,380,259,377,263,319,224"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="471,269,541,295"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="338,219,461,262,460,267,336,224"/>
 </map>

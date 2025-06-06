@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['welcometab_2eh_0',['welcomeTab.h',['../db/d00/welcomeTab_8h.html',1,'']]]
+  ['settingswindow_2eh_0',['settingsWindow.h',['../d6/d0f/settingsWindow_8h.html',1,'']]]
 ];

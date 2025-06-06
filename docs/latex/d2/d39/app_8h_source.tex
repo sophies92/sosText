@@ -1,63 +1,67 @@
-\hypertarget{app_8h_source}{}\doxysection{app.\+h}
-\label{app_8h_source}\index{/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h@{/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h}}
+\doxysection{app.\+h}
+\hypertarget{app_8h_source}{}\label{app_8h_source}\index{/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h@{/home/sophie/Projects/cpp/sosText/sosText/src/app/app.h}}
 \mbox{\hyperlink{app_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 }
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef APP\_H}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#define APP\_H}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
-\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <filesystem>}}
-\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <vector>}}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QObject>}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../ui/mainWindow/mainWindow.h"{}}}
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../ui/openFileDialog/loadFileDialogWindow.h"{}}}
-\DoxyCodeLine{17 }
-\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../project/project.h"{}}}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{20 \textcolor{keyword}{namespace }App}
-\DoxyCodeLine{21 \{}
-\DoxyCodeLine{22     \textcolor{keyword}{class }\mbox{\hyperlink{classApp_1_1App}{App}} : \textcolor{keyword}{public} QObject}
-\DoxyCodeLine{23     \{}
-\DoxyCodeLine{24         Q\_OBJECT}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26         \textcolor{comment}{// Public Variables}}
-\DoxyCodeLine{27         \textcolor{keyword}{public}:}
-\DoxyCodeLine{28         \mbox{\hyperlink{classMainWindow}{MainWindow}} *mainWindow;}
-\DoxyCodeLine{29         \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}} *loadFileDialogWindow;}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31         \textcolor{comment}{// Private Variables}}
-\DoxyCodeLine{32         \textcolor{keyword}{private}:}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34         \textcolor{comment}{// Public Functions}}
-\DoxyCodeLine{35         \textcolor{keyword}{public}:}
-\DoxyCodeLine{36         \mbox{\hyperlink{classApp_1_1App}{App}}(QObject *parent = \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{37         \mbox{\hyperlink{classApp_1_1App}{\string~App}}();}
-\DoxyCodeLine{38 }
-\DoxyCodeLine{39         \textcolor{comment}{// Public Slots}}
-\DoxyCodeLine{40         \textcolor{keyword}{public} slots:}
-\DoxyCodeLine{41         \textcolor{keywordtype}{void} showMainWindow();}
-\DoxyCodeLine{42         \textcolor{keywordtype}{void} openFileDialogRequested();}
-\DoxyCodeLine{43         \textcolor{keywordtype}{void} newProjectWindowRequested();}
-\DoxyCodeLine{44         \textcolor{keywordtype}{void} welcomeTabRequested();}
-\DoxyCodeLine{45         \mbox{\hyperlink{classNewFileTab}{NewFileTab}} *fileTabRequested();}
-\DoxyCodeLine{46 }
-\DoxyCodeLine{47         \textcolor{keywordtype}{void} fileStarted();}
-\DoxyCodeLine{48         \textcolor{keywordtype}{void} fileOpened(std::filesystem::path *path);}
-\DoxyCodeLine{49 }
-\DoxyCodeLine{50         \textcolor{comment}{// Signals}}
-\DoxyCodeLine{51         signals:}
-\DoxyCodeLine{52         \textcolor{keywordtype}{void} fileStartedSignal();}
-\DoxyCodeLine{53         \textcolor{keywordtype}{void} fileOpenedSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}} *tab);}
-\DoxyCodeLine{54         \textcolor{keywordtype}{void} projectOpenedSignal(std::filesystem::path *path);}
-\DoxyCodeLine{55 }
-\DoxyCodeLine{56         \textcolor{keywordtype}{void} newWelcomeTabSignal(\mbox{\hyperlink{classWelcomeTab}{WelcomeTab}} *tab);}
-\DoxyCodeLine{57         \textcolor{keywordtype}{void} newFileTabSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}} *tab);}
-\DoxyCodeLine{58     \};}
-\DoxyCodeLine{59 \}}
-\DoxyCodeLine{60 }
-\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// APP\_H}}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ APP\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ APP\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../ui/mainWindow/mainWindow.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../ui/openFileDialog/loadFileDialogWindow.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../ui/settingsWindow/settingsWindow.h"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}../project/project.h"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{classApp}{App}}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classApp_1_1App}{App}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Variables}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMainWindow}{MainWindow}}\ *\mbox{\hyperlink{classApp_1_1App_a802240bd0b51eb6fb2082c5751217f8e}{mainWindow}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLoadFileDialogWindow}{LoadFileDialogWindow}}\ *\mbox{\hyperlink{classApp_1_1App_a87b745cafa4a6d399005bdd422f7354b}{loadFileDialogWindow}};\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSettingsWindow}{SettingsWindow}}\ *\mbox{\hyperlink{classApp_1_1App_aa7ace09eb2caada675f36f7f5f5cb406}{settingsWindow}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Private\ Variables}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Functions}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classApp_1_1App}{App}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classApp_1_1App}{\string~App}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *createNewFileTab();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Public\ Slots}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ mainWindowRequested();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ openFileDialogRequested();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newProjectWindowRequested();}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ welcomeTabRequested();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ settingsWindowRequested();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStarted();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpened(std::filesystem::path\ *path);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Signals}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ signals:}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileStartedSignal();}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ fileOpenedSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ projectOpenedSignal(std::filesystem::path\ *path);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newWelcomeTabSignal(\mbox{\hyperlink{classWelcomeTab}{WelcomeTab}}\ *tab);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ newFileTabSignal(\mbox{\hyperlink{classNewFileTab}{NewFileTab}}\ *tab);}
+\DoxyCodeLine{00070\ \ \ \ \ \};}
+\DoxyCodeLine{00071\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APP\_H}}
 
 \end{DoxyCode}

@@ -20,21 +20,29 @@
 
 namespace App
 {
+    /**
+     * @class App
+     * @brief This class controls the App
+     */
     class App : public QObject
     {
         Q_OBJECT
 
         // Public Variables
         public:
-        MainWindow *mainWindow;
-        LoadFileDialogWindow *loadFileDialogWindow;
-        SettingsWindow *settingsWindow;
+        MainWindow *mainWindow;                         //!< A pointer to the MainWindow of the App
+        LoadFileDialogWindow *loadFileDialogWindow;     //!< A pointer to the LoadFileDialogWindow
+        SettingsWindow *settingsWindow;                 //!< A pointer to the SettingsWindow
 
         // Private Variables
         private:
 
         // Public Functions
         public:
+        /**
+         * @fn App(QObject *parent = nullptr)
+         * @brief The constructor for the class
+         */
         App(QObject *parent = nullptr);
         ~App();
 
