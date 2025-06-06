@@ -130,7 +130,7 @@ namespace sosText
             /**
              * @fn fileOpenedSignal(NewFileTab *tab)
              * @brief sounds out a signal with a tab contaning a newly opened file
-             * @param none
+             * @param tab the NewFileTab to be sent out
              * @return none
              */
             void fileOpenedSignal(NewFileTab *tab);
@@ -144,7 +144,7 @@ namespace sosText
             /**
              * @fn newWelcomeTabSignal(WelcomeTab *tab)
              * @brief sends out a signal containing a WelcomeTab
-             * @param tab the NewFileTab to be sent out
+             * @param tab the WelcomeTab to be sent out
              * @return none
              */
             void newWelcomeTabSignal(WelcomeTab *tab);
