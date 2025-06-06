@@ -1,12 +1,12 @@
 #include "settingsWindow.h"
 #include "ui_settingsWindow.h"
 
-SettingsWindow::SettingsWindow(QWidget *parent) : QWidget(), ui(new Ui::SettingsWindow)
+sosText::SettingsWindow::SettingsWindow(QWidget *parent) : QWidget(), ui(new Ui::SettingsWindow)
 {
     SettingsWindow::ui->setupUi(this);
 }
 
-SettingsWindow::~SettingsWindow()
+sosText::SettingsWindow::~SettingsWindow()
 {
     delete ui;
 }

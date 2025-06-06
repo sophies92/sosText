@@ -17,57 +17,60 @@
 #include "../ui/settingsWindow/settingsWindow.h"
 
 #include "../project/project.h"
+#include "../settings/setting.h"
 
-namespace App
+namespace sosText
 {
-    /**
-     * @class App
-     * @brief This class controls the App
-     */
-    class App : public QObject
+    namespace App
     {
-        Q_OBJECT
-
-        // Public Variables
-        public:
-        MainWindow *mainWindow;                         //!< A pointer to the MainWindow of the App
-        LoadFileDialogWindow *loadFileDialogWindow;     //!< A pointer to the LoadFileDialogWindow
-        SettingsWindow *settingsWindow;                 //!< A pointer to the SettingsWindow
-
-        // Private Variables
-        private:
-
-        // Public Functions
-        public:
         /**
-         * @fn App(QObject *parent = nullptr)
-         * @brief The constructor for the class
+         * @class App
+         * @brief This class controls the App
          */
-        App(QObject *parent = nullptr);
-        ~App();
+        class App : public QObject
+        {
+            Q_OBJECT
 
-        private:
-        NewFileTab *createNewFileTab();
+            // Public Variables
+            public:
+            sosText::ui::MainWindow *mainWindow;            //!< A pointer to the MainWindow of the App
+            LoadFileDialogWindow *loadFileDialogWindow;     //!< A pointer to the LoadFileDialogWindow
+            SettingsWindow *settingsWindow;                 //!< A pointer to the SettingsWindow
 
-        // Public Slots
-        public slots:
-        void mainWindowRequested();
-        void openFileDialogRequested();
-        void newProjectWindowRequested();
-        void welcomeTabRequested();
-        void settingsWindowRequested();
-        void fileStarted();
-        void fileOpened(std::filesystem::path *path);
+            // Private Variables
+            private:
 
-        // Signals
-        signals:
-        void fileStartedSignal();
-        void fileOpenedSignal(NewFileTab *tab);
-        void projectOpenedSignal(std::filesystem::path *path);
+            // Public Functions
+            public:
+            /**
+             * @fn App(QObject *parent = nullptr)
+             * @brief The constructor for the class
+             */
+            App(QObject *parent = nullptr);
+            ~App();
 
-        void newWelcomeTabSignal(WelcomeTab *tab);
-        void newFileTabSignal(NewFileTab *tab);
-    };
+            private:
+            NewFileTab *createNewFileTab();
+
+            // Public Slots
+            public slots:
+            void mainWindowRequested();
+            void openFileDialogRequested();
+            void newProjectWindowRequested();
+            void welcomeTabRequested();
+            void settingsWindowRequested();
+            void fileStarted();
+            void fileOpened(std::filesystem::path *path);
+
+            // Signals
+            signals:
+            void fileStartedSignal();
+            void fileOpenedSignal(NewFileTab *tab);
+            void projectOpenedSignal(std::filesystem::path *path);
+
+            void newWelcomeTabSignal(WelcomeTab *tab);
+            void newFileTabSignal(NewFileTab *tab);
+        };
+    }
 }
-
 #endif // APP_H

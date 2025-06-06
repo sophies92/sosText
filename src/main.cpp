@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    App::App *app = new App::App();
+    sosText::App::App *app = new sosText::App::App();
 
     return a.exec();
 }

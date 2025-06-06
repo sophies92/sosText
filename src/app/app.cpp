@@ -1,64 +1,64 @@
 #include "app.h"
 
-App::App::App(QObject *parent) : QObject()
+sosText::App::App::App(QObject *parent) : QObject()
 {
     mainWindowRequested();
 }
 
-App::App::~App()
+sosText::App::App::~App()
 {
     
 }
 
-NewFileTab *App::App::createNewFileTab()
+NewFileTab *sosText::App::App::createNewFileTab()
 {
     NewFileTab *tab = new NewFileTab();
     return(tab);
 }
 
-void App::App::mainWindowRequested()
+void sosText::App::App::mainWindowRequested()
 {
-    mainWindow = new MainWindow();
-    connect(mainWindow, &MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
-    connect(mainWindow, &MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
-    connect(mainWindow, &MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
-    connect(mainWindow, &MainWindow::requestFileTabSignal, this, &App::fileStarted);
-    connect(mainWindow, &MainWindow::requestSettingsWindowSignal, this, &App::settingsWindowRequested);
-    connect(this, &App::newWelcomeTabSignal, mainWindow, &MainWindow::addNewWelcomeTab);
-    connect(this, &App::newFileTabSignal, mainWindow, &MainWindow::addNewFileTab);
+    mainWindow = new sosText::ui::MainWindow();
+    connect(mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestFileTabSignal, this, &App::fileStarted);
+    connect(mainWindow, &sosText::ui::MainWindow::requestSettingsWindowSignal, this, &App::settingsWindowRequested);
+    connect(this, &App::newWelcomeTabSignal, mainWindow, &sosText::ui::MainWindow::addNewWelcomeTab);
+    connect(this, &App::newFileTabSignal, mainWindow, &sosText::ui::MainWindow::addNewFileTab);
     mainWindow->showMaximized();
     emit mainWindow->requestWelcomeTabSignal();
 }
 
-void App::App::openFileDialogRequested()
+void sosText::App::App::openFileDialogRequested()
 {
     loadFileDialogWindow = new LoadFileDialogWindow(mainWindow);
     connect(loadFileDialogWindow, &LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
     loadFileDialogWindow->show();
 }
 
-void App::App::newProjectWindowRequested()
+void sosText::App::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
 }
 
-void App::App::welcomeTabRequested()
+void sosText::App::App::welcomeTabRequested()
 {
     WelcomeTab *welcomeTab = new WelcomeTab();
     connect(welcomeTab, &WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
-    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, mainWindow, &MainWindow::requestOpenFileDialogSignal);
-    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &MainWindow::requestNewProjectSignal);
-    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &MainWindow::requestOpenFileDialogSignal);
+    connect(welcomeTab, &WelcomeTab::openFileButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
+    connect(welcomeTab, &WelcomeTab::newProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal);
+    connect(welcomeTab, &WelcomeTab::openProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
-void App::App::settingsWindowRequested()
+void sosText::App::App::settingsWindowRequested()
 {
     settingsWindow = new SettingsWindow(mainWindow);
     settingsWindow->show();
 }
 
-void App::App::fileStarted()
+void sosText::App::App::fileStarted()
 {
     NewFileTab *tab = createNewFileTab();
     tab->file->setPath("newFile");
@@ -66,7 +66,7 @@ void App::App::fileStarted()
     emit newFileTabSignal(tab);
 }
 
-void App::App::fileOpened(std::filesystem::path *path)
+void sosText::App::App::fileOpened(std::filesystem::path *path)
 {
     if(std::filesystem::is_directory(path->c_str()))
     {

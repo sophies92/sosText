@@ -13,16 +13,18 @@ namespace Ui
     class SettingsWindow;
 }
 
-class SettingsWindow : public QWidget
+namespace sosText
 {
-    Q_OBJECT
+    class SettingsWindow : public QWidget
+    {
+        Q_OBJECT
 
-    private:
-    Ui::SettingsWindow *ui;
+        private:
+        Ui::SettingsWindow *ui;
 
-    public:
-    SettingsWindow(QWidget *parent = nullptr);
-    ~SettingsWindow();
-};
-
+        public:
+        SettingsWindow(QWidget *parent = nullptr);
+        ~SettingsWindow();
+    };
+}
 #endif // SETTINGSWINDOW_H

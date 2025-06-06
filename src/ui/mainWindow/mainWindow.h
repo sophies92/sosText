@@ -22,59 +22,64 @@ namespace Ui
     class MainWindow;
 }
 
-/**
- * @class MainWindow
- * @brief
- */
-class MainWindow : public QMainWindow
+namespace sosText
 {
-    Q_OBJECT
+    namespace ui
+    {   
+         /**
+         * @class MainWindow
+         * @brief
+         */
+        class MainWindow : public QMainWindow
+        {
+            Q_OBJECT
 
-    // Private Variables
-    private:
-    Ui::MainWindow *ui;                                             //!< a pointer to the UI element
+            // Private Variables
+            private:
+            Ui::MainWindow *ui;                                             //!< a pointer to the UI element
 
-    // Public Functions
-    public:
-    /**
-     * @fn MainWindow(QWidget *parent = nullptr)
-     * @brief The constructor for the MainWindow class
-     * @param parent A pointer to the parent QWidget. default = null
-     */
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-    Ui::MainWindow *getUi();
+            // Public Functions
+            public:
+            /**
+             * @fn MainWindow(QWidget *parent = nullptr)
+             * @brief The constructor for the MainWindow class
+             * @param parent A pointer to the parent QWidget. default = null
+             */
+            MainWindow(QWidget *parent = nullptr);
+            ~MainWindow();
+            Ui::MainWindow *getUi();
 
-    // Public Slots
-    public slots:
-    /**
-     * @fn addNewWelcomeTab(WelcomeTab *tab)
-     * @brief Adds a new WelcomeTab to the file viewer.
-     * @param tab A pointer to the tab to be added.
-     */
-    void addNewWelcomeTab(WelcomeTab *tab);
-    void addNewFileTab(NewFileTab *tab);
-    void closeTab(int index);
+            // Public Slots
+            public slots:
+            /**
+             * @fn addNewWelcomeTab(WelcomeTab *tab)
+             * @brief Adds a new WelcomeTab to the file viewer.
+             * @param tab A pointer to the tab to be added.
+             */
+            void addNewWelcomeTab(WelcomeTab *tab);
+            void addNewFileTab(NewFileTab *tab);
+            void closeTab(int index);
 
-    void fileOpened(std::filesystem::path *path);
-    void projectOpened(std::filesystem::path *path);
+            void fileOpened(std::filesystem::path *path);
+            void projectOpened(std::filesystem::path *path);
 
-    void fileSaved();
-    void allFilesSaved();
+            void fileSaved();
+            void allFilesSaved();
 
-    signals:
-    /**
-     * @fn requestOpenFileDialogSignal()
-     * @brief Send a request for the Open-File Dialog window to be shown.
-     */
-    void requestOpenFileDialogSignal();
-    void requestNewProjectSignal();
-    void requestWelcomeTabSignal();
-    void requestFileTabSignal();
-    void requestSettingsWindowSignal();
+            signals:
+            /**
+             * @fn requestOpenFileDialogSignal()
+             * @brief Send a request for the Open-File Dialog window to be shown.
+             */
+            void requestOpenFileDialogSignal();
+            void requestNewProjectSignal();
+            void requestWelcomeTabSignal();
+            void requestFileTabSignal();
+            void requestSettingsWindowSignal();
 
-    private:
-    void connectActions();
-};
-
+            private:
+            void connectActions();
+        };
+    }
+}
 #endif // MAINWINDOW_H
