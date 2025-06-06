@@ -14,3 +14,8 @@ void sosText::settings::AppSettings::LoadSettings()
 {
     // TODO load settings from file and add to settings map
 }
+
+std::map<std::string, sosText::settings::Setting> *sosText::settings::AppSettings::getAllSettings()
+{
+    return(this->appSettingsMap);
+}

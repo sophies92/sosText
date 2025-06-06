@@ -162,7 +162,7 @@ namespace sosText
             /**
              * 
              */
-            void settingsRequestReturnSignal();
+            void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
         };
     }
 }

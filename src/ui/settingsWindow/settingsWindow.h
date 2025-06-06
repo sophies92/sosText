@@ -8,6 +8,8 @@
 
 #include <QWidget>
 
+#include "../../settings/setting.h"
+
 namespace Ui
 {
     class SettingsWindow;
@@ -52,7 +54,7 @@ namespace sosText
              * @param none
              * @return none
              */
-            void allSettingsRequestReturn();
+            void allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings);
 
             signals:
             /**

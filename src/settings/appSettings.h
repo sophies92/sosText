@@ -30,11 +30,14 @@ namespace sosText
              * @brief
              */
             ~AppSettings();
+
             /**
              * @fn
              * @brief
              */
             void LoadSettings();
+
+            std::map<std::string, sosText::settings::Setting> *getAllSettings();
         };
     }
 }

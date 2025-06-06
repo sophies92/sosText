@@ -71,8 +71,7 @@ void sosText::App::App::settingsWindowRequested()
 
 void sosText::App::App::allSettingsRequested()
 {
-    // TODO return settings somehow (list)
-    emit settingsRequestReturnSignal();
+    emit settingsRequestReturnSignal(this->appSettings->getAllSettings());
 }
 
 void sosText::App::App::fileStarted()
