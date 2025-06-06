@@ -33,6 +33,13 @@ namespace sosText
          * @brief
          */
         ~SettingsWindow();
+        /**
+         * @fn
+         * @brief
+         * @param none
+         * @return none
+         */
+        void close();
     };
 }
 #endif // SETTINGSWINDOW_H
