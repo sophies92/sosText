@@ -127,8 +127,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>378</width>
-           <height>338</height>
+           <width>98</width>
+           <height>28</height>
           </rect>
          </property>
          <attribute name="label">
@@ -197,6 +197,12 @@
           <widget class="QPlainTextEdit" name="OutputTerminalTextEdit">
            <property name="lineWrapMode">
             <enum>QPlainTextEdit::NoWrap</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="textInteractionFlags">
+            <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
            </property>
           </widget>
          </item>
