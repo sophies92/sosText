@@ -164,7 +164,7 @@
         <property name="handleWidth">
          <number>5</number>
         </property>
-        <widget class="QListWidget" name="listWidget">
+        <widget class="QListWidget" name="placesList">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>
@@ -184,7 +184,7 @@
           </size>
          </property>
         </widget>
-        <widget class="QListView" name="listView">
+        <widget class="QListWidget" name="devicesList">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
            <horstretch>0</horstretch>

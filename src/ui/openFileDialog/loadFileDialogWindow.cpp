@@ -14,6 +14,15 @@ sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : Q
     ui->directories->setModel(filesModel);
     ui->directories->expandToDepth(1);
     updateUIPathView();
+
+    // TODO show devices
+    for(std::filesystem::directory_entry e : std::filesystem::directory_iterator("/dev"))
+    {
+        if(e.is_block_file())
+        {
+            ui->devicesList->addItem(e.path().filename().c_str());
+        }
+    }
 }
 
 sosText::ui::LoadFileDialogWindow::~LoadFileDialogWindow()
