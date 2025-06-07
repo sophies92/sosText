@@ -16,8 +16,8 @@ sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : Q
     updateUIPathView();
 
     // TODO show devices
-    ui->devicesList->addItem("root");
-    ui->devicesList->addItem("home");
+    ui->placesList->addItem("root");
+    ui->placesList->addItem("home");
 }
 
 sosText::ui::LoadFileDialogWindow::~LoadFileDialogWindow()
