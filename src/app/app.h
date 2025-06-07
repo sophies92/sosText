@@ -215,8 +215,8 @@ namespace sosText
             void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
 
             /**
-             * @fn
-             * @brief
+             * @fn requestPrintToOutput(std::string text)
+             * @brief sends a request to print to the ouput terminal
              */
             void requestPrintToOutput(std::string text);
         };
