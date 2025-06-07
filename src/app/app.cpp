@@ -15,6 +15,7 @@ sosText::app::App::App(QObject *parent) : QObject()
 sosText::app::App::~App()
 {
     delete appSettings;
+    delete outputTerminal;
 }
 
 NewFileTab *sosText::app::App::createNewFileTab()
