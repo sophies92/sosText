@@ -23,6 +23,11 @@ Ui::MainWindow *sosText::ui::MainWindow::getUi()
     return(ui);
 }
 
+QPlainTextEdit *sosText::ui::MainWindow::getOutputBox()
+{
+    return(ui->OutputTerminalTextEdit);
+}
+
 void sosText::ui::MainWindow::addNewFileTab(NewFileTab *tab)
 {
     int tabIndex = ui->filesTabs->addTab(tab, tab->file->getFilename()->c_str());

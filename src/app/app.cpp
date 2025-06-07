@@ -2,9 +2,10 @@
 
 sosText::app::App::App(QObject *parent) : QObject()
 {
+    mainWindowRequested();
+    this->outputTerminal = createNewOutputTerminal();
     this->appSettings = createNewAppSettings();
     this->appSettings->LoadSettings();
-    mainWindowRequested();
 }
 
 sosText::app::App::~App()
@@ -22,6 +23,14 @@ sosText::settings::AppSettings *sosText::app::App::createNewAppSettings()
 {
     sosText::settings::AppSettings *settings = new sosText::settings::AppSettings();
     return(settings);
+}
+
+sosText::output::OutputTerminal *sosText::app::App::createNewOutputTerminal()
+{
+    sosText::output::OutputTerminal *terminal = new sosText::output::OutputTerminal();
+    terminal->setTextArea(mainWindow->getOutputBox());
+    connect(this, &sosText::app::App::requestPrintToOutput, terminal, &sosText::output::OutputTerminal::printToOutputRequested);
+    return(terminal);
 }
 
 void sosText::app::App::mainWindowRequested()

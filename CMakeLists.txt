@@ -21,6 +21,9 @@ set(PROJECT_SOURCES
         src/app/app.cpp
         src/app/app.h
 
+        src/outputTerminal/outputTerminal.cpp
+        src/outputTerminal/outputTerminal.h
+
         src/project/project.cpp
         src/project/project.h
 

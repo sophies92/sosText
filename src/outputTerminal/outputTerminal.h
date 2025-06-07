@@ -7,6 +7,7 @@
 #define OUTPUTTERMINAL_H
 
 #include <QObject>
+#include <QPlainTextEdit>
 
 namespace sosText
 {
@@ -16,20 +17,54 @@ namespace sosText
         {
             Q_OBJECT
 
-            public:
-            OutputTerminal();
-            ~OutputTerminal();
+
 
             private:
+            QPlainTextEdit *textArea;
 
-            public slots:
+
+
+            public:
+
             /**
              * @fn
              * @brief
              * @param
              * @return
              */
-            void printToOutputRequested(char* text);
+            OutputTerminal();
+
+            /**
+             * @fn
+             * @brief
+             * @param
+             * @return
+             */
+            ~OutputTerminal();
+
+            /**
+             * @fn
+             * @brief
+             * @param
+             * @return
+             */
+            void setTextArea(QPlainTextEdit *textArea);
+
+
+
+            private:
+
+
+
+            public slots:
+
+            /**
+             * @fn
+             * @brief
+             * @param
+             * @return
+             */
+            void printToOutputRequested(std::string text);
 
             signals:
         };

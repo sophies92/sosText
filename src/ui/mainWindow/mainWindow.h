@@ -57,6 +57,14 @@ namespace sosText
              */
             Ui::MainWindow *getUi();
 
+            /**
+             * @fn
+             * @brief
+             * @param
+             * @return
+             */
+            QPlainTextEdit *getOutputBox();
+
             // Public Slots
             public slots:
             /**

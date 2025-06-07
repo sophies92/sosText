@@ -17,6 +17,7 @@
 
 #include "../project/project.h"
 #include "../settings/appSettings.h"
+#include "../outputTerminal/outputTerminal.h"
 
 namespace sosText
 {
@@ -43,6 +44,7 @@ namespace sosText
             sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             
             sosText::settings::AppSettings *appSettings;                //!< A pointer to the AppSettings
+            sosText::output::OutputTerminal *outputTerminal;            //!< A pointer to the OutputTermianl object
 
 
 
@@ -83,6 +85,14 @@ namespace sosText
              * @return A pointer to the AppSettings object that has been created
              */
             sosText::settings::AppSettings *createNewAppSettings();
+
+            /**
+             * @fn
+             * @brief
+             * @param
+             * @return
+             */
+            sosText::output::OutputTerminal *createNewOutputTerminal();
 
 
 
@@ -203,6 +213,12 @@ namespace sosText
              * @brief sends out a signal containing a pointer to the settings map
              */
             void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
+
+            /**
+             * @fn
+             * @brief
+             */
+            void requestPrintToOutput(std::string text);
         };
     }
 }
