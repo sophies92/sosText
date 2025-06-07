@@ -70,7 +70,6 @@ void Project::File::saveFile(QString tabText)
             fs.open(path->c_str());
             fs.write(tabText.toStdString().c_str(), tabText.length() +1);
             fs.close();
-            std::cout << "saved" << std::endl;
         }
         else
         {

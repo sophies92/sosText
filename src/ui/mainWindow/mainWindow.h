@@ -131,12 +131,23 @@ namespace sosText
              */
             void requestSettingsWindowSignal();
 
+            /**
+             * @fn
+             * @brief
+             */
+            void requestPrintToOutput(std::string text);
+
+
+
             private:
+            
             /**
              * @fn
              * @brief
              */
             void connectActions();
+
+            
         };
     }
 }

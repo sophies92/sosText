@@ -55,6 +55,7 @@ void sosText::ui::MainWindow::fileSaved()
     {
         NewFileTab *tab = dynamic_cast<NewFileTab*>(ui->filesTabs->currentWidget());
         tab->file->saveFile(tab->textEdit->toPlainText());
+        emit requestPrintToOutput("File saved!");
     }    
 }
 

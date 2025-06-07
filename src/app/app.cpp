@@ -3,9 +3,13 @@
 sosText::app::App::App(QObject *parent) : QObject()
 {
     mainWindowRequested();
+
     this->outputTerminal = createNewOutputTerminal();
+
     this->appSettings = createNewAppSettings();
+    emit requestPrintToOutput("Loading Settings...");
     this->appSettings->LoadSettings();
+    emit requestPrintToOutput("done!");
 }
 
 sosText::app::App::~App()
@@ -30,6 +34,7 @@ sosText::output::OutputTerminal *sosText::app::App::createNewOutputTerminal()
     sosText::output::OutputTerminal *terminal = new sosText::output::OutputTerminal();
     terminal->setTextArea(mainWindow->getOutputBox());
     connect(this, &sosText::app::App::requestPrintToOutput, terminal, &sosText::output::OutputTerminal::printToOutputRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestPrintToOutput, terminal, &sosText::output::OutputTerminal::printToOutputRequested);
     return(terminal);
 }
 
@@ -57,7 +62,7 @@ void sosText::app::App::openFileDialogRequested()
 void sosText::app::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
-    
+    emit requestPrintToOutput("New project started...");
 }
 
 void sosText::app::App::welcomeTabRequested()
