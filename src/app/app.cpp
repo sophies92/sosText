@@ -12,7 +12,6 @@ sosText::app::App::App(QObject *parent) : QObject()
     emit requestPrintToOutput("done!");
 
     mainWindow->showMaximized();
-    
     emit mainWindow->requestWelcomeTabSignal();
 }
 
