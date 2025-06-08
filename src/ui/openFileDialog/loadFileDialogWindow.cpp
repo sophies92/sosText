@@ -7,21 +7,22 @@ sosText::ui::LoadFileDialogWindow::LoadFileDialogWindow(QMainWindow *parent) : Q
     connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &LoadFileDialogWindow::openFileButton);
     connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &LoadFileDialogWindow::close);
     connect(ui->directories, &QTreeView::clicked, this, &LoadFileDialogWindow::onDirListClick);
-
-    path = new std::filesystem::path("/");
-    filesModel = new QFileSystemModel();
-    filesModel->setRootPath(ui->filepath->toPlainText());
-    ui->directories->setModel(filesModel);
-    ui->directories->expandToDepth(1);
-    updateUIPathView();
-
-    // TODO show devices
 }
 
 sosText::ui::LoadFileDialogWindow::~LoadFileDialogWindow()
 {
     delete path;
     delete ui;
+}
+
+void sosText::ui::LoadFileDialogWindow::showDirectories(std::filesystem::path pathToRoot)
+{
+    path = new std::filesystem::path(pathToRoot);
+    filesModel = new QFileSystemModel();
+    filesModel->setRootPath(ui->filepath->toPlainText());
+    ui->directories->setModel(filesModel);
+    ui->directories->expandToDepth(1);
+    updateUIPathView();
 }
 
 void sosText::ui::LoadFileDialogWindow::onDirListClick(QModelIndex index)

@@ -10,6 +10,10 @@ sosText::app::App::App(QObject *parent) : QObject()
     emit requestPrintToOutput("Loading Settings...");
     this->appSettings->LoadSettings();
     emit requestPrintToOutput("done!");
+
+    mainWindow->showMaximized();
+    
+    emit mainWindow->requestWelcomeTabSignal();
 }
 
 sosText::app::App::~App()
@@ -49,8 +53,6 @@ void sosText::app::App::mainWindowRequested()
     connect(mainWindow, &sosText::ui::MainWindow::requestSettingsWindowSignal, this, &App::settingsWindowRequested);
     connect(this, &App::newWelcomeTabSignal, mainWindow, &sosText::ui::MainWindow::addNewWelcomeTab);
     connect(this, &App::newFileTabSignal, mainWindow, &sosText::ui::MainWindow::addNewFileTab);
-    mainWindow->showMaximized();
-    emit mainWindow->requestWelcomeTabSignal();
 }
 
 void sosText::app::App::openFileDialogRequested()
@@ -59,6 +61,7 @@ void sosText::app::App::openFileDialogRequested()
     connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
     connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::requestPrintToOutput, outputTerminal, &sosText::output::OutputTerminal::printToOutputRequested);
     loadFileDialogWindow->show();
+    loadFileDialogWindow->showDirectories("/");
 }
 
 void sosText::app::App::newProjectWindowRequested()

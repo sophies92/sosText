@@ -50,6 +50,14 @@ namespace sosText
              */
             ~LoadFileDialogWindow();
 
+            /**
+             * @file showDirectories(std::filesystem::path pathToRoot)
+             * @brief
+             * @param
+             * @return
+             */
+            void showDirectories(std::filesystem::path pathToRoot);
+
             // Public UI slots
             public slots:
             /**
@@ -85,7 +93,7 @@ namespace sosText
 
             // Private functions
             private:
-            
+
             /**
              * @fn
              * @brief
