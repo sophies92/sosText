@@ -57,6 +57,7 @@ void sosText::app::App::openFileDialogRequested()
 {
     loadFileDialogWindow = new sosText::ui::LoadFileDialogWindow(mainWindow);
     connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
+    connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::requestPrintToOutput, outputTerminal, &sosText::output::OutputTerminal::printToOutputRequested);
     loadFileDialogWindow->show();
 }
 

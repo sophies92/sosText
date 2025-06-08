@@ -75,8 +75,17 @@ namespace sosText
              */
             void fileOpened(std::filesystem::path *path);
 
+            /**
+             * @fn requestPrintToOutput(std::string text)
+             * @brief sends a request to print to the ouput terminal
+             */
+            void requestPrintToOutput(std::string text);
+
+
+
             // Private functions
             private:
+            
             /**
              * @fn
              * @brief
