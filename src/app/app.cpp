@@ -14,7 +14,7 @@ sosText::app::App::App(QObject *parent) : QObject()
     mainWindow->showMaximized();
     emit mainWindow->requestWelcomeTabSignal();
 }
-
+ 
 sosText::app::App::~App()
 {
     delete appSettings;
