@@ -24,11 +24,12 @@ void sosText::settings::AppSettings::addSetting(std::string catagory, std::strin
     std::variant<std::string, int, double, bool> defaultValue, std::variant<std::string, int, double, bool> savedValue)
 {
     sosText::settings::Setting *newSetting = new sosText::settings::Setting();
+    
     newSetting->setCatagory(catagory);
     newSetting->setName(name);
     newSetting->setDescription(description);
     newSetting->setDefaultValue(defaultValue);
     newSetting->setSavedValue(savedValue);
-    
+
     appSettingsMap->emplace(newSetting);
 }
