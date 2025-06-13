@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Load File</string>
+   <string>File Browser</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
