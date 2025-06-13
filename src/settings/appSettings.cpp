@@ -3,6 +3,8 @@
 sosText::settings::AppSettings::AppSettings()
 {
     appSettingsMap = new std::map<std::string, sosText::settings::Setting>();
+
+    addSetting("MainWindow", "StartMaximised", "Should the program start maximised?", true, true);
 }
 
 sosText::settings::AppSettings::~AppSettings()
@@ -24,7 +26,7 @@ void sosText::settings::AppSettings::addSetting(std::string catagory, std::strin
     std::variant<std::string, int, double, bool> defaultValue, std::variant<std::string, int, double, bool> savedValue)
 {
     sosText::settings::Setting *newSetting = new sosText::settings::Setting();
-    
+
     newSetting->setCatagory(catagory);
     newSetting->setName(name);
     newSetting->setDescription(description);
