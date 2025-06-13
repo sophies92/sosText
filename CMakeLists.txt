@@ -51,6 +51,10 @@ set(PROJECT_SOURCES
         src/ui/openFileDialog/loadFileDialogWindow.h
         src/ui/openFileDialog/loadFileDialogWindow.ui
 
+        src/ui/newProjectWindow/newProjectWindow.cpp
+        src/ui/newProjectWindow/newProjectWindow.h
+        src/ui/newProjectWindow/newProjectWindow.ui
+
         src/ui/settingsWindow/settingsWindow.cpp
         src/ui/settingsWindow/settingsWindow.h
         src/ui/settingsWindow/settingsWindow.ui

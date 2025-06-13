@@ -23,6 +23,10 @@ namespace sosText
 
             private:
             Ui::NewProjectWindow *ui;
+
+            public: 
+            NewProjectWindow(QWidget *parent = nullptr);
+            ~NewProjectWindow();
         };
     }
 }
