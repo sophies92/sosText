@@ -1,5 +1,5 @@
-#ifndef LOADFILEDIALOGWINDOW_H
-#define LOADFILEDIALOGWINDOW_H
+#ifndef FILEBROWSWERWINDOW_H
+#define FILEBROWSWERWINDOW_H
 
 #include <vector>
 #include <string>
@@ -18,21 +18,21 @@
 
 namespace Ui
 {
-    class LoadFileDialogWindow;
+    class FileBrowserWindow;
 }
 
 namespace sosText
 {
     namespace ui
     {
-        class LoadFileDialogWindow : public QDialog
+        class FileBrowserWindow : public QDialog
         {
             Q_OBJECT
 
             // Public variables
 
             // Private variables
-            Ui::LoadFileDialogWindow *ui;
+            Ui::FileBrowserWindow *ui;
 
             std::filesystem::path *path;
             QFileSystemModel *filesModel;
@@ -43,12 +43,12 @@ namespace sosText
              * @fn
              * @brief
              */
-            LoadFileDialogWindow(QMainWindow *parent = nullptr);
+            FileBrowserWindow(QMainWindow *parent = nullptr);
             /**
              * @fn
              * @brief
              */
-            ~LoadFileDialogWindow();
+            ~FileBrowserWindow();
 
             /**
              * @file showDirectories(std::filesystem::path pathToRoot)
@@ -103,4 +103,4 @@ namespace sosText
         };
     }
 }
-#endif // LOADFILEDIALOGWINDOW_H
+#endif // FILEBROWSWERWINDOW_H

@@ -11,7 +11,7 @@
 #include <QMainWindow>
 #include <QTextEdit>
 
-#include "../openFileDialog/loadFileDialogWindow.h"
+#include "../fileBrowserWindow/fileBrowserWindow.h"
 #include "../filesTabs/welcomeTab/welcomeTab.h"
 #include "../filesTabs/newFileTab/newFileTab.h"
 

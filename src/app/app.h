@@ -12,7 +12,7 @@
 #include <QObject>
 
 #include "../ui/mainWindow/mainWindow.h"
-#include "../ui/openFileDialog/loadFileDialogWindow.h"
+#include "../ui/fileBrowserWindow/fileBrowserWindow.h"
 #include "../ui/newProjectWindow/newProjectWindow.h"
 #include "../ui/settingsWindow/settingsWindow.h"
 
@@ -41,7 +41,7 @@ namespace sosText
             // Private Variables
             private:
             sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
-            sosText::ui::LoadFileDialogWindow *loadFileDialogWindow;    //!< A pointer to the LoadFileDialogWindow
+            sosText::ui::FileBrowserWindow *fileBrowserWindow;    //!< A pointer to the FileBrowserWindow
             sosText::ui::NewProjectWindow *newProjectWindow;
             sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             

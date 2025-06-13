@@ -56,11 +56,11 @@ void sosText::app::App::mainWindowRequested()
 
 void sosText::app::App::openFileDialogRequested()
 {
-    loadFileDialogWindow = new sosText::ui::LoadFileDialogWindow(mainWindow);
-    connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::fileOpened, this, &App::fileOpened);
-    connect(loadFileDialogWindow, &sosText::ui::LoadFileDialogWindow::requestPrintToOutput, outputTerminal, &sosText::output::OutputTerminal::printToOutputRequested);
-    loadFileDialogWindow->show();
-    loadFileDialogWindow->showDirectories("/");
+    fileBrowserWindow = new sosText::ui::FileBrowserWindow(mainWindow);
+    connect(fileBrowserWindow, &sosText::ui::FileBrowserWindow::fileOpened, this, &App::fileOpened);
+    connect(fileBrowserWindow, &sosText::ui::FileBrowserWindow::requestPrintToOutput, outputTerminal, &sosText::output::OutputTerminal::printToOutputRequested);
+    fileBrowserWindow->show();
+    fileBrowserWindow->showDirectories("/");
 }
 
 void sosText::app::App::newProjectWindowRequested()
