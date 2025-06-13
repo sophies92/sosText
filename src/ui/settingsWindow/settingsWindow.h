@@ -49,7 +49,7 @@ namespace sosText
              * @param none
              * @return none
              */
-            void allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings);
+            void allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting *> *allSettings);
             /**
              * @fn close()
              * @brief Closes the SettingsWindow

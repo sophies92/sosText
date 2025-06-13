@@ -17,7 +17,7 @@ namespace sosText
         class AppSettings
         {
             private:
-            std::map<std::string, sosText::settings::Setting> *appSettingsMap;
+            std::map<std::string, sosText::settings::Setting *> *appSettingsMap;
 
             public:
             /**
@@ -49,7 +49,7 @@ namespace sosText
              * @param none
              * @return a pointer to the appSettingsMap object
              */
-            std::map<std::string, sosText::settings::Setting> *getAllSettings();
+            std::map<std::string, sosText::settings::Setting *> *getAllSettings();
 
 
 

@@ -214,7 +214,7 @@ namespace sosText
              * @fn settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings)
              * @brief sends out a signal containing a pointer to the settings map
              */
-            void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting> *allSettings);
+            void settingsRequestReturnSignal(std::map<std::string, sosText::settings::Setting *> *allSettings);
 
             /**
              * @fn requestPrintToOutput(std::string text)

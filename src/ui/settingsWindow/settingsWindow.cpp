@@ -33,7 +33,7 @@ void sosText::ui::SettingsWindow::buttonPressed(QAbstractButton *button)
     }
 }
 
-void sosText::ui::SettingsWindow::allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting> *allSettings)
+void sosText::ui::SettingsWindow::allSettingsRequestReturn(std::map<std::string, sosText::settings::Setting *> *allSettings)
 {
     // TODO display settings
 }
