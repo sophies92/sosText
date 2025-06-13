@@ -15,7 +15,14 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <widget class="QPlainTextEdit" name="textEdit"/>
+    <widget class="QPlainTextEdit" name="textEdit">
+     <property name="lineWrapMode">
+      <enum>QPlainTextEdit::NoWrap</enum>
+     </property>
+     <property name="tabStopDistance">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
