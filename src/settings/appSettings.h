@@ -50,6 +50,24 @@ namespace sosText
              * @return a pointer to the appSettingsMap object
              */
             std::map<std::string, sosText::settings::Setting> *getAllSettings();
+
+
+
+            private:
+
+            /**
+             * @fn addSetting(std::string catagory, std::string name, std::string description, 
+                std::variant<std::string, int, double, bool> defaultValue, std::variant<std::string, int, double, bool> savedValue)
+             * @brief
+             * @param catagory
+             * @param name
+             * @param description
+             * @param defaultValue
+             * @param savedValue
+             * @return none
+             */
+            void addSetting(std::string catagory, std::string name, std::string description, 
+                std::variant<std::string, int, double, bool> defaultValue, std::variant<std::string, int, double, bool> savedValue);
         };
     }
 }

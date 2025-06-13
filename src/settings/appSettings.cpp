@@ -19,3 +19,16 @@ std::map<std::string, sosText::settings::Setting> *sosText::settings::AppSetting
 {
     return(this->appSettingsMap);
 }
+
+void sosText::settings::AppSettings::addSetting(std::string catagory, std::string name, std::string description, 
+    std::variant<std::string, int, double, bool> defaultValue, std::variant<std::string, int, double, bool> savedValue)
+{
+    sosText::settings::Setting *newSetting = new sosText::settings::Setting();
+    newSetting->setCatagory(catagory);
+    newSetting->setName(name);
+    newSetting->setDescription(description);
+    newSetting->setDefaultValue(defaultValue);
+    newSetting->setSavedValue(savedValue);
+    
+    appSettingsMap->emplace(newSetting);
+}
