@@ -66,6 +66,9 @@ void sosText::app::App::openFileDialogRequested()
 void sosText::app::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
+    newProjectWindow = new sosText::ui::NewProjectWindow(mainWindow);
+    connect(newProjectWindow, &sosText::ui::NewProjectWindow::requestFileBrowserSignal, this, &sosText::app::App::openFileDialogRequested);
+    newProjectWindow->show();
     emit requestPrintToOutput("New project started...");
 }
 

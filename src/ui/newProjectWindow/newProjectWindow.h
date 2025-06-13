@@ -7,6 +7,7 @@
 #define NEWPROJECTWINDOW_H
 
 #include <QWidget>
+#include <QWizard>
 
 namespace Ui
 {
@@ -17,7 +18,7 @@ namespace sosText
 {
     namespace ui
     {
-        class NewProjectWindow : public QWidget
+        class NewProjectWindow : public QWizard
         {
             Q_OBJECT
 
@@ -27,6 +28,11 @@ namespace sosText
             public: 
             NewProjectWindow(QWidget *parent = nullptr);
             ~NewProjectWindow();
+
+            Ui::NewProjectWindow *getUi();
+
+            signals:
+            void requestFileBrowserSignal();
         };
     }
 }

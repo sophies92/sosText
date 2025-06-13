@@ -13,6 +13,7 @@
 
 #include "../ui/mainWindow/mainWindow.h"
 #include "../ui/openFileDialog/loadFileDialogWindow.h"
+#include "../ui/newProjectWindow/newProjectWindow.h"
 #include "../ui/settingsWindow/settingsWindow.h"
 
 #include "../project/project.h"
@@ -41,6 +42,7 @@ namespace sosText
             private:
             sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
             sosText::ui::LoadFileDialogWindow *loadFileDialogWindow;    //!< A pointer to the LoadFileDialogWindow
+            sosText::ui::NewProjectWindow *newProjectWindow;
             sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             
             sosText::settings::AppSettings *appSettings;                //!< A pointer to the AppSettings
