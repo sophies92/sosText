@@ -45,7 +45,7 @@ sosText::output::OutputTerminal *sosText::app::App::createNewOutputTerminal()
 void sosText::app::App::mainWindowRequested()
 {
     mainWindow = new sosText::ui::MainWindow();
-    connect(mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal, this, &App::openFileDialogRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestOpenFileSignal, this, &App::openFileDialogRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestFileTabSignal, this, &App::fileStarted);
@@ -56,11 +56,10 @@ void sosText::app::App::mainWindowRequested()
 
 void sosText::app::App::openFileDialogRequested()
 {
-    fileBrowserWindow = new sosText::ui::FileBrowserWindow(mainWindow);
-    connect(fileBrowserWindow, &sosText::ui::FileBrowserWindow::fileOpened, this, &App::fileOpened);
-    connect(fileBrowserWindow, &sosText::ui::FileBrowserWindow::requestPrintToOutput, outputTerminal, &sosText::output::OutputTerminal::printToOutputRequested);
+    QFileDialog *fileBrowserWindow = new QFileDialog();
+    fileBrowserWindow->setAcceptMode(QFileDialog::AcceptMode::AcceptOpen);
+    connect(fileBrowserWindow, &QFileDialog::fileSelected, this, &sosText::app::App::fileOpened);
     fileBrowserWindow->show();
-    fileBrowserWindow->showDirectories("/");
 }
 
 void sosText::app::App::newProjectWindowRequested()
@@ -76,9 +75,9 @@ void sosText::app::App::welcomeTabRequested()
 {
     sosText::ui::WelcomeTab *welcomeTab = new sosText::ui::WelcomeTab();
     connect(welcomeTab, &sosText::ui::WelcomeTab::newFileButtonPressedSignal, this, &App::fileStarted);
-    connect(welcomeTab, &sosText::ui::WelcomeTab::openFileButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
+    connect(welcomeTab, &sosText::ui::WelcomeTab::openFileButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileSignal);
     connect(welcomeTab, &sosText::ui::WelcomeTab::newProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal);
-    connect(welcomeTab, &sosText::ui::WelcomeTab::openProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenFileDialogSignal);
+    connect(welcomeTab, &sosText::ui::WelcomeTab::openProjectButtonPressedSignal, mainWindow, &sosText::ui::MainWindow::requestOpenProjectSignal);
     emit newWelcomeTabSignal(welcomeTab); 
 }
 
@@ -115,20 +114,13 @@ void sosText::app::App::fileStarted()
     emit newFileTabSignal(tab);
 }
 
-void sosText::app::App::fileOpened(std::filesystem::path *path)
+void sosText::app::App::fileOpened(QString path)
 {
-    if(std::filesystem::is_directory(path->c_str()))
-    {
-        emit projectOpenedSignal(path);
-    }
-    else
-    {
-        NewFileTab *tab = createNewFileTab();
-        tab->file->setPath(path->c_str());
-        tab->file->setFilename(path->filename().c_str());
-        tab->file->setFileText(tab->file->loadFile());
-        tab->textEdit->setPlainText(tab->file->getFileText()->c_str());
-        emit newFileTabSignal(tab);
-    }
+    NewFileTab *tab = createNewFileTab();
+    tab->file->setPath(path.toStdString());
+    tab->file->setFilename(tab->file->getPath()->filename());
+    tab->file->setFileText(tab->file->loadFile());
+    tab->textEdit->setPlainText(tab->file->getFileText()->c_str());
+    emit newFileTabSignal(tab);
 }
 

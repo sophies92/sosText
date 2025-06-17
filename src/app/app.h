@@ -10,9 +10,9 @@
 #include <filesystem>
 
 #include <QObject>
+#include <QFileDialog>
 
 #include "../ui/mainWindow/mainWindow.h"
-#include "../ui/fileBrowserWindow/fileBrowserWindow.h"
 #include "../ui/newProjectWindow/newProjectWindow.h"
 #include "../ui/settingsWindow/settingsWindow.h"
 
@@ -41,7 +41,6 @@ namespace sosText
             // Private Variables
             private:
             sosText::ui::MainWindow *mainWindow;                        //!< A pointer to the MainWindow of the App
-            sosText::ui::FileBrowserWindow *fileBrowserWindow;    //!< A pointer to the FileBrowserWindow
             sosText::ui::NewProjectWindow *newProjectWindow;
             sosText::ui::SettingsWindow *settingsWindow;                //!< A pointer to the SettingsWindow
             
@@ -179,7 +178,7 @@ namespace sosText
              * @param path a pointer to the path where the file can be found
              * @return none
              */
-            void fileOpened(std::filesystem::path *path);
+            void fileOpened(QString path);
 
 
 

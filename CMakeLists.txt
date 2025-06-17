@@ -47,10 +47,6 @@ set(PROJECT_SOURCES
         src/ui/filesTabs/newFileTab/newFileTab.h
         src/ui/filesTabs/newFileTab/newFileTab.ui
 
-        src/ui/fileBrowserWindow/fileBrowserWindow.cpp
-        src/ui/fileBrowserWindow/fileBrowserWindow.h
-        src/ui/fileBrowserWindow/fileBrowserWindow.ui
-
         src/ui/newProjectWindow/newProjectWindow.cpp
         src/ui/newProjectWindow/newProjectWindow.h
         src/ui/newProjectWindow/newProjectWindow.ui

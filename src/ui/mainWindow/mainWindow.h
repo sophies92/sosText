@@ -11,7 +11,6 @@
 #include <QMainWindow>
 #include <QTextEdit>
 
-#include "../fileBrowserWindow/fileBrowserWindow.h"
 #include "../filesTabs/welcomeTab/welcomeTab.h"
 #include "../filesTabs/newFileTab/newFileTab.h"
 
@@ -106,25 +105,34 @@ namespace sosText
 
             signals:
             /**
-             * @fn requestOpenFileDialogSignal()
+             * @fn requestOpenFileSignal()
              * @brief Send a request for the Open-File Dialog window to be shown.
              */
-            void requestOpenFileDialogSignal();
+            void requestOpenFileSignal();
+
+            /**
+             * 
+             */
+            void requestOpenProjectSignal();
+
             /**
              * @fn
              * @brief
              */
             void requestNewProjectSignal();
+
             /**
              * @fn
              * @brief
              */
             void requestWelcomeTabSignal();
+
             /**
              * @fn
              * @brief
              */
             void requestFileTabSignal();
+            
             /**
              * @fn
              * @brief
