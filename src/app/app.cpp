@@ -140,4 +140,5 @@ void sosText::app::App::fileOpened(QString path)
 
 void sosText::app::App::projectOpened(QString path)
 {
+    // TODO handle opening project
 }
