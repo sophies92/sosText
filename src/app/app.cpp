@@ -58,6 +58,7 @@ void sosText::app::App::openFileDialogRequested()
 {
     QFileDialog *fileBrowserWindow = new QFileDialog();
     fileBrowserWindow->setAcceptMode(QFileDialog::AcceptMode::AcceptOpen);
+    fileBrowserWindow->setFileMode(QFileDialog::FileMode::ExistingFile);
     connect(fileBrowserWindow, &QFileDialog::fileSelected, this, &sosText::app::App::fileOpened);
     fileBrowserWindow->show();
 }
