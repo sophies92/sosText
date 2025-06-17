@@ -116,6 +116,8 @@ namespace sosText
              */
             void openFileDialogRequested();
 
+            void openProjectDialogRequested();
+
             /**
              * @fn newProjectWindowRequested()
              * @brief answers a request to show a NewProjectWindow
@@ -179,6 +181,8 @@ namespace sosText
              * @return none
              */
             void fileOpened(QString path);
+
+            void projectOpened(QString path);
 
 
 

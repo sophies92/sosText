@@ -46,6 +46,7 @@ void sosText::app::App::mainWindowRequested()
 {
     mainWindow = new sosText::ui::MainWindow();
     connect(mainWindow, &sosText::ui::MainWindow::requestOpenFileSignal, this, &App::openFileDialogRequested);
+    connect(mainWindow, &sosText::ui::MainWindow::requestOpenProjectSignal, this, &App::openProjectDialogRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestNewProjectSignal, this, &App::newProjectWindowRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestWelcomeTabSignal, this, &App::welcomeTabRequested);
     connect(mainWindow, &sosText::ui::MainWindow::requestFileTabSignal, this, &App::fileStarted);
@@ -63,11 +64,20 @@ void sosText::app::App::openFileDialogRequested()
     fileBrowserWindow->show();
 }
 
+void sosText::app::App::openProjectDialogRequested()
+{
+    QFileDialog *fileBrowserWindow = new QFileDialog();
+    fileBrowserWindow->setAcceptMode(QFileDialog::AcceptMode::AcceptOpen);
+    fileBrowserWindow->setFileMode(QFileDialog::FileMode::Directory);
+    connect(fileBrowserWindow, &QFileDialog::fileSelected, this, &sosText::app::App::projectOpened);
+    fileBrowserWindow->show();
+}
+
 void sosText::app::App::newProjectWindowRequested()
 {
     // TODO show new project wizard
     newProjectWindow = new sosText::ui::NewProjectWindow(mainWindow);
-    connect(newProjectWindow, &sosText::ui::NewProjectWindow::requestFileBrowserSignal, this, &sosText::app::App::openFileDialogRequested);
+    connect(newProjectWindow, &sosText::ui::NewProjectWindow::requestFileBrowserSignal, this, &sosText::app::App::openProjectDialogRequested);
     newProjectWindow->show();
     emit requestPrintToOutput("New project started...");
 }
@@ -125,3 +135,6 @@ void sosText::app::App::fileOpened(QString path)
     emit newFileTabSignal(tab);
 }
 
+void sosText::app::App::projectOpened(QString path)
+{
+}
