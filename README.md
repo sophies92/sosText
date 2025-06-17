@@ -15,6 +15,7 @@ Changelog:
         - Added Output terminal to main window  
         - Added New Project wizard (not functional)  
         - Changed File Browser  
+        
         0.2  
         - Added option to launch a new welcome tab  
         - Added option to start a new file without needing the welcome tab  
