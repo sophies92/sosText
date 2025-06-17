@@ -13,6 +13,7 @@
 #include <QFileDialog>
 
 #include "../ui/mainWindow/mainWindow.h"
+#include "../ui/mainWindow/ui_mainWindow.h"
 #include "../ui/newProjectWindow/newProjectWindow.h"
 #include "../ui/settingsWindow/settingsWindow.h"
 
