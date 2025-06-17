@@ -1,25 +1,25 @@
-Project:  
-        sosText
+__Project:__  
+sosText
 
-Current Version:  
-        0.3
+__Current Version:__  
+0.3
 
- Author:  
-         Sophie Short
+__Author:__  
+Sophie Short
 
-Description:  
-        sosText is a text editor.
+__Description:__  
+sosText is a text editor for Linux.
 
-Changelog:  
-        0.3  
-        - Added Output terminal to main window  
-        - Added New Project wizard (not functional)  
-        - Changed File Browser  
-        
-        0.2  
-        - Added option to launch a new welcome tab  
-        - Added option to start a new file without needing the welcome tab  
-        - Added option to "Save as" (not functional)  
-        - Added option to "Save all" (not functional)  
-        - Added option to start a new project without needing the welcome tab (not functional)  
-        - Added option to show setting menu  
+__Changelog:__  
+__0.3__  
+* Added Output terminal to main window  
+* Added New Project wizard (not functional)  
+* Changed File Browser
+
+__0.2__  
+* Added option to launch a new welcome tab  
+* Added option to start a new file without needing the welcome tab  
+* Added option to "Save as" (not functional)  
+* Added option to "Save all" (not functional)  
+* Added option to start a new project without needing the welcome tab (not functional)  
+* Added option to show setting menu  
