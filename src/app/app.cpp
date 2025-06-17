@@ -127,12 +127,15 @@ void sosText::app::App::fileStarted()
 
 void sosText::app::App::fileOpened(QString path)
 {
-    NewFileTab *tab = createNewFileTab();
-    tab->file->setPath(path.toStdString());
-    tab->file->setFilename(tab->file->getPath()->filename());
-    tab->file->setFileText(tab->file->loadFile());
-    tab->textEdit->setPlainText(tab->file->getFileText()->c_str());
-    emit newFileTabSignal(tab);
+    if(std::filesystem::exists(path.toStdString()))
+    {
+        NewFileTab *tab = createNewFileTab();
+        tab->file->setPath(path.toStdString());
+        tab->file->setFilename(tab->file->getPath()->filename());
+        tab->file->setFileText(tab->file->loadFile());
+        tab->textEdit->setPlainText(tab->file->getFileText()->c_str());
+        emit newFileTabSignal(tab);
+    }
 }
 
 void sosText::app::App::projectOpened(QString path)
