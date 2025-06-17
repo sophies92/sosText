@@ -69,6 +69,8 @@ void sosText::app::App::openProjectDialogRequested()
     QFileDialog *fileBrowserWindow = new QFileDialog();
     fileBrowserWindow->setAcceptMode(QFileDialog::AcceptMode::AcceptOpen);
     fileBrowserWindow->setFileMode(QFileDialog::FileMode::Directory);
+    fileBrowserWindow->setWindowTitle("Open Project");
+    fileBrowserWindow->setLabelText(QFileDialog::DialogLabel::Accept, "Open");
     connect(fileBrowserWindow, &QFileDialog::fileSelected, this, &sosText::app::App::projectOpened);
     fileBrowserWindow->show();
 }

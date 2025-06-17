@@ -127,8 +127,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>98</width>
-           <height>28</height>
+           <width>378</width>
+           <height>338</height>
           </rect>
          </property>
          <attribute name="label">
@@ -274,6 +274,7 @@
     <addaction name="actionNew_Project"/>
     <addaction name="separator"/>
     <addaction name="actionOpen_File"/>
+    <addaction name="actionOpen_Project"/>
     <addaction name="separator"/>
     <addaction name="actionSave_File"/>
     <addaction name="actionSave_As"/>
@@ -294,7 +295,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen_File">
    <property name="text">
-    <string>&amp;Open File/Project</string>
+    <string>&amp;Open File</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -356,6 +357,14 @@
   <action name="actionE_xit">
    <property name="text">
     <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
    </property>
   </action>
  </widget>
