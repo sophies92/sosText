@@ -8,7 +8,7 @@ project(sosText
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_PREFIX_PATH /opt/qt6/6.6.0/gcc_64)
+set(CMAKE_PREFIX_PATH /opt/qt6/6.9.1/gcc_64)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
 set(CMAKE_AUTOMOC ON)
