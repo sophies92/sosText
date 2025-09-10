@@ -19,6 +19,7 @@
 #define MAINWINDOW
 
     #include <QMainWindow>
+    #include "../textEditTab/textEditTab.h"
 
     namespace Ui
     {
@@ -38,6 +39,8 @@
                 public:
                 MainWindow(QWidget *parent = nullptr);
                 ~MainWindow();
+
+                void connectSlots();
 
                 void createNewFile();
             };

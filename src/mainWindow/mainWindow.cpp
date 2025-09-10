@@ -22,6 +22,7 @@
 Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connectSlots();
     this->showMaximized();
 }
 
@@ -30,6 +31,13 @@ Sosware::SosText::MainWindow::~MainWindow()
     delete ui;
 }
 
+void Sosware::SosText::MainWindow::connectSlots()
+{
+    connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+}
+
 void Sosware::SosText::MainWindow::createNewFile()
 {
+    Sosware::SosText::TextEditTab *textTab = new Sosware::SosText::TextEditTab(this);
+    ui->tabWidget->addTab(textTab, "*newFile");
 }
