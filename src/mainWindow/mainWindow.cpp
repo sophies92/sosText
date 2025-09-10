@@ -33,20 +33,41 @@ Sosware::SosText::MainWindow::~MainWindow()
 
 void Sosware::SosText::MainWindow::connectSlots()
 {
-    connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
-    connect(this->ui->actionOpen_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
-    connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
-    connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+    connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
+    connect(this->ui->actionOpen_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::openFile);
+    connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
+    connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 }
 
-void Sosware::SosText::MainWindow::createNewFile()
+void Sosware::SosText::MainWindow::createTextEditTab(QString path)
 {
     Sosware::SosText::TextEditTab *textTab = new Sosware::SosText::TextEditTab(this);
-    ui->tabWidget->addTab(textTab, "*newFile");
+    if(path == nullptr)
+    {
+        ui->tabWidget->addTab(textTab, "*newFile");
+    }
+    else
+    {
+        if(textTab->openFile(path) == 0)
+        {
+            ui->tabWidget->addTab(textTab, QString(std::filesystem::path(path.toStdString().c_str()).filename().c_str()));
+        }
+        else
+        {
+            //TODO File load failed
+        }
+    }
+}
+
+void Sosware::SosText::MainWindow::newFile()
+{
+    createTextEditTab();
 }
 
 void Sosware::SosText::MainWindow::openFile()
 {
-
+    QFileDialog dialog;
+    QString file = dialog.getOpenFileName();
+    createTextEditTab(file);
 }

@@ -18,7 +18,10 @@
 #ifndef MAINWINDOW
 #define MAINWINDOW
 
+    #include <filesystem>
     #include <QMainWindow>
+    #include <QFileDialog>
+    #include <QString>
     #include "../textEditTab/textEditTab.h"
 
     namespace Ui
@@ -42,7 +45,9 @@
 
                 void connectSlots();
 
-                void createNewFile();
+                void createTextEditTab(QString path = nullptr);
+
+                void newFile();
                 void openFile();
             };
         }

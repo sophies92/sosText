@@ -28,3 +28,19 @@ Sosware::SosText::TextEditTab::~TextEditTab()
 {
     delete ui;
 }
+
+int Sosware::SosText::TextEditTab::openFile(QString path)
+{
+    QFile *qf = new QFile(path);
+    qf->open(QIODevice::ReadOnly);
+    if(qf->isReadable())
+    {
+        QString qs = qf->readAll();
+        ui->plainTextEdit->appendPlainText(qs);
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}

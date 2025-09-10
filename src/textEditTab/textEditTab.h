@@ -17,8 +17,12 @@
 */
 #ifndef TEXTEDITTAB
 #define TEXTEDITTAB
-
+    #include <filesystem>
+    #include <fstream>
+    #include <streambuf>
     #include <QWidget>
+    #include <QString>
+    #include <QFile>
     namespace Ui
     {
         class TextEditTab;
@@ -37,6 +41,8 @@
                 public:
                 TextEditTab(QWidget *parent = nullptr);
                 ~TextEditTab();
+
+                int openFile(QString path);
             };
         }
     }
