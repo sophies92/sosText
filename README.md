@@ -1,12 +1,16 @@
 # sosText
+Version: 1.0
 
 ## 1 - Description
-sosText is a text editor. It is released as part of the sosSuite.  
-Copyright (C) 2025  Sophie Short
+sosText is a basic text editor. It is released as part of the sosSuite.  
+Copyright (C) 2025  Sophie Short / sosware
 
 ## 2 - Features
+- Open, Edit and Save text files
 
 ## 3 - Known Bugs
+- Tabs do not close
+- Files cammot be opened with a command line arguament
 
 ## 4 - Licence
 This program is free software: you can redistribute it and/or modify
