@@ -15,31 +15,28 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-#ifndef MAINWINDOW
-#define MAINWINDOW
+#ifndef TEXTEDITTAB
+#define TEXTEDITTAB
 
-    #include <QMainWindow>
-
+    #include <QWidget>
     namespace Ui
     {
-        class MainWindow;
+        class TextEditTab;
     }
 
     namespace Sosware
     {
         namespace SosText
         {
-            class MainWindow : public QMainWindow
+            class TextEditTab : public QWidget
             {
                 Q_OBJECT
                 private:
-                Ui::MainWindow *ui;
+                Ui::TextEditTab *ui;
 
                 public:
-                MainWindow(QWidget *parent = nullptr);
-                ~MainWindow();
-
-                void createNewFile();
+                TextEditTab(QWidget *parent = nullptr);
+                ~TextEditTab();
             };
         }
     }

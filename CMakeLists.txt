@@ -26,7 +26,7 @@ project(
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -38,11 +38,15 @@ set(PROJECT_SOURCES
     src/mainWindow/mainWindow.h
     src/mainWindow/mainWindow.cpp
     src/mainWindow/mainWindow.ui
+
+    src/textEditTab/textEditTab.h
+    src/textEditTab/textEditTab.cpp
+    src/textEditTab/textEditTab.ui
 )
 
 add_executable(sosText ${PROJECT_SOURCES})
 
 target_link_libraries(
-    sosText PRIVATE Qt6::Widgets Qt6::Core
+    sosText PRIVATE Qt6::Widgets Qt6::Core Qt6::Gui
 )
 
