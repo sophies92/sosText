@@ -45,6 +45,7 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
     }
     else
     {
+        // TODO Open file failed
         return 1;
     }
 }
@@ -62,6 +63,7 @@ int Sosware::SosText::TextEditTab::saveFile()
         }
         else
         {
+            // TODO Save file failed
             return 1;
         }
     }
