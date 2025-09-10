@@ -43,6 +43,7 @@
                 void connectSlots();
 
                 void createNewFile();
+                void openFile();
             };
         }
     }

@@ -41,3 +41,8 @@ void Sosware::SosText::MainWindow::createNewFile()
     Sosware::SosText::TextEditTab *textTab = new Sosware::SosText::TextEditTab(this);
     ui->tabWidget->addTab(textTab, "*newFile");
 }
+
+void Sosware::SosText::MainWindow::openFile()
+{
+    
+}
