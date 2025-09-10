@@ -20,7 +20,7 @@ Copyright (C) 2025  Sophie Short / sosware
 2. Only the *sosText* binary file is needed to run the program. It can be placed anywhere to be used at your convenience (recommended */usr/local/bin*).
 
 ## 5 - Changelog
-- Files can be opened from the terminal with *sosText [path-to-file]*
+- [1.1] Files can be opened from the terminal with *sosText [path-to-file]*
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify
