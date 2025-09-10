@@ -23,7 +23,6 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    Sosware::SosText::MainWindow mainWindow;
-    
+    Sosware::SosText::MainWindow mainWindow;    
     return app.exec();
 }

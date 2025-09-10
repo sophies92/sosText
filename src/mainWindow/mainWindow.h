@@ -17,13 +17,10 @@
 */
 #ifndef MAINWINDOW
 #define MAINWINDOW
-
-    #include <filesystem>
     #include <QMainWindow>
     #include <QFileDialog>
     #include <QString>
     #include "../textEditTab/textEditTab.h"
-
     namespace Ui
     {
         class MainWindow;
