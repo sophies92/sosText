@@ -12,7 +12,15 @@ Copyright (C) 2025  Sophie Short / sosware
 - Tabs do not close
 - Files cammot be opened with a command line arguament
 
-## 4 - Licence
+## 4 - Install
+### Dependencies
+- Qt6
+
+### Installation Instructions
+1. The source code can be built by running the CMake script.
+2. Only the *sosText* binary file is needed to run the program. It can be placed anywhere to be used at your convenience (recommended */usr/local/bin*).
+
+## 5 - Licence
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
