@@ -74,6 +74,12 @@ void Sosware::SosText::MainWindow::openFile()
     createTextEditTab(file);
 }
 
+void Sosware::SosText::MainWindow::openFileFromPath(char *path)
+{
+    QString qs(path);
+    createTextEditTab(qs);
+}
+
 void Sosware::SosText::MainWindow::saveFile()
 {
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());

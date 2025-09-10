@@ -23,6 +23,10 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    Sosware::SosText::MainWindow mainWindow;    
+    Sosware::SosText::MainWindow mainWindow;
+    if(argc > 0)
+    {
+        mainWindow.openFileFromPath(argv[1]);
+    }
     return app.exec();
 }

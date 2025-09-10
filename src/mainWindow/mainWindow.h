@@ -46,6 +46,7 @@
 
                 void newFile();
                 void openFile();
+                void openFileFromPath(char *path);
                 void saveFile();
                 void saveFileAs();
             };
