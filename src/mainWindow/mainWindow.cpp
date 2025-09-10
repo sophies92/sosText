@@ -75,12 +75,26 @@ void Sosware::SosText::MainWindow::openFile()
 void Sosware::SosText::MainWindow::saveFile()
 {
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
-    tab->saveFile();
+    if(tab->saveFile() == 0)
+    {
+
+    }
+    else
+    {
+        //TODO Save Failed
+    }
 }
 
 void Sosware::SosText::MainWindow::saveFileAs()
 {
     QFileDialog dialog;
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
-    tab->saveFileAs(dialog.getSaveFileName());
+    if(tab->saveFileAs(dialog.getSaveFileName()))
+    {
+
+    }
+    else
+    {
+        // TODO Save Failed
+    }
 }
