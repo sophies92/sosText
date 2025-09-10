@@ -43,6 +43,8 @@
                 ~TextEditTab();
 
                 int openFile(QString path);
+                int saveFile();
+                int saveFileAs(QString path);
             };
         }
     }

@@ -35,8 +35,8 @@ void Sosware::SosText::MainWindow::connectSlots()
 {
     connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
     connect(this->ui->actionOpen_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::openFile);
-    connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
-    connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
+    connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::saveFile);
+    connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::saveFileAs);
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 }
 
@@ -68,6 +68,19 @@ void Sosware::SosText::MainWindow::newFile()
 void Sosware::SosText::MainWindow::openFile()
 {
     QFileDialog dialog;
-    QString file = dialog.getOpenFileName();
+    QString file = dialog.getOpenFileName(this);
     createTextEditTab(file);
+}
+
+void Sosware::SosText::MainWindow::saveFile()
+{
+    Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    tab->saveFile();
+}
+
+void Sosware::SosText::MainWindow::saveFileAs()
+{
+    QFileDialog dialog;
+    Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    tab->saveFileAs(dialog.getSaveFileName());
 }

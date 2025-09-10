@@ -44,3 +44,13 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
         return 1;
     }
 }
+
+int Sosware::SosText::TextEditTab::saveFile()
+{
+    return 0;
+}
+
+int Sosware::SosText::TextEditTab::saveFileAs(QString path)
+{
+    return 0;
+}
