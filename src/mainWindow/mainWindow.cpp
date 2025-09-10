@@ -34,6 +34,10 @@ Sosware::SosText::MainWindow::~MainWindow()
 void Sosware::SosText::MainWindow::connectSlots()
 {
     connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+    connect(this->ui->actionOpen_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+    connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+    connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::createNewFile);
+    connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 }
 
 void Sosware::SosText::MainWindow::createNewFile()
@@ -44,5 +48,5 @@ void Sosware::SosText::MainWindow::createNewFile()
 
 void Sosware::SosText::MainWindow::openFile()
 {
-    
+
 }

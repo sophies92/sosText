@@ -96,9 +96,6 @@
    <property name="text">
     <string>E&amp;xit</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+X</string>
-   </property>
   </action>
   <action name="actionAbout">
    <property name="text">
