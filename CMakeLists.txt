@@ -19,7 +19,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(
     sosText
-    VERSION 0.1
+    VERSION 1.1
     LANGUAGES CXX
 )
 
