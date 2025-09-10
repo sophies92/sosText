@@ -29,13 +29,17 @@ Sosware::SosText::TextEditTab::~TextEditTab()
     delete ui;
 }
 
+void Sosware::SosText::TextEditTab::setFilepath(QString path)
+{
+    filepath = path;
+}
+
 int Sosware::SosText::TextEditTab::openFile(QString path)
 {
-    QFile *qf = new QFile(path);
-    qf->open(QIODevice::ReadOnly);
-    if(qf->isReadable())
+    QFile qf(path);
+    if(qf.open(QIODevice::ReadOnly))
     {
-        QString qs = qf->readAll();
+        QString qs = qf.readAll();
         ui->plainTextEdit->appendPlainText(qs);
         return 0;
     }
@@ -47,10 +51,27 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
 
 int Sosware::SosText::TextEditTab::saveFile()
 {
-    return 0;
-}
-
-int Sosware::SosText::TextEditTab::saveFileAs(QString path)
-{
-    return 0;
+    if(!filepath.isEmpty())
+    {
+        QFile qf(filepath);
+        if(qf.open(QIODevice::ReadWrite))
+        {
+            QString qs = ui->plainTextEdit->toPlainText();
+            qf.write(qs.toStdString().c_str());
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+    else
+    {
+        QFileDialog dialog;
+        this->setFilepath(dialog.getSaveFileName());
+        saveFile();
+        return 0;
+    }
+    
+    
 }

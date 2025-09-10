@@ -51,6 +51,7 @@ void Sosware::SosText::MainWindow::createTextEditTab(QString path)
     {
         if(textTab->openFile(path) == 0)
         {
+            textTab->setFilepath(path);
             ui->tabWidget->addTab(textTab, QString(std::filesystem::path(path.toStdString().c_str()).filename().c_str()));
         }
         else
@@ -89,7 +90,8 @@ void Sosware::SosText::MainWindow::saveFileAs()
 {
     QFileDialog dialog;
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
-    if(tab->saveFileAs(dialog.getSaveFileName()))
+    tab->setFilepath(dialog.getSaveFileName());
+    if(tab->saveFile())
     {
 
     }

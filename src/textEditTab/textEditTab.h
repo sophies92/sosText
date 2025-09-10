@@ -20,6 +20,7 @@
     #include <QWidget>
     #include <QString>
     #include <QFile>
+    #include <QFileDialog>
     namespace Ui
     {
         class TextEditTab;
@@ -34,14 +35,15 @@
                 Q_OBJECT
                 private:
                 Ui::TextEditTab *ui;
+                QString filepath;
 
                 public:
                 TextEditTab(QWidget *parent = nullptr);
                 ~TextEditTab();
 
+                void setFilepath(QString path);
                 int openFile(QString path);
                 int saveFile();
-                int saveFileAs(QString path);
             };
         }
     }
