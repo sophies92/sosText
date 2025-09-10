@@ -37,6 +37,8 @@
                 public:
                 MainWindow(QWidget *parent = nullptr);
                 ~MainWindow();
+
+                void createNewFile();
             };
         }
     }

@@ -29,3 +29,7 @@ Sosware::SosText::MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void Sosware::SosText::MainWindow::createNewFile()
+{
+}
