@@ -1,5 +1,5 @@
 # sosText
-Version: 1.0
+Version: 1.1
 
 ## 1 - Description
 sosText is a basic text editor. It is released as part of the sosSuite.  
@@ -10,7 +10,6 @@ Copyright (C) 2025  Sophie Short / sosware
 
 ## 3 - Known Bugs
 - Tabs do not close
-- Files cammot be opened with a command line arguament
 
 ## 4 - Install
 ### Dependencies
@@ -20,7 +19,10 @@ Copyright (C) 2025  Sophie Short / sosware
 1. The source code can be built by running the CMake script.
 2. Only the *sosText* binary file is needed to run the program. It can be placed anywhere to be used at your convenience (recommended */usr/local/bin*).
 
-## 5 - Licence
+## 5 - Changelog
+- Files can be opened from the terminal with *sosText [path-to-file]*
+
+## 6 - Licence
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
