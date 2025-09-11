@@ -30,7 +30,7 @@
     {
         namespace SosText
         {
-            class SettingsWindow : public QWidget
+            class SettingsWindow : public QDialog
             {
                 Q_OBJECT
                 private:

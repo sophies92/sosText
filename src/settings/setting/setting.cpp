@@ -1,4 +1,4 @@
-/* 
+/*
     sosText - A text editor.
     Copyright (C) 2025  Sophie Short / sosware
 
@@ -16,20 +16,12 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#define WINDOW_TITLE "sosText"
+#include "setting.h"
 
-#include <QApplication>
-#include "mainWindow/mainWindow.h"
-#include "settings/settings.h"
-int main(int argc, char* argv[])
+Sosware::SosText::Setting::Setting()
 {
-    QApplication app(argc, argv);
-    Sosware::SosText::Settings settings;
-    Sosware::SosText::MainWindow mainWindow;
-    if(argc > 0)
-    {
-        for(int i = 1; i < argc; ++i)
-        mainWindow.openFileFromPath(argv[i]);
-    }
-    return app.exec();
+}
+
+Sosware::SosText::Setting::~Setting()
+{
 }

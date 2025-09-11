@@ -19,7 +19,7 @@
 
 #include "settingsWindow.h"
 #include "ui_settingsWindow.h"
-Sosware::SosText::SettingsWindow::SettingsWindow(QWidget *parent) : QWidget(parent), ui(new Ui::SettingsWindow)
+Sosware::SosText::SettingsWindow::SettingsWindow(QWidget *parent) : QDialog(parent), ui(new Ui::SettingsWindow)
 {
     ui->setupUi(this);
 }

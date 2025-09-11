@@ -34,11 +34,17 @@ Sosware::SosText::MainWindow::~MainWindow()
 
 void Sosware::SosText::MainWindow::connectSlots()
 {
+    // File actions
     connect(this->ui->actionNew_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::newFile);
     connect(this->ui->actionOpen_File, &QAction::triggered, this, &Sosware::SosText::MainWindow::openFile);
     connect(this->ui->actionSave, &QAction::triggered, this, &Sosware::SosText::MainWindow::saveFile);
     connect(this->ui->actionSave_As, &QAction::triggered, this, &Sosware::SosText::MainWindow::saveFileAs);
+    connect(this->ui->actionSettings, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchSettingsWindow);
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
+
+    // Edit actions
+
+    // About actions
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
@@ -106,4 +112,10 @@ void Sosware::SosText::MainWindow::saveFileAs()
     {
         // TODO Save Failed
     }
+}
+
+void Sosware::SosText::MainWindow::launchSettingsWindow()
+{
+    settingsWindow = new Sosware::SosText::SettingsWindow(this);
+    settingsWindow->show();
 }

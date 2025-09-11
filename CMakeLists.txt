@@ -46,6 +46,12 @@ set(PROJECT_SOURCES
     src/settingsWindow/settingsWindow.h
     src/settingsWindow/settingsWindow.cpp
     src/settingsWindow/settingsWindow.ui
+
+    src/settings/settings.h
+    src/settings/settings.cpp
+
+    src/settings/setting/setting.h
+    src/settings/setting/setting.cpp
 )
 
 add_executable(sosText ${PROJECT_SOURCES})

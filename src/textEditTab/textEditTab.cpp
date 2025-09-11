@@ -74,8 +74,4 @@ int Sosware::SosText::TextEditTab::saveFile()
         saveFile();
         return 0;
     }
-
-    
-    
-    
 }

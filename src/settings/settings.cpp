@@ -16,20 +16,14 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#define WINDOW_TITLE "sosText"
+#include "settings.h"
 
-#include <QApplication>
-#include "mainWindow/mainWindow.h"
-#include "settings/settings.h"
-int main(int argc, char* argv[])
+Sosware::SosText::Settings::Settings()
 {
-    QApplication app(argc, argv);
-    Sosware::SosText::Settings settings;
-    Sosware::SosText::MainWindow mainWindow;
-    if(argc > 0)
-    {
-        for(int i = 1; i < argc; ++i)
-        mainWindow.openFileFromPath(argv[i]);
-    }
-    return app.exec();
+    settingsMap = new QMap<QString, Sosware::SosText::Setting>();
+    settingsFilePath = "~/.config/sosware/sosText/settings";
+}
+
+Sosware::SosText::Settings::~Settings()
+{
 }

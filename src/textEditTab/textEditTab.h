@@ -42,6 +42,7 @@
                 ~TextEditTab();
 
                 void setFilepath(QString path);
+                
                 int openFile(QString path);
                 int saveFile();
             };

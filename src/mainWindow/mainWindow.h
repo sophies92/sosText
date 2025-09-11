@@ -21,6 +21,7 @@
     #include <QFileDialog>
     #include <QString>
     #include "../textEditTab/textEditTab.h"
+    #include "../settingsWindow/settingsWindow.h"
     namespace Ui
     {
         class MainWindow;
@@ -35,6 +36,7 @@
                 Q_OBJECT
                 private:
                 Ui::MainWindow *ui;
+                Sosware::SosText::SettingsWindow *settingsWindow;
 
                 public:
                 MainWindow(QWidget *parent = nullptr);
@@ -49,6 +51,8 @@
                 void openFileFromPath(char *path);
                 void saveFile();
                 void saveFileAs();
+
+                void launchSettingsWindow();
             };
         }
     }
