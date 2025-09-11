@@ -24,7 +24,6 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
-    Sosware::SosText::Settings settings;
     Sosware::SosText::MainWindow mainWindow;
     if(argc > 0)
     {

@@ -24,6 +24,8 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     ui->setupUi(this);
     this->setWindowTitle("sosText");
     connectSlots();
+    appSettings = new Sosware::SosText::Settings();;
+    // TODO Load settings
     this->showMaximized();
 }
 

@@ -22,6 +22,7 @@
     #include <QString>
     #include "../textEditTab/textEditTab.h"
     #include "../settingsWindow/settingsWindow.h"
+    #include "../settings/settings.h"
     namespace Ui
     {
         class MainWindow;
@@ -37,6 +38,7 @@
                 private:
                 Ui::MainWindow *ui;
                 Sosware::SosText::SettingsWindow *settingsWindow;
+                Sosware::SosText::Settings *appSettings;
 
                 public:
                 MainWindow(QWidget *parent = nullptr);
