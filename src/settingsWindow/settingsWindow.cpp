@@ -16,9 +16,12 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-Sosware::SosText::SettingsWindow::SettingsWindow(QWidget *parent) : QWidget(parent), ui( new Ui::SettingsWindow)
+
+#include "settingsWindow.h"
+#include "ui_settingsWindow.h"
+Sosware::SosText::SettingsWindow::SettingsWindow(QWidget *parent) : QWidget(parent), ui(new Ui::SettingsWindow)
 {
-    ui.setupUi();
+    ui->setupUi(this);
 }
 
 Sosware::SosText::SettingsWindow::~SettingsWindow()

@@ -42,6 +42,10 @@ set(PROJECT_SOURCES
     src/textEditTab/textEditTab.h
     src/textEditTab/textEditTab.cpp
     src/textEditTab/textEditTab.ui
+
+    src/settingsWindow/settingsWindow.h
+    src/settingsWindow/settingsWindow.cpp
+    src/settingsWindow/settingsWindow.ui
 )
 
 add_executable(sosText ${PROJECT_SOURCES})
