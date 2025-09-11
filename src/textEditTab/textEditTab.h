@@ -21,6 +21,7 @@
     #include <QString>
     #include <QFile>
     #include <QFileDialog>
+    #include "../mainWindow/mainWindow.h"
     namespace Ui
     {
         class TextEditTab;
@@ -33,8 +34,9 @@
             class TextEditTab : public QWidget
             {
                 Q_OBJECT
-                private:
+                public:
                 Ui::TextEditTab *ui;
+                private:
                 QString filepath;
 
                 public:

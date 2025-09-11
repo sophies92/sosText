@@ -22,6 +22,8 @@
 Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent), ui(new Ui::TextEditTab)
 {
     ui->setupUi(this);
+    // TODO
+    // ui->plainTextEdit->textChanged();
 }
 
 Sosware::SosText::TextEditTab::~TextEditTab()

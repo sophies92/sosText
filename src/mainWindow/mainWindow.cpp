@@ -81,6 +81,12 @@ void Sosware::SosText::MainWindow::closeTab(int index)
     this->ui->tabWidget->removeTab(index);
 }
 
+void Sosware::SosText::MainWindow::markTabUnsaved(int index)
+{
+    ui->tabWidget->tabBar()->setTabTextColor(index, Qt::red);
+    // TODO connect to tab/textChanged
+}
+
 void Sosware::SosText::MainWindow::newFile()
 {
     createTextEditTab();

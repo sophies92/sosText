@@ -20,6 +20,8 @@
     #include <QMainWindow>
     #include <QFileDialog>
     #include <QString>
+    #include <QPlainTextEdit>
+    #include <QTabBar>
     #include "../textEditTab/textEditTab.h"
     #include "../settingsWindow/settingsWindow.h"
     #include "../settings/settings.h"
@@ -48,6 +50,7 @@
 
                 void createTextEditTab(QString path = nullptr);
                 void closeTab(int index);
+                void markTabUnsaved(int index);
 
                 void newFile();
                 void openFile();
