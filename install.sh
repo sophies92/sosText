@@ -4,10 +4,12 @@ echo "Creating Directories..."
 mkdir ./sosText/
 mkdir ./sosText/resources/
 mkdir ./sosText/resources/icons/
+mkdir ./sosText/licence/
 echo "Done!"
 
 echo "Copying Resources..."
 cp ./res/sosText_icon.svg ./sosText/resources/icons/
+cp ./licence ./sosText/licence/
 echo "Done!"
 
 echo "Copying Binary..."
