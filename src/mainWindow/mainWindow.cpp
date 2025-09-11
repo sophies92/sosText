@@ -48,7 +48,7 @@ void Sosware::SosText::MainWindow::connectSlots()
 
     // About actions
 
-    // More actions
+    // Tab slots
     connect(this->ui->tabWidget, &QTabWidget::tabCloseRequested, this, &Sosware::SosText::MainWindow::closeTab);
 }
 
