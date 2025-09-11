@@ -9,7 +9,6 @@ Copyright (C) 2025  Sophie Short / sosware
 - Open, Edit and Save text files
 
 ## 3 - Known Bugs
-- Tabs do not close
 
 ## 4 - Install
 ### Dependencies
@@ -24,6 +23,7 @@ Copyright (C) 2025  Sophie Short / sosware
 *sosText [path-to-file]*
 - [1.2] Can now open multiple files from the terminal by chaining inputs.  
 *sosText [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]*
+- [1.3] Tabs can now be closed.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify
