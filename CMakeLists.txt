@@ -18,7 +18,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(
-    sosText
+    sostext
     VERSION 1.3
     LANGUAGES CXX
 )
@@ -54,9 +54,9 @@ set(PROJECT_SOURCES
     src/settings/setting/setting.cpp
 )
 
-add_executable(sosText ${PROJECT_SOURCES})
+add_executable(sostext ${PROJECT_SOURCES})
 
 target_link_libraries(
-    sosText PRIVATE Qt6::Widgets Qt6::Core Qt6::Gui
+    sostext PRIVATE Qt6::Widgets Qt6::Core Qt6::Gui
 )
 
