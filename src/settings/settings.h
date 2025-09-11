@@ -36,7 +36,7 @@
                 Settings();
                 ~Settings();
 
-                void addSetting();
+                void loadSettingsFile();
             };
         }
     }

@@ -26,4 +26,10 @@ Sosware::SosText::Settings::Settings()
 
 Sosware::SosText::Settings::~Settings()
 {
+    delete settingsMap;
+}
+
+void Sosware::SosText::Settings::loadSettingsFile()
+{
+    // TODO load settings file
 }
