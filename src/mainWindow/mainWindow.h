@@ -47,6 +47,7 @@
                 void connectSlots();
 
                 void createTextEditTab(QString path = nullptr);
+                void closeTab(int index);
 
                 void newFile();
                 void openFile();

@@ -47,6 +47,9 @@ void Sosware::SosText::MainWindow::connectSlots()
     // Edit actions
 
     // About actions
+
+    // More actions
+    connect(this->ui->tabWidget, &QTabWidget::tabCloseRequested, this, &Sosware::SosText::MainWindow::closeTab);
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
@@ -68,6 +71,13 @@ void Sosware::SosText::MainWindow::createTextEditTab(QString path)
             //TODO File load failed
         }
     }
+}
+
+void Sosware::SosText::MainWindow::closeTab(int index)
+{
+    // TODO check if file is modified
+    // TODO Ask to save file
+    this->ui->tabWidget->removeTab(index);
 }
 
 void Sosware::SosText::MainWindow::newFile()
