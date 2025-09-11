@@ -41,7 +41,12 @@ set(PROJECT_SOURCES
 
     src/textEditTab/textEditTab.h
     src/textEditTab/textEditTab.cpp
-    src/textEditTab/textEditTab.ui
+
+    src/textEditTab/textArea/textArea.h
+    src/textEditTab/textArea/textArea.cpp
+
+    src/textEditTab/lineNumberArea/lineNumberArea.h
+    src/textEditTab/lineNumberArea/lineNumberArea.cpp
 
     src/settingsWindow/settingsWindow.h
     src/settingsWindow/settingsWindow.cpp

@@ -16,18 +16,18 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#ifndef LINENUMBERAREA
-#define LINENUMBERAREA
+#ifndef TEXTAREA
+#define TEXTAREA
     #include <QPlainTextEdit>
     namespace Sosware
     {
         namespace SosText
         {
-            class LineNumberArea : public QPlainTextEdit
+            class TextArea : public QPlainTextEdit
             {
                 public:
-                LineNumberArea(QWidget *parent = nullptr);
-                ~LineNumberArea();
+                TextArea(QWidget *parent = nullptr);
+                ~TextArea();
             };
         }
     }

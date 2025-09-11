@@ -17,18 +17,21 @@
 */
 
 #include "textEditTab.h"
-#include "ui_textEditTab.h"
 
-Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent), ui(new Ui::TextEditTab)
+Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
 {
-    ui->setupUi(this);
-    // TODO
-    // ui->plainTextEdit->textChanged();
+    QHBoxLayout layout(this);
+    
+    lineNumberArea.setReadOnly(true);
+    lineNumberArea.setMaximumWidth(50);
+    lineNumberArea.setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+
+    layout.addWidget(&lineNumberArea);
+    layout.addWidget(&textArea);
 }
 
 Sosware::SosText::TextEditTab::~TextEditTab()
 {
-    delete ui;
 }
 
 void Sosware::SosText::TextEditTab::setFilepath(QString path)
@@ -42,7 +45,7 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
     if(qf.open(QIODevice::ReadOnly))
     {
         QString qs = qf.readAll();
-        ui->plainTextEdit->appendPlainText(qs);
+        textArea.appendPlainText(qs);
         return 0;
     }
     else
@@ -59,7 +62,7 @@ int Sosware::SosText::TextEditTab::saveFile()
         QFile qf(filepath);
         if(qf.open(QIODevice::ReadWrite))
         {
-            QString qs = ui->plainTextEdit->toPlainText();
+            QString qs = textArea.toPlainText();
             qf.write(qs.toStdString().c_str());
             return 0;
         }

@@ -17,3 +17,11 @@
 */
 
 #include "lineNumberArea.h"
+
+Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
+{
+}
+
+Sosware::SosText::LineNumberArea::~LineNumberArea()
+{
+}

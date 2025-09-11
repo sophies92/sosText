@@ -21,12 +21,9 @@
     #include <QString>
     #include <QFile>
     #include <QFileDialog>
-    #include "../mainWindow/mainWindow.h"
-    namespace Ui
-    {
-        class TextEditTab;
-    }
-
+    #include <QLayout>
+    #include "textArea/textArea.h"
+    #include "lineNumberArea/lineNumberArea.h"
     namespace Sosware
     {
         namespace SosText
@@ -34,9 +31,10 @@
             class TextEditTab : public QWidget
             {
                 Q_OBJECT
-                public:
-                Ui::TextEditTab *ui;
                 private:
+                Sosware::SosText::TextArea textArea;
+                Sosware::SosText::LineNumberArea lineNumberArea;
+
                 QString filepath;
 
                 public:
