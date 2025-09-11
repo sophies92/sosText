@@ -26,7 +26,8 @@ int main(int argc, char* argv[])
     Sosware::SosText::MainWindow mainWindow;
     if(argc > 0)
     {
-        mainWindow.openFileFromPath(argv[1]);
+        for(int i = 1; i < argc; ++i)
+        mainWindow.openFileFromPath(argv[i]);
     }
     return app.exec();
 }
