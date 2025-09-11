@@ -11,5 +11,8 @@ cp ./res/sosText_icon.svg ./sosText/resources/icons/
 echo "Done!"
 
 echo "Copying Binary..."
-
+cp ./sostext ./sosText/
 echo "Done!"
+
+mv ./sosText /usr/local/bin/
+ln -s /usr/local/bin/sosText/sostext /usr/local/bin/

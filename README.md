@@ -15,9 +15,10 @@ Copyright (C) 2025  Sophie Short / sosware
 - Qt6
 
 ### Installation Instructions
-1. The source code can be built by running *cmake CMakeLists.txt* in a terminal.
-2. The program can then be installed by running the *install.sh* script as root.
-3. The program can be started by running *sostext* (optionally followed by the path(s) of any files you want to open) in a terminal.
+1. Navigate to the *sosText* directory and run *cmake CMakeLists.txt* in a terminal.
+2. Run *make* in the same directory.
+3. Finally run the *install.sh* script as root. The program will be installed to */usr/local/bin*.
+The program can be started by running *sostext* (optionally followed by the path(s) of any files you want to open) in a terminal, or added to your launcher menu.
 
 ## 5 - Changelog (Fixed bugs)
 - [1.1] Files can be opened from the terminal.  
