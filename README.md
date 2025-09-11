@@ -1,5 +1,5 @@
 # sosText
-Version: 1.2
+Version: 1.3
 
 ## 1 - Description
 sosText is a basic text editor. It is released as part of the sosSuite.  
