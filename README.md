@@ -18,7 +18,7 @@ Copyright (C) 2025  Sophie Short / sosware
 1. The source code can be built by running the CMake script.
 2. Only the *sosText* binary file is needed to run the program. It can be placed anywhere to be used at your convenience (recommended */usr/local/bin*).
 
-## 5 - Changelog
+## 5 - Changelog (Fixed bugs)
 - [1.1] Files can be opened from the terminal.  
 *sosText [path-to-file]*
 - [1.2] Can now open multiple files from the terminal by chaining inputs.  
