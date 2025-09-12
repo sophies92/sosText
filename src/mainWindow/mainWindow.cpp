@@ -60,7 +60,9 @@ void Sosware::SosText::MainWindow::connectSlots()
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
 {
     Sosware::SosText::TextEditTab *textTab = new Sosware::SosText::TextEditTab(this);
+    // Text changed
     connect(textTab->textArea, &QPlainTextEdit::textChanged, this, &Sosware::SosText::MainWindow::markTabUnsaved);
+
     if(path == nullptr)
     {
         ui->tabWidget->addTab(textTab, "*newFile");
@@ -115,7 +117,10 @@ void Sosware::SosText::MainWindow::openFile()
 {
     QFileDialog dialog;
     QString file = dialog.getOpenFileName(this);
-    createTextEditTab(file);
+    if(!file.isEmpty())
+    {
+        createTextEditTab(file);
+    }
 }
 
 void Sosware::SosText::MainWindow::openFileFromPath(char *path)
