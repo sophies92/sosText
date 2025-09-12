@@ -34,6 +34,8 @@ echo "Copying Binary..."
 cp ./sostext ./sosText/
 echo "Done!"
 
+echo "Installing..."
 rm -r /usr/local/bin/sosText/
 mv -f ./sosText /usr/local/bin/
 ln -sf /usr/local/bin/sosText/sostext /usr/local/bin/
+echo "Done!"
