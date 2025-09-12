@@ -57,6 +57,7 @@ void Sosware::SosText::MainWindow::connectSlots()
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
 {
     Sosware::SosText::TextEditTab *textTab = new Sosware::SosText::TextEditTab(this);
+    // TODO Connect texttab.textarea/textChanged to marktabunsaved
     if(path == nullptr)
     {
         ui->tabWidget->addTab(textTab, "*newFile");
