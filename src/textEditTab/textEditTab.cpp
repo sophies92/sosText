@@ -61,7 +61,8 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
     if(qf.open(QIODevice::ReadOnly))
     {
         QString qs = qf.readAll();
-        textArea->appendPlainText(qs);
+        textArea->clear();
+        textArea->insertPlainText(qs);
         return 0;
     }
     else
@@ -76,7 +77,7 @@ int Sosware::SosText::TextEditTab::saveFile()
     if(!filepath.isEmpty())
     {
         QFile qf(filepath);
-        if(qf.open(QIODevice::ReadWrite))
+        if(qf.open(QIODevice::WriteOnly))
         {
             QString qs = textArea->toPlainText();
             qf.write(qs.toStdString().c_str());
