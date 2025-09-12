@@ -38,7 +38,9 @@ Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
 
 Sosware::SosText::TextEditTab::~TextEditTab()
 {
-    
+    delete lineNumberArea;
+    delete textArea;
+    delete layout;
 }
 
 void Sosware::SosText::TextEditTab::setFilepath(QString path)

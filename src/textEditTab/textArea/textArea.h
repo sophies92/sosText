@@ -29,6 +29,9 @@
                 public:
                 TextArea(QWidget *parent = nullptr);
                 ~TextArea();
+
+                signals:
+                
             };
         }
     }

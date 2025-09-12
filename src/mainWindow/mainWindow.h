@@ -46,9 +46,24 @@
                 MainWindow(QWidget *parent = nullptr);
                 ~MainWindow();
 
+                /**
+                 * @fn
+                 * @brief Connect the slots needed for the program to work
+                */
                 void connectSlots();
 
+                /**
+                 * @fn
+                 * @brief Creates a new TextEditTab
+                 * @param path (Optional) The path to the file to be opened. If blank, a new file will be created
+                */
                 void createTextEditTab(QString path = nullptr);
+
+                /**
+                 * @fn 
+                 * @brief Closes a TextEditTab
+                 * @param index The index of the TextEditTab to be closed
+                 */
                 void closeTab(int index);
                 void markTabUnsaved(int index);
 

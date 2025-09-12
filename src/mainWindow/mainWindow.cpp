@@ -78,7 +78,8 @@ void Sosware::SosText::MainWindow::closeTab(int index)
 {
     // TODO check if file is modified
     // TODO Ask to save file
-    this->ui->tabWidget->removeTab(index);
+    Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    delete tab;
 }
 
 void Sosware::SosText::MainWindow::markTabUnsaved(int index)
