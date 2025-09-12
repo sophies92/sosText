@@ -65,19 +65,20 @@
                 void createTextEditTab(QString path = nullptr);
 
                 /**
-                 * @fn 
+                 * @fn closeTab(int index)
                  * @brief Closes a TextEditTab
                  * @param index The index of the TextEditTab to be closed
                  */
                 void closeTab(int index);
 
                 /**
-                 * 
+                 * @fn updateTabText(int index, QString text)
+                 * @brief
                  */
                 void updateTabText(int index, QString text);
 
                 /**
-                 * @fn
+                 * @fn markTabUnsaved()
                  * @brief Mark a TextEditTab as unsaved
                  * @param index The index of the TextEditTab to be marked
                  */
