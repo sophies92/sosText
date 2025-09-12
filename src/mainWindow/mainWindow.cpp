@@ -25,7 +25,8 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     this->setWindowTitle("sosText");
     this->setWindowIcon(QIcon("/usr/local/bin/sosText/resources/icons/sosText_icon.svg")); // TODO make this better
     connectSlots();
-    appSettings = new Sosware::SosText::Settings();;
+    appSettings = new Sosware::SosText::Settings();
+
     // TODO Load settings
     this->showMaximized();
 }
