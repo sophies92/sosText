@@ -16,17 +16,22 @@ Copyright (C) 2025  Sophie Short / sosware
 - Qt6
 
 ### Installation Instructions
-1. Navigate to the *sosText* directory and run *cmake CMakeLists.txt* in a terminal.
-2. Run *make* in the same directory.
-3. Finally run the *install.sh* script as root. The program will be installed to */usr/local/bin*.
+1. Navigate to the `sosText` directory and run `cmake CMakeLists.txt` in a terminal.
+2. Run `make` in the same directory.
+3. Finally run the `install.sh` script as root. The program will be installed to `/usr/local/bin`.
 
-The program can be started by running *sostext* (optionally followed by the path(s) of any files you want to open) in a terminal, or added to your launcher menu.
+The program can be started by running `sostext` (optionally followed by the path(s) of any files you want to open eg. `sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`) in a terminal. sosText can also be added to your launcher menu and started from there.
+
+### Uninstall
+1. Delete the `sosText` directory from `/usr/local/bin/`.
+2. Delete the `sostext` symbolic link from`/usr/local/bin/`
+3. Remove sosText from your launcher menu if you have added it.
 
 ## 5 - Changelog (Fixed bugs)
 - [1.1] Files can be opened from the terminal.  
-*sostext [path-to-file]*
+`sostext [path-to-file]`
 - [1.2] Can now open multiple files from the terminal by chaining inputs.  
-*sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]*
+`sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`
 - [1.3] Tabs can now be closed.
 - [1.3] When starting a new file, or opening a file, the new tab becomes the active tab.
 - [1.3] When closing tabs that aren't the active tab, the correct tab now closes.
