@@ -20,7 +20,7 @@
 
 Sosware::SosText::TextArea::TextArea(QWidget *parent)
 {
-    this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
 }
 
 Sosware::SosText::TextArea::~TextArea()
