@@ -10,6 +10,7 @@ Copyright (C) 2025  Sophie Short / sosware
 
 ## 3 - Known Bugs
 
+
 ## 4 - Install
 ### Dependencies
 - Qt6
@@ -27,6 +28,8 @@ The program can be started by running *sostext* (optionally followed by the path
 - [1.2] Can now open multiple files from the terminal by chaining inputs.  
 *sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]*
 - [1.3] Tabs can now be closed.
+- [1.3] When starting a new file, or opening a file, the new tab becomes the active tab.
+- [1.3] When closing tabs that aren't the active tab, the correct tab now closes.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify

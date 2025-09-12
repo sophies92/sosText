@@ -33,6 +33,7 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
 Sosware::SosText::MainWindow::~MainWindow()
 {
     delete ui;
+    delete appSettings;
 }
 
 void Sosware::SosText::MainWindow::connectSlots()
@@ -70,15 +71,18 @@ void Sosware::SosText::MainWindow::createTextEditTab(QString path)
         else
         {
             //TODO File load failed
+            delete textTab;
+            return;
         }
     }
+    this->ui->tabWidget->setCurrentWidget(textTab);
 }
 
 void Sosware::SosText::MainWindow::closeTab(int index)
 {
     // TODO check if file is modified
     // TODO Ask to save file
-    Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
+    Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(index);
     delete tab;
 }
 
