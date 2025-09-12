@@ -25,6 +25,7 @@
         {
             class TextArea : public QPlainTextEdit
             {
+                Q_OBJECT
                 public:
                 TextArea(QWidget *parent = nullptr);
                 ~TextArea();

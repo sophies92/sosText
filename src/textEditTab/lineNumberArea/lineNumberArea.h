@@ -25,6 +25,7 @@
         {
             class LineNumberArea : public QPlainTextEdit
             {
+                Q_OBJECT
                 public:
                 LineNumberArea(QWidget *parent = nullptr);
                 ~LineNumberArea();

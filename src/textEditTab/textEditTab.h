@@ -32,8 +32,9 @@
             {
                 Q_OBJECT
                 private:
-                Sosware::SosText::TextArea textArea;
-                Sosware::SosText::LineNumberArea lineNumberArea;
+                QHBoxLayout *layout;
+                Sosware::SosText::TextArea *textArea;
+                Sosware::SosText::LineNumberArea *lineNumberArea;
 
                 QString filepath;
 

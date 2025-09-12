@@ -20,20 +20,25 @@
 
 Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
 {
+    // Create Tab Contents
+    lineNumberArea = new Sosware::SosText::LineNumberArea(this);
+    textArea = new Sosware::SosText::TextArea(this);
+
     // Create Tab Layout
-    QHBoxLayout *layout = new QHBoxLayout(this);
+    layout = new QHBoxLayout(this);
     // Set layout properties
     layout->setSpacing(2);
     layout->setContentsMargins(0, 0, 0, 0);
     // Add widgets to layout
-    layout->addWidget(&lineNumberArea);
-    layout->addWidget(&textArea);
+    layout->addWidget(lineNumberArea);
+    layout->addWidget(textArea);
     // Add layout
     this->setLayout(layout);
 }
 
 Sosware::SosText::TextEditTab::~TextEditTab()
 {
+    
 }
 
 void Sosware::SosText::TextEditTab::setFilepath(QString path)
@@ -47,7 +52,7 @@ int Sosware::SosText::TextEditTab::openFile(QString path)
     if(qf.open(QIODevice::ReadOnly))
     {
         QString qs = qf.readAll();
-        textArea.appendPlainText(qs);
+        textArea->appendPlainText(qs);
         return 0;
     }
     else
@@ -64,7 +69,7 @@ int Sosware::SosText::TextEditTab::saveFile()
         QFile qf(filepath);
         if(qf.open(QIODevice::ReadWrite))
         {
-            QString qs = textArea.toPlainText();
+            QString qs = textArea->toPlainText();
             qf.write(qs.toStdString().c_str());
             return 0;
         }
