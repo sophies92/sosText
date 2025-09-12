@@ -9,7 +9,7 @@ Copyright (C) 2025  Sophie Short / sosware
 - Open, Edit and Save text files
 
 ## 3 - Known Bugs
-
+- Tab name doesn't change colour to red when text is edited to show unsaved changes
 
 ## 4 - Install
 ### Dependencies
@@ -35,6 +35,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.3] Tabs can now be closed.
 - [1.3] When starting a new file, or opening a file, the new tab becomes the active tab.
 - [1.3] When closing tabs that aren't the active tab, the correct tab now closes.
+- [1.3] Tab name changes colour to green to show the file has been saved successfully.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify

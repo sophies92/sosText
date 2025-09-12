@@ -17,6 +17,7 @@
 */
 #ifndef TEXTEDITTAB
 #define TEXTEDITTAB
+    #include <filesystem>
     #include <QWidget>
     #include <QString>
     #include <QFile>
@@ -43,6 +44,7 @@
                 ~TextEditTab();
 
                 void setFilepath(QString path);
+                QString getFilename();
                 
                 int openFile(QString path);
                 int saveFile();

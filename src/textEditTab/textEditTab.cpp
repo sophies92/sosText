@@ -48,6 +48,13 @@ void Sosware::SosText::TextEditTab::setFilepath(QString path)
     filepath = path;
 }
 
+QString Sosware::SosText::TextEditTab::getFilename()
+{
+    std::filesystem::path path = filepath.toStdString();
+    QString name = path.filename().c_str();
+    return name;
+}
+
 int Sosware::SosText::TextEditTab::openFile(QString path)
 {
     QFile qf(path);

@@ -88,10 +88,20 @@ void Sosware::SosText::MainWindow::closeTab(int index)
     delete tab;
 }
 
+void Sosware::SosText::MainWindow::updateTabText(int index, QString text)
+{
+    ui->tabWidget->setTabText(index, text);
+}
+
 void Sosware::SosText::MainWindow::markTabUnsaved(int index)
 {
     ui->tabWidget->tabBar()->setTabTextColor(index, Qt::red);
     // TODO connect to tab/textChanged
+}
+
+void Sosware::SosText::MainWindow::markTabSaved(int index)
+{
+    ui->tabWidget->tabBar()->setTabTextColor(index, Qt::green);
 }
 
 void Sosware::SosText::MainWindow::newFile()
@@ -117,7 +127,8 @@ void Sosware::SosText::MainWindow::saveFile()
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
     if(tab->saveFile() == 0)
     {
-
+        updateTabText(ui->tabWidget->currentIndex(), tab->getFilename());
+        markTabSaved(ui->tabWidget->currentIndex());
     }
     else
     {
@@ -132,7 +143,8 @@ void Sosware::SosText::MainWindow::saveFileAs()
     tab->setFilepath(dialog.getSaveFileName());
     if(tab->saveFile())
     {
-
+        updateTabText(ui->tabWidget->currentIndex(), tab->getFilename());
+        markTabSaved(ui->tabWidget->currentIndex());
     }
     else
     {

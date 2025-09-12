@@ -36,10 +36,12 @@
         {
             /**
              * @class MainWindow
+             * @brief
              */
             class MainWindow : public QMainWindow
             {
                 Q_OBJECT
+
                 private:
                 Ui::MainWindow *ui;
                 Sosware::SosText::SettingsWindow *settingsWindow;
@@ -56,7 +58,7 @@
                 void connectSlots();
 
                 /**
-                 * @fn
+                 * @fn createTextEditTab(QString path = nullptr)
                  * @brief Creates a new TextEditTab
                  * @param path (Optional) The path to the file to be opened. If blank, a new file will be created
                 */
@@ -68,6 +70,12 @@
                  * @param index The index of the TextEditTab to be closed
                  */
                 void closeTab(int index);
+
+                /**
+                 * 
+                 */
+                void updateTabText(int index, QString text);
+
                 /**
                  * @fn
                  * @brief Mark a TextEditTab as unsaved
@@ -75,12 +83,46 @@
                  */
                 void markTabUnsaved(int index);
 
+                /**
+                 * @fn
+                 * @brief
+                 */
+                void markTabSaved(int index);
+
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void newFile();
+
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void openFile();
+
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void openFileFromPath(char *path);
+
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void saveFile();
+
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void saveFileAs();
 
+                /**
+                 * @fn
+                 * @brief
+                 */
                 void launchSettingsWindow();
             };
         }
