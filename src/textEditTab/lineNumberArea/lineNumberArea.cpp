@@ -20,6 +20,9 @@
 
 Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
 {
+    this->setReadOnly(true);
+    this->setMaximumWidth(50);
+    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
 }
 
 Sosware::SosText::LineNumberArea::~LineNumberArea()

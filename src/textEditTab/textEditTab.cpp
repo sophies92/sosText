@@ -20,14 +20,16 @@
 
 Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
 {
-    QHBoxLayout layout(this);
-    
-    lineNumberArea.setReadOnly(true);
-    lineNumberArea.setMaximumWidth(50);
-    lineNumberArea.setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
-
-    layout.addWidget(&lineNumberArea);
-    layout.addWidget(&textArea);
+    // Create Tab Layout
+    QHBoxLayout *layout = new QHBoxLayout(this);
+    // Set layout properties
+    layout->setSpacing(2);
+    layout->setContentsMargins(0, 0, 0, 0);
+    // Add widgets to layout
+    layout->addWidget(&lineNumberArea);
+    layout->addWidget(&textArea);
+    // Add layout
+    this->setLayout(layout);
 }
 
 Sosware::SosText::TextEditTab::~TextEditTab()
