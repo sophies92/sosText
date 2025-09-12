@@ -26,13 +26,14 @@ mkdir ./sosText/licence/
 echo "Done!"
 
 echo "Copying Resources..."
-cp ./res/sosText_icon.svg ./sosText/resources/icons/
-cp ./licence ./sosText/licence/
+cp -r ./res/sosText_icon.svg ./sosText/resources/icons/
+cp -r ./licence ./sosText/licence/
 echo "Done!"
 
 echo "Copying Binary..."
 cp ./sostext ./sosText/
 echo "Done!"
 
-mv ./sosText /usr/local/bin/
-ln -s /usr/local/bin/sosText/sostext /usr/local/bin/
+rm -r /usr/local/bin/sosText/
+mv -f ./sosText /usr/local/bin/
+ln -sf /usr/local/bin/sosText/sostext /usr/local/bin/
