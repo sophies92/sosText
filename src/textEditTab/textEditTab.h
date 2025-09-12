@@ -34,10 +34,11 @@
                 Q_OBJECT
                 private:
                 QHBoxLayout *layout;
+                QString filepath;
+                
+                public:
                 Sosware::SosText::TextArea *textArea;
                 Sosware::SosText::LineNumberArea *lineNumberArea;
-
-                QString filepath;
 
                 public:
                 TextEditTab(QWidget *parent = nullptr);
