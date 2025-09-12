@@ -80,7 +80,6 @@
                 /**
                  * @fn markTabUnsaved()
                  * @brief Mark a TextEditTab as unsaved
-                 * @param index The index of the TextEditTab to be marked
                  */
                 void markTabUnsaved();
 
