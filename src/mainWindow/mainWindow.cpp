@@ -48,6 +48,8 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 
     // Edit actions
+    // connect(this->ui->actionSelect_All, &QAction::triggered, this, selecat all text);
+    // connect(this->ui.actionFind, QAction::triggered, this, find in text);
 
     // About actions
 
