@@ -34,6 +34,9 @@
     {
         namespace SosText
         {
+            /**
+             * @class MainWindow
+             */
             class MainWindow : public QMainWindow
             {
                 Q_OBJECT
@@ -65,6 +68,11 @@
                  * @param index The index of the TextEditTab to be closed
                  */
                 void closeTab(int index);
+                /**
+                 * @fn
+                 * @brief Mark a TextEditTab as unsaved
+                 * @param index The index of the TextEditTab to be marked
+                 */
                 void markTabUnsaved(int index);
 
                 void newFile();
