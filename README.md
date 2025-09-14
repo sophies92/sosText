@@ -6,7 +6,9 @@ sosText is a basic text editor. It is released as part of the sosSuite.
 Copyright (C) 2025  Sophie Short / sosware
 
 ## 2 - Features
-- Open, Edit and Save text files
+- Open, Edit and Save multiple text files from within a single window.
+- Intuitive indicator for when a file has unsaved changes.
+- Line counting/numbering.
 
 ## 3 - Known Bugs
 
