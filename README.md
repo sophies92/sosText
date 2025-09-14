@@ -29,9 +29,9 @@ The program can be started by running `sostext` (optionally followed by the path
 3. Remove sosText from your launcher menu if you have added it.
 
 ## 5 - Changelog (Fixed bugs)
-- [1.1] Files can be opened from the terminal.  
+- [1.1] [NEW] Files can be opened from the terminal.  
 `sostext [path-to-file]`
-- [1.2] Can now open multiple files from the terminal by chaining inputs.  
+- [1.2] [NEW] Can now open multiple files from the terminal by chaining inputs.  
 `sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`
 - [1.3] [BUG] Tabs can now be closed.
 - [1.3] [BUG] When starting a new file, or opening a file, the new tab becomes the active tab.
