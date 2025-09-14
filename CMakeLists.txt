@@ -57,6 +57,9 @@ set(PROJECT_SOURCES
 
     src/settings/setting/setting.h
     src/settings/setting/setting.cpp
+
+    src/aboutWindow/aboutWindow.h
+    src/aboutWindow/aboutWindow.cpp
 )
 
 add_executable(sostext ${PROJECT_SOURCES})

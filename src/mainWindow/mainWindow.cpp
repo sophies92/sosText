@@ -52,6 +52,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     // connect(this->ui.actionFind, QAction::triggered, this, find in text);
 
     // About actions
+    connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
 
     // Tab slots
     connect(this->ui->tabWidget, &QTabWidget::tabCloseRequested, this, &Sosware::SosText::MainWindow::closeTab);
@@ -162,5 +163,9 @@ void Sosware::SosText::MainWindow::saveFileAs()
 void Sosware::SosText::MainWindow::launchSettingsWindow()
 {
     settingsWindow = new Sosware::SosText::SettingsWindow(this);
-    settingsWindow->show();
+}
+
+void Sosware::SosText::MainWindow::launchAboutWindow()
+{
+    aboutWindow = new Sosware::SosText::AboutWindow(this);
 }

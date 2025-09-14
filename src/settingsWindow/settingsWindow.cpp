@@ -22,6 +22,7 @@
 Sosware::SosText::SettingsWindow::SettingsWindow(QWidget *parent) : QDialog(parent), ui(new Ui::SettingsWindow)
 {
     ui->setupUi(this);
+    this->show();
 }
 
 Sosware::SosText::SettingsWindow::~SettingsWindow()

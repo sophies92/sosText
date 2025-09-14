@@ -15,3 +15,26 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+#ifndef ABOUTWINDOW
+#define ABOUTWINDOW
+    #include <QDialog>
+    namespace Sosware
+    {
+        namespace SosText
+        {
+            /**
+             * @class AboutWindow
+             * @brief
+             */
+            class AboutWindow : QDialog
+            {
+                Q_OBJECT
+
+                public:
+                AboutWindow(QWidget *parent = nullptr);
+                ~AboutWindow();
+            };
+        }
+    }
+#endif

@@ -1,4 +1,4 @@
-/* 
+/*
     sosText - A text editor.
     Copyright (C) 2025  Sophie Short / sosware
 
@@ -15,3 +15,14 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+#include "aboutWindow.h"
+
+Sosware::SosText::AboutWindow::AboutWindow(QWidget *parent)
+{
+    this->show();
+}
+
+Sosware::SosText::AboutWindow::~AboutWindow()
+{
+}
