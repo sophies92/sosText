@@ -20,12 +20,12 @@
 
 Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
 {
+    vScrollBar = this->verticalScrollBar();
     this->setReadOnly(true);
     this->setMaximumWidth(50);
     this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
     this->setTextInteractionFlags(Qt::NoTextInteraction);
     this->setFocusPolicy(Qt::NoFocus);
-    this->setAlignment(Qt::AlignRight);
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 }
 

@@ -18,14 +18,18 @@
 
 #ifndef LINENUMBERAREA
 #define LINENUMBERAREA
-    #include <QTextEdit>
+    #include <QPlainTextEdit>
+    #include <QScrollBar>
     namespace Sosware
     {
         namespace SosText
         {
-            class LineNumberArea : public QTextEdit
+            class LineNumberArea : public QPlainTextEdit
             {
                 Q_OBJECT
+                public: 
+                QScrollBar *vScrollBar;
+
                 public:
                 LineNumberArea(QWidget *parent = nullptr);
                 ~LineNumberArea();

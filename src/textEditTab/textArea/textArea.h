@@ -19,6 +19,7 @@
 #ifndef TEXTAREA
 #define TEXTAREA
     #include <QPlainTextEdit>
+    #include <QScrollBar>
     namespace Sosware
     {
         namespace SosText
@@ -26,6 +27,9 @@
             class TextArea : public QPlainTextEdit
             {
                 Q_OBJECT
+                public:
+                QScrollBar *vScrollBar;
+
                 public:
                 TextArea(QWidget *parent = nullptr);
                 ~TextArea();

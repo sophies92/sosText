@@ -20,7 +20,10 @@
 
 Sosware::SosText::TextArea::TextArea(QWidget *parent)
 {
-    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+    vScrollBar = this->verticalScrollBar();
+    
+    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
+    this->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
 }
 
 Sosware::SosText::TextArea::~TextArea()

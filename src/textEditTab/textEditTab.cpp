@@ -24,8 +24,14 @@ Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
     lineNumberArea = new Sosware::SosText::LineNumberArea(this);
     textArea = new Sosware::SosText::TextArea(this);
 
+    // Line count
     connect(textArea, &QPlainTextEdit::blockCountChanged, this, &Sosware::SosText::TextEditTab::updateLineCount);
     updateLineCount(textArea->blockCount());
+
+    // Scrollbar sync
+    connect(textArea->vScrollBar, &QScrollBar::valueChanged, this, &Sosware::SosText::TextEditTab::updateScroll);
+    connect(textArea, &QPlainTextEdit::blockCountChanged, this, &Sosware::SosText::TextEditTab::updateScroll);
+
 
     // Create Tab Layout
     layout = new QHBoxLayout(this);
@@ -108,5 +114,11 @@ void Sosware::SosText::TextEditTab::updateLineCount(int lines)
     {
         lineNumbers.append(std::to_string(i+1) + "~\n");
     }
-    lineNumberArea->setText(lineNumbers);
+    lineNumberArea->setPlainText(lineNumbers);
+}
+
+void Sosware::SosText::TextEditTab::updateScroll(int value)
+{
+    lineNumberArea->vScrollBar->setRange(textArea->vScrollBar->minimum(), textArea->vScrollBar->maximum());
+    lineNumberArea->vScrollBar->setValue(textArea->vScrollBar->value());
 }

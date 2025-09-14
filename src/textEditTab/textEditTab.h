@@ -19,6 +19,7 @@
 #define TEXTEDITTAB
     #include <filesystem>
     #include <QWidget>
+    #include <QScrollBar>
     #include <QString>
     #include <QFile>
     #include <QFileDialog>
@@ -51,6 +52,7 @@
                 int saveFile();
 
                 void updateLineCount(int lines);
+                void updateScroll(int value);
             };
         }
     }
