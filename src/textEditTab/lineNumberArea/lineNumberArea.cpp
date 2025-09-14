@@ -26,6 +26,7 @@ Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
     this->setTextInteractionFlags(Qt::NoTextInteraction);
     this->setFocusPolicy(Qt::NoFocus);
     this->setAlignment(Qt::AlignRight);
+    this->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 }
 
 Sosware::SosText::LineNumberArea::~LineNumberArea()
