@@ -36,10 +36,10 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.3] [BUG] Tabs can now be closed.
 - [1.3] [BUG] When starting a new file, or opening a file, the new tab becomes the active tab.
 - [1.3] [BUG] When closing tabs that aren't the active tab, the correct tab now closes.
-- [1.3] Tab name changes colour to green to show the file has been saved successfully.
-- [1.3] Tab name changes colour to red to show unsaved changes.
+- [1.3] [NEW] Tab name changes colour to green to show the file has been saved successfully.
+- [1.3] [NEW] Tab name changes colour to red to show unsaved changes.
 - [1.4] [BUG] A new tab is no longer opened when selection `Cancel` in the open file dialog.
-- [1.4] Added line numbers.
+- [1.4] [NEW] Added line numbers.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify
