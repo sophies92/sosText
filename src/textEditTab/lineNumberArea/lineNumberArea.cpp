@@ -25,6 +25,7 @@ Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
     this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
     this->setTextInteractionFlags(Qt::NoTextInteraction);
     this->setFocusPolicy(Qt::NoFocus);
+    this->setAlignment(Qt::AlignRight);
 }
 
 Sosware::SosText::LineNumberArea::~LineNumberArea()

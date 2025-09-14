@@ -106,7 +106,7 @@ void Sosware::SosText::TextEditTab::updateLineCount(int lines)
     QString lineNumbers;
     for(int i = 0; i < lines; ++i)
     {
-        lineNumbers.append(std::to_string(i+1) + "\n");
+        lineNumbers.append(std::to_string(i+1) + "~\n");
     }
-    lineNumberArea->setPlainText(lineNumbers);
+    lineNumberArea->setText(lineNumbers);
 }

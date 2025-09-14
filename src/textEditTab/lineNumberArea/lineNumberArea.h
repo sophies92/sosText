@@ -18,12 +18,12 @@
 
 #ifndef LINENUMBERAREA
 #define LINENUMBERAREA
-    #include <QPlainTextEdit>
+    #include <QTextEdit>
     namespace Sosware
     {
         namespace SosText
         {
-            class LineNumberArea : public QPlainTextEdit
+            class LineNumberArea : public QTextEdit
             {
                 Q_OBJECT
                 public:
