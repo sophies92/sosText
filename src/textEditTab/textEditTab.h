@@ -49,6 +49,8 @@
                 
                 int openFile(QString path);
                 int saveFile();
+
+                void updateLineCount(int lines);
             };
         }
     }

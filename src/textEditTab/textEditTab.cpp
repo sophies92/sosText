@@ -24,6 +24,9 @@ Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
     lineNumberArea = new Sosware::SosText::LineNumberArea(this);
     textArea = new Sosware::SosText::TextArea(this);
 
+    connect(textArea, &QPlainTextEdit::blockCountChanged, this, &Sosware::SosText::TextEditTab::updateLineCount);
+    updateLineCount(textArea->blockCount());
+
     // Create Tab Layout
     layout = new QHBoxLayout(this);
     // Set layout properties
@@ -96,4 +99,14 @@ int Sosware::SosText::TextEditTab::saveFile()
         saveFile();
         return 0;
     }
+}
+
+void Sosware::SosText::TextEditTab::updateLineCount(int lines)
+{
+    QString lineNumbers;
+    for(int i = 0; i < lines; ++i)
+    {
+        lineNumbers.append(std::to_string(i+1) + "\n");
+    }
+    lineNumberArea->setPlainText(lineNumbers);
 }
