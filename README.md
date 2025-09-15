@@ -11,6 +11,7 @@ Copyright (C) 2025  Sophie Short / sosware
 - Line counting/numbering.
 
 ## 3 - Known Bugs
+- When saving in a directory without write access, the file shows as saved even though the file doesn't get written
 
 ## 4 - Install
 ### Dependencies
