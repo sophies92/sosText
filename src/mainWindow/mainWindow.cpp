@@ -149,7 +149,7 @@ void Sosware::SosText::MainWindow::saveFileAs()
     QFileDialog dialog;
     Sosware::SosText::TextEditTab *tab = (Sosware::SosText::TextEditTab*)ui->tabWidget->widget(ui->tabWidget->currentIndex());
     tab->setFilepath(dialog.getSaveFileName());
-    if(tab->saveFile())
+    if(tab->saveFile() == 0)
     {
         updateTabText(ui->tabWidget->currentIndex(), tab->getFilename());
         markTabSaved(ui->tabWidget->currentIndex());

@@ -88,9 +88,18 @@ int Sosware::SosText::TextEditTab::saveFile()
         QFile qf(filepath);
         if(qf.open(QIODevice::WriteOnly))
         {
-            QString qs = textArea->toPlainText();
-            qf.write(qs.toStdString().c_str());
-            return 0;
+            
+            if(qf.isWritable())
+            {
+                QString qs = textArea->toPlainText();
+                qf.write(qs.toStdString().c_str());
+                return 0;
+            }
+            else
+            {
+                // TODO Save file failed (no write access)
+                return 1;
+            }
         }
         else
         {
@@ -103,8 +112,8 @@ int Sosware::SosText::TextEditTab::saveFile()
         QFileDialog dialog;
         this->setFilepath(dialog.getSaveFileName());
         saveFile();
-        return 0;
     }
+    return 1;
 }
 
 void Sosware::SosText::TextEditTab::updateLineCount(int lines)
