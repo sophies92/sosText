@@ -1,18 +1,18 @@
 # sosText
 Version: 1.5
 
-## 1 - Description
+## Description
 sosText is a basic text editor. It is released as part of the sosSuite.  
 Copyright (C) 2025  Sophie Short / sosware
 
-## 2 - Features
+## Features
 - Open, Edit and Save multiple text files from within a single window.
 - Intuitive indicator for when a file has unsaved changes.
 - Line counting/numbering.
  
-## 3 - Known Bugs
+## Known Bugs
 
-## 4 - Install
+## Install
 ### Dependencies
 - Qt6
 
@@ -28,7 +28,7 @@ The program can be started by running `sostext` (optionally followed by the path
 2. Delete the `sostext` symbolic link from`/usr/local/bin/`
 3. Remove sosText from your launcher menu if you have added it.
 
-## 5 - Changelog
+## Changelog
 - [1.1] [NEW] Files can be opened from the terminal.  
 `sostext [path-to-file]`
 - [1.2] [NEW] Can now open multiple files from the terminal by chaining inputs.  
@@ -43,7 +43,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.4.1] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
 - [1.5] [NEW] Changed text to monospace.
 
-## 6 - Licence
+## Licence
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
