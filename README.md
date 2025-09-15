@@ -1,5 +1,5 @@
 # sosText
-Version: 1.4
+Version: 1.5
 
 ## 1 - Description
 sosText is a basic text editor. It is released as part of the sosSuite.  
@@ -11,7 +11,6 @@ Copyright (C) 2025  Sophie Short / sosware
 - Line counting/numbering.
  
 ## 3 - Known Bugs
-- When saving in a directory without write access, the file turns green to show the file has been saved, even though the file doesn't get written
 
 ## 4 - Install
 ### Dependencies
@@ -41,6 +40,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.3] [NEW] Tab name changes colour to red to show unsaved changes.
 - [1.4] [BUG] A new tab is no longer opened when selection `Cancel` in the open file dialog.
 - [1.4] [NEW] Added line numbers.
+- [1.5] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify
