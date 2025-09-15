@@ -101,7 +101,6 @@ void Sosware::SosText::MainWindow::updateTabText(int index, QString text)
 void Sosware::SosText::MainWindow::markTabUnsaved()
 {
     ui->tabWidget->tabBar()->setTabTextColor(ui->tabWidget->currentIndex(), Qt::red);
-    // TODO connect to tab/textChanged
 }
 
 void Sosware::SosText::MainWindow::markTabSaved(int index)
