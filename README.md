@@ -28,7 +28,7 @@ The program can be started by running `sostext` (optionally followed by the path
 2. Delete the `sostext` symbolic link from`/usr/local/bin/`
 3. Remove sosText from your launcher menu if you have added it.
 
-## 5 - Changelog (Fixed bugs)
+## 5 - Changelog
 - [1.1] [NEW] Files can be opened from the terminal.  
 `sostext [path-to-file]`
 - [1.2] [NEW] Can now open multiple files from the terminal by chaining inputs.  
@@ -40,7 +40,8 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.3] [NEW] Tab name changes colour to red to show unsaved changes.
 - [1.4] [BUG] A new tab is no longer opened when selection `Cancel` in the open file dialog.
 - [1.4] [NEW] Added line numbers.
-- [1.5] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
+- [1.4.1] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
+- [1.5] [NEW] Changed text to monospace.
 
 ## 6 - Licence
 This program is free software: you can redistribute it and/or modify
