@@ -42,6 +42,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.4] [NEW] Added line numbers.
 - [1.4.1] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
 - [1.5] [NEW] Changed text to monospace.
+- [1.5] [NEW] Window title updates to show name of active file.
 
 ## Licence
 This program is free software: you can redistribute it and/or modify

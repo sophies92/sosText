@@ -54,6 +54,11 @@
                 ~MainWindow();
 
                 /**
+                 * 
+                 */
+                void updateWindowName(int tabIndex);
+
+                /**
                  * @fn
                  * @brief Connect the slots needed for the program to work
                 */

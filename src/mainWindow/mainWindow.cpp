@@ -37,6 +37,18 @@ Sosware::SosText::MainWindow::~MainWindow()
     delete appSettings;
 }
 
+void Sosware::SosText::MainWindow::updateWindowName(int tabIndex)
+{
+    if(tabIndex >= 0)
+    {
+        this->setWindowTitle(ui->tabWidget->tabText(tabIndex) + " - " + "sosText");
+    }
+    else
+    {
+        this->setWindowTitle("sosText");
+    }
+}
+
 void Sosware::SosText::MainWindow::connectSlots()
 {
     // File actions
@@ -56,6 +68,7 @@ void Sosware::SosText::MainWindow::connectSlots()
 
     // Tab slots
     connect(this->ui->tabWidget, &QTabWidget::tabCloseRequested, this, &Sosware::SosText::MainWindow::closeTab);
+    connect(this->ui->tabWidget, &QTabWidget::currentChanged, this, &Sosware::SosText::MainWindow::updateWindowName);
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
