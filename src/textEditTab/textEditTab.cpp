@@ -111,7 +111,7 @@ int Sosware::SosText::TextEditTab::saveFile()
     {
         QFileDialog dialog;
         this->setFilepath(dialog.getSaveFileName());
-        saveFile();
+        return(saveFile());
     }
     return 1;
 }

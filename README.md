@@ -1,5 +1,5 @@
 # sosText
-Version: 1.5
+Version: 1.5.1
 
 ## Description
 sosText is a basic text editor. It is released as part of the sosSuite.  
@@ -43,6 +43,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.4.1] [BUG] When saving in a directory without write access, the file name no longer turns green to show the file has been saved.
 - [1.5] [NEW] Changed text to monospace.
 - [1.5] [NEW] Window title updates to show name of active file.
+- [1.5.1] [BUG] Fixed file not showing as saved when saving a new file with [ctrl] + [s].
 
 ## Licence
 This program is free software: you can redistribute it and/or modify
