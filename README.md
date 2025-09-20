@@ -44,6 +44,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.5] [NEW] Changed text to monospace.
 - [1.5] [NEW] Window title updates to show name of active file.
 - [1.5.1] [BUG] Fixed file not showing as saved when saving a new file with [ctrl] + [s].
+- [1.5.1] [BUG] Fixed window title not updating when a file is saved as a new name.
 
 ## Licence
 This program is free software: you can redistribute it and/or modify

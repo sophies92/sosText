@@ -149,6 +149,7 @@ void Sosware::SosText::MainWindow::saveFile()
     {
         updateTabText(ui->tabWidget->currentIndex(), tab->getFilename());
         markTabSaved(ui->tabWidget->currentIndex());
+        updateWindowName(ui->tabWidget->currentIndex());
     }
     else
     {
@@ -165,6 +166,7 @@ void Sosware::SosText::MainWindow::saveFileAs()
     {
         updateTabText(ui->tabWidget->currentIndex(), tab->getFilename());
         markTabSaved(ui->tabWidget->currentIndex());
+        updateWindowName(ui->tabWidget->currentIndex());
     }
     else
     {
