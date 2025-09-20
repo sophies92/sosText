@@ -45,6 +45,7 @@
 
                 private:
                 Ui::MainWindow *ui;
+                // TODO Find toolbar
                 Sosware::SosText::SettingsWindow *settingsWindow;
                 Sosware::SosText::Settings *appSettings;
                 Sosware::SosText::AboutWindow *aboutWindow;
@@ -137,6 +138,14 @@
                  * @brief
                  */
                 void launchAboutWindow();
+
+                // SIGNALS
+                signals:
+
+                /**
+                 * 
+                 */
+                void requestUpdateWindowName(QString newWindowName);
             };
         }
     }

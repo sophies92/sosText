@@ -131,3 +131,15 @@ void Sosware::SosText::TextEditTab::updateScroll(int value)
     lineNumberArea->vScrollBar->setRange(textArea->vScrollBar->minimum(), textArea->vScrollBar->maximum());
     lineNumberArea->vScrollBar->setValue(textArea->vScrollBar->value());
 }
+
+int Sosware::SosText::TextEditTab::findInText(QString textToFind)
+{
+    if(textArea->find(textToFind))
+    {
+        
+    }
+    else
+    {
+        return 0;
+    }
+}
