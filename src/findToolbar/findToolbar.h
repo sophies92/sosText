@@ -27,6 +27,9 @@
             {
                 Q_OBJECT
 
+                public:
+                FindToolbar();
+                ~FindToolbar();
             };
         }
     }
