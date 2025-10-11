@@ -134,5 +134,8 @@ void Sosware::SosText::TextEditTab::updateScroll(int value)
 
 void Sosware::SosText::TextEditTab::findInText(QString textToFind)
 {
+    QTextCursor cursor;
+    cursor.setPosition(0);
+    textArea->setTextCursor(cursor);
     textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords});
 }
