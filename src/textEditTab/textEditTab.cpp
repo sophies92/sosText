@@ -132,22 +132,7 @@ void Sosware::SosText::TextEditTab::updateScroll(int value)
     lineNumberArea->vScrollBar->setValue(textArea->vScrollBar->value());
 }
 
-int Sosware::SosText::TextEditTab::findInText(QString textToFind)
+void Sosware::SosText::TextEditTab::findInText(QString textToFind)
 {
-    std::vector<int> searchList;
-    if(textArea->find(textToFind))
-    {
-        int numberFound = 0;
-
-        while(!textArea->textCursor().End)
-        {
-            textArea->find(textToFind);
-            numberFound++;
-        }
-        return 0;
-    }
-    else
-    {
-        return 0;
-    }
+    textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords});
 }

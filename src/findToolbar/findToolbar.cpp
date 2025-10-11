@@ -34,9 +34,31 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     searchButton->setText("Find Next");
     connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::SearchText);
 
+    numberFoundLabel = new QLabel(this);
+    numberFoundLabel->setText("0 of 0");
+
+    isCaseSensativeLabel = new QLabel(this);
+    isCaseSensativeLabel->setText("Case sensative:");
+
+    isCaseSensativeBox = new QCheckBox(this);
+    isCaseSensativeBox->setCheckState(Qt::CheckState::Checked);
+
+    isWholeWordsOnlyLabel = new QLabel(this);
+    isWholeWordsOnlyLabel->setText("Whole words only:");
+
+    isWholeWordsOnlyBox = new QCheckBox(this);
+    isWholeWordsOnlyBox->setCheckState(Qt::CheckState::Checked);
+
     this->addWidget(findBoxLabel);
     this->addWidget(findTextbox);
     this->addWidget(searchButton);
+    this->addWidget(numberFoundLabel);
+    this->addSeparator();
+    this->addWidget(isCaseSensativeLabel);
+    this->addWidget(isCaseSensativeBox);
+    this->addWidget(isWholeWordsOnlyLabel);
+    this->addWidget(isWholeWordsOnlyBox);
+    
 
     parent->addToolBar(this);
 }
@@ -46,6 +68,11 @@ Sosware::SosText::FindToolbar::~FindToolbar()
     delete findBoxLabel;
     delete findTextbox;
     delete searchButton;
+    delete numberFoundLabel;
+    delete isCaseSensativeLabel;
+    delete isCaseSensativeBox;
+    delete isWholeWordsOnlyLabel;
+    delete isWholeWordsOnlyBox;
 }
 
 void Sosware::SosText::FindToolbar::SearchText()

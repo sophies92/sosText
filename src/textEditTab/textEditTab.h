@@ -54,7 +54,7 @@
                 void updateLineCount(int lines);
                 void updateScroll(int value);
 
-                int findInText(QString textToFind);
+                void findInText(QString textToFind);
             };
         }
     }

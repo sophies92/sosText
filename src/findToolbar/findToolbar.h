@@ -23,6 +23,7 @@
     #include <QLabel>
     #include <QLineEdit>
     #include <QPushButton>
+    #include <QCheckBox>
     namespace Sosware
     {
         namespace SosText
@@ -36,6 +37,11 @@
                 QLabel *findBoxLabel = nullptr;
                 QLineEdit *findTextbox = nullptr;
                 QPushButton *searchButton = nullptr;
+                QLabel *numberFoundLabel = nullptr;
+                QLabel *isCaseSensativeLabel = nullptr;
+                QCheckBox *isCaseSensativeBox = nullptr;
+                QLabel *isWholeWordsOnlyLabel = nullptr;
+                QCheckBox *isWholeWordsOnlyBox = nullptr;
 
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
