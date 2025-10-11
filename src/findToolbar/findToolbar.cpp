@@ -17,9 +17,10 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-Sosware::SosText::FindToolbar::FindToolbar()
+Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(parent)
 {
-
+    this->hide();
+    parent->addToolBar(this);
 }
 
 Sosware::SosText::FindToolbar::~FindToolbar()

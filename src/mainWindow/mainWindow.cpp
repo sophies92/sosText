@@ -26,6 +26,7 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     this->setWindowIcon(QIcon("/usr/local/bin/sosText/resources/icons/sosText_icon.svg")); // TODO make this better
     connectSlots();
     appSettings = new Sosware::SosText::Settings();
+    findToolbar = new Sosware::SosText::FindToolbar(this);
 
     // TODO Load settings
     this->showMaximized();
@@ -61,7 +62,7 @@ void Sosware::SosText::MainWindow::connectSlots()
 
     // Edit actions
     // connect(this->ui->actionSelect_All, &QAction::triggered, this, selecat all text);
-    // connect(this->ui.actionFind, QAction::triggered, this, find in text);
+    connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
 
     // About actions
     connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
@@ -171,6 +172,18 @@ void Sosware::SosText::MainWindow::saveFileAs()
     else
     {
         // TODO Save Failed
+    }
+}
+
+void Sosware::SosText::MainWindow::launchFindToolbar()
+{
+    if(findToolbar->isHidden())
+    {
+        findToolbar->show();
+    }
+    else
+    {
+        findToolbar->hide();
     }
 }
 

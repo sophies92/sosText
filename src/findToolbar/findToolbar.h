@@ -19,6 +19,7 @@
 #ifndef FINDTOOLBAR
 #define FINDTOOLBAR
     #include <QToolBar>
+    #include <QMainWindow>
     namespace Sosware
     {
         namespace SosText
@@ -28,7 +29,7 @@
                 Q_OBJECT
 
                 public:
-                FindToolbar();
+                FindToolbar(QMainWindow *parent = nullptr);
                 ~FindToolbar();
             };
         }

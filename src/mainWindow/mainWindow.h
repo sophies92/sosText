@@ -23,6 +23,7 @@
     #include <QPlainTextEdit>
     #include <QTabBar>
     #include "../textEditTab/textEditTab.h"
+    #include "../findToolbar/findToolbar.h"
     #include "../settingsWindow/settingsWindow.h"
     #include "../settings/settings.h"
     #include "../aboutWindow/aboutWindow.h"
@@ -46,9 +47,10 @@
                 private:
                 Ui::MainWindow *ui;
                 // TODO Find toolbar
-                Sosware::SosText::SettingsWindow *settingsWindow;
-                Sosware::SosText::Settings *appSettings;
-                Sosware::SosText::AboutWindow *aboutWindow;
+                Sosware::SosText::FindToolbar *findToolbar = nullptr;
+                Sosware::SosText::SettingsWindow *settingsWindow = nullptr;
+                Sosware::SosText::Settings *appSettings = nullptr;
+                Sosware::SosText::AboutWindow *aboutWindow = nullptr;
 
                 public:
                 MainWindow(QWidget *parent = nullptr);
@@ -126,6 +128,12 @@
                  * @brief
                  */
                 void saveFileAs();
+
+                /**
+                 * @fn
+                 * @brief
+                 */
+                void launchFindToolbar();
 
                 /**
                  * @fn

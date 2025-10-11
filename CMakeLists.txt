@@ -60,6 +60,9 @@ set(PROJECT_SOURCES
 
     src/aboutWindow/aboutWindow.h
     src/aboutWindow/aboutWindow.cpp
+
+    src/findToolbar/findToolbar.h
+    src/findToolbar/findToolbar.cpp
 )
 
 add_executable(sostext ${PROJECT_SOURCES})
