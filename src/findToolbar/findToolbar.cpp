@@ -20,6 +20,21 @@
 Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(parent)
 {
     this->hide();
+    this->setWindowTitle("Find");
+
+    findBoxLabel = new QLabel(this);
+    findBoxLabel->setText("Find:");
+
+    findTextbox = new QLineEdit(this);
+    findTextbox->setMaximumWidth(300);
+
+    searchButton = new QPushButton(this);
+    searchButton->setText("Search");
+
+    this->addWidget(findBoxLabel);
+    this->addWidget(findTextbox);
+    this->addWidget(searchButton);
+
     parent->addToolBar(this);
 }
 

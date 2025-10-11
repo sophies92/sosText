@@ -20,6 +20,9 @@
 #define FINDTOOLBAR
     #include <QToolBar>
     #include <QMainWindow>
+    #include <QLabel>
+    #include <QLineEdit>
+    #include <QPushButton>
     namespace Sosware
     {
         namespace SosText
@@ -27,6 +30,11 @@
             class FindToolbar : public QToolBar
             {
                 Q_OBJECT
+
+                private:
+                QLabel *findBoxLabel = nullptr;
+                QLineEdit *findTextbox = nullptr;
+                QPushButton *searchButton = nullptr;
 
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
