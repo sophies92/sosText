@@ -155,6 +155,14 @@
                  * 
                  */
                 void requestUpdateWindowName(QString newWindowName);
+
+                // SLOTS
+                public slots:
+
+                /**
+                 * 
+                 */
+                void searchCurrentTabText(QString searchTerm);
             };
         }
     }

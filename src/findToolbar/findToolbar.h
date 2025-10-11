@@ -32,6 +32,7 @@
                 Q_OBJECT
 
                 private:
+                QTabWidget *tabs = nullptr;
                 QLabel *findBoxLabel = nullptr;
                 QLineEdit *findTextbox = nullptr;
                 QPushButton *searchButton = nullptr;
@@ -39,6 +40,12 @@
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
                 ~FindToolbar();
+
+                private:
+                void SearchText();
+
+                signals:
+                void SearchCurrentTabSignal(QString serachTerm);
             };
         }
     }

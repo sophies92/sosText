@@ -17,6 +17,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// TODO needs pointer to text tabs
 Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(parent)
 {
     this->hide();
@@ -27,9 +28,11 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
 
     findTextbox = new QLineEdit(this);
     findTextbox->setMaximumWidth(300);
+    connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::SearchText);
 
     searchButton = new QPushButton(this);
     searchButton->setText("Search");
+    connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::SearchText);
 
     this->addWidget(findBoxLabel);
     this->addWidget(findTextbox);
@@ -43,4 +46,9 @@ Sosware::SosText::FindToolbar::~FindToolbar()
     delete findBoxLabel;
     delete findTextbox;
     delete searchButton;
+}
+
+void Sosware::SosText::FindToolbar::SearchText()
+{
+    emit SearchCurrentTabSignal(findTextbox->text());
 }

@@ -24,12 +24,15 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     ui->setupUi(this);
     this->setWindowTitle("sosText");
     this->setWindowIcon(QIcon("/usr/local/bin/sosText/resources/icons/sosText_icon.svg")); // TODO make this better
-    connectSlots();
+
     appSettings = new Sosware::SosText::Settings();
+    // TODO Load settings
+
     findToolbar = new Sosware::SosText::FindToolbar(this);
 
-    // TODO Load settings
-    this->showMaximized();
+    connectSlots();
+
+    this->show();
 }
 
 Sosware::SosText::MainWindow::~MainWindow()
@@ -63,6 +66,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     // Edit actions
     // connect(this->ui->actionSelect_All, &QAction::triggered, this, selecat all text);
     connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
+    connect(findToolbar, &Sosware::SosText::FindToolbar::SearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
 
     // About actions
     connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
@@ -195,4 +199,9 @@ void Sosware::SosText::MainWindow::launchSettingsWindow()
 void Sosware::SosText::MainWindow::launchAboutWindow()
 {
     aboutWindow = new Sosware::SosText::AboutWindow(this);
+}
+
+void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
+{
+    // TODO Tab.searchText :)
 }
