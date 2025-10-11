@@ -29,6 +29,7 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     // TODO Load settings
 
     findToolbar = new Sosware::SosText::FindToolbar(this);
+    textSearcher = new Sosware::SosText::TextSearcher; // TODO finish this
 
     connectSlots();
 

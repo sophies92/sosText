@@ -43,6 +43,7 @@
                 QLabel *isWholeWordsOnlyLabel = nullptr;
                 QCheckBox *isWholeWordsOnlyBox = nullptr;
 
+
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
                 ~FindToolbar();
