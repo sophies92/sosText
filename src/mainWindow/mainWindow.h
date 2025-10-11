@@ -46,7 +46,6 @@
 
                 private:
                 Ui::MainWindow *ui;
-                // TODO Find toolbar
                 Sosware::SosText::FindToolbar *findToolbar = nullptr;
                 Sosware::SosText::SettingsWindow *settingsWindow = nullptr;
                 Sosware::SosText::Settings *appSettings = nullptr;
@@ -57,7 +56,9 @@
                 ~MainWindow();
 
                 /**
-                 * 
+                 * @fn updateWindowName(int tabIndex)
+                 * @brief Update the name of the window
+                 * @param tabIndex The Filename of the tab(filename) to name the window after. If no tabs are open, default is used;
                  */
                 void updateWindowName(int tabIndex);
 
