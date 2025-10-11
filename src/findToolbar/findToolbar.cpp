@@ -40,5 +40,7 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
 
 Sosware::SosText::FindToolbar::~FindToolbar()
 {
-
+    delete findBoxLabel;
+    delete findTextbox;
+    delete searchButton;
 }

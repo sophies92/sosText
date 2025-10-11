@@ -63,7 +63,7 @@
                 void updateWindowName(int tabIndex);
 
                 /**
-                 * @fn
+                 * @fn connectSlots()
                  * @brief Connect the slots needed for the program to work
                 */
                 void connectSlots();
