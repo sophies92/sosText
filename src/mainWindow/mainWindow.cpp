@@ -66,7 +66,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     // Edit actions
     // connect(this->ui->actionSelect_All, &QAction::triggered, this, selecat all text);
     connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
-    connect(findToolbar, &Sosware::SosText::FindToolbar::SearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
+    
 
     // About actions
     connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
@@ -74,6 +74,9 @@ void Sosware::SosText::MainWindow::connectSlots()
     // Tab slots
     connect(this->ui->tabWidget, &QTabWidget::tabCloseRequested, this, &Sosware::SosText::MainWindow::closeTab);
     connect(this->ui->tabWidget, &QTabWidget::currentChanged, this, &Sosware::SosText::MainWindow::updateWindowName);
+
+    // FindToolbar slots
+    connect(findToolbar, &Sosware::SosText::FindToolbar::SearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
@@ -204,4 +207,6 @@ void Sosware::SosText::MainWindow::launchAboutWindow()
 void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
 {
     // TODO Tab.searchText :)
+    TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    textTab->findInText(searchTerm);
 }

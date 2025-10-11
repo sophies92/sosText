@@ -156,6 +156,8 @@
                  */
                 void requestUpdateWindowName(QString newWindowName);
 
+                void requestCurrentTabSearchText(QString searchTerm);
+
                 // SLOTS
                 public slots:
 
