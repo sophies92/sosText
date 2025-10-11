@@ -31,7 +31,7 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::SearchText);
 
     searchButton = new QPushButton(this);
-    searchButton->setText("Search");
+    searchButton->setText("Find Next");
     connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::SearchText);
 
     this->addWidget(findBoxLabel);
