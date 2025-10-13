@@ -23,16 +23,18 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     this->hide();
     this->setWindowTitle("Find");
 
+    stringMatchesList = new std::vector<StringMatch>();
+
     findBoxLabel = new QLabel(this);
     findBoxLabel->setText("Find:");
 
     findTextbox = new QLineEdit(this);
     findTextbox->setMaximumWidth(300);
-    connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::SearchText);
+    connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::searchText);
 
     searchButton = new QPushButton(this);
     searchButton->setText("Find Next");
-    connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::SearchText);
+    connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::searchText);
 
     numberFoundLabel = new QLabel(this);
     numberFoundLabel->setText("0 of 0");
@@ -75,7 +77,12 @@ Sosware::SosText::FindToolbar::~FindToolbar()
     delete isWholeWordsOnlyBox;
 }
 
-void Sosware::SosText::FindToolbar::SearchText()
+void Sosware::SosText::FindToolbar::searchText()
 {
-    emit SearchCurrentTabSignal(findTextbox->text());
+    emit searchCurrentTabSignal(findTextbox->text());
+}
+
+void Sosware::SosText::FindToolbar::resetFindCounter()
+{
+    stringMatchesFound = 0;
 }

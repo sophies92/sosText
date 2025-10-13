@@ -29,7 +29,6 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     // TODO Load settings
 
     findToolbar = new Sosware::SosText::FindToolbar(this);
-    textSearcher = new Sosware::SosText::TextSearcher; // TODO finish this
 
     connectSlots();
 
@@ -77,7 +76,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->tabWidget, &QTabWidget::currentChanged, this, &Sosware::SosText::MainWindow::updateWindowName);
 
     // FindToolbar slots
-    connect(findToolbar, &Sosware::SosText::FindToolbar::SearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
+    connect(findToolbar, &Sosware::SosText::FindToolbar::searchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)

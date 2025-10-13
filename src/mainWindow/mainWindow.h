@@ -27,7 +27,6 @@
     #include "../settingsWindow/settingsWindow.h"
     #include "../settings/settings.h"
     #include "../aboutWindow/aboutWindow.h"
-    #include "../textSearcher/textSearcher.h"
 
     namespace Ui
     {
@@ -49,7 +48,6 @@
                 private:
                 Ui::MainWindow *ui;
                 Sosware::SosText::FindToolbar *findToolbar = nullptr;
-                Sosware::SosText::TextSearcher *textSearcher = nullptr;
                 Sosware::SosText::SettingsWindow *settingsWindow = nullptr;
                 Sosware::SosText::Settings *appSettings = nullptr;
                 Sosware::SosText::AboutWindow *aboutWindow = nullptr;

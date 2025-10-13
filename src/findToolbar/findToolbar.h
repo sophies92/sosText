@@ -30,6 +30,13 @@
         {
             class FindToolbar : public QToolBar
             {
+                typedef struct StringMatch
+                {
+                    int tabIndex;
+                    int startPosition;
+                    int endPosition;
+                };
+
                 Q_OBJECT
 
                 private:
@@ -43,16 +50,22 @@
                 QLabel *isWholeWordsOnlyLabel = nullptr;
                 QCheckBox *isWholeWordsOnlyBox = nullptr;
 
+                std::vector<StringMatch> *stringMatchesList;
+                int stringMatchesFound = 0;
+                int currentMatchIndex = 0;
+
 
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
                 ~FindToolbar();
 
                 private:
-                void SearchText();
+                void searchText();
+
+                void resetFindCounter();
 
                 signals:
-                void SearchCurrentTabSignal(QString serachTerm);
+                void searchCurrentTabSignal(QString serachTerm);
             };
         }
     }
