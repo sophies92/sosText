@@ -86,7 +86,11 @@ Sosware::SosText::FindToolbar::~FindToolbar()
     delete findBoxLabel;
     delete findTextbox;
     delete searchButton;
+    delete selectedOfNumberFound;
+    delete ofNumberFoundLabel;
     delete numberFoundLabel;
+    delete nextButton;
+    delete prevButton;
     delete isCaseSensativeLabel;
     delete isCaseSensativeBox;
     delete isWholeWordsOnlyLabel;
@@ -115,5 +119,6 @@ void Sosware::SosText::FindToolbar::searchText()
 
 void Sosware::SosText::FindToolbar::resetFindCounter()
 {
+    currentMatchIndex = 0;
     stringMatchesFound = 0;
 }
