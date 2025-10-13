@@ -118,8 +118,11 @@ void Sosware::SosText::FindToolbar::searchText()
     emit searchCurrentTabSignal(findTextbox->text());
 }
 
-void Sosware::SosText::FindToolbar::resetFindCounter()
+void Sosware::SosText::FindToolbar::resetFindToolbar()
 {
+    // TODO reset on textchanged
+    findTextbox->setText("");
     currentMatchIndex = 0;
     stringMatchesFound = 0;
+    setNumberFoundLabelText(currentMatchIndex);
 }

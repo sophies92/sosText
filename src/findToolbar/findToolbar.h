@@ -70,7 +70,7 @@
                 private:
                 void searchText();
 
-                void resetFindCounter();
+                void resetFindToolbar();
 
                 signals:
                 void searchCurrentTabSignal(QString serachTerm);
