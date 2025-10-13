@@ -107,6 +107,16 @@ QCheckBox *Sosware::SosText::FindToolbar::getIsWholeWordsOnlyBox()
     return isWholeWordsOnlyBox;
 }
 
+void Sosware::SosText::FindToolbar::setMatchesList(std::vector<StringMatch>* matchesList)
+{
+    if(stringMatchesList != nullptr)
+    {
+        delete stringMatchesList;
+        stringMatchesList = matchesList;
+    }
+    setNumberFoundLabelText(stringMatchesList->size());
+}
+
 void Sosware::SosText::FindToolbar::setNumberFoundLabelText(int numberFound)
 {
     stringMatchesFound = numberFound;

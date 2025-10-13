@@ -209,8 +209,12 @@ void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
 {
     TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
 
-    std::vector<Sosware::SosText::StringMatch> stringMatches = textTab->findInText(searchTerm, findToolbar->getIsCaseSensativeBox()->isChecked(), findToolbar->getIsWholeWordsOnlyBox()->isChecked());
-    this->findToolbar->setNumberFoundLabelText(stringMatches.size());
+    std::vector<Sosware::SosText::StringMatch> *stringMatches = new std::vector<Sosware::SosText::StringMatch>();
 
-    // TODO transfer list to findToolbar
+    for(auto entry : textTab->findInText(searchTerm, findToolbar->getIsCaseSensativeBox()->isChecked(), findToolbar->getIsWholeWordsOnlyBox()->isChecked()))
+    {
+        stringMatches->push_back(entry);
+    }
+
+    findToolbar->setMatchesList(stringMatches);
 }

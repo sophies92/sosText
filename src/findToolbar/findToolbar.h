@@ -54,7 +54,7 @@
                 QLabel *isWholeWordsOnlyLabel = nullptr;
                 QCheckBox *isWholeWordsOnlyBox = nullptr;
 
-                std::vector<StringMatch> *stringMatchesList;
+                std::vector<StringMatch> *stringMatchesList = nullptr;
                 int stringMatchesFound = 0;
                 int currentMatchIndex = 0;
 
@@ -65,11 +65,12 @@
 
                 QCheckBox* getIsCaseSensativeBox();
                 QCheckBox* getIsWholeWordsOnlyBox();
+
+                void setMatchesList(std::vector<StringMatch> *matchesList);
                 void setNumberFoundLabelText(int numberFound);
 
                 private:
                 void searchText();
-
                 void resetFindToolbar();
 
                 signals:
