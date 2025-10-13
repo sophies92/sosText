@@ -115,6 +115,7 @@ void Sosware::SosText::FindToolbar::setMatchesList(std::vector<StringMatch>* mat
         stringMatchesList = matchesList;
     }
     setNumberFoundLabelText(stringMatchesList->size());
+    // TODO do stuff with the matches
 }
 
 void Sosware::SosText::FindToolbar::setNumberFoundLabelText(int numberFound)
