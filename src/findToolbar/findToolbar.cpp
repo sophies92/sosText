@@ -155,6 +155,7 @@ void Sosware::SosText::FindToolbar::resetFindToolbar()
 
 void Sosware::SosText::FindToolbar::nextButtonPressed()
 {
+    // TODO change focus to text window when search/next/prev buttons are pressed
     if(stringMatchesFound > 0)
     {
         if(currentMatchIndex < (stringMatchesFound - 1))
