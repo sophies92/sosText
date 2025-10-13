@@ -39,6 +39,7 @@ Sosware::SosText::MainWindow::~MainWindow()
 {
     delete ui;
     delete appSettings;
+    delete findToolbar;
 }
 
 void Sosware::SosText::MainWindow::updateWindowName(int tabIndex)
