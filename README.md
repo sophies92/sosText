@@ -11,6 +11,7 @@ Copyright (C) 2025  Sophie Short / sosware
 - Line counting/numbering.
  
 ## Known Bugs
+- `Case senstaive` and `Whole words only` check boxes on `Find` toolbar are non-functional.
 
 ## Install
 ### Dependencies

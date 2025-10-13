@@ -47,9 +47,11 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
 
     nextButton = new QPushButton(this);
     nextButton->setText("Next");
+    connect(nextButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::nextButtonPressed);
 
     prevButton = new QPushButton(this);
     prevButton->setText("Prev");
+    connect(prevButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::prevButtonPressed);
 
     isCaseSensativeLabel = new QLabel(this);
     isCaseSensativeLabel->setText("Case sensative:");
@@ -116,8 +118,13 @@ void Sosware::SosText::FindToolbar::setMatchesList(std::vector<StringMatch>* mat
     }
     setNumberFoundLabelText(stringMatchesList->size());
 
+
     // TODO do stuff with the matches
-    emit requestMoveCursorPosition(stringMatchesList->at(0));
+    if(stringMatchesList->size() > 0)
+    {
+        setCurrentIndexLabelText(currentMatchIndex);
+        emit requestMoveCursorPosition(stringMatchesList->at(currentMatchIndex));
+    }
 }
 
 void Sosware::SosText::FindToolbar::setNumberFoundLabelText(int numberFound)
@@ -126,8 +133,15 @@ void Sosware::SosText::FindToolbar::setNumberFoundLabelText(int numberFound)
     numberFoundLabel->setText(QString::number(stringMatchesFound));
 }
 
+void Sosware::SosText::FindToolbar::setCurrentIndexLabelText(int number)
+{
+    selectedOfNumberFound->setText(QString::number(number + 1));
+}
+
 void Sosware::SosText::FindToolbar::searchText()
 {
+    currentMatchIndex = 0;
+    stringMatchesFound = 0;
     emit requestSearchCurrentTabSignal(findTextbox->text());
 }
 
@@ -135,5 +149,40 @@ void Sosware::SosText::FindToolbar::resetFindToolbar()
 {
     currentMatchIndex = 0;
     stringMatchesFound = 0;
-    setNumberFoundLabelText(currentMatchIndex);
+    setNumberFoundLabelText(stringMatchesFound);
+    setCurrentIndexLabelText(-1);
+}
+
+void Sosware::SosText::FindToolbar::nextButtonPressed()
+{
+    if(stringMatchesFound > 0)
+    {
+        if(currentMatchIndex < (stringMatchesFound - 1))
+        {
+            currentMatchIndex++;
+        }
+        else if(currentMatchIndex == (stringMatchesFound - 1))
+        {
+            currentMatchIndex = 0;
+        }
+        setCurrentIndexLabelText(currentMatchIndex);
+        emit requestMoveCursorPosition(stringMatchesList->at(currentMatchIndex));
+    }
+}
+
+void Sosware::SosText::FindToolbar::prevButtonPressed()
+{
+    if(stringMatchesFound > 0)
+    {
+        if(currentMatchIndex > 0)
+        {
+            currentMatchIndex--;
+        }
+        else if(currentMatchIndex == 0)
+        {
+            currentMatchIndex = (stringMatchesFound - 1);
+        }
+        setCurrentIndexLabelText(currentMatchIndex);
+        emit requestMoveCursorPosition(stringMatchesList->at(currentMatchIndex));
+    }
 }

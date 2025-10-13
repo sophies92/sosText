@@ -68,10 +68,13 @@
 
                 void setMatchesList(std::vector<StringMatch> *matchesList);
                 void setNumberFoundLabelText(int numberFound);
+                void setCurrentIndexLabelText(int number);
 
                 private:
                 void searchText();
                 void resetFindToolbar();
+                void nextButtonPressed();
+                void prevButtonPressed();
 
                 signals:
                 void requestSearchCurrentTabSignal(QString serachTerm);
