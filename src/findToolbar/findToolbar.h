@@ -74,7 +74,8 @@
                 void resetFindToolbar();
 
                 signals:
-                void searchCurrentTabSignal(QString serachTerm);
+                void requestSearchCurrentTabSignal(QString serachTerm);
+                void requestMoveCursorPosition(Sosware::SosText::StringMatch match);
             };
         }
     }

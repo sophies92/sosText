@@ -42,6 +42,11 @@ Sosware::SosText::MainWindow::~MainWindow()
     delete findToolbar;
 }
 
+Ui::MainWindow *Sosware::SosText::MainWindow::getUI()
+{
+    return ui;
+}
+
 void Sosware::SosText::MainWindow::updateWindowName(int tabIndex)
 {
     if(tabIndex >= 0)
@@ -77,7 +82,8 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->tabWidget, &QTabWidget::currentChanged, this, &Sosware::SosText::MainWindow::updateWindowName);
 
     // FindToolbar slots
-    connect(findToolbar, &Sosware::SosText::FindToolbar::searchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
+    connect(findToolbar, &Sosware::SosText::FindToolbar::requestSearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
+    connect(findToolbar, &Sosware::SosText::FindToolbar::requestMoveCursorPosition, this, &Sosware::SosText::MainWindow::moveCursorPositionRequested);
 }
 
 void Sosware::SosText::MainWindow::createTextEditTab(QString path)
@@ -223,4 +229,17 @@ void Sosware::SosText::MainWindow::currentTabSelectAll()
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->selectAll();
+}
+
+void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText::StringMatch match)
+{
+    Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    QTextCursor cursor = textTab->textArea->textCursor();
+
+    cursor.setPosition(match.startPosition, QTextCursor::MoveAnchor);
+    cursor.setPosition(match.endPosition, QTextCursor::KeepAnchor);
+
+    textTab->textArea->setTextCursor(cursor);
+
+    // TODO handle next/prev buttons
 }

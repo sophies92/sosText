@@ -56,6 +56,8 @@
                 MainWindow(QWidget *parent = nullptr);
                 ~MainWindow();
 
+                Ui::MainWindow *getUI();
+
                 /**
                  * @fn updateWindowName(int tabIndex)
                  * @brief Update the name of the window
@@ -168,6 +170,8 @@
                 void searchCurrentTabText(QString searchTerm);
 
                 void currentTabSelectAll();
+
+                void moveCursorPositionRequested(Sosware::SosText::StringMatch match);
             };
         }
     }
