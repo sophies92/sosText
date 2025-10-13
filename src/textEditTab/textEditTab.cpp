@@ -132,12 +132,28 @@ void Sosware::SosText::TextEditTab::updateScroll(int value)
     lineNumberArea->vScrollBar->setValue(textArea->vScrollBar->value());
 }
 
-void Sosware::SosText::TextEditTab::findInText(QString textToFind)
+std::vector<Sosware::SosText::StringMatch> Sosware::SosText::TextEditTab::findInText(QString textToFind, bool isCaseSensative, bool onlyWholeWords)
 {
+    // TODO find and return all matches
+    std::vector<Sosware::SosText::StringMatch> stringMatches;
+
     QTextCursor cursor;
     cursor.setPosition(0);
     textArea->setTextCursor(cursor);
-    textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords});
 
-    // TODO find and return all matches
+    while(textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords}))
+    {
+        Sosware::SosText::StringMatch match;
+        match.startPosition = textArea->textCursor().selectionStart();
+        match.endPosition = textArea->textCursor().selectionEnd();
+        stringMatches.push_back(match);
+    }
+    return stringMatches;
+}
+
+void Sosware::SosText::TextEditTab::goToPositionInText(int startPosition, int endPosition)
+{
+    QTextCursor cursor;
+    cursor.setPosition(startPosition, QTextCursor::MoveAnchor);
+    cursor.setPosition(endPosition, QTextCursor::KeepAnchor);
 }

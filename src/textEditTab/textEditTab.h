@@ -26,6 +26,7 @@
     #include <QLayout>
     #include "textArea/textArea.h"
     #include "lineNumberArea/lineNumberArea.h"
+    #include "../findToolbar/findToolbar.h"
     namespace Sosware
     {
         namespace SosText
@@ -54,7 +55,9 @@
                 void updateLineCount(int lines);
                 void updateScroll(int value);
 
-                void findInText(QString textToFind);
+                std::vector<Sosware::SosText::StringMatch> findInText(QString textToFind, bool isCaseSensative, bool onlyWholeWords);
+
+                void goToPositionInText(int startPosition, int endPosition);
             };
         }
     }

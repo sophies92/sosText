@@ -206,7 +206,10 @@ void Sosware::SosText::MainWindow::launchAboutWindow()
 
 void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
 {
-    // TODO Tab.searchText :)
     TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
-    textTab->findInText(searchTerm);
+
+    std::vector<Sosware::SosText::StringMatch> stringMatches = textTab->findInText(searchTerm, findToolbar->getIsCaseSensativeBox()->isChecked(), findToolbar->getIsWholeWordsOnlyBox()->isChecked());
+    this->findToolbar->setNumberFoundLabelText(QString::number(stringMatches.size()));
+
+    // TODO transfer list to findToolbar
 }

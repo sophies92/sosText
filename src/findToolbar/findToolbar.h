@@ -28,15 +28,15 @@
     {
         namespace SosText
         {
+            struct StringMatch
+            {
+                int tabIndex;
+                int startPosition;
+                int endPosition;
+            };
+
             class FindToolbar : public QToolBar
             {
-                typedef struct StringMatch
-                {
-                    int tabIndex;
-                    int startPosition;
-                    int endPosition;
-                };
-
                 Q_OBJECT
 
                 private:
@@ -44,7 +44,11 @@
                 QLabel *findBoxLabel = nullptr;
                 QLineEdit *findTextbox = nullptr;
                 QPushButton *searchButton = nullptr;
+                QLabel *selectedOfNumberFound = nullptr;
+                QLabel *ofNumberFoundLabel = nullptr;
                 QLabel *numberFoundLabel = nullptr;
+                QPushButton *nextButton = nullptr;
+                QPushButton *prevButton = nullptr;
                 QLabel *isCaseSensativeLabel = nullptr;
                 QCheckBox *isCaseSensativeBox = nullptr;
                 QLabel *isWholeWordsOnlyLabel = nullptr;
@@ -58,6 +62,10 @@
                 public:
                 FindToolbar(QMainWindow *parent = nullptr);
                 ~FindToolbar();
+
+                QCheckBox* getIsCaseSensativeBox();
+                QCheckBox* getIsWholeWordsOnlyBox();
+                void setNumberFoundLabelText(QString numberFound);
 
                 private:
                 void searchText();

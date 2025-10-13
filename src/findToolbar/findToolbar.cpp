@@ -33,11 +33,23 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::searchText);
 
     searchButton = new QPushButton(this);
-    searchButton->setText("Find Next");
+    searchButton->setText("Search");
     connect(searchButton, &QPushButton::clicked, this, &Sosware::SosText::FindToolbar::searchText);
 
+    selectedOfNumberFound = new QLabel(this);
+    selectedOfNumberFound->setText("0");
+
+    ofNumberFoundLabel = new QLabel(this);
+    ofNumberFoundLabel->setText(" of ");
+
     numberFoundLabel = new QLabel(this);
-    numberFoundLabel->setText("0 of 0");
+    numberFoundLabel->setText("0");
+
+    nextButton = new QPushButton(this);
+    nextButton->setText("Next");
+
+    prevButton = new QPushButton(this);
+    prevButton->setText("Prev");
 
     isCaseSensativeLabel = new QLabel(this);
     isCaseSensativeLabel->setText("Case sensative:");
@@ -54,7 +66,11 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     this->addWidget(findBoxLabel);
     this->addWidget(findTextbox);
     this->addWidget(searchButton);
+    this->addWidget(selectedOfNumberFound);
+    this->addWidget(ofNumberFoundLabel);
     this->addWidget(numberFoundLabel);
+    this->addWidget(nextButton);
+    this->addWidget(prevButton);
     this->addSeparator();
     this->addWidget(isCaseSensativeLabel);
     this->addWidget(isCaseSensativeBox);
@@ -75,6 +91,21 @@ Sosware::SosText::FindToolbar::~FindToolbar()
     delete isCaseSensativeBox;
     delete isWholeWordsOnlyLabel;
     delete isWholeWordsOnlyBox;
+}
+
+QCheckBox* Sosware::SosText::FindToolbar::getIsCaseSensativeBox()
+{
+    return isCaseSensativeBox;
+}
+
+QCheckBox *Sosware::SosText::FindToolbar::getIsWholeWordsOnlyBox()
+{
+    return isWholeWordsOnlyBox;
+}
+
+void Sosware::SosText::FindToolbar::setNumberFoundLabelText(QString numberFound)
+{
+    numberFoundLabel->setText(numberFound);
 }
 
 void Sosware::SosText::FindToolbar::searchText()
