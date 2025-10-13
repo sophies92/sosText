@@ -138,4 +138,6 @@ void Sosware::SosText::TextEditTab::findInText(QString textToFind)
     cursor.setPosition(0);
     textArea->setTextCursor(cursor);
     textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords});
+
+    // TODO find and return all matches
 }
