@@ -116,11 +116,16 @@ void Sosware::SosText::FindToolbar::setMatchesList(std::vector<StringMatch>* mat
         delete stringMatchesList;
         stringMatchesList = matchesList;
     }
-    setNumberFoundLabelText(stringMatchesList->size());
+    else
+    {
+        stringMatchesList = matchesList;
+    }
+    stringMatchesFound = stringMatchesList->size();
+    setNumberFoundLabelText(stringMatchesFound);
 
 
     // TODO do stuff with the matches
-    if(stringMatchesList->size() > 0)
+    if(stringMatchesFound > 0)
     {
         setCurrentIndexLabelText(currentMatchIndex);
         emit requestMoveCursorPosition(stringMatchesList->at(currentMatchIndex));
