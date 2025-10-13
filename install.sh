@@ -38,4 +38,5 @@ echo "Installing..."
 rm -r /usr/local/bin/sosText/
 mv -f ./sosText /usr/local/bin/
 ln -sf /usr/local/bin/sosText/sostext /usr/local/bin/
+chgrp users /usr/local/bin/sosText
 echo "Done!"
