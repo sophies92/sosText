@@ -30,9 +30,9 @@
         {
             struct StringMatch
             {
-                int tabIndex;
-                int startPosition;
-                int endPosition;
+                int tabIndex = 0;
+                int startPosition = 0;
+                int endPosition = 0;
             };
 
             class FindToolbar : public QToolBar

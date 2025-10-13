@@ -215,12 +215,7 @@ void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
 
-    std::vector<Sosware::SosText::StringMatch> *stringMatches = new std::vector<Sosware::SosText::StringMatch>();
-
-    for(auto entry : textTab->findInText(searchTerm, findToolbar->getIsCaseSensativeBox()->isChecked(), findToolbar->getIsWholeWordsOnlyBox()->isChecked()))
-    {
-        stringMatches->push_back(entry);
-    }
+    std::vector<Sosware::SosText::StringMatch> *stringMatches = new std::vector<Sosware::SosText::StringMatch>(textTab->findInText(searchTerm, findToolbar->getIsCaseSensativeBox()->isChecked(), findToolbar->getIsWholeWordsOnlyBox()->isChecked()));
 
     findToolbar->setMatchesList(stringMatches);
 }
