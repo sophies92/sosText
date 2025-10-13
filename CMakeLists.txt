@@ -35,6 +35,9 @@ set(CMAKE_AUTOUIC ON)
 set(PROJECT_SOURCES
     src/main.cpp
 
+    src/appManager/appManager.h
+    src/appManager/appManager.cpp
+
     src/mainWindow/mainWindow.h
     src/mainWindow/mainWindow.cpp
     src/mainWindow/mainWindow.ui
