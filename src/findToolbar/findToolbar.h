@@ -65,7 +65,7 @@
 
                 QCheckBox* getIsCaseSensativeBox();
                 QCheckBox* getIsWholeWordsOnlyBox();
-                void setNumberFoundLabelText(QString numberFound);
+                void setNumberFoundLabelText(int numberFound);
 
                 private:
                 void searchText();

@@ -107,9 +107,10 @@ QCheckBox *Sosware::SosText::FindToolbar::getIsWholeWordsOnlyBox()
     return isWholeWordsOnlyBox;
 }
 
-void Sosware::SosText::FindToolbar::setNumberFoundLabelText(QString numberFound)
+void Sosware::SosText::FindToolbar::setNumberFoundLabelText(int numberFound)
 {
-    numberFoundLabel->setText(numberFound);
+    stringMatchesFound = numberFound;
+    numberFoundLabel->setText(QString::number(stringMatchesFound));
 }
 
 void Sosware::SosText::FindToolbar::searchText()
