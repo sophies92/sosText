@@ -31,6 +31,7 @@ Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(paren
     findTextbox = new QLineEdit(this);
     findTextbox->setMaximumWidth(300);
     connect(findTextbox, &QLineEdit::returnPressed, this, &Sosware::SosText::FindToolbar::searchText);
+    connect(findTextbox, &QLineEdit::textChanged, this, &Sosware::SosText::FindToolbar::resetFindToolbar);
 
     searchButton = new QPushButton(this);
     searchButton->setText("Search");
@@ -132,7 +133,6 @@ void Sosware::SosText::FindToolbar::searchText()
 void Sosware::SosText::FindToolbar::resetFindToolbar()
 {
     // TODO reset on textchanged
-    findTextbox->setText("");
     currentMatchIndex = 0;
     stringMatchesFound = 0;
     setNumberFoundLabelText(currentMatchIndex);

@@ -166,6 +166,8 @@
                  * 
                  */
                 void searchCurrentTabText(QString searchTerm);
+
+                void currentTabSelectAll();
             };
         }
     }

@@ -65,7 +65,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 
     // Edit actions
-    // connect(this->ui->actionSelect_All, &QAction::triggered, this, selecat all text);
+    connect(this->ui->actionSelect_All, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabSelectAll);
     connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
     
 
@@ -207,7 +207,7 @@ void Sosware::SosText::MainWindow::launchAboutWindow()
 
 void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
 {
-    TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
 
     std::vector<Sosware::SosText::StringMatch> *stringMatches = new std::vector<Sosware::SosText::StringMatch>();
 
@@ -217,4 +217,10 @@ void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
     }
 
     findToolbar->setMatchesList(stringMatches);
+}
+
+void Sosware::SosText::MainWindow::currentTabSelectAll()
+{
+    Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    textTab->textArea->selectAll();
 }
