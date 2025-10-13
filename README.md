@@ -12,7 +12,6 @@ Copyright (C) 2025  Sophie Short / sosware
  
 ## Known Bugs
 - `Case senstaive` and `Whole words only` check boxes on `Find` toolbar are non-functional.
-- When a search term in the 'find' toolbar is not found (or an empty search in entered) the text cursor can disappear. This can be corrected by searching a term that appears in the text at least once.
 
 ## Install
 ### Dependencies

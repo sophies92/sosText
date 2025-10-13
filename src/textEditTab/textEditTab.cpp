@@ -137,11 +137,21 @@ std::vector<Sosware::SosText::StringMatch> Sosware::SosText::TextEditTab::findIn
     // TODO find and return all matches
     std::vector<Sosware::SosText::StringMatch> stringMatches;
 
-    QTextCursor cursor;
-    cursor.setPosition(0);
+    QTextCursor cursor = textArea->textCursor();
+    cursor.setPosition(0, QTextCursor::MoveAnchor);
     textArea->setTextCursor(cursor);
 
-    while(textArea->find(textToFind, {QTextDocument::FindFlag::FindCaseSensitively, QTextDocument::FindFlag::FindWholeWords}))
+    QTextDocument::FindFlags flags(0);
+    if(isCaseSensative)
+    {
+        flags.setFlag(QTextDocument::FindFlag::FindCaseSensitively, true);
+    }
+    if(onlyWholeWords)
+    {
+        flags.setFlag(::QTextDocument::FindFlag::FindWholeWords, true);
+    }
+
+    while(textArea->find(textToFind, flags))
     {
         Sosware::SosText::StringMatch match;
         match.startPosition = textArea->textCursor().selectionStart();
