@@ -17,7 +17,6 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// TODO needs pointer to text tabs
 Sosware::SosText::FindToolbar::FindToolbar(QMainWindow *parent) : QToolBar(parent)
 {
     this->hide();
@@ -132,7 +131,6 @@ void Sosware::SosText::FindToolbar::searchText()
 
 void Sosware::SosText::FindToolbar::resetFindToolbar()
 {
-    // TODO reset on textchanged
     currentMatchIndex = 0;
     stringMatchesFound = 0;
     setNumberFoundLabelText(currentMatchIndex);
