@@ -23,7 +23,6 @@ Sosware::SosText::MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
 {
     ui->setupUi(this);
     this->setWindowTitle("sosText");
-    // this->setWindowIcon(QIcon("/usr/share/icons/hicolor/scalable/apps/sosText.svg")); // TODO make this better
 
     appSettings = new Sosware::SosText::Settings();
     // TODO Load settings
