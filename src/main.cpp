@@ -24,6 +24,7 @@
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
+    app.setDesktopFileName("/usr/share/applications/sosText.desktop");
     Sosware::SosText::MainWindow mainWindow;
     if(argc > 0)
     {
