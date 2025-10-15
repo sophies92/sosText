@@ -18,25 +18,18 @@
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-echo "Creating Directories..."
-mkdir ./sosText/
-mkdir ./sosText/resources/
-mkdir ./sosText/resources/icons/
-mkdir ./sosText/licence/
-echo "Done!"
-
-echo "Copying Resources..."
-cp -r ./res/sosText_icon.svg ./sosText/resources/icons/
-cp -r ./licence ./sosText/licence/
-echo "Done!"
-
-echo "Copying Binary..."
-cp ./sostext ./sosText/
-echo "Done!"
-
 echo "Installing..."
+echo "Removing old versions"
 rm -r /usr/local/bin/sosText/
-mv -f ./sosText /usr/local/bin/
+echo "Creating directories"
+mkdir /usr/local/bin/sosText/
+echo "Copying binary"
+cp ./sostext /usr/local/bin/sosText/
 ln -sf /usr/local/bin/sosText/sostext /usr/local/bin/
-chgrp users /usr/local/bin/sosText
+echo "Copying licence"
+cp -r ./licence /usr/local/bin/sosText/
+echo "Copying icons"
+cp  ./res/sosText.svg /usr/share/icons/hicolor/scalable/apps/sosText.svg
+echo "Setting up launcher"
+cp  ./res/sosText.desktop /usr/share/applications/sosText.desktop
 echo "Done!"

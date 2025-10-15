@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_GB]=
+Comment=
+Exec=/usr/local/bin/sostext
+GenericName[en_GB]=a simple text editor
+GenericName=a simple text editor
+Icon=sosText
+MimeType=
+Name[en_GB]=sosText
+Name=sosText
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
