@@ -234,6 +234,7 @@ void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText:
     cursor.setPosition(match.endPosition, QTextCursor::KeepAnchor);
 
     textTab->textArea->setTextCursor(cursor);
+    textTab->textArea->setFocus();
 
     // TODO handle next/prev buttons
 }

@@ -1,8 +1,8 @@
 # sosText
-Version: 1.6.1
+Version: 1.6.2
 
 ## Description
-sosText is a basic text editor. It is released as part of the sosSuite.  
+sosText is a basic text editor. It is released as part of the sos Suite.  
 Copyright (C) 2025  Sophie Short / sosware
 
 ## Features
@@ -45,9 +45,10 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.5] [NEW] Window title updates to show name of active file.
 - [1.5.1] [BUG] Fixed file not showing as saved when saving a new file with [ctrl] + [s].
 - [1.5.1] [BUG] Fixed window title not updating when a file is saved as a new name.
-- [1.6] [NEW] `Select all` from the `Edit` menu selects all text in the current tab
-- [1.6] [NEW] Added `Find` toolbar
-- [1.6.1] [BUG] Window icon is displayed
+- [1.6] [NEW] `Select all` from the `Edit` menu selects all text in the current tab.
+- [1.6] [NEW] Added `Find` toolbar.
+- [1.6.1] [BUG] Window icon is displayed.
+- [1.6.2] [BUG] Text window takes focus when a string is searched using the find toolbar.
 
 ## Licence
 This program is free software: you can redistribute it and/or modify
