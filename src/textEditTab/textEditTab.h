@@ -35,12 +35,12 @@
             {
                 Q_OBJECT
                 private:
-                QHBoxLayout *layout;
+                QHBoxLayout *layout = nullptr;
                 QString filepath;
                 
                 public:
-                Sosware::SosText::TextArea *textArea;
-                Sosware::SosText::LineNumberArea *lineNumberArea;
+                Sosware::SosText::TextArea *textArea = nullptr;
+                Sosware::SosText::LineNumberArea *lineNumberArea = nullptr;
 
                 public:
                 TextEditTab(QWidget *parent = nullptr);

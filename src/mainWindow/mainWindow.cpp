@@ -72,6 +72,9 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->actionSelect_All, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabSelectAll);
     connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
     
+    // View Actions
+    connect(this->ui->action_Zoom_In, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabIncreaseZoom);
+    connect(this->ui->action_Zoom_Out, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabDecreaseZoom);
 
     // About actions
     connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
@@ -225,6 +228,20 @@ void Sosware::SosText::MainWindow::currentTabSelectAll()
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->selectAll();
+}
+
+void Sosware::SosText::MainWindow::currentTabIncreaseZoom()
+{
+    Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    textTab->textArea->zoomIn(2);
+    textTab->lineNumberArea->zoomIn(2);
+}
+
+void Sosware::SosText::MainWindow::currentTabDecreaseZoom()
+{
+    Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
+    textTab->textArea->zoomOut(2);
+    textTab->lineNumberArea->zoomOut(2);
 }
 
 void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText::StringMatch match)

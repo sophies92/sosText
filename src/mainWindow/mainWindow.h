@@ -171,6 +171,10 @@
 
                 void currentTabSelectAll();
 
+                void currentTabIncreaseZoom();
+
+                void currentTabDecreaseZoom();
+
                 void moveCursorPositionRequested(Sosware::SosText::StringMatch match);
             };
         }

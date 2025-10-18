@@ -47,7 +47,7 @@ QFile *Sosware::SosText::Settings::createNewSettingsFile()
     }
 
     // TODO write default settings
-    // settingsFileContents.erase(settingsFileContents.begin(), settingsFileContents.end());
+    settingsFileContents.erase(settingsFileContents.begin(), settingsFileContents.end());
     
 
     settingsFile->write(settingsFileContents.toStdString().c_str());
