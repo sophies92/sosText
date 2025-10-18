@@ -69,6 +69,7 @@
                 void setMatchesList(std::vector<StringMatch> *matchesList);
                 void setNumberFoundLabelText(int numberFound);
                 void setCurrentIndexLabelText(int number);
+                void setTextFocus();
 
                 private:
                 void searchText();

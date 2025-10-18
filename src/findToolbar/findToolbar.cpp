@@ -143,6 +143,11 @@ void Sosware::SosText::FindToolbar::setCurrentIndexLabelText(int number)
     selectedOfNumberFound->setText(QString::number(number + 1));
 }
 
+void Sosware::SosText::FindToolbar::setTextFocus()
+{
+    this->findTextbox->setFocus();
+}
+
 void Sosware::SosText::FindToolbar::searchText()
 {
     currentMatchIndex = 0;

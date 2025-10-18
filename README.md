@@ -1,5 +1,5 @@
 # sosText
-Version: 1.6.2
+Version: 1.6.3
 
 ## Description
 sosText is a basic text editor. It is released as part of the sos Suite.  
@@ -49,6 +49,8 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.6] [NEW] Added `Find` toolbar.
 - [1.6.1] [BUG] Window icon is displayed.
 - [1.6.2] [BUG] Text window takes focus when a string is searched using the find toolbar.
+- [1.6.3] [BUG] Focus is moved to the search box when the `Find` toolbar is opened.
+- [1.6.3] [BUG] Focus is moved to the text area when a new file is started or a  file is opened.
 
 ## Licence
 This program is free software: you can redistribute it and/or modify

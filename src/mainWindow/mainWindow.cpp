@@ -110,6 +110,7 @@ void Sosware::SosText::MainWindow::createTextEditTab(QString path)
         }
     }
     this->ui->tabWidget->setCurrentWidget(textTab);
+    textTab->textArea->setFocus();
 }
 
 void Sosware::SosText::MainWindow::closeTab(int index)
@@ -193,6 +194,7 @@ void Sosware::SosText::MainWindow::launchFindToolbar()
     if(findToolbar->isHidden())
     {
         findToolbar->show();
+        findToolbar->setTextFocus();
     }
     else
     {
