@@ -20,16 +20,54 @@
 
 Sosware::SosText::Settings::Settings()
 {
-    settingsMap = new QMap<QString, Sosware::SosText::Setting>();
-    settingsFilePath = "~/.config/sosware/sosText/settings";
+    settingsFileDir = QDir::homePath() + "/.config/sosware/sosText/";
+    settingsFileName = "/settings.config";
+    loadSettingsFile();
 }
 
 Sosware::SosText::Settings::~Settings()
 {
-    delete settingsMap;
+    if(settingsFile != nullptr)
+    {
+        delete settingsFile;
+    }
+}
+
+QFile *Sosware::SosText::Settings::createNewSettingsFile()
+{
+    QFile *settingsFile = new QFile(settingsFileDir.path() + settingsFileName);
+    if(!settingsFileDir.exists())
+    {
+        settingsFileDir.mkpath(settingsFileDir.path());
+    }
+
+    if(!settingsFile->isOpen())
+    {
+        settingsFile->open(QIODevice::WriteOnly);
+    }
+
+    // TODO write default settings
+    // settingsFileContents.erase(settingsFileContents.begin(), settingsFileContents.end());
+    
+
+    settingsFile->write(settingsFileContents.toStdString().c_str());
+    settingsFile->close();
+    return settingsFile;
 }
 
 void Sosware::SosText::Settings::loadSettingsFile()
 {
     // TODO load settings file
+    if(!QFile(settingsFileName).exists())
+    {
+        if(settingsFile != nullptr)
+        {
+            delete settingsFile;
+        }
+        settingsFile = createNewSettingsFile();
+    }
+
+    settingsFile->open(QIODevice::ReadOnly);
+    settingsFileContents = settingsFile->readAll();
+    settingsFile->close();
 }

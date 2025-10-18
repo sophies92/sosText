@@ -21,21 +21,29 @@
     #include <QMap>
     #include <QString>
     #include <QSettings>
+    #include <QObject>
+    #include <QFile>
+    #include <QDir>
     #include "setting/setting.h"
     namespace Sosware
     {
         namespace SosText
         {
-            class Settings
+            class Settings : public QObject
             {
+                Q_OBJECT
+
                 private:
-                QMap<QString, Sosware::SosText::Setting> *settingsMap;
-                QString settingsFilePath;
+                QFile *settingsFile = nullptr;
+                QDir settingsFileDir;
+                QString settingsFileName;
+                QString settingsFileContents;
 
                 public:
                 Settings();
                 ~Settings();
 
+                QFile* createNewSettingsFile();
                 void loadSettingsFile();
             };
         }

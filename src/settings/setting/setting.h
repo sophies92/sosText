@@ -18,6 +18,7 @@
 
 #ifndef SETTING
 #define SETTING
+    #include <QObject>
     #include <QMap>
     #include <QString>
     #include <QSettings>
@@ -25,8 +26,10 @@
     {
         namespace SosText
         {
-            class Setting
+            class Setting : public QObject
             {
+                Q_OBJECT
+                
                 private:
                 
                 public:
