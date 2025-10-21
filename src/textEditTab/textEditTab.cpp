@@ -120,6 +120,7 @@ int Sosware::SosText::TextEditTab::saveFile()
 
 void Sosware::SosText::TextEditTab::updateFont(QFont newFont, int tabSpaces)
 {
+    // TODO load font stuff from settings
     QFont f("Monospace");
     f.setStyleHint(QFont::Monospace);
     
