@@ -22,13 +22,15 @@ Sosware::SosText::LineNumberArea::LineNumberArea(QWidget *parent)
 {
     vScrollBar = this->verticalScrollBar();
     this->setReadOnly(true);
+    this->setMinimumWidth(20);
     this->setMaximumWidth(50);
-    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+    this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
     this->setTextInteractionFlags(Qt::NoTextInteraction);
     this->setFocusPolicy(Qt::NoFocus);
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    this->setLineWrapMode(QPlainTextEdit::LineWrapMode::NoWrap);
     
-    QFont f("");
+    QFont f("Monospace");
     f.setStyleHint(QFont::Monospace);
     this->setFont(f);
 }
