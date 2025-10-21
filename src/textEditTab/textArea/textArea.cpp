@@ -24,8 +24,6 @@ Sosware::SosText::TextArea::TextArea(QWidget *parent)
     
     this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);    
-
-    // TODO get font from settings
 }
 
 Sosware::SosText::TextArea::~TextArea()
