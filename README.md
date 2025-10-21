@@ -16,7 +16,7 @@ Copyright (C) 2025  Sophie Short / sosware
 
 ## Install
 ### Dependencies
-- Qt6
+- Qt6 (qt6-base-dev)
 
 ### Installation Instructions
 1. Navigate to the `sosText` directory and run `cmake CMakeLists.txt` in a terminal.
