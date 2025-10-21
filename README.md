@@ -23,12 +23,14 @@ Copyright (C) 2025  Sophie Short / sosware
 2. Run `make` in the same directory.
 3. Finally run the `install.sh` script as root. The program will be installed to `/usr/local/bin`.
 
-The program can be started by running `sostext` (optionally followed by the path(s) of any files you want to open (eg. `sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`)) in a terminal. sosText can also be added to your launcher menu and started from there.
+The program can be started by running `sostext` (optionally followed by the path(s) of any files you want to open in a terminal (eg. `sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`)).
 
 ### Uninstall
 1. Delete the `sosText` directory from `/usr/local/bin/`.
-2. Delete the `sostext` symbolic link from`/usr/local/bin/`
-3. Remove sosText from your launcher menu if you have added it.
+2. Delete the `sostext` symbolic link from`/usr/local/bin/`.
+3. Delete `sosText.desktop` from `/usr/share/applications/`.
+4. Delete `sosText.svg` from `/usr/share/icons/hicolor/scalable/apps/`.
+5. Delete the `sosware/sosText/` directory from `~/.config/`.
 
 ## Changelog
 - [1.1] [NEW] Files can be opened from the terminal.  
