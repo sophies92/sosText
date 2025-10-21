@@ -26,11 +26,13 @@
     {
         namespace SosText
         {
-            class Setting : public QObject
-            {
-                Q_OBJECT
-                
+            class Setting
+            {                
                 private:
+
+                public:
+                QString nameString;
+                QString valueString;
                 
                 public:
                 Setting();

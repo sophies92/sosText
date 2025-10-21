@@ -37,7 +37,8 @@
                 QFile *settingsFile = nullptr;
                 QDir settingsFileDir;
                 QString settingsFileName;
-                QString settingsFileContents;
+
+                QMap<QString, Sosware::SosText::Setting> settingMap;
 
                 public:
                 Settings();

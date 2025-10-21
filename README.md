@@ -52,6 +52,7 @@ The program can be started by running `sostext` (optionally followed by the path
 - [1.6.3] [BUG] Focus is moved to the search box when the `Find` toolbar is opened.
 - [1.6.3] [BUG] Focus is moved to the text area when a new file is started or a  file is opened.
 - [1.7] [NEW] Zoom level on an edit tab can be changed from the `View` menu, or keyboard shortcuts.
+- [1.7] [NEW] Tab size set to 4 spaces.
 
 ## Licence
 This program is free software: you can redistribute it and/or modify

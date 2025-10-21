@@ -36,6 +36,7 @@ Sosware::SosText::Settings::~Settings()
 QFile *Sosware::SosText::Settings::createNewSettingsFile()
 {
     QFile *settingsFile = new QFile(settingsFileDir.path() + settingsFileName);
+
     if(!settingsFileDir.exists())
     {
         settingsFileDir.mkpath(settingsFileDir.path());
@@ -46,18 +47,13 @@ QFile *Sosware::SosText::Settings::createNewSettingsFile()
         settingsFile->open(QIODevice::WriteOnly);
     }
 
-    // TODO write default settings
-    settingsFileContents.erase(settingsFileContents.begin(), settingsFileContents.end());
-    
-
-    settingsFile->write(settingsFileContents.toStdString().c_str());
+    settingsFile->write(QString().toStdString().c_str());
     settingsFile->close();
     return settingsFile;
 }
 
 void Sosware::SosText::Settings::loadSettingsFile()
 {
-    // TODO load settings file
     if(!QFile(settingsFileName).exists())
     {
         if(settingsFile != nullptr)
@@ -67,7 +63,26 @@ void Sosware::SosText::Settings::loadSettingsFile()
         settingsFile = createNewSettingsFile();
     }
 
-    settingsFile->open(QIODevice::ReadOnly);
-    settingsFileContents = settingsFile->readAll();
+    if(!settingsFile->isOpen())
+    {
+        settingsFile->open(QIODevice::ReadOnly);
+    }
+
+    while(settingsFile->canReadLine())
+    {
+        QString line = settingsFile->readLine();
+        QStringList splitLine = line.split("=", Qt::SplitBehaviorFlags::KeepEmptyParts);
+        Sosware::SosText::Setting setting;
+        setting.nameString = splitLine[0];
+        setting.valueString = splitLine[1];
+        settingMap.insert(setting.nameString, setting);
+        // TODO finish reading and loading settings
+    }
     settingsFile->close();
+
+    for(auto &s : settingMap)
+    {
+        
+    }
 }
+

@@ -23,13 +23,29 @@ Sosware::SosText::TextArea::TextArea(QWidget *parent)
     vScrollBar = this->verticalScrollBar();
     
     this->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
-    this->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    this->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);    
 
-    QFont f("");
-    f.setStyleHint(QFont::Monospace);
-    this->setFont(f);
+    // TODO get font from settings
+    setNewFont(4);
 }
 
 Sosware::SosText::TextArea::~TextArea()
 {
+}
+
+void Sosware::SosText::TextArea::setNewFont(int tabSpaces)
+{
+    QFont f("Monospace");
+    f.setStyleHint(QFont::Monospace);
+    this->setFont(f);
+    QFontMetrics fm(this->font());
+    this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
+}
+
+void Sosware::SosText::TextArea::setNewFont(QFont font, int tabSpaces)
+{
+    this->setFont(font);
+
+    QFontMetrics fm(this->font());
+    this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
 }

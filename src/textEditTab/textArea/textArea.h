@@ -34,6 +34,10 @@
                 TextArea(QWidget *parent = nullptr);
                 ~TextArea();
 
+                public slots:
+                void setNewFont(int tabSpaces);
+                void setNewFont(QFont font, int tabSpaces);
+
                 signals:
                 
             };
