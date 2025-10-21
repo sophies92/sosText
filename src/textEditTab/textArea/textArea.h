@@ -35,6 +35,7 @@
                 ~TextArea();
 
                 public slots:
+                void updateTabSpace(int tabSpaces);
                 void setNewFont(int tabSpaces);
                 void setNewFont(QFont font, int tabSpaces);
 

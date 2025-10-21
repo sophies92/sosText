@@ -33,19 +33,22 @@ Sosware::SosText::TextArea::~TextArea()
 {
 }
 
+void Sosware::SosText::TextArea::updateTabSpace(int tabSpaces)
+{
+    QFontMetrics fm(this->font());
+    this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
+}
+
 void Sosware::SosText::TextArea::setNewFont(int tabSpaces)
 {
     QFont f("Monospace");
     f.setStyleHint(QFont::Monospace);
     this->setFont(f);
-    QFontMetrics fm(this->font());
-    this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
+    updateTabSpace(tabSpaces);
 }
 
 void Sosware::SosText::TextArea::setNewFont(QFont font, int tabSpaces)
 {
     this->setFont(font);
-
-    QFontMetrics fm(this->font());
-    this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
+    updateTabSpace(tabSpaces);
 }

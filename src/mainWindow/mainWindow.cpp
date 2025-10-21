@@ -235,6 +235,8 @@ void Sosware::SosText::MainWindow::currentTabIncreaseZoom()
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->zoomIn(2);
     textTab->lineNumberArea->zoomIn(2);
+    // TODO set tabspace from settings
+    textTab->textArea->updateTabSpace(4);
 }
 
 void Sosware::SosText::MainWindow::currentTabDecreaseZoom()
@@ -242,6 +244,8 @@ void Sosware::SosText::MainWindow::currentTabDecreaseZoom()
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->zoomOut(2);
     textTab->lineNumberArea->zoomOut(2);
+    // TODO set tabspace from settings
+    textTab->textArea->updateTabSpace(4);
 }
 
 void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText::StringMatch match)
