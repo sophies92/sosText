@@ -26,7 +26,6 @@ Sosware::SosText::TextArea::TextArea(QWidget *parent)
     this->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);    
 
     // TODO get font from settings
-    setNewFont(4);
 }
 
 Sosware::SosText::TextArea::~TextArea()
@@ -37,18 +36,4 @@ void Sosware::SosText::TextArea::updateTabSpace(int tabSpaces)
 {
     QFontMetrics fm(this->font());
     this->setTabStopDistance(fm.horizontalAdvance(" ") * tabSpaces);
-}
-
-void Sosware::SosText::TextArea::setNewFont(int tabSpaces)
-{
-    QFont f("Monospace");
-    f.setStyleHint(QFont::Monospace);
-    this->setFont(f);
-    updateTabSpace(tabSpaces);
-}
-
-void Sosware::SosText::TextArea::setNewFont(QFont font, int tabSpaces)
-{
-    this->setFont(font);
-    updateTabSpace(tabSpaces);
 }

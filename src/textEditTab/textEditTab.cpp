@@ -43,6 +43,8 @@ Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
     layout->addWidget(textArea);
     // Add layout
     this->setLayout(layout);
+
+    updateFont(QFont(), 4);
 }
 
 Sosware::SosText::TextEditTab::~TextEditTab()
@@ -114,6 +116,16 @@ int Sosware::SosText::TextEditTab::saveFile()
         return(saveFile());
     }
     return 1;
+}
+
+void Sosware::SosText::TextEditTab::updateFont(QFont newFont, int tabSpaces)
+{
+    QFont f("Monospace");
+    f.setStyleHint(QFont::Monospace);
+    
+    lineNumberArea->setFont(f);
+    textArea->setFont(f);
+    textArea->updateTabSpace(tabSpaces);
 }
 
 void Sosware::SosText::TextEditTab::updateLineCount(int lines)

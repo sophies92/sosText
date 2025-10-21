@@ -52,6 +52,7 @@
                 int openFile(QString path);
                 int saveFile();
 
+                void updateFont(QFont newFont, int tabSpaces);
                 void updateLineCount(int lines);
                 void updateScroll(int value);
 
