@@ -23,6 +23,7 @@ Copyright (C) 2025  Sophie Short / sosware
 2. Run `make` in the same directory.
 3. Finally run the `install.sh` script as root. The program will be installed to `/usr/local/bin`.
 
+### Usage
 The program can be started by running `sostext` (optionally followed by the path(s) of any files you want to open in a terminal (eg. `sostext [path-to-file-1] [path-to-file-2] [path-to-file-...] [path-to-file-99]`)).
 
 ### Uninstall
