@@ -9,6 +9,8 @@ Copyright (C) 2025  Sophie Short / sosware
 - Open, Edit and Save multiple text files from within a single window.
 - Intuitive indicator for when a file has unsaved changes.
 - Line counting/numbering.
+- Search files for text strings.
+- Independent zoom levels for tabs.
  
 ## Known Bugs
 
