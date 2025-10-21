@@ -134,7 +134,6 @@ void Sosware::SosText::TextEditTab::updateScroll(int value)
 
 std::vector<Sosware::SosText::StringMatch> Sosware::SosText::TextEditTab::findInText(QString textToFind, bool isCaseSensative, bool onlyWholeWords)
 {
-    // TODO find and return all matches
     std::vector<Sosware::SosText::StringMatch> stringMatches;
 
     QTextCursor cursor = textArea->textCursor();

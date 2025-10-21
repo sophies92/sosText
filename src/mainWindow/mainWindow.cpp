@@ -258,6 +258,4 @@ void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText:
 
     textTab->textArea->setTextCursor(cursor);
     textTab->textArea->setFocus();
-
-    // TODO handle next/prev buttons
 }
