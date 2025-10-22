@@ -59,6 +59,9 @@
                 std::vector<Sosware::SosText::StringMatch> findInText(QString textToFind, bool isCaseSensative, bool onlyWholeWords);
 
                 void goToPositionInText(int startPosition, int endPosition);
+
+                signals:
+                void requestSetting(QString settingString);
             };
         }
     }

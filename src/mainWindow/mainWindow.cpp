@@ -69,12 +69,12 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->actionExit, &QAction::triggered, this, &Sosware::SosText::MainWindow::close);
 
     // Edit actions
-    connect(this->ui->actionSelect_All, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabSelectAll);
+    connect(this->ui->actionSelect_All, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabSelectAllRequested);
     connect(this->ui->action_Find, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchFindToolbar);
     
     // View Actions
-    connect(this->ui->action_Zoom_In, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabIncreaseZoom);
-    connect(this->ui->action_Zoom_Out, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabDecreaseZoom);
+    connect(this->ui->action_Zoom_In, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabIncreaseZoomRequested);
+    connect(this->ui->action_Zoom_Out, &QAction::triggered, this, &Sosware::SosText::MainWindow::currentTabDecreaseZoomRequested);
 
     // About actions
     connect(this->ui->actionAbout, &QAction::triggered, this, &Sosware::SosText::MainWindow::launchAboutWindow);
@@ -84,7 +84,7 @@ void Sosware::SosText::MainWindow::connectSlots()
     connect(this->ui->tabWidget, &QTabWidget::currentChanged, this, &Sosware::SosText::MainWindow::updateWindowName);
 
     // FindToolbar slots
-    connect(findToolbar, &Sosware::SosText::FindToolbar::requestSearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabText);
+    connect(findToolbar, &Sosware::SosText::FindToolbar::requestSearchCurrentTabSignal, this, &Sosware::SosText::MainWindow::searchCurrentTabTextRequested);
     connect(findToolbar, &Sosware::SosText::FindToolbar::requestMoveCursorPosition, this, &Sosware::SosText::MainWindow::moveCursorPositionRequested);
 }
 
@@ -215,7 +215,7 @@ void Sosware::SosText::MainWindow::launchAboutWindow()
     aboutWindow = new Sosware::SosText::AboutWindow(this);
 }
 
-void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
+void Sosware::SosText::MainWindow::searchCurrentTabTextRequested(QString searchTerm)
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
 
@@ -224,13 +224,13 @@ void Sosware::SosText::MainWindow::searchCurrentTabText(QString searchTerm)
     findToolbar->setMatchesList(stringMatches);
 }
 
-void Sosware::SosText::MainWindow::currentTabSelectAll()
+void Sosware::SosText::MainWindow::currentTabSelectAllRequested()
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->selectAll();
 }
 
-void Sosware::SosText::MainWindow::currentTabIncreaseZoom()
+void Sosware::SosText::MainWindow::currentTabIncreaseZoomRequested()
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->zoomIn(2);
@@ -239,7 +239,7 @@ void Sosware::SosText::MainWindow::currentTabIncreaseZoom()
     textTab->textArea->updateTabSpace(4);
 }
 
-void Sosware::SosText::MainWindow::currentTabDecreaseZoom()
+void Sosware::SosText::MainWindow::currentTabDecreaseZoomRequested()
 {
     Sosware::SosText::TextEditTab *textTab = (TextEditTab *)ui->tabWidget->currentWidget();
     textTab->textArea->zoomOut(2);
@@ -258,4 +258,10 @@ void Sosware::SosText::MainWindow::moveCursorPositionRequested(Sosware::SosText:
 
     textTab->textArea->setTextCursor(cursor);
     textTab->textArea->setFocus();
+}
+
+void Sosware::SosText::MainWindow::settingRequested(QString settingString)
+{
+    // TODO setting Requested
+    
 }

@@ -56,7 +56,7 @@
                 MainWindow(QWidget *parent = nullptr);
                 ~MainWindow();
 
-                Ui::MainWindow *getUI();
+                Ui::MainWindow* getUI();
 
                 /**
                  * @fn updateWindowName(int tabIndex)
@@ -167,15 +167,17 @@
                 /**
                  * 
                  */
-                void searchCurrentTabText(QString searchTerm);
+                void searchCurrentTabTextRequested(QString searchTerm);
 
-                void currentTabSelectAll();
+                void currentTabSelectAllRequested();
 
-                void currentTabIncreaseZoom();
+                void currentTabIncreaseZoomRequested();
 
-                void currentTabDecreaseZoom();
+                void currentTabDecreaseZoomRequested();
 
                 void moveCursorPositionRequested(Sosware::SosText::StringMatch match);
+
+                void settingRequested(QString settingString);
             };
         }
     }
