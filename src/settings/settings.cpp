@@ -75,14 +75,15 @@ void Sosware::SosText::Settings::loadSettingsFile()
         Sosware::SosText::Setting setting;
         setting.nameString = splitLine[0];
         setting.valueString = splitLine[1];
-        settingMap.insert(setting.nameString, setting);
-        // TODO finish reading and loading settings
+        if(settingMap.contains(setting.nameString))
+        {
+            settingMap[setting.nameString] = setting;
+        }
+        else
+        {
+            settingMap.insert(setting.nameString, setting);
+        }
     }
     settingsFile->close();
-
-    for(auto &s : settingMap)
-    {
-        
-    }
 }
 
