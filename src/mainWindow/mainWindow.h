@@ -151,32 +151,62 @@
                  */
                 void launchAboutWindow();
 
+
+
                 // SIGNALS
                 signals:
 
                 /**
-                 * 
+                 * @fn requestUpdateWindowName(QString newWindowName)
+                 * @brief Updates the window name
+                 * @param newWindowName the new name for the window
                  */
                 void requestUpdateWindowName(QString newWindowName);
 
+                /**
+                 * @fn requestCurrentTabSearchText(QString searchTerm)
+                 * @brief Search the current tab for a text string
+                 * @param searchTerm the string to search for
+                 */
                 void requestCurrentTabSearchText(QString searchTerm);
+
+
 
                 // SLOTS
                 public slots:
 
                 /**
-                 * 
+                 * @fn searchCurrentTabTextRequested(QString searchTerm)
+                 * @brief 
                  */
                 void searchCurrentTabTextRequested(QString searchTerm);
 
+                /**
+                 * @fn currentTabSelectAllRequested()
+                 * @brief Sellects all the text in the current tab
+                 */
                 void currentTabSelectAllRequested();
 
+                /**
+                 * @fn currentTabIncreaseZoomRequested()
+                 * @brief Increase the zoom level for the current tab
+                 */
                 void currentTabIncreaseZoomRequested();
 
+                /**
+                 * @fn currentTabDecreaseZoomRequested()
+                 * @brief Decrease the zoom level in the current tab
+                 */
                 void currentTabDecreaseZoomRequested();
 
+                /**
+                 * @fn moveCursorPositionRequested(Sosware::SosText::StringMatch match)
+                 */
                 void moveCursorPositionRequested(Sosware::SosText::StringMatch match);
 
+                /**
+                 * @fn settingRequested(QString settingString)
+                 */
                 void settingRequested(QString settingString);
             };
         }
