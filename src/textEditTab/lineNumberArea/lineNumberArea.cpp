@@ -35,3 +35,9 @@ Sosware::SosText::LineNumberArea::~LineNumberArea()
 {
 
 }
+
+void Sosware::SosText::LineNumberArea::mouseDoubleClickEvent(QMouseEvent *event)
+{
+    int blockNumber = this->cursorForPosition(event->pos()).blockNumber();
+    emit requestSelectBlockInText(blockNumber);
+}

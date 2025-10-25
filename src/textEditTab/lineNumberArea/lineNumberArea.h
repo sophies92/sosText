@@ -33,6 +33,14 @@
                 public:
                 LineNumberArea(QWidget *parent = nullptr);
                 ~LineNumberArea();
+
+                void mouseDoubleClickEvent(QMouseEvent *event);
+
+
+                // Signals
+                signals:
+
+                void requestSelectBlockInText(int blockNumber);
             };
         }
     }

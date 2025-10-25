@@ -24,6 +24,7 @@
     #include <QFile>
     #include <QFileDialog>
     #include <QLayout>
+    #include <QTextBlock>
     #include "textArea/textArea.h"
     #include "lineNumberArea/lineNumberArea.h"
     #include "../findToolbar/findToolbar.h"
@@ -58,8 +59,13 @@
 
                 std::vector<Sosware::SosText::StringMatch> findInText(QString textToFind, bool isCaseSensative, bool onlyWholeWords);
 
-                void goToPositionInText(int startPosition, int endPosition);
+                // void goToPositionInText(int startPosition, int endPosition);
 
+                // SLOTS
+                void selectBlockInTextRequested(int blockNumber);
+
+
+                // SIGNALS
                 signals:
                 void requestSetting(QString settingString);
             };

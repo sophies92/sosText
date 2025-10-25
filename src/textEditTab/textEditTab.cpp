@@ -32,6 +32,8 @@ Sosware::SosText::TextEditTab::TextEditTab(QWidget *parent) : QWidget(parent)
     connect(textArea->vScrollBar, &QScrollBar::valueChanged, this, &Sosware::SosText::TextEditTab::updateScroll);
     connect(textArea, &QPlainTextEdit::blockCountChanged, this, &Sosware::SosText::TextEditTab::updateScroll);
 
+    connect(lineNumberArea, &Sosware::SosText::LineNumberArea::requestSelectBlockInText, this, &Sosware::SosText::TextEditTab::selectBlockInTextRequested);
+
 
     // Create Tab Layout
     layout = new QHBoxLayout(this);
@@ -173,9 +175,17 @@ std::vector<Sosware::SosText::StringMatch> Sosware::SosText::TextEditTab::findIn
     return stringMatches;
 }
 
-void Sosware::SosText::TextEditTab::goToPositionInText(int startPosition, int endPosition)
+// void Sosware::SosText::TextEditTab::goToPositionInText(int startPosition, int endPosition)
+// {
+//     QTextCursor cursor;
+//     cursor.setPosition(startPosition, QTextCursor::MoveAnchor);
+//     cursor.setPosition(endPosition, QTextCursor::KeepAnchor);
+// }
+
+void Sosware::SosText::TextEditTab::selectBlockInTextRequested(int blockNumber)
 {
-    QTextCursor cursor;
-    cursor.setPosition(startPosition, QTextCursor::MoveAnchor);
-    cursor.setPosition(endPosition, QTextCursor::KeepAnchor);
+    QTextCursor cursor = textArea->textCursor();
+    cursor.setPosition(textArea->document()->findBlockByLineNumber(blockNumber).position());
+    cursor.select(cursor.BlockUnderCursor);
+    textArea->setTextCursor(cursor);
 }
