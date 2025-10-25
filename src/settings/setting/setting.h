@@ -29,8 +29,6 @@
             class Setting
             {                
                 private:
-
-                public:
                 QString nameString;
                 QString valueString;
                 
