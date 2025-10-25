@@ -201,6 +201,8 @@
 
                 /**
                  * @fn moveCursorPositionRequested(Sosware::SosText::StringMatch match)
+                 * @brief Moves the cursor position in the current tab to a searched string
+                 * @param match the string match to move the cursor to
                  */
                 void moveCursorPositionRequested(Sosware::SosText::StringMatch match);
 
