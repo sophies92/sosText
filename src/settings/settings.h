@@ -43,9 +43,6 @@
                 public:
                 Settings();
                 ~Settings();
-
-                QFile* createNewSettingsFile();
-                void loadSettingsFile();
             };
         }
     }
