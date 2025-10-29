@@ -1,6 +1,8 @@
 # sosText
 Version: 1.7
 
+![Image](./screenshots/v1.7/app.png)
+
 ## Description
 sosText is a basic text editor. It is released as part of the sos Suite.  
 Copyright (C) 2025  Sophie Short / sosware
